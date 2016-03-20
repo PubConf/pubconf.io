@@ -50,4 +50,155 @@ section {
     font-weight: 700;
   }
 
+  /* Specifics */
+  &.section-hero {
+    .wrapper {
+      padding: 80px 0;
+    }
+  }
+
+  &.section-speakers {
+
+    .talk-list {
+      padding: $spacing-unit;
+      list-style: none;
+      @include media-query($on-palm) { padding: $spacing-unit 0; }
+    }
+
+    .talk-item {
+      float: left;
+      width: 50%;
+      margin: 0 auto;
+      text-align: left;
+      min-height: 140px;
+
+      @include media-query(750px) { width: 100%; }
+
+      img {
+        float: left;
+        border-radius: 50px;
+      }
+
+      .talk-content {
+        margin-left: 120px;
+        min-height: 120px;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+      }
+
+      h5 {
+        font-weight: 300;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0;
+      }
+
+      .talk-desc {
+        line-height: 1em;
+      }
+
+    }
+
+  }
+
+  &.section-subscribe {
+    h2 { margin: 0 0 10px; }
+
+    input {
+      display: block;
+      margin: 0 auto 0;
+      width: 240px;
+      font-size: 1.2em;
+      vertical-align: bottom;
+      padding: 4px 10px;
+      border: none;
+      border-radius: 2px;
+    }
+
+    input[type=submit] {
+      width: 262px;
+      background-color: $alt-color;
+      border: 1px solid darken($alt-color, 20%);
+      color: $grey-color-light;
+      padding: 6px 12px;
+      cursor: pointer;
+
+      &:hover,&:active,&:focus {
+        background-color: darken($alt-color, 20%);
+      }
+    }
+
+  }
+
+  &.section-venue {
+    .wrapper { max-width: 720px;}
+    .venue-address {
+      margin-top: $spacing-unit / 2;
+      line-height: 1.0em;
+    }
+  }
+
+  &.section-schedule {
+
+    .schedule-wrap {
+      text-align: left;
+      max-width: 480px;
+      margin: 20px auto;
+      padding: 10px 0;
+
+      strong {
+        display: block;
+        margin-left: 80px;
+      }
+    }
+
+  }
+
+  &.section-sponsors {
+
+    .sponsor-list {
+      list-style: none;
+      margin: 0;
+    }
+    .sponsor-item {
+      float: left;
+      padding: $spacing-unit;
+
+      width: -webkit-calc(50% - #{$spacing-unit * 2});
+      width:         calc(50% - #{$spacing-unit * 2});
+      img {
+        max-height: 160px;
+        max-width: 320px;
+      }
+
+      @include media-query(750px) {
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding: $spacing-unit 0;
+      }
+    }
+
+  }
+
+  &.section-tickets {
+
+    .ticket-list {
+      list-style: none;
+      max-width: 640px;
+      margin: $spacing-unit auto;
+      padding: 10px 0;
+    }
+
+    .ticket-item {
+      margin: $spacing-unit;
+    }
+
+  }
+
 }
