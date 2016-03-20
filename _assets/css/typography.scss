@@ -1,0 +1,23 @@
+/* Typography */
+
+.text-lg { font-size: 1.4em;line-height: 1.4em; }
+.text-center { text-align: center; }
+.text-muted { color: #555; }
+.pull-left {float:left;}
+.pull-right {float:right;}
+.button {
+  background-color: #8D1303;
+  color: #eee;
+  padding: 8px 24px;
+  border-radius: 2px;
+  font-weight: 700;
+  border: 1px solid #8D1303;
+  transition: background-color 300ms ease 0s;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #8D1303;
+  color: #eee;
+  text-decoration: none;
+}

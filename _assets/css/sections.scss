@@ -1,0 +1,53 @@
+/* Sections */
+
+section {
+
+  .section-head {
+    text-align: center;
+  }
+
+  &.section-light {
+    background-color: $background-color;
+    width: 100%;
+    padding: $spacing-unit 0;
+    color: $text-color;
+
+    .section-title {}
+    .section-head {
+      padding-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      border-bottom: 1px solid $accent-color;
+      border-image: linear-gradient(to right, transparent, $accent-color 31.91489%, $accent-color 68.08511%, transparent) 0 0 100% 0;
+    }
+  }
+
+  &.section-dark {
+    background-color: $grey-color-dark;
+    width: 100%;
+    padding: $spacing-unit 0;
+    color: $text-color-light;
+
+    .section-title {}
+    .section-head {
+      padding-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      border-bottom: 1px solid $accent-color;
+      border-image: linear-gradient(to right, transparent, $accent-color 31.91489%, $accent-color 68.08511%, transparent) 0 0 100% 0;
+    }
+  }
+
+  &.section-decor {
+    box-shadow: inset 0px  8px 8px -5px rgba(0,0,0,0.8),
+                inset 0px -8px 8px -5px rgba(0,0,0,0.8);
+    background: url(/assets/images/bar1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 60px 0;
+    color: $text-color-light;
+    font-weight: 700;
+  }
+
+}

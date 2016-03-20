@@ -1,0 +1,32 @@
+/* Main Navigation */
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: $grey-color-dark;
+  color: $text-color-light;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    display: inline-block;
+    margin: 4px auto;
+    padding: 0
+  }
+
+  li {
+    text-align: center;
+    display: inline;
+    margin:10px 6px;
+    padding: 0;
+
+    a {
+      color: $text-color-light;
+
+      &:hover,&:active,&:focus {
+        color: lighten($brand-color, 40%);
+      }
+    }
+  }
+}

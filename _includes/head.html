@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="version" content="{{ site.data.hash }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if site.googleplus_username %}<link rel="publisher" href="https://plus.google.com/{{ site.googleplus_username }}">{% endif %}
+  {% if site.twitter_username %}<link rel="me" href="https://twitter.com/{{ site.twitter_username }}">{% endif %}
+
+  <!-- Open Graph Sharing Info -->
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_US" />
+  {% if site.facebook_username %}<meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
+  {% if site.facebook_username %}<meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
+  {% if page.image %}<meta property="og:image" content="{{site.url}}{{page.image}}" />
+  {% else %}<meta property="og:image" content="{{site.url}}{{site.image}}" />{% endif %}
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
+  {% if page.image %}<meta name="twitter:image" content="{{site.url}}{{page.image}}" />
+  {% else %}<meta name="twitter:image" content="{{site.url}}{{site.image}}" />{% endif %}
+
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAC18PcAAAAAAMfn6wDg+/8AAH3jAADD/wD/fUoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYRERERERZmZmFERERBZmZmYUEUEUFmZmZhQUQUQWZmZmFBRBRBERZmYVFVFVEAAWZhUVUVUREBZmFRVRVRYQFmYVFVFVERAWYhUVUVUQABYjFRVRVRERZiMTMyMzEzZmYhMzMjMTZmZiMyMyMzJmZmYjMjMyNmZmZmIzIzNmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+
+  {% stylesheet main %}
+</head>

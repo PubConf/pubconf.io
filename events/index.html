@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="events-page">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-light section-events">
+    <div class="wrapper text-center">
+
+      <ul class="event-list">
+
+        <li class="event-item">
+          <a href="/"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
+          <div>
+            <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
+            <a href="{{ site.data.oslo2016.partner.url }}" target="_blank">
+              <img src="{{ site.data.oslo2016.partner.imageUrl }}" alt="{{ site.data.oslo2016.partner.name }}" style="max-height:30px;">
+            </a>
+          </div>
+          <div class="text-muted text-lg">{{ site.data.oslo2016.date | date: "%B %d, %Y" }}</div>
+        </li>
+
+        <li class="event-item">
+          <a href="/events/london2016.html"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
+          <div>
+            <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
+            <a href="{{ site.data.london2016.partner.url }}" target="_blank">
+              <img src="{{ site.data.london2016.partner.imageUrl }}" alt="{{ site.data.london2016.partner.name }}" style="max-height:30px;">
+            </a>
+          </div>
+          <div class="text-muted text-lg">{{ site.data.london2016.date | date: "%B %d, %Y" }}</div>
+        </li>
+
+      </ul>
+
+  </section>
+
+  <footer>
+    <div class="footer-wrap">
+      <p>Special thanks to <a href="https://twitter.com/westleyl">Liam Westley</a> and <a href="https://twitter.com/jakbradf">Jakob Bradford</a>. PubConf is a project by <a href="http://todd.mn/">Todd H Gardner</a>.</p>
+      <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">PubConf</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+      <div style="margin-top:20px;"><img src="/assets/images/logo_small_dark.png" alt="PubConf"/></div>
+    </div>
+  </footer>
+
+</div>

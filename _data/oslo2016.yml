@@ -1,0 +1,35 @@
+
+
+partner:
+  title: NDC Oslo
+  url: http://ndcoslo.com/
+  imageUrl: /assets/images/sponsors/ndcoslo-black.png
+
+
+date: 2016-06-11
+
+sponsors:
+
+  - name: NDC Oslo
+    url: http://ndcoslo.com/
+    imageUrl: /assets/images/sponsors/ndcoslo-white.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
+speakers:
+
+  - name: Sebastien Lambla
+    url: http://serialseb.com/
+    title: To Be Announced
+    description: Runs Caffeine IT, a consultancy helping clients across Europe.
+    imageUrl: /assets/images/speakers/sebastien.jpg
+    presentationUrl:
+
+  - name: Troy Hunt
+    url: http://troyhunt.com
+    title: To Be Announced
+    description: World-renowned internet security specialist.
+    imageUrl: /assets/images/speakers/troy.jpg
+    presentationUrl:

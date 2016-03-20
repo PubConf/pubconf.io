@@ -1,0 +1,139 @@
+
+partner:
+  title: NDC London
+  url: http://ndc-london.com/
+  imageUrl: /assets/images/ndc-black.png
+
+date: 2016-01-16
+
+sponsors:
+
+  - name: NDC London
+    url: http://ndc-london.com/
+    imageUrl: /assets/images/sponsors/ndc.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
+  - name: Zopa
+    url: https://www.zopa.com/
+    imageUrl: /assets/images/sponsors/zopa.png
+
+  - name: Red Gate
+    url: https://www.red-gate.com/
+    imageUrl: /assets/images/sponsors/redgate.png
+
+speakers:
+
+  - name: Calum Gunn
+    url: http://www.calumgunn.com/
+    title: Coding Music
+    description: Computer musician, specialising in elasticated rave objects.
+    imageUrl: /assets/images/speakers/calum.jpg
+    theme: managing-yourself
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-coding-music-by-calum-gunn
+
+  - name: Basia Fusińska
+    url: http://barbarafusinska.com
+    title: Conference Talk Contract
+    description: A mentor to aspiring developers.
+    imageUrl: /assets/images/speakers/basia.png
+    theme: managing-yourself
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-conference-talk-contract-by-basia-fukinska
+
+  - name: Ben Hall
+    url: http://Katacoda.com
+    title: Learning Patterns for the Overworked Developer
+    description: Founder of Ocelot Uproar, launched Katacoda.
+    imageUrl: /assets/images/speakers/ben.jpg
+    theme: managing-yourself
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-learning-patterns-for-the-overworked-developer-by-ben-hall
+
+  - name: Mark Rendle
+    url: https://blog.markrendle.net/
+    title: Being a Programmer is Awesome
+    description: Grand High Mystic Of The Eternal Church Of Made-up Titles.
+    imageUrl: /assets/images/speakers/mark.jpg
+    theme: managing-yourself
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-being-a-programmer-is-awesome-by-mark-rendle
+
+  - name: Sam Elamin
+    url: https://twitter.com/samelamin
+    title: Failure is Awesome
+    description: Software Developer at JustEat.
+    imageUrl: /assets/images/speakers/sam.jpg
+    theme: managing-yourself
+    presentationUrl:
+
+  - name: Chris Massey
+    url: https://twitter.com/camassey
+    title: Seamless Computering
+    description: Community architect at RedGate.
+    imageUrl: /assets/images/speakers/chris.jpg
+    theme: future-computering
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-seamless-computering-by-chris-massey
+
+  - name: Doug Sillars
+    url: https://twitter.com/dougsillars
+    title: Why 3G 4G 5G is Not the Solution
+    description: Leader in mobile performance.
+    imageUrl: /assets/images/speakers/doug.jpg
+    theme: future-computering
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-faster-apps-why-3g-4g-5g-is-not-the-solution-by-doug-sillars
+
+  - name: Liam Westley
+    url: http://geekswithblogs.net/twickers
+    title: What Is the Point Of Microsoft?
+    description: Application Architect at Huddle.
+    imageUrl: /assets/images/speakers/liam.jpg
+    theme: future-computering
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-what-is-the-point-of-microsoft-by-liam-westley
+
+  - name: Dylan Beattie
+    url: http://backstage.spotlight.com/
+    title: The Face of Things to Come
+    description: Lead Developer at Spotlight.
+    imageUrl: /assets/images/speakers/dylan.jpg
+    theme: future-computering
+    presentationUrl: https://vimeo.com/152890042
+
+  - name: Jimmy Bogard
+    url: https://lostechies.com/jimmybogard/
+    title: When You've Fucked Up
+    description: Chief Architect at Headspring.
+    imageUrl: /assets/images/speakers/jimmy.jpg
+    theme: everything-wrong
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-when-youve-fucked-up-by-jimmy-bogard
+
+  - name: Ian Cooper
+    url: http://codebetter.com/iancooper/
+    title: RPC is Evil
+    description: Once corporate, his current version comes complete with beard, tattoos and piercings.
+    imageUrl: /assets/images/speakers/ian.jpg
+    theme: everything-wrong
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-rpc-is-evil-by-ian-cooper
+
+  - name: Pete Smith
+    url: http://beyond-code.com/
+    title: The Next Big Thing
+    description: One time he finished something.
+    imageUrl: /assets/images/speakers/pete.jpg
+    theme: everything-wrong
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-the-next-big-thing-by-pete-smith
+
+  - name: Sebastien Lambla
+    url: http://serialseb.com/
+    title: The Illogical 17:00 Split
+    description: Runs Caffeine IT, a consultancy helping clients across Europe.
+    imageUrl: /assets/images/speakers/sebastien.jpg
+    theme: everything-wrong
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-the-illogical-17-00-split-by-sebastien-lambla
+
+  - name: Troy Hunt
+    url: http://troyhunt.com
+    title: Let's Face It–Security is Pointless
+    description: World-renowned internet security specialist.
+    imageUrl: /assets/images/speakers/troy.jpg
+    theme: everything-wrong
+    presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-lets-face-it-security-is-pointless-by-troy-hunt
