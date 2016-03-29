@@ -12,5 +12,5 @@ Event website for PubConf Conferences
 ## To Release
 
 - `bundle`
-- `export JEKYLL_ENV=production && jekyll build`
+- `export JEKYLL_ENV=production && jekyll clean && jekyll build`
 - `scp -r _site/* <user>@<ip_address>:/var/www/pubconf.io/html`
