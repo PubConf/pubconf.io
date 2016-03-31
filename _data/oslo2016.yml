@@ -20,6 +20,20 @@ sponsors:
 
 speakers:
 
+  - name: Karoline Klever
+    url: http://www.karolikl.com/
+    title: The Miscommunicating Developer
+    description: Passionate feminist developer lured into the corporate world.
+    imageUrl: /assets/images/speakers/karoline.jpg
+    presentationUrl:
+
+  - name: Niall Merrigan
+    url: http://www.certsandprogs.com
+    title: Toilets on the Internet and How to Find Them
+    description: <img src=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+    imageUrl: /assets/images/speakers/niall.jpg
+    presentationUrl:
+
   - name: Sebastien Lambla
     url: http://serialseb.com/
     title: To Be Announced
@@ -30,6 +44,6 @@ speakers:
   - name: Troy Hunt
     url: http://troyhunt.com
     title: To Be Announced
-    description: World-renowned internet security specialist.
+    description: Rather Stupid Security Researcher.
     imageUrl: /assets/images/speakers/troy.jpg
     presentationUrl:
