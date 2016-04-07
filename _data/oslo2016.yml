@@ -20,11 +20,32 @@ sponsors:
 
 speakers:
 
+  - name: Evelina Gabasova
+    url: http://evelinag.com/
+    title: Welcoming our AI Overlords
+    description: Machine learning researcher, clerk at the ministry of silly talks
+    imageUrl: /assets/images/speakers/evelina.jpg
+    presentationUrl:
+
+  - name: Karl-Henrik Nilsson
+    url: https://twitter.com/KHNilsson
+    title: The Internet of Less-Useless Things
+    description: If you ever need to build a smarter toaster, I'm your guy
+    imageUrl: /assets/images/speakers/karl.jpg
+    presentationUrl:
+
   - name: Karoline Klever
     url: http://www.karolikl.com/
     title: The Miscommunicating Developer
     description: Passionate feminist developer lured into the corporate world.
     imageUrl: /assets/images/speakers/karoline.jpg
+    presentationUrl:
+
+  - name: Lars Klint
+    url: http://larsklint.com
+    title: The Day Kittens Took Over the World Using HoloLens
+    description: Freelance Geek, Banjo Enthusiast and Petrol Head
+    imageUrl: /assets/images/speakers/lars.jpg
     presentationUrl:
 
   - name: Niall Merrigan
@@ -36,14 +57,21 @@ speakers:
 
   - name: Sebastien Lambla
     url: http://serialseb.com/
-    title: To Be Announced
+    title: How to Always Be Right on the Internets
     description: Runs Caffeine IT, a consultancy helping clients across Europe.
     imageUrl: /assets/images/speakers/sebastien.jpg
     presentationUrl:
 
+  - name: Stefan Daugaard Poulsen
+    url: http://cyberzed.dk
+    title: IoT is Misspelled IoU
+    description: Software Charlatan
+    imageUrl: /assets/images/speakers/stefan.jpg
+    presentationUrl:
+
   - name: Troy Hunt
     url: http://troyhunt.com
-    title: To Be Announced
+    title: Let's Face It--Security is Pointless
     description: Rather Stupid Security Researcher.
     imageUrl: /assets/images/speakers/troy.jpg
     presentationUrl:
