@@ -20,6 +20,20 @@ sponsors:
 
 speakers:
 
+  - name: Dylan Beattie
+    url: http://www.dylanbeattie.net
+    title: So You Think Your Code Isn't Mission Critical?
+    description: You know. The one in the hat.
+    imageUrl: /assets/images/speakers/dylan.jpg
+    presentationUrl:
+
+  - name: Einar Høst
+    url: http://einarwh.wordpress.com
+    title: Pragmatism is Poison
+    description: Ivory tower zealot. Basically Saruman.
+    imageUrl: /assets/images/speakers/einar.jpg
+    presentationUrl:
+
   - name: Evelina Gabasova
     url: http://evelinag.com/
     title: Welcoming our AI Overlords
