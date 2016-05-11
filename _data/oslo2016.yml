@@ -41,6 +41,14 @@ speakers:
     imageUrl: /assets/images/speakers/evelina.jpg
     presentationUrl:
 
+  - name: Jimmy Bogard
+    url: https://lostechies.com/jimmybogard/
+    title: When You've Fucked Up
+    description: Chief Architect at Headspring.
+    imageUrl: /assets/images/speakers/jimmy.jpg
+    theme: everything-wrong
+    presentationUrl:
+
   - name: Karl-Henrik Nilsson
     url: https://twitter.com/KHNilsson
     title: The Internet of Less-Useless Things
