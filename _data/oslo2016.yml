@@ -20,6 +20,13 @@ sponsors:
 
 speakers:
 
+  - name: David Neal
+    url: http://reverentgeek.com/
+    title: Win Hearts with Your Craptastic Drawings
+    description: Bacon Believer
+    imageUrl: /assets/images/speakers/davidneal.jpg
+    presentationUrl:
+
   - name: Dylan Beattie
     url: http://www.dylanbeattie.net
     title: So You Think Your Code Isn't Mission Critical?
