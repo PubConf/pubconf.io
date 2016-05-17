@@ -84,6 +84,13 @@ speakers:
     imageUrl: /assets/images/speakers/niall.jpg
     presentationUrl:
 
+  - name: Rob Ashton
+    url: http://codeofrob.com
+    title: My Code Looks Like Vomit and That's Okay
+    description: Makes better coffee than you
+    imageUrl: /assets/images/speakers/rob.jpg
+    presentationUrl:
+
   - name: Sebastien Lambla
     url: http://serialseb.com/
     title: How to Always Be Right on the Internets
