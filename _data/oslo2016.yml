@@ -20,6 +20,13 @@ sponsors:
 
 speakers:
 
+  - name: Ben Cull
+    url: https://twitter.com/BenWhoLikesBeer
+    title: How to Brew Beer
+    description: Cheif Beer Drinker (after Todd)
+    imageUrl: /assets/images/speakers/bencull.jpg
+    presentationUrl:
+
   - name: David Neal
     url: http://reverentgeek.com/
     title: Win Hearts with Your Craptastic Drawings
@@ -75,20 +82,6 @@ speakers:
     title: The Day Kittens Took Over the World Using HoloLens
     description: Freelance Geek, Banjo Enthusiast and Petrol Head
     imageUrl: /assets/images/speakers/lars.jpg
-    presentationUrl:
-
-  - name: Niall Merrigan
-    url: http://www.certsandprogs.com
-    title: Toilets on the Internet and How to Find Them
-    description: <img src=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
-    imageUrl: /assets/images/speakers/niall.jpg
-    presentationUrl:
-
-  - name: Rob Ashton
-    url: http://codeofrob.com
-    title: My Code Looks Like Vomit and That's Okay
-    description: Makes better coffee than you
-    imageUrl: /assets/images/speakers/rob.jpg
     presentationUrl:
 
   - name: Sebastien Lambla
