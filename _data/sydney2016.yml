@@ -1,0 +1,50 @@
+
+
+partner:
+  title: NDC Sydney
+  url: http://ndcsydney.com/
+  imageUrl: /assets/images/sponsors/ndcsydney-black.png
+
+ticketUrl:
+
+date: 2016-08-05
+
+sponsors:
+
+  - name: NDC Sydney
+    url: http://ndcsydney.com/
+    imageUrl: /assets/images/sponsors/ndcsydney-white.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
+speakers:
+
+  - name: Dylan Beattie
+    url: http://www.dylanbeattie.net
+    title:
+    description: You know. The one in the hat.
+    imageUrl: /assets/images/speakers/dylan.jpg
+    presentationUrl:
+
+  - name: Jimmy Bogard
+    url: https://lostechies.com/jimmybogard/
+    title:
+    description: Chief Architect at Headspring.
+    imageUrl: /assets/images/speakers/jimmy.jpg
+    presentationUrl:
+
+  - name: Lars Klint
+    url: http://larsklint.com
+    title:
+    description: Freelance Geek, Banjo Enthusiast and Petrol Head
+    imageUrl: /assets/images/speakers/lars.jpg
+    presentationUrl:
+
+  - name: Troy Hunt
+    url: http://troyhunt.com
+    title:
+    description: Rather Stupid Security Researcher.
+    imageUrl: /assets/images/speakers/troy.jpg
+    presentationUrl:

@@ -4,6 +4,8 @@ section {
 
   .section-head {
     text-align: center;
+    clear: both;
+    @extend %clearfix;
   }
 
   &.section-light {
