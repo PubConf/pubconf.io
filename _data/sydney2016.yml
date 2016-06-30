@@ -52,7 +52,7 @@ speakers:
 
   - name: Troy Hunt
     url: http://troyhunt.com
-    title:
+    title: Let's Face It--Security is Pointless
     description: Rather Stupid Security Researcher.
     imageUrl: /assets/images/speakers/troy.jpg
     presentationUrl:
