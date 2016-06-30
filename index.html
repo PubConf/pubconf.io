@@ -2,6 +2,10 @@
 layout: default
 title: PubConf Sydney - August 5 2016
 ---
+<script src="/assets/js/scrollMonitor.js"></script>
+<script>
+
+</script>
 
 <div class="sydney2016">
 
@@ -58,7 +62,7 @@ title: PubConf Sydney - August 5 2016
       <ul class="talk-list">
         {% assign speakers = (event.speakers | sort: "name") %}
         {% for speaker in speakers %}
-        <li class="talk-item">
+        <li class="talk-item" id="{{ speaker.elementId }}">
           <img src="{{ speaker.imageUrl }}" width="100px" height="100px" alt="{{ speaker.name }}">
           <div class="talk-content">
             <h4>{{ speaker.title }}</h4>

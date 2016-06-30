@@ -42,6 +42,14 @@ speakers:
     imageUrl: /assets/images/speakers/lars.jpg
     presentationUrl:
 
+  - name: Niall Merrigan
+    elementId: niall-xss-talk
+    url: http://www.certsandprogs.com
+    title:
+    description: p0wned!<script>var b = false; var e = scrollMonitor.create(document.getElementById("niall-xss-talk")); e.fullyEnterViewport(function() { if (!b) { b=true; alert('Niall Merrigan talks about Cross-Site Scripting vulnerabilities.'); } });</script>
+    imageUrl: /assets/images/speakers/niall.jpg
+    presentationUrl:
+
   - name: Troy Hunt
     url: http://troyhunt.com
     title:
