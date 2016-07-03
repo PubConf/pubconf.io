@@ -21,6 +21,13 @@ sponsors:
 
 speakers:
 
+  - name: Damian Brady
+    url: http://www.damianbrady.com.au
+    title: Humans Ruin Everything
+    description: 16th-best developer at Octopus Deploy
+    imageUrl: /assets/images/speakers/damian.jpg
+    presentationUrl:
+
   - name: Dylan Beattie
     url: http://www.dylanbeattie.net
     title:
@@ -30,9 +37,16 @@ speakers:
 
   - name: Jimmy Bogard
     url: https://lostechies.com/jimmybogard/
-    title:
+    title: 
     description: Chief Architect at Headspring.
     imageUrl: /assets/images/speakers/jimmy.jpg
+    presentationUrl:
+
+  - name: Kylie Hunt
+    url: http://www.kyliehunt.com
+    title: 5 Ninja-Tricks to Thriving at Work
+    description: I keep Troy Hunt firmly grounded
+    imageUrl: /assets/images/speakers/kylie.jpg
     presentationUrl:
 
   - name: Lars Klint
@@ -46,7 +60,7 @@ speakers:
     elementId: niall-xss-talk
     url: http://www.certsandprogs.com
     title:
-    description: p0wned!<script>var b = false; var e = scrollMonitor.create(document.getElementById("niall-xss-talk")); e.fullyEnterViewport(function() { if (!b) { b=true; alert('Niall Merrigan talks about Cross-Site Scripting vulnerabilities.'); } });</script>
+    description: p0wned!
     imageUrl: /assets/images/speakers/niall.jpg
     presentationUrl:
 

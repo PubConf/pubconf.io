@@ -36,6 +36,10 @@ section {
       border-bottom: 1px solid $accent-color;
       border-image: linear-gradient(to right, transparent, $accent-color 31.91489%, $accent-color 68.08511%, transparent) 0 0 100% 0;
     }
+
+    a {
+      color: lighten($brand-color, 40%);
+    }
   }
 
   &.section-decor {
