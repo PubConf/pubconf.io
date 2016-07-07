@@ -21,6 +21,12 @@ sponsors:
 
 speakers:
 
+  - name: Ben Hall
+    url: http://Katacoda.com
+    title:
+    description: Founder of Ocelot Uproar, launched Katacoda.
+    imageUrl: /assets/images/speakers/ben.jpg
+
   - name: Damian Brady
     url: http://www.damianbrady.com.au
     title: Humans Ruin Everything
@@ -37,7 +43,7 @@ speakers:
 
   - name: Jimmy Bogard
     url: https://lostechies.com/jimmybogard/
-    title: 
+    title:
     description: Chief Architect at Headspring.
     imageUrl: /assets/images/speakers/jimmy.jpg
     presentationUrl:
@@ -45,7 +51,7 @@ speakers:
   - name: Kylie Hunt
     url: http://www.kyliehunt.com
     title: 5 Ninja-Tricks to Thriving at Work
-    description: I keep Troy Hunt firmly grounded
+    description: I make workplaces suck less. And keep Troy Hunt in line.
     imageUrl: /assets/images/speakers/kylie.jpg
     presentationUrl:
 
@@ -54,6 +60,19 @@ speakers:
     title:
     description: Freelance Geek, Banjo Enthusiast and Petrol Head
     imageUrl: /assets/images/speakers/lars.jpg
+    presentationUrl:
+
+  - name: Liam Westley
+    url: http://geekswithblogs.net/twickers
+    title:
+    description: Application Architect at Huddle.
+    imageUrl: /assets/images/speakers/liam.jpg
+
+  - name: Magnus Mårtensson
+    url: http://loftysoft.com/
+    title:
+    description: Don of the Cumulous Mafia
+    imageUrl: /assets/images/speakers/magnus.jpg
     presentationUrl:
 
   - name: Niall Merrigan
