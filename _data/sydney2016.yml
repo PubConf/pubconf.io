@@ -43,8 +43,8 @@ speakers:
 
   - name: Jimmy Bogard
     url: https://lostechies.com/jimmybogard/
-    title:
-    description: Chief Architect at Headspring.
+    title: Code So Bad It Made the News
+    description: The Barley Architect
     imageUrl: /assets/images/speakers/jimmy.jpg
     presentationUrl:
 
@@ -70,8 +70,8 @@ speakers:
 
   - name: Magnus Mårtensson
     url: http://loftysoft.com/
-    title:
-    description: Don of the Cumulous Mafia
+    title: "#cloud #itoldyouso"
+    description: Air Force Cloud Pilot and Meteorologist for Cloudy weather
     imageUrl: /assets/images/speakers/magnus.jpg
     presentationUrl:
 
@@ -83,9 +83,30 @@ speakers:
     imageUrl: /assets/images/speakers/niall.jpg
     presentationUrl:
 
+  - name: Nik Molnar
+    url: http://nikcodes.com
+    title: Grokking Gastronomy
+    description: Bit Butcher
+    imageUrl: /assets/images/speakers/nik.jpg
+    presentationUrl:
+
+  - name: Scott Allen
+    url: http://odetocode.com
+    title: How The Gods Punish Us With New Web Standards
+    description: The Profit of Pluralsight
+    imageUrl: /assets/images/speakers/scottallen.jpg
+    presentationUrl:
+
   - name: Troy Hunt
     url: http://troyhunt.com
     title: Let's Face It--Security is Pointless
     description: Rather Stupid Security Researcher.
     imageUrl: /assets/images/speakers/troy.jpg
+    presentationUrl:
+
+  - name: Xharmagne Carandang
+    url: https://twitter.com/xharmagne
+    title: Fight Your Way Into UX Design
+    description: Loves designing, building and debugging magic
+    imageUrl: /assets/images/speakers/xharmagne.jpg
     presentationUrl:
