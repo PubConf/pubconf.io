@@ -5,7 +5,7 @@ partner:
   url: http://ndcsydney.com/
   imageUrl: /assets/images/sponsors/ndcsydney-black.png
 
-ticketUrl:
+ticketUrl: http://www.eventbrite.com.au/e/pubconf-syndey-2016-tickets-26399378251
 
 date: 2016-08-05
 
@@ -36,7 +36,7 @@ speakers:
 
   - name: Dylan Beattie
     url: http://www.dylanbeattie.net
-    title:
+    title: Everybody's Free (To Use Flatscreens)
     description: You know. The one in the hat.
     imageUrl: /assets/images/speakers/dylan.jpg
     presentationUrl:
@@ -57,15 +57,15 @@ speakers:
 
   - name: Lars Klint
     url: http://larsklint.com
-    title:
+    title:  Banjo Coding in the Outback (How to Be a Developer with Australian Internet)
     description: Freelance Geek, Banjo Enthusiast and Petrol Head
     imageUrl: /assets/images/speakers/lars.jpg
     presentationUrl:
 
   - name: Liam Westley
     url: http://geekswithblogs.net/twickers
-    title:
-    description: Application Architect at Huddle.
+    title: The Secret Life of Programmers
+    description: Top Trumps analysis of developer personalities.
     imageUrl: /assets/images/speakers/liam.jpg
 
   - name: Magnus Mårtensson
