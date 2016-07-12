@@ -78,8 +78,25 @@ speakers:
   - name: Niall Merrigan
     elementId: niall-xss-talk
     url: http://www.certsandprogs.com
-    title:
-    description: p0wned!
+    title: XSS - What Does It Really Mean
+    description: >
+      p0wned!<script>
+      (function() {
+        var step = 50;
+        var beat = 100;
+        var e = document.getElementById("niall-xss-talk");
+        if (!e) return;
+        e.style.position = "relative";
+        setInterval(function() {
+          e.style.top = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.right = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.left = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.bottom = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          e.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        }, beat);
+      })();
+      </script>
     imageUrl: /assets/images/speakers/niall.jpg
     presentationUrl:
 
