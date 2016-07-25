@@ -31,6 +31,12 @@ speakers:
     description: Founder of Ocelot Uproar, launched Katacoda.
     imageUrl: /assets/images/speakers/ben.jpg
 
+  - name: Cathy Hunt
+    url: http://www.ipadartroom.com
+    title:  Teachers Tech and 'Tools'
+    description: Teaching Teachers to Teach with Teaching
+    imageUrl: /assets/images/speakers/cathyhunt.jpg
+
   - name: Damian Brady
     url: http://www.damianbrady.com.au
     title: Humans Ruin Everything
@@ -52,6 +58,13 @@ speakers:
     imageUrl: /assets/images/speakers/jimmy.jpg
     presentationUrl:
 
+  - name: Kris Howard
+    url: http://www.krishoward.org/
+    title: Granny Was a Hacker
+    description: Former dev. Yarn stash exceeds life expectancy.
+    imageUrl: /assets/images/speakers/krishoward.jpg
+    presentationUrl:
+
   - name: Kylie Hunt
     url: http://www.kyliehunt.com
     title: 5 Ninja-Tricks to Thriving at Work
@@ -61,7 +74,7 @@ speakers:
 
   - name: Lars Klint
     url: http://larsklint.com
-    title:  Banjo Coding in the Outback (How to Be a Developer with Australian Internet)
+    title:  Banjo Coding in the Outback
     description: Freelance Geek, Banjo Enthusiast and Petrol Head
     imageUrl: /assets/images/speakers/lars.jpg
     presentationUrl:
