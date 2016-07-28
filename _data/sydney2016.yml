@@ -23,6 +23,10 @@ sponsors:
     url: http://www.justdigitalpeople.com.au/
     imageUrl: /assets/images/sponsors/justdigitalpeople.png
 
+  - name: Pluralsight
+    url: https://www.pluralsight.com/
+    imageUrl: /assets/images/sponsors/pluralsight.png
+
 speakers:
 
   - name: Ben Hall
