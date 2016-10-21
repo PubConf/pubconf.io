@@ -1,0 +1,25 @@
+
+title: PubConf Sydney
+date: 2017-08-18
+time:
+location:
+status: preorder
+ticketURL:
+permalink: /events/2017/sydney.html
+
+bannerURL: /assets/images/2017-sydney.jpg
+bannerAlt: PubConf after NDC Sydney 2017
+
+cfp: true
+speakers:
+
+venue:
+  description:
+  imageURL:
+  imageAlt:
+  address:
+  mapURL:
+
+cfs: true
+prospectusURL:
+sponsors:

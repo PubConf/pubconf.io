@@ -1,0 +1,22 @@
+.events-page {
+
+  min-height: 1000px;
+
+  .event-list {
+    padding: $spacing-unit;
+    list-style: none;
+    @include media-query($on-palm) { padding: $spacing-unit 0; }
+  }
+
+  .event-item {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 420px;
+
+    @include media-query(750px) { width: 100%; }
+  }
+
+
+}

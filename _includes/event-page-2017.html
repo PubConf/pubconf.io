@@ -1,0 +1,300 @@
+<div class="event-page-2017">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#guests">Guests</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+      </ul>
+    </nav>
+    <div class="section-event-banner" style="padding-top:36px;">
+      <a href="{{ include.event.permalink }}" class="banner-wrapper">
+        <div class="wrapper shadow">
+            <img src="{{ include.event.bannerURL }}" alt="{{ include.event.bannerAlt }}"/>
+        </div>
+      </a>
+      <div class="text-center" style="background-color:white;">
+        <small>Open to the (technical) public.</small>
+      </div>
+    </section>
+  </header>
+
+  <section class="section-light section-hero">
+    <div class="wrapper">
+      <div class="hero-col-wrapper">
+        <div class="hero-col hero-col-1 text-center">
+          <h1 class="hero-title">{{ include.event.title }}</h1>
+          <div class="hero-when">{{ include.event.date | date: "%B %d, %Y" }} @ {{ include.event.time }}</div>
+          <div class="hero-where">{{ include.event.location }}</div>
+        </div>
+        <div class="hero-col hero-col-2 text-center">
+          {% if include.event.status == "preorder" %}
+          <button type="button" class="button button-hero button-alt js-waitlist-toggle">
+            Join Waitlist
+          </button>
+          <div class="hero-info">
+            Tickets are not on sale yet. <br />Join the waitlist, and you'll be the first to know!
+          </div>
+          <div class="modal-overlay js-waitlist-wrap">
+            <div class="modal-wrap">
+              <button type="button" class="modal-close js-modal-close">&times;</button>
+              <h2>Join the {{ include.event.title }} Waitlist</h2>
+              <p class="preamble">Be the first to know when tickets are available!</p>
+
+              <!-- http://kb.mailchimp.com/lists/signup-forms/host-your-own-signup-forms -->
+              <form id="js-newsletter-form" method="POST" action="https://pubconf.us11.list-manage.com/subscribe/post">
+                <input type="hidden" name="u" value="33d7399517a3ee3a5e9b679f7">
+                <input type="hidden" name="id" value="05e06dc18c">
+                <input type="hidden" name="EVENT" value="London">
+                <div style="margin: 0 auto 10px;">
+                  <label class="inside-label">
+                    <input type="email" name="EMAIL" placeholder="jane@example.com" required="required"/>
+                    <span>Email</span>
+                  </label>
+                </div>
+                <button type="submit" name="subscribe" class="button button-alt button-large">Join Waitlist</button>
+              </form>
+            </div>
+          </div>
+          {% elsif include.event.status == "onsale" %}
+          <a class="button button-hero" href="{{ include.event.ticketURL }}">
+            Get Tickets Now
+          </a>
+          <div class="hero-info">
+            Grab yours quick before they're gone!
+          </div>
+          {% elsif include.event.status == "soldout" %}
+          <a class="button button-hero button-disabled">
+            Sold Out
+          </a>
+          <div class="hero-info">
+            Sorry! This event is sold out.
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="hero-share text-center">
+        <h4 style="margin-bottom:5px;font-weight:normal">Share this Event</h4>
+        <ul class="social-media-list">
+          <li>
+            <a href="https://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=pubconf"
+              onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=700,height=450');return false;"
+              class="icon-26 twitter" title="Twitter">
+              <i class="icon-twitter" aria-label="Twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title }}"
+              onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=700,height=450');return false;"
+              class="icon-10 facebook" title="Facebook">
+              <i class="icon-facebook" aria-label="Facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+              onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=700,height=450');return false;"
+              class="icon-14 googleplus" title="GooglePlus">
+              <i class="icon-gplus" aria-label="GooglePlus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor section-about">
+    <div class="wrapper">
+      <div class="fade-in text-center text-lg">
+        Rapid-fire Ignite talks, musical acts, and comedy stunts from amazing developers in an intimate atmosphere.
+        <br><br>
+        You don't want to miss it.
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light section-speakers">
+    <div class="wrapper">
+
+      <div class="section-head">
+        <h2 id="speakers">Hosted By</h2>
+        <div class="text-lg">Introducing the guests, laughing along, and making sure you have a great time.</div>
+      </div>
+      <ul class="talk-list">
+        <li class="talk-item" style="float:none;">
+          <img src="/assets/images/speakers/todd.jpg" width="100px" height="100px" alt="Todd Gardner">
+          <div class="talk-content">
+            <h4>Todd H. Gardner</h4>
+            <h5>PubConf Producer</h5>
+            <div class="talk-desc"><small>Phony conference organizer extraordinaire. Occasional JavaScript Developer.</small></div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-head">
+        <h2 id="guests">Guests</h2>
+        <div class="text-lg">Guest talks will be lively, inspirational, and presented in Ignite-format, <br />5 minutes, 20 slides, 15 seconds per slide. It's going to be fun!</div>
+      </div>
+      <ul class="talk-list">
+        {% if include.event.speakers %}
+        {% assign speakers = (include.event.speakers | sort: "name") %}
+        {% for speaker in speakers %}
+        <li class="talk-item">
+          <img src="{{ speaker.imageUrl }}" width="100px" height="100px" alt="{{ speaker.name }}">
+          <div class="talk-content">
+            <h4>{{ speaker.title }}</h4>
+            <h5><a href="{{ speaker.url }}">{{ speaker.name }}</a></h5>
+            <div class="talk-desc"><small>{{ speaker.description }}</small></div>
+            {% if speaker.presentationUrl %}<div><a href="{{ speaker.presentationUrl }}">Presentation</a></div>{% endif %}
+          </div>
+        </li>
+        {% endfor; %}
+        {% endif; %}
+        {% if include.event.cfp %}
+        <li class="talk-item">
+          <img src="/assets/images/logo.png" width="100px" height="100px" alt="PubConf">
+          <div class="talk-content">
+            <h4>More Coming...</h4>
+            <h5>Maybe You!</h5>
+            <div class="talk-desc"><small><a href="{{ site.data.speaking.cfpURL }}" target="_blank">Share something amazing</a></small></div>
+          </div>
+        </li>
+        {% endif; %}
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="section-decor section-karaoke">
+    <div class="wrapper">
+      <div class="fade-in text-center">
+        <h2>Ignite Karaoke</h2>
+        <p class="text-lg">
+          The ultimate speaker test: take the stage at PubConf and bullshit your way through a blind deck to the crowd.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light section-venue text-center">
+    <div class="wrapper">
+      {% if include.event.venue and include.event.description  %}
+      <div class="section-head">
+        <h2 id="venue">Venue</h2>
+        <div class="text-lg">{{ include.event.description }}</div>
+      </div>
+      <div class="venue-image">
+        <img src="{{ include.event.imageURL }}" alt="{{ include.event.imageAlt }}" width="360px" height="360px">
+      </div>
+      <div class="venue-address">
+        {{ include.event.address }} <br />
+        <a href="include.event.mapURL" target="_blank">Google Map</a>
+      </div>
+      {% else %}
+      <div class="section-head">
+        <h2 id="venue">Venue</h2>
+        <div class="text-lg">
+          We're still scouting out pubs. As soon as we find the best one, we'll post it here.
+        </div>
+      </div>
+      {% endif; %}
+    </div>
+  </section>
+
+  <section class="section-decor">
+    <div class="wrapper text-center text-lg">
+      Condense a week-long software conference into one beer-fueled evening of laughs, and you have PubConf.
+    </div>
+  </section>
+
+
+  <section class="section-light section-tickets">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="tickets">Tickets</h2>
+        <div class="text-lg">You can attend PubConf for the cost of a couple beers where you'll enjoy a sponsored bar, pub-fare food, and amazingly funny developer talks. <br /><br /><strong>Space is limited, and we will sell out. Don't wait!</strong></div>
+      </div>
+
+      <div class="ticket-list">
+        {% if include.event.status == "preorder" %}
+        <div class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Preorder!</strong></div>
+          <h3>Join Waitlist</h3>
+          <div>Tickets are not on sale yet. Join the waitlist, and you'll be the first to know!</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <button type="button" class="button button-large button-alt js-waitlist-toggle">
+              Join Waitlist
+            </button>
+          </div>
+        </div>
+        {% elsif include.event.status == "onsale" %}
+        <div class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Available Now!</strong></div>
+          <h3>General Tickets</h3>
+          <div>PubConf is open to the public for a small fee to help us keep your hunger fed and thirst quenched.</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button button-large" href="{{ include.event.ticketURL }}">
+              Get Tickets Now
+            </a>
+          </div>
+        </div>
+        {% elsif include.event.status == "soldout" %}
+        <div class="ticket-item">
+          <h3>Sold Out</h3>
+          <div>Sorry! This event is sold out. We told you it would.</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button button-large button-disabled">
+              Sold Out
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="text-lg text-center">
+        All attendees, speakers, and sponsors at PubConf are required to agree and follow the <a href="/codeofconduct.html">code of conduct</a>. We will enforce this code throughout the event.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-dark section-sponsors">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="sponsors">Sponsors</h2>
+        <div class="text-lg">PubConf is possible thanks to the generosity and expertise of our Sponsors. Please visit them and find out more about their awesomeness.</div>
+      </div>
+
+      <ul class="sponsor-list">
+      {% for sponsor in site.data.global-sponsors %}
+        <li class="sponsor-item">
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+      {% endfor; %}
+      {% for sponsor in include.event.sponsors %}
+        <li class="sponsor-item">
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+      {% endfor; %}
+      </ul>
+
+    </div>
+    {% if include.event.cfs and include.event.prospectusURL %}
+    <div class="wrapper">
+      <div class="text-center text-lg">
+        We're looking for more great sponsors! Be a part of this unique event and reach some amazing people.
+        Check out <a href="{{ include.event.prospectusURL }}">the prospectus</a> and contact us at
+        <a href="mailto:hello@pubconf.io">hello@pubconf.io</a> for information.
+      </div>
+    </div>
+    {% endif; %}
+
+  </section>
+
+</div>

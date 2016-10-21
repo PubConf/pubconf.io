@@ -1,0 +1,290 @@
+---
+layout: event
+title: PubConf Sydney - August 5 2016
+---
+<script src="/assets/js/scrollMonitor.js"></script>
+<script>
+
+</script>
+
+<div class="sydney2016">
+
+  {% assign event = site.data.2016-sydney %}
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-light section-hero">
+    <div class="wrapper text-center">
+      <a href="/"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
+      <div class="slide-in">
+        <div>
+          <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
+          <a href="{{ event.partner.url }}" target="_blank">
+            <img src="{{ event.partner.imageUrl }}" alt="{{ event.partner.name }}" style="max-height:30px;">
+          </a>
+        </div>
+        <div class="text-muted text-lg">{{ event.date | date: "%B %d, %Y" }}</div>
+        <br>
+        <!-- {% if event.ticketUrl %}
+        <div class="text-center text-lg">
+          <a class="button" href="{{ event.ticketUrl }}">Get Tickets Now</a>
+        </div>
+        {% endif %} -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor section-about">
+    <div class="wrapper">
+      <div class="fade-in text-center text-lg">Rapid-fire Ignite talks from inspirational developers in an intimate atmosphere, PubConf will be a uniquely entertaining and insightful event. <br><br>You won't want to miss it.</div>
+    </div>
+  </section>
+
+  <section class="section-light section-speakers">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="speakers">Guest Speakers</h2>
+        <div class="text-lg">Guest Ignite Talks. Our speakers have 5 minutes to wow you. 5 minutes, 20 slides, 15 seconds per. Curated and presented in a single track.</div>
+      </div>
+
+      <ul class="talk-list">
+        {% assign speakers = (event.speakers | sort: "name") %}
+        {% for speaker in speakers %}
+        <li class="talk-item" id="{{ speaker.elementId }}">
+          <img src="{{ speaker.imageUrl }}" width="100px" height="100px" alt="{{ speaker.name }}">
+          <div class="talk-content">
+            <h4>{{ speaker.title }}</h4>
+            <h5><a href="{{ speaker.url }}">{{ speaker.name }}</a></h5>
+            <div class="talk-desc"><small>{{ speaker.description | markdownify }}</small></div>
+            {% if speaker.presentationUrl %}<div><a href="{{ speaker.presentationUrl }}">Presentation</a></div>{% endif %}
+          </div>
+        </li>
+        {% endfor; %}
+
+        <!-- <li class="talk-item">
+          <img src="/assets/images/logo.gif" width="100px" height="100px" alt="PubConf">
+          <div class="talk-content">
+            <h4>More Coming...</h4>
+            <h5>Someone amazing.</h5>
+          </div>
+        </li> -->
+        <!-- <li class="talk-item">
+          <img src="/assets/images/logo.gif" width="100px" height="100px" alt="PubConf">
+          <div class="talk-content">
+            <h4>Maybe You!</h4>
+            <h5><a href="https://docs.google.com/forms/d/1AX_bn6KJhk0pBL_yxrACaV-hOhK5NcwkBPacMZbnciA/viewform?usp=send_form">Call For Proposals</a></h5>
+            <div class="talk-desc"><small>Share something funny, amazing, and inspiring with us!</small></div>
+          </div>
+        </li> -->
+      </ul>
+
+      <div class="section-head">
+        <h2 id="speakers">Musical Guest</h2>
+        <div class="text-lg">Closing out the night with some tunes and laughs.</div>
+      </div>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <img src="/assets/images/speakers/dylan.jpg" width="100px" height="100px" alt="Dylan Beattie">
+          <div class="talk-content">
+            <h4>Dylan Beattie</h4>
+            <h5></h5>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-head">
+        <h2 id="speakers">Your Host</h2>
+        <div class="text-lg">Introducing your speakers, laughing along, and making sure you have a great time.</div>
+      </div>
+      <ul class="talk-list">
+        <li class="talk-item">
+          <img src="/assets/images/speakers/todd.jpg" width="100px" height="100px" alt="Todd Gardner">
+          <div class="talk-content">
+            <h4>Todd Gardner</h4>
+            <h5>PubConf Producer</h5>
+            <div class="talk-desc"><small>Phony conference organizer extraordinaire.</small></div>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+  </section>
+
+  <section class="section-decor section-subscribe text-center">
+    <div class="wrapper">
+      <h2 id="subscribe">Don't Miss Out!</h2>
+      <div>Subscribe to our mailing list for updates and ticket releases.</div>
+      <!-- Begin MailChimp Signup Form -->
+      <form style="margin-top:20px" action="https://pubconf.us11.list-manage.com/subscribe/post?u=33d7399517a3ee3a5e9b679f7&amp;id=05e06dc18c" method="post" target="_blank">
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_33d7399517a3ee3a5e9b679f7_05e06dc18c" tabindex="-1" value=""></div>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </form>
+      <!--End mc_embed_signup-->
+    </div>
+  </section>
+
+  <section class="section-light section-venue text-center">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="venue">Venue</h2>
+        <!-- <div class="text-lg">
+          We're still scouting out pubs. As soon as we find the best one, we'll post it here.
+        </div> -->
+        <div class="text-lg">Just a few blocks from the NDC Event, Hotel CBD is a relaxed bar located inside a multi-storey Victorian building with a pool room, beer garden and TAB</div>
+      </div>
+
+      <div class="venue-image">
+        <img src="/assets/images/cbdmerivale.jpg" alt="CBD Merivale" width="360px" height="360px">
+      </div>
+      <div class="venue-address">
+        Hotel CBD Forth Floor<br />
+        Cnr King and York Sts, Sydney<br />
+        New South Wales, Australia
+        <a href="https://www.google.com/maps/place/Hotel+CBD/@-33.868568,151.203702,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ae3f6801e339:0xd976fea24a44d7cf!8m2!3d-33.868568!4d151.205896">Google Map</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor">
+    <div class="wrapper text-center text-lg">
+      Building the developer community<br>
+      one beverage at a time.
+    </div>
+  </section>
+
+  <section class="section-light section-schedule">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="schedule">Schedule</h2>
+        <div class="text-lg">PubConf's program will be very open, with plenty of time for discussion and socializing. Have a drink and meet chat about something new.</div>
+      </div>
+      <div class="text-lg schedule-wrap">
+        <div>
+          <div class="pull-left">6pm</div>
+          <strong>Doors open, open bar</strong>
+        </div>
+        <div>
+          <div class="pull-left">7pm</div>
+          <strong>Welcome</strong>
+          <strong>Ignite Talks 1</strong>
+        </div>
+        <div>
+          <div class="pull-left">8pm</div>
+          <strong>Ignite Talks 2</strong>
+          <strong>Ignite: Karaoke</strong>
+        </div>
+        <div>
+          <div class="pull-left">9:30pm</div>
+          <strong>Ignite Talks 3</strong>
+        </div>
+        <div>
+          <div class="pull-left">10pm</div>
+          <strong>Music of Dylan Beattie</strong>
+          <strong>Closing Thank You</strong>
+        </div>
+        <div>
+          <div class="pull-left">11pm</div>
+          <strong>Last Call</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor">
+    <div class="wrapper text-center text-lg">
+      Not quite a conference;<br>
+      Not exactly an afterparty;<br>
+      Inspirational conversations with amazing developers.
+    </div>
+  </section>
+
+  <section class="section-light section-tickets">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="tickets">Tickets</h2>
+        <div class="text-lg">Thanks to the generosity of our <a href="#sponsors">Sponsors</a>, PubConf tickets will be very inexpensive. For the price of a beer, enjoy the open bar, pub-fare food, and some amazing developer talks. Space is limited, get your ticket today!</div>
+      </div>
+
+      <ul class="ticket-list">
+        <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Sold Out!</strong></div>
+          <h3>General Tickets</h3>
+          <!-- <div>Tickets will be released in the coming weeks. Available here, <a href="https://twitter.com/pubconf">twitter</a>, and the <a href="#subscribe">mailing list</a>.</div> -->
+          <div>PubConf is an open event, you do not need to have a NDC ticket. Come and bring your friends. The small fee of $10 to help us keep your hunger fed and thirst quenched.</div>
+          <!-- <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="{{ event.ticketUrl }}">Get Tickets Now</a>
+          </div> -->
+        </li>
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Free with NDC Ticket</strong></div>
+          <h3>NDC Attendee Ticket</h3>
+          <div>If you have a ticket to NDC Oslo, then you have first access to PubConf Tickets! Check your email from NDC for instructions on how to claim it.</div>
+        </li> -->
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Available Now!</strong></div>
+          <h3>Early-Bird Tickets</h3>
+          <div>Be the first to get your PubConf ticket with reduced Early-bird pricing, only <strong>100kr</strong>!</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="https://www.eventbrite.com/e/pubconf-oslo-2016-tickets-24281656087">Get Early-Bird Tickets Now</a>
+          </div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="http://eepurl.com/bGEiOH">Subscribe Now!</a>
+          </div>
+        </li> -->
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Available Now for 200 NOK!</strong></div>
+          <h3>General Tickets</h3>
+          <div>PubConf is open to everyone for the small fee of 200NOK to help us keep your hunger fed and thirst quenched.</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="{{ event.ticketUrl }}">Get Tickets Now</a>
+          </div>
+        </li> -->
+      </ul>
+
+      <div class="text-lg text-center">
+        All attendees, speakers, and sponsors at PubConf are required to agree and follow the <a href="/codeofconduct.html">code of conduct</a>. We will enforce this code throughout the event.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-dark section-sponsors">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="sponsors">Sponsors</h2>
+        <div class="text-lg">PubConf is possible thanks to the generosity and expertise of our Sponsors. Please visit them and find out more about their awesomeness.</div>
+      </div>
+
+      <ul class="sponsor-list">
+      {% for sponsor in event.sponsors %}
+        <li class="sponsor-item">
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+      {% endfor; %}
+      </ul>
+
+    </div>
+    <!-- <div class="wrapper">
+      <div class="text-center text-lg">
+        We're looking for more great sponsors! Be a part of this unique event and reach some amazing people. Check out <a href="/sydneysponsor.pdf">the prospectus</a> and contact us at <a href="mailto:hello@pubconf.io">hello@pubconf.io</a> for information.
+      </div>
+    </div> -->
+
+  </section>
+
+</div>

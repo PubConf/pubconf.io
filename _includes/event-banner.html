@@ -1,0 +1,28 @@
+<section class="section-event-banner section-light">
+  <div class="wrapper">
+    <div class="event-title clearfix">
+      <h1>{{ include.event.title }}</h1>
+      <h2>{{ include.event.date | date: "%B %d, %Y" }}</h2>
+    </div>
+  </div>
+  <a href="{{ include.event.permalink }}" class="banner-wrapper">
+    {% if include.event.status == "preorder" %}
+    <div class="ribbon-wrapper">
+      <div class="ribbon ribbon-blue">Preorder</div>
+    </div>
+    {% endif %}
+    {% if include.event.status == "onsale" %}
+    <div class="ribbon-wrapper">
+      <div class="ribbon ribbon-red">Get Tickets</div>
+    </div>
+    {% endif %}
+    {% if include.event.status == "soldout" %}
+    <div class="ribbon-wrapper">
+      <div class="ribbon ribbon-grey">Sold Out</div>
+    </div>
+    {% endif %}
+    <div class="wrapper shadow">
+        <img src="{{ include.event.bannerURL }}" alt="{{ include.event.bannerAlt }}"/>
+    </div>
+  </a>
+</section>

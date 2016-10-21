@@ -1,0 +1,30 @@
+.page-sponsoring {
+
+  .section-sponsors {
+    .sponsor-item {
+      width: -webkit-calc(33% - #{$spacing-unit * 2});
+      width:         calc(33% - #{$spacing-unit * 2});
+      height: 100px;
+      img {
+        max-width: 250px;
+      }
+
+      @include media-query($on-laptop) {
+        float: left;
+        width: -webkit-calc(50% - #{$spacing-unit * 2});
+        width:         calc(50% - #{$spacing-unit * 2});
+      }
+
+      @include media-query($on-palm) {
+        width: -webkit-calc(100% - #{$spacing-unit * 2});
+        width:         calc(100% - #{$spacing-unit * 2});
+        margin: 0 auto 0;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+}

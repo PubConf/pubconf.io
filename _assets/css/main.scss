@@ -23,7 +23,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    960px;
-
+$minimum-width:    380px;
 $on-palm:          600px;
 $on-laptop:        920px;
 
@@ -44,14 +44,24 @@ $on-laptop:        920px;
 
 
 @import
-  "base",
-  "animations",
-  "nav",
-  "sections",
-  "typography",
-  "footer",
-  "page",
-  "pages/events",
-  "pages/london2016",
-  "pages/oslo2016"
+  "_base",
+  "_animations",
+  "_buttons",
+  "_icons",
+  "_forms",
+  "_modal",
+  "_nav",
+  "_page",
+  "_ribbon",
+  "_sections",
+  "_typography",
+  "pages/_home",
+  "pages/_events",
+  "pages/_london2016",
+  "pages/_oslo2016",
+  "pages/_sponsoring",
+  "includes/_event-page-2017",
+  "includes/_event-banner",
+  "includes/_footer",
+  "includes/_header"
 ;

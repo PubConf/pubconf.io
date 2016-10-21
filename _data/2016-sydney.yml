@@ -1,0 +1,155 @@
+
+title: PubConf Sydney 2016
+date: 2016-08-05
+status:
+permalink: /events/2016/sydney.html
+
+bannerURL: /assets/images/2017-sydney.jpg
+bannerAlt: PubConf after NDC Sydney 2016
+
+partner:
+  title: NDC Sydney
+  url: http://ndcsydney.com/
+  imageUrl: /assets/images/sponsors/ndcsydney-black.png
+
+ticketUrl: http://www.eventbrite.com.au/e/pubconf-syndey-2016-tickets-26399378251
+
+sponsors:
+
+  - name: NDC Sydney
+    url: http://ndcsydney.com/
+    imageUrl: /assets/images/sponsors/ndcsydney-white.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
+  - name: Just Digital People
+    url: http://www.justdigitalpeople.com.au/
+    imageUrl: /assets/images/sponsors/justdigitalpeople.png
+
+  - name: Pluralsight
+    url: https://www.pluralsight.com/
+    imageUrl: /assets/images/sponsors/pluralsight.png
+
+speakers:
+
+  - name: Ben Hall
+    url: http://Katacoda.com
+    title: So You Want to Build a Software Company...
+    description: Founder of Ocelot Uproar, launched Katacoda.
+    imageUrl: /assets/images/speakers/ben.jpg
+
+  - name: Cathy Hunt
+    url: http://www.ipadartroom.com
+    title:  Teachers Tech and 'Tools'
+    description: Yes, I tried turning it off and on again...
+    imageUrl: /assets/images/speakers/cathyhunt.jpg
+
+  - name: Damian Brady
+    url: http://www.damianbrady.com.au
+    title: Humans Ruin Everything
+    description: 16th-best developer at Octopus Deploy
+    imageUrl: /assets/images/speakers/damian.jpg
+    presentationUrl:
+
+  - name: Dylan Beattie
+    url: http://www.dylanbeattie.net
+    title: Everybody's Free (To Use Flatscreens)
+    description: You know. The one in the hat.
+    imageUrl: /assets/images/speakers/dylan.jpg
+    presentationUrl:
+
+  - name: Jimmy Bogard
+    url: https://lostechies.com/jimmybogard/
+    title: Code So Bad It Made the News
+    description: The Barley Architect
+    imageUrl: /assets/images/speakers/jimmy.jpg
+    presentationUrl:
+
+  - name: Kris Howard
+    url: http://www.krishoward.org/
+    title: Granny Was a Hacker
+    description: Former dev. Yarn stash exceeds life expectancy.
+    imageUrl: /assets/images/speakers/krishoward.jpg
+    presentationUrl:
+
+  - name: Kylie Hunt
+    url: http://www.kyliehunt.com
+    title: 5 Ninja-Tricks to Thriving at Work
+    description: I make workplaces suck less. And keep Troy Hunt in line.
+    imageUrl: /assets/images/speakers/kylie.jpg
+    presentationUrl:
+
+  - name: Lars Klint
+    url: http://larsklint.com
+    title:  Banjo Coding in the Outback
+    description: Freelance Geek, Banjo Enthusiast and Petrol Head
+    imageUrl: /assets/images/speakers/lars.jpg
+    presentationUrl:
+
+  - name: Liam Westley
+    url: http://geekswithblogs.net/twickers
+    title: The Secret Life of Programmers
+    description: Top Trumps analysis of developer personalities.
+    imageUrl: /assets/images/speakers/liam.jpg
+
+  - name: Magnus Mårtensson
+    url: http://loftysoft.com/
+    title: "#cloud #itoldyouso"
+    description: Air Force Cloud Pilot and Meteorologist for Cloudy weather
+    imageUrl: /assets/images/speakers/magnus.jpg
+    presentationUrl:
+
+  - name: Niall Merrigan
+    elementId: niall-xss-talk
+    url: http://www.certsandprogs.com
+    title: XSS - What Does It Really Mean
+    description: >
+      p0wned!<script>
+      (function() {
+        var step = 50;
+        var beat = 100;
+        var e = document.getElementById("niall-xss-talk");
+        if (!e) return;
+        e.style.position = "relative";
+        setInterval(function() {
+          e.style.top = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.right = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.left = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.bottom = (Math.floor(Math.random()*step) - step/2) + "px";
+          e.style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          e.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        }, beat);
+      })();
+      </script>
+    imageUrl: /assets/images/speakers/niall.jpg
+    presentationUrl:
+
+  - name: Nik Molnar
+    url: http://nikcodes.com
+    title: Grokking Gastronomy
+    description: Bit Butcher
+    imageUrl: /assets/images/speakers/nik.jpg
+    presentationUrl:
+
+  - name: Scott Allen
+    url: http://odetocode.com
+    title: How The Gods Punish Us With New Web Standards
+    description: The Profit of Pluralsight
+    imageUrl: /assets/images/speakers/scottallen.jpg
+    presentationUrl:
+
+  - name: Troy Hunt
+    url: http://troyhunt.com
+    title: Let's Face It--Security is Pointless
+    description: Rather Stupid Security Researcher.
+    imageUrl: /assets/images/speakers/troy.jpg
+    presentationUrl:
+
+  - name: Xharmagne Carandang
+    url: https://twitter.com/xharmagne
+    title: Fight Your Way Into UX Design
+    description: Loves designing, building and debugging magic
+    imageUrl: /assets/images/speakers/xharmagne.jpg
+    presentationUrl:

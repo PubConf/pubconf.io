@@ -5,54 +5,14 @@ title: PubConf Events
 
 <div class="events-page">
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="section-light section-events">
-    <div class="wrapper text-center">
-
-      <ul class="event-list">
-
-        <li class="event-item">
-          <a href="/"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
-          <div>
-            <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
-            <a href="{{ site.data.sydney2016.partner.url }}" target="_blank">
-              <img src="{{ site.data.sydney2016.partner.imageUrl }}" alt="{{ site.data.sydney2016.partner.name }}" style="max-height:30px;">
-            </a>
-          </div>
-          <div class="text-muted text-lg">{{ site.data.sydney2016.date | date: "%B %d, %Y" }}</div>
-        </li>
-
-        <li class="event-item">
-          <a href="/events/oslo2016.html"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
-          <div>
-            <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
-            <a href="{{ site.data.oslo2016.partner.url }}" target="_blank">
-              <img src="{{ site.data.oslo2016.partner.imageUrl }}" alt="{{ site.data.oslo2016.partner.name }}" style="max-height:30px;">
-            </a>
-          </div>
-          <div class="text-muted text-lg">{{ site.data.oslo2016.date | date: "%B %d, %Y" }}</div>
-        </li>
-
-        <li class="event-item">
-          <a href="/events/london2016.html"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
-          <div>
-            <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
-            <a href="{{ site.data.london2016.partner.url }}" target="_blank">
-              <img src="{{ site.data.london2016.partner.imageUrl }}" alt="{{ site.data.london2016.partner.name }}" style="max-height:30px;">
-            </a>
-          </div>
-          <div class="text-muted text-lg">{{ site.data.london2016.date | date: "%B %d, %Y" }}</div>
-        </li>
-
-      </ul>
-
+  <section class="section-light">
+    <div class="wrapper">
+      <h1>Event Archive</h1>
+    </div>
   </section>
+
+  {% include event-banner.html event=site.data.2016-sydney %}
+  {% include event-banner.html event=site.data.2016-oslo %}
+  {% include event-banner.html event=site.data.2016-london %}
 
 </div>

@@ -1,0 +1,225 @@
+---
+layout: event
+title: PubConf Oslo - June 11 2016
+---
+
+<div class="oslo2016">
+
+  {% assign event = site.data.2016-oslo %}
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-light section-hero">
+    <div class="wrapper text-center">
+      <a href="/"><img src="/assets/images/logo.gif" alt="PubConf" width="320"/></a>
+      <div class="slide-in">
+        <div>
+          <small style="vertical-align:top;font-size:14px;line-height:32px;">at</small>
+          <a href="{{ event.partner.url }}" target="_blank">
+            <img src="{{ event.partner.imageUrl }}" alt="{{ event.partner.name }}" style="max-height:30px;">
+          </a>
+        </div>
+        <div class="text-muted text-lg">{{ event.date | date: "%B %d, %Y" }}</div>
+        <br>
+        <!-- <div class="text-center text-lg">
+          <a class="button" href="https://www.eventbrite.com/e/pubconf-oslo-2016-tickets-24281656087">Get Tickets Now</a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor section-about">
+    <div class="wrapper">
+      <div class="fade-in text-center text-lg">Rapid-fire Ignite talks from inspirational developers in an intimate atmosphere, PubConf will be a uniquely entertaining and insightful event. <br><br>You won't want to miss it.</div>
+    </div>
+  </section>
+
+  <section class="section-light section-speakers">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="speakers">Speakers</h2>
+        <div class="text-lg">All talks will be Ignite-style (5 minutes, 20 slides, 15 seconds per slide), curated, and presented in a single track.</div>
+      </div>
+
+      <ul class="talk-list">
+        {% assign speakers = (event.speakers | sort: "name") %}
+        {% for speaker in speakers %}
+        <li class="talk-item">
+          <img src="{{ speaker.imageUrl }}" width="100px" height="100px" alt="{{ speaker.name }}">
+          <div class="talk-content">
+            <h4>{{ speaker.title }}</h4>
+            <h5><a href="{{ speaker.url }}">{{ speaker.name }}</a></h5>
+            <div class="talk-desc"><small>{{ speaker.description | markdownify }}</small></div>
+            {% if speaker.presentationUrl %}<div><a href="{{ speaker.presentationUrl }}">Presentation</a></div>{% endif %}
+          </div>
+        </li>
+        {% endfor; %}
+        <!-- <li class="talk-item">
+          <img src="/assets/images/logo.gif" width="100px" height="100px" alt="PubConf">
+          <div class="talk-content">
+            <h4>Maybe You!</h4>
+            <h5><a href="https://docs.google.com/forms/d/1AX_bn6KJhk0pBL_yxrACaV-hOhK5NcwkBPacMZbnciA/viewform?usp=send_form">Call For Proposals</a></h5>
+            <div class="talk-desc"><small>Share something funny, amazing, and inspiring with us!</small></div>
+          </div>
+        </li> -->
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="section-decor section-subscribe text-center">
+    <div class="wrapper">
+      <h2 id="subscribe">Don't Miss Out!</h2>
+      <div>Subscribe to our mailing list for updates and ticket releases.</div>
+      <!-- Begin MailChimp Signup Form -->
+      <form style="margin-top:20px" action="https://pubconf.us11.list-manage.com/subscribe/post?u=33d7399517a3ee3a5e9b679f7&amp;id=05e06dc18c" method="post" target="_blank">
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_33d7399517a3ee3a5e9b679f7_05e06dc18c" tabindex="-1" value=""></div>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </form>
+      <!--End mc_embed_signup-->
+    </div>
+  </section>
+
+  <section class="section-light section-venue text-center">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="venue">Venue</h2>
+        <div class="text-lg">The Scotsman focuses on good, traditional pub food and a great selection of draft beers and ales. We will showcase the best of pub scene and be an inclusive meeting place right in town.</div>
+      </div>
+      <div class="venue-image">
+        <img src="/assets/images/thescotsman.jpg" alt="The Scotsman" width="360px" height="360px">
+      </div>
+      <div class="venue-address">
+        The Scotsman<br />
+        Karl Johans Gate 17<br />
+        0159 Oslo<br />
+        Norway
+        <a href="https://www.google.com/maps/place/The+Scotsman/@59.912682,10.743556,15z/data=!4m2!3m1!1s0x0:0xa014dad961064099">Google Map</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor">
+    <div class="wrapper text-center text-lg">
+      Building the developer community<br>
+      one beverage at a time.
+    </div>
+  </section>
+
+  <section class="section-light section-schedule">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="schedule">Schedule</h2>
+        <div class="text-lg">PubConf's program will be very open, with plenty of time for discussion and socializing. Have a drink and meet chat about something new.</div>
+      </div>
+      <div class="text-lg schedule-wrap">
+        <div>
+          <div class="pull-left">18:30</div>
+          <strong>Doors open, open bar</strong>
+        </div>
+        <div>
+          <div class="pull-left">19:45</div>
+          <strong>Welcome</strong>
+        </div>
+        <div>
+          <div class="pull-left">20:00</div>
+          <strong>Ignite Talks 1</strong>
+        </div>
+        <div>
+          <div class="pull-left">21:00</div>
+          <strong>Ignite: Karaoke</strong>
+        </div>
+        <div>
+          <div class="pull-left">22:00</div>
+          <strong>Ignite Talks 2</strong>
+        </div>
+        <div>
+          <div class="pull-left">22:45</div>
+          <strong>Closing Time</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-decor">
+    <div class="wrapper text-center text-lg">
+      Not quite a conference;<br>
+      Not exactly an afterparty;<br>
+      Inspirational conversations with amazing developers.
+    </div>
+  </section>
+
+  <section class="section-light section-tickets">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="tickets">Tickets</h2>
+        <div class="text-lg">Thanks to the generosity of our <a href="#sponsors">Sponsors</a>, PubConf is tickets are only <strong>200kr</strong>. For the price of a beer, enjoy the open bar, pub-fare food, and some amazing developer talks. Space is limited, get your ticket today!</div>
+      </div>
+
+      <ul class="ticket-list">
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Free with NDC Ticket</strong></div>
+          <h3>NDC Attendee Ticket</h3>
+          <div>If you have a ticket to NDC Oslo, then you have first access to PubConf Tickets! Check your email from NDC for instructions on how to claim it.</div>
+        </li> -->
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Available Now!</strong></div>
+          <h3>Early-Bird Tickets</h3>
+          <div>Be the first to get your PubConf ticket with reduced Early-bird pricing, only <strong>100kr</strong>!</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="https://www.eventbrite.com/e/pubconf-oslo-2016-tickets-24281656087">Get Early-Bird Tickets Now</a>
+          </div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="http://eepurl.com/bGEiOH">Subscribe Now!</a>
+          </div>
+        </li> -->
+        <!-- <li class="ticket-item">
+          <div class="pull-right text-muted ticket-release"><strong>Available Now for 200 NOK!</strong></div>
+          <h3>General Tickets</h3>
+          <div>PubConf is open to everyone for the small fee of 200NOK to help us keep your hunger fed and thirst quenched.</div>
+          <div class="text-center text-lg" style="margin: 20px;">
+            <a class="button" href="https://www.eventbrite.com/e/pubconf-oslo-2016-tickets-24281656087">Get Tickets Now</a>
+          </div>
+        </li> -->
+      </ul>
+
+      <div class="text-lg text-center">
+        All attendees, speakers, and sponsors at PubConf are required to agree and follow the <a href="/codeofconduct.html">code of conduct</a>. We will enforce this code throughout the event.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-dark section-sponsors">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2 id="sponsors">Sponsors</h2>
+        <div class="text-lg">PubConf is possible thanks to the generosity and expertise of our Sponsors. Please visit them and find out more about their awesomeness.</div>
+      </div>
+
+      <ul class="sponsor-list">
+      {% for sponsor in event.sponsors %}
+        <li class="sponsor-item">
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+      {% endfor; %}
+      </ul>
+
+    </div>
+  </section>
+
+</div>

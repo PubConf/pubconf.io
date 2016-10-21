@@ -1,0 +1,25 @@
+
+title: PubConf London
+date: 2017-01-20
+time: 7PM - 11PM
+location:
+status: preorder
+ticketURL:
+permalink: /events/2017/london.html
+
+bannerURL: /assets/images/2017-london.jpg
+bannerAlt: PubConf after NDC London 2017
+
+cfp: true
+speakers:
+
+venue:
+  description:
+  imageURL:
+  imageAlt:
+  address:
+  mapURL:
+
+cfs: true
+prospectusURL: 
+sponsors:

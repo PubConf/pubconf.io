@@ -1,0 +1,62 @@
+.ribbon-wrapper {
+
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+
+  .ribbon {
+    font: bold 16px Sans-Serif;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+    transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -14px;
+    top: 24px;
+    width: 180px;
+    color: white;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+
+    &.ribbon-grey {
+      $ribbon-light: $grey-color;
+      $ribbon-dark:  $grey-color-dark;
+
+      background-color: $ribbon-light;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($ribbon-light), to($ribbon-dark));
+      background-image: -webkit-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:    -moz-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:     -ms-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:      -o-linear-gradient(top, $ribbon-light, $ribbon-dark);
+    }
+
+    &.ribbon-blue {
+      $ribbon-light: lighten($alt-color, 20%);
+      $ribbon-dark:  $alt-color;
+
+      background-color: $ribbon-light;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($ribbon-light), to($ribbon-dark));
+      background-image: -webkit-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:    -moz-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:     -ms-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:      -o-linear-gradient(top, $ribbon-light, $ribbon-dark);
+    }
+
+    &.ribbon-red {
+      $ribbon-light: lighten($brand-color, 20%);
+      $ribbon-dark:  $brand-color;
+
+      background-color: $ribbon-light;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($ribbon-light), to($ribbon-dark));
+      background-image: -webkit-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:    -moz-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:     -ms-linear-gradient(top, $ribbon-light, $ribbon-dark);
+      background-image:      -o-linear-gradient(top, $ribbon-light, $ribbon-dark);
+    }
+  }
+
+}

@@ -1,0 +1,123 @@
+/**
+ * Site footer
+ */
+footer.site-footer {
+  // border-top: 1px solid $grey-color-light;
+  background-color: darken($grey-color-dark, 10%);
+  padding: $spacing-unit 0 0 0;
+
+  .footer-logo {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .social-media-list {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-bottom: $spacing-unit / 4;
+      padding-right: $spacing-unit / 4;
+      width: -webkit-calc(23% - (#{$spacing-unit} / 5));
+      width:     calc(23% - (#{$spacing-unit} / 5));
+      max-width: 96px;
+
+      a {
+        color: $grey-color-light;
+        i {
+          font-size: 3em;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: lighten($brand-color, 50%);
+        }
+      }
+    }
+  }
+
+  .section-footer-links {
+    padding: 20px 0;
+  }
+
+  .section-legal {
+    background-color: $grey-color-light;
+    padding: $spacing-unit 0 0 0;
+    color: $grey-color;
+    text-align: center;
+    line-height: 14px;
+  }
+
+}
+
+.footer-col-wrapper {
+  font-size: 16px;
+  color: $grey-color-light;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit;
+  padding-left: $spacing-unit;
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  ul, li {
+    list-style: none;
+    margin: 0 0 10px 0;
+  }
+
+  a {
+    color: $grey-color-light;
+    transition: color 200ms ease 0s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: lighten($brand-color, 50%);
+    }
+  }
+}
+
+.footer-col-1 {
+  width: -webkit-calc(30% - (#{$spacing-unit}));
+  width:     calc(30% - (#{$spacing-unit}));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(30% - (#{$spacing-unit}));
+  width:     calc(30% - (#{$spacing-unit}));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(40% - (#{$spacing-unit}));
+  width:     calc(40% - (#{$spacing-unit}));
+}
+
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit}));
+    width:         calc(50% - (#{$spacing-unit}));
+  }
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit}));
+    width:         calc(100% - (#{$spacing-unit}));
+    // padding-left: $spacing-unit / 2;
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
