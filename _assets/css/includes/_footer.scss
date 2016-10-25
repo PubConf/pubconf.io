@@ -120,4 +120,8 @@ footer.site-footer {
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
+  .footer-col-3 {
+    width: 100%;
+    padding: 0;
+  }
 }
