@@ -12,6 +12,23 @@ bannerAlt: PubConf after NDC London 2017
 
 cfp: true
 speakers:
+  - name: Dylan Beattie
+    url: http://www.dylanbeattie.net
+    title: Coming Soon
+    description: You know. The one in the hat.
+    imageUrl: /assets/images/speakers/dylan.jpg
+
+  - name: Evelina Gabasova
+    url: http://evelinag.com/
+    title: Coming Soon
+    description: Machine learning researcher, clerk at the ministry of silly talks
+    imageUrl: /assets/images/speakers/evelina.jpg
+
+  - name: Troy Hunt
+    url: http://troyhunt.com
+    title: Let's Face It--Security is Pointless
+    description: Rather Stupid Security Researcher.
+    imageUrl: /assets/images/speakers/troy.jpg
 
 venue:
   description:
@@ -21,3 +38,6 @@ venue:
   mapURL:
 
 sponsors:
+  - name: Katacoda
+    url: https://www.katacoda.com/
+    imageUrl: /assets/images/sponsors/katacoda.png
