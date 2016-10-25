@@ -24,6 +24,12 @@ speakers:
     description: Machine learning researcher, clerk at the ministry of silly talks
     imageUrl: /assets/images/speakers/evelina.jpg
 
+  - name: Liam Westley
+    url: http://geekswithblogs.net/twickers
+    title: The Secret Life of Programmers
+    description: Top Trumps analysis of developer personalities.
+    imageUrl: /assets/images/speakers/liam.jpg
+
   - name: Troy Hunt
     url: http://troyhunt.com
     title: Let's Face It--Security is Pointless
