@@ -12,6 +12,12 @@ bannerAlt: PubConf after NDC London 2017
 
 cfp: true
 speakers:
+  - name: Dan North
+    url: http://dannorth.net
+    title: Why Every Single Element of SOLID is Wrong
+    description: Unclean Coder
+    imageUrl: /assets/images/speakers/dan.jpg
+
   - name: Dylan Beattie
     url: http://www.dylanbeattie.net
     title: Coming Soon
@@ -20,7 +26,7 @@ speakers:
 
   - name: Evelina Gabasova
     url: http://evelinag.com/
-    title: “R Wat?!… and a Parrot" 
+    title: “R Wat?!… and a Parrot"
     description: Machine learning researcher, clerk at the ministry of silly talks
     imageUrl: /assets/images/speakers/evelina.jpg
 
