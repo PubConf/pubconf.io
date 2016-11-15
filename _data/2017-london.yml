@@ -12,6 +12,12 @@ bannerAlt: PubConf after NDC London 2017
 
 cfp: true
 speakers:
+  - name: Damian Brady
+    url: https://twitter.com/damovisa
+    title: How to Code Like an Arsehole
+    description: 16th best developer at Octopus Deploy
+    imageUrl: /assets/images/speakers/damianbrady.jpg
+
   - name: Dan North
     url: http://dannorth.net
     title: Why Every Single Element of SOLID is Wrong
@@ -30,11 +36,29 @@ speakers:
     description: Machine learning researcher, clerk at the ministry of silly talks
     imageUrl: /assets/images/speakers/evelina.jpg
 
+  - name: Jonathan Mills
+    url: http://jonathanfmills.com
+    title: JavaScript, The Weird Parts?
+    description: Still confused by JavaScript
+    imageUrl: /assets/images/speakers/jonmills.jpg
+
+  - name: Kasia Mrowca
+    url: https://twitter.com/MrowcaKasia
+    title: GDD (Gantt-Chart Driven Development)
+    description: Product Leech, ups I meant Product Lead
+    imageUrl: /assets/images/speakers/kasiamrwoca.jpg
+
   - name: Liam Westley
     url: http://geekswithblogs.net/twickers
     title: The Secret Life of Programmers
     description: Top Trumps analysis of developer personalities.
     imageUrl: /assets/images/speakers/liam.jpg
+
+  - name: Tomas Petricek
+    url: http://tomasp.net
+    title: 16th Century Programming Myths
+    description: Self-interested peddler of Whizbang Technologies
+    imageUrl: /assets/images/speakers/tomaspetricek.jpg
 
   - name: Troy Hunt
     url: http://troyhunt.com
