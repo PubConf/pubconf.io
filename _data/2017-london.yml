@@ -48,6 +48,12 @@ speakers:
     description: Product Leech, ups I meant Product Lead
     imageUrl: /assets/images/speakers/kasiamrwoca.jpg
 
+  - name: Lars Klint
+    url: http://larsklint.com
+    title: "Why We Can’t Have Nice Things: A Love Story"
+    description: Holographic pirate and Galactic Viceroy
+    imageUrl: /assets/images/speakers/lars.jpg
+
   - name: Liam Westley
     url: http://geekswithblogs.net/twickers
     title: The Secret Life of Programmers
