@@ -36,6 +36,12 @@ speakers:
     description: Machine learning researcher, clerk at the ministry of silly talks
     imageUrl: /assets/images/speakers/evelina.jpg
 
+  - name: Jennifer Wong
+    url: http://mochimachine.org/
+    title: Mobile Safari, Whyyyy?!!?
+    description: The Poop Master of Silicon Valley
+    imageUrl: /assets/images/speakers/jennwong.jpg
+
   - name: Jonathan Mills
     url: http://jonathanfmills.com
     title: JavaScript, The Weird Parts?
