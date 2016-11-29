@@ -39,7 +39,7 @@ speakers:
   - name: Jennifer Wong
     url: http://mochimachine.org/
     title: Mobile Safari, Whyyyy?!!?
-    description: The Poop Master of Silicon Valley
+    description: The Bay Area's Leading Crapmapper
     imageUrl: /assets/images/speakers/jennwong.jpg
 
   - name: Jonathan Mills
@@ -65,6 +65,14 @@ speakers:
     title: The Secret Life of Programmers
     description: Top Trumps analysis of developer personalities.
     imageUrl: /assets/images/speakers/liam.jpg
+
+
+  - name: Niall Merrigan
+    url: http://www.certsandprogs.com
+    title: How to Sound Smart at Conferences
+    description: "Doesn't follow instructions"
+    imageUrl: /assets/images/speakers/niall.jpg
+    presentationUrl:
 
   - name: Tomas Petricek
     url: http://tomasp.net
