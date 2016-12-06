@@ -1,7 +1,7 @@
-- name: TrackJS
-  url: https://trackjs.com/
-  imageUrl: /assets/images/sponsors/trackjs.png
-
 - name: NDC Conferences
   url: http://ndcconferences.com/
   imageUrl: /assets/images/sponsors/ndc.png
+
+- name: TrackJS
+  url: https://trackjs.com/
+  imageUrl: /assets/images/sponsors/trackjs.png

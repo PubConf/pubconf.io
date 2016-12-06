@@ -94,6 +94,10 @@ venue:
   mapURL:
 
 sponsors:
+  - name: Pluralsight
+    url: https://www.pluralsight.com/
+    imageUrl: /assets/images/sponsors/pluralsight.png
+
   - name: Katacoda
     url: https://www.katacoda.com/
     imageUrl: /assets/images/sponsors/katacoda.png

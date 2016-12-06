@@ -2,6 +2,7 @@
 
   .section-sponsors {
     .sponsor-item {
+      text-align: center;
       width: -webkit-calc(33% - #{$spacing-unit * 2});
       width:         calc(33% - #{$spacing-unit * 2});
       height: 100px;
