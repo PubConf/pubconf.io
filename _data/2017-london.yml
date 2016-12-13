@@ -10,7 +10,7 @@ permalink: /events/2017/london.html
 bannerURL: /assets/images/2017-london.jpg
 bannerAlt: PubConf after NDC London 2017
 
-cfp: true
+cfp: false
 speakers:
   - name: Damian Brady
     url: https://twitter.com/damovisa
@@ -87,7 +87,7 @@ speakers:
 
 venue:
   description: The Fine Line is a lively riverside bar on Fisherman's Walk - offering an exciting selection of food and drink and a seat right at the water's edge. It's just as stylish indoors, where a full refurbishment has made it one of the most desirable bars in the City of London.
-  imageURL: /assets/images/fineline.png
+  imageURL: /assets/images/fineline.jpg
   imageAlt: The Fine Line
   address: The Fine Line <br>
     29-30 Fishermen’s Walk <br>
