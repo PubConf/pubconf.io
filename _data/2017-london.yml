@@ -66,7 +66,6 @@ speakers:
     description: Top Trumps analysis of developer personalities.
     imageUrl: /assets/images/speakers/liam.jpg
 
-
   - name: Niall Merrigan
     url: http://www.certsandprogs.com
     title: How to Sound Smart at Conferences
@@ -87,11 +86,15 @@ speakers:
     imageUrl: /assets/images/speakers/troy.jpg
 
 venue:
-  description:
-  imageURL:
-  imageAlt:
-  address:
-  mapURL:
+  description: The Fine Line is a lively riverside bar on Fisherman's Walk - offering an exciting selection of food and drink and a seat right at the water's edge. It's just as stylish indoors, where a full refurbishment has made it one of the most desirable bars in the City of London.
+  imageURL: /assets/images/fineline.png
+  imageAlt: The Fine Line
+  address: The Fine Line <br>
+    29-30 Fishermen’s Walk <br>
+    10 Cabot Square, <br>
+    London E14 4DH <br>
+    United Kingdom
+  mapURL: https://www.google.com/maps/place/The+Fine+Line/@51.506131,-0.0238884,16.84z/data=!3m1!5s0x487602b79f7f6349:0x1e314697499a084b!4m5!3m4!1s0x487602b7642f2f9d:0x23f9211867f83097!8m2!3d51.506086!4d-0.021656
 
 sponsors:
   - name: Pluralsight

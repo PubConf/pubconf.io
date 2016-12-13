@@ -180,17 +180,17 @@
 
   <section class="section-light section-venue text-center">
     <div class="wrapper">
-      {% if include.event.venue and include.event.description  %}
+      {% if include.event.venue and include.event.venue.description  %}
       <div class="section-head">
         <h2 id="venue">Venue</h2>
-        <div class="text-lg">{{ include.event.description }}</div>
+        <div class="text-lg">{{ include.event.venue.description }}</div>
       </div>
       <div class="venue-image">
-        <img src="{{ include.event.imageURL }}" alt="{{ include.event.imageAlt }}" width="360px" height="360px">
+        <img src="{{ include.event.venue.imageURL }}" alt="{{ include.event.venue.imageAlt }}" width="360px" height="360px">
       </div>
       <div class="venue-address">
-        {{ include.event.address }} <br />
-        <a href="include.event.mapURL" target="_blank">Google Map</a>
+        {{ include.event.venue.address }} <br />
+        <a href="include.event.venue.mapURL" target="_blank">Google Map</a>
       </div>
       {% else %}
       <div class="section-head">
