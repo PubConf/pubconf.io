@@ -71,7 +71,19 @@ speakers:
     title: How to Sound Smart at Conferences
     description: "Doesn't follow instructions"
     imageUrl: /assets/images/speakers/niall.jpg
-    presentationUrl:
+
+  - name: Pete Smith
+    url: http://beyond-code.com/
+    title: What Having a Software Project Has Taught Me About Babies
+    description: One time he finished something.
+    imageUrl: /assets/images/speakers/pete.jpg
+    theme: everything-wrong
+
+  - name: Sebastien Lambla
+    url: http://serialseb.com/
+    title: Bugs, Is It Rocket Science?
+    description: International bits fiddler. ReSTing all the things. Create bugs in most languages.
+    imageUrl: /assets/images/speakers/sebastien.jpg
 
   - name: Tomas Petricek
     url: http://tomasp.net
