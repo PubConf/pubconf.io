@@ -170,9 +170,9 @@
   <section class="section-decor section-karaoke">
     <div class="wrapper">
       <div class="fade-in text-center">
-        <h2>Ignite Karaoke</h2>
+        <h2>Ignite Battle</h2>
         <p class="text-lg">
-          The ultimate speaker test: take the stage at PubConf and bullshit your way through a blind deck to the crowd.
+          The ultimate speaker test: take the stage at PubConf and bullshit your way through a blind deck to the crowd against an opponent.
         </p>
       </div>
     </div>
@@ -190,7 +190,7 @@
       </div>
       <div class="venue-address">
         {{ include.event.venue.address }} <br />
-        <a href="include.event.venue.mapURL" target="_blank">Google Map</a>
+        <a href="{{ include.event.venue.mapURL }}" target="_blank">Google Map</a>
       </div>
       {% else %}
       <div class="section-head">

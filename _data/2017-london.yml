@@ -2,9 +2,9 @@
 title: PubConf London
 date: 2017-01-20
 time: 7PM - 11PM
-location:
-status: preorder
-ticketURL:
+location: The Fine Line Canary Wharf
+status: onsale
+ticketURL: https://www.eventbrite.co.uk/e/pubconf-london-2017-tickets-28725750493
 permalink: /events/2017/london.html
 
 bannerURL: /assets/images/2017-london.jpg
@@ -26,13 +26,13 @@ speakers:
 
   - name: Dylan Beattie
     url: http://www.dylanbeattie.net
-    title: Coming Soon
+    title: Why Is Talking About Software So Weird?
     description: You know. The one in the hat.
     imageUrl: /assets/images/speakers/dylan.jpg
 
   - name: Evelina Gabasova
     url: http://evelinag.com/
-    title: “R Wat?!… and a Parrot"
+    title: R Wat?!… and a Parrot
     description: Machine learning researcher, clerk at the ministry of silly talks
     imageUrl: /assets/images/speakers/evelina.jpg
 
@@ -77,7 +77,6 @@ speakers:
     title: What Having a Software Project Has Taught Me About Babies
     description: One time he finished something.
     imageUrl: /assets/images/speakers/pete.jpg
-    theme: everything-wrong
 
   - name: Sebastien Lambla
     url: http://serialseb.com/
@@ -106,7 +105,7 @@ venue:
     10 Cabot Square, <br>
     London E14 4DH <br>
     United Kingdom
-  mapURL: https://www.google.com/maps/place/The+Fine+Line/@51.506131,-0.0238884,16.84z/data=!3m1!5s0x487602b79f7f6349:0x1e314697499a084b!4m5!3m4!1s0x487602b7642f2f9d:0x23f9211867f83097!8m2!3d51.506086!4d-0.021656
+  mapURL: "https://www.google.com/maps/place/The+Fine+Line/@51.506131,-0.0238884,16.84z/data=!3m1!5s0x487602b79f7f6349:0x1e314697499a084b!4m5!3m4!1s0x487602b7642f2f9d:0x23f9211867f83097!8m2!3d51.506086!4d-0.021656"
 
 sponsors:
   - name: Pluralsight
