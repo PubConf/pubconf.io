@@ -12,6 +12,12 @@ bannerAlt: PubConf after NDC London 2017
 
 cfp: false
 speakers:
+  - name: Ben Cull
+    url: https://twitter.com/BenWhoLikesBeer
+    title: Continuous Delivery of Beer to my Face
+    description: Likes beer a little too much
+    imageUrl: /assets/images/speakers/BenCull.jpg
+
   - name: Damian Brady
     url: https://twitter.com/damovisa
     title: How to Code Like an Arsehole
@@ -111,6 +117,10 @@ sponsors:
   - name: Pluralsight
     url: https://www.pluralsight.com/
     imageUrl: /assets/images/sponsors/pluralsight.png
+
+  - name: Titania
+    url: https://www.titania.com/
+    imageUrl: /assets/images/sponsors/titania.png
 
   - name: Katacoda
     url: https://www.katacoda.com/
