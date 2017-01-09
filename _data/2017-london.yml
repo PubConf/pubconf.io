@@ -72,6 +72,12 @@ speakers:
     description: Top Trumps analysis of developer personalities.
     imageUrl: /assets/images/speakers/liam.jpg
 
+  - name: Mark Rendle
+    url: https://blog.markrendle.net/
+    title: "My Combined Language-Framework-Platform-Methodology: \"SilverBullet\""
+    description: Chief Technology Ossifier
+    imageUrl: /assets/images/speakers/mark.jpg
+
   - name: Niall Merrigan
     url: http://www.certsandprogs.com
     title: How to Sound Smart at Conferences
@@ -121,6 +127,10 @@ sponsors:
   - name: Titania
     url: https://www.titania.com/
     imageUrl: /assets/images/sponsors/titania.png
+
+  - name: Equal Experts
+    url: https://www.equalexperts.com/
+    imageUrl: /assets/images/sponsors/equalexperts.png
 
   - name: Katacoda
     url: https://www.katacoda.com/
