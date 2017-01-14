@@ -67,11 +67,11 @@
             Grab yours quick before they're gone!
           </div>
           {% elsif include.event.status == "soldout" %}
-          <a class="button button-hero button-disabled">
-            Sold Out
+          <a class="button button-hero" href="{{ include.event.ticketURL }}">
+            Join Waitlist
           </a>
           <div class="hero-info">
-            Sorry! This event is sold out.
+            Sorry! General tickets have sold out. Join the ticket waitlist.
           </div>
           {% endif %}
         </div>
@@ -243,10 +243,10 @@
         {% elsif include.event.status == "soldout" %}
         <div class="ticket-item">
           <h3>Sold Out</h3>
-          <div>Sorry! This event is sold out. We told you it would.</div>
+          <div>Sorry! General tickets have sold out. Join the ticket waitlist.</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <a class="button button-large button-disabled">
-              Sold Out
+            <a class="button button-large" href="{{ include.event.ticketURL }}">
+              Join Waitlist
             </a>
           </div>
         </div>
