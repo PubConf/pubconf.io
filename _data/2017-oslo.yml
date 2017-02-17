@@ -1,4 +1,4 @@
-
+city: oslo
 title: PubConf Oslo
 date: 2017-06-16
 time: 7PM - 11PM
@@ -21,3 +21,10 @@ venue:
   mapURL:
 
 sponsors:
+  - name: NDC Conferences
+    url: http://ndcconferences.com/
+    imageUrl: /assets/images/sponsors/ndc.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png

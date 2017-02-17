@@ -1,4 +1,4 @@
-
+city: kansascity
 title: PubConf Kansas City
 date: 2017-08-04
 time:
@@ -21,3 +21,6 @@ venue:
   mapURL:
 
 sponsors:
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png

@@ -1,4 +1,4 @@
-
+city: london
 title: PubConf London
 date: 2017-01-20
 time: 7PM - 11PM
@@ -108,6 +108,12 @@ speakers:
     description: Rather Stupid Security Researcher.
     imageUrl: /assets/images/speakers/troy.jpg
 
+music:
+  name: Dylan Beattie
+  title: You know, the one with the hat.
+  description: Software Parodies of Yesterday's Greatest Hits
+  imageURL: /assets/images/speakers/dylan.jpg
+
 venue:
   description: The Fine Line is a lively riverside bar on Fisherman's Walk - offering an exciting selection of food and drink and a seat right at the water's edge. It's just as stylish indoors, where a full refurbishment has made it one of the most desirable bars in the City of London.
   imageURL: /assets/images/fineline.jpg
@@ -120,6 +126,14 @@ venue:
   mapURL: "https://www.google.com/maps/place/The+Fine+Line/@51.506131,-0.0238884,16.84z/data=!3m1!5s0x487602b79f7f6349:0x1e314697499a084b!4m5!3m4!1s0x487602b7642f2f9d:0x23f9211867f83097!8m2!3d51.506086!4d-0.021656"
 
 sponsors:
+  - name: NDC Conferences
+    url: http://ndcconferences.com/
+    imageUrl: /assets/images/sponsors/ndc.png
+
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
   - name: Pluralsight
     url: https://www.pluralsight.com/
     imageUrl: /assets/images/sponsors/pluralsight.png

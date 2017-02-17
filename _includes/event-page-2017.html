@@ -48,7 +48,7 @@
               <form id="js-newsletter-form" method="POST" action="https://pubconf.us11.list-manage.com/subscribe/post">
                 <input type="hidden" name="u" value="33d7399517a3ee3a5e9b679f7">
                 <input type="hidden" name="id" value="05e06dc18c">
-                <input type="hidden" name="EVENT" value="London">
+                <input type="hidden" name="EVENT" value="{{ include.event.city }}">
                 <div style="margin: 0 auto 10px;">
                   <label class="inside-label">
                     <input type="email" name="EMAIL" placeholder="jane@example.com" required="required"/>
@@ -119,23 +119,8 @@
     <div class="wrapper">
 
       <div class="section-head">
-        <h2 id="speakers">Hosted By</h2>
-        <div class="text-lg">Introducing the guests, laughing along, and making sure you have a great time.</div>
-      </div>
-      <ul class="talk-list">
-        <li class="talk-item" style="float:none;">
-          <img src="/assets/images/speakers/todd.jpg" width="100px" height="100px" alt="Todd Gardner">
-          <div class="talk-content">
-            <h4>Todd H. Gardner</h4>
-            <h5>PubConf Producer</h5>
-            <div class="talk-desc"><small>Phony conference organizer extraordinaire. Occasional JavaScript Developer.</small></div>
-          </div>
-        </li>
-      </ul>
-
-      <div class="section-head">
-        <h2 id="guests">Guests</h2>
-        <div class="text-lg">Guest talks will be lively, inspirational, and presented in Ignite-format, <br />5 minutes, 20 slides, 15 seconds per slide. It's going to be fun!</div>
+        <h2 id="guests">Featuring</h2>
+        <div class="text-lg">Talks will be lively, entertaining, and presented in Ignite-format, <br />5 minutes, 20 slides, 15 seconds per slide. It's going to be fun!</div>
       </div>
       <ul class="talk-list">
         {% if include.event.speakers %}
@@ -162,6 +147,37 @@
           </div>
         </li>
         {% endif; %}
+      </ul>
+
+      {% if include.event.music %}
+      <div class="section-head">
+        <h2 id="speakers">Musical Performance</h2>
+      </div>
+      <ul class="talk-list">
+        <li class="talk-item" style="float:none;">
+          <img src="{{ include.event.music.imageURL }}" width="100px" height="100px" alt="{{ include.event.music.name }}">
+          <div class="talk-content">
+            <h4>{{ include.event.music.name }}</h4>
+            <h5>{{ include.event.music.title }}</h5>
+            <div class="talk-desc"><small>{{ include.event.music.description }}</small></div>
+          </div>
+        </li>
+      </ul>
+      {% endif; %}
+
+      <div class="section-head">
+        <h2 id="speakers">Host</h2>
+        <div class="text-lg">Introducing our guests, and making some jokes.</div>
+      </div>
+      <ul class="talk-list">
+        <li class="talk-item" style="float:none;">
+          <img src="/assets/images/speakers/todd.jpg" width="100px" height="100px" alt="Todd Gardner">
+          <div class="talk-content">
+            <h4>Todd H. Gardner</h4>
+            <h5>PubConf Producer</h5>
+            <div class="talk-desc"><small>Occasional JavaScript Developer.</small></div>
+          </div>
+        </li>
       </ul>
 
     </div>
@@ -214,7 +230,7 @@
     <div class="wrapper">
       <div class="section-head">
         <h2 id="tickets">Tickets</h2>
-        <div class="text-lg">You can attend PubConf for the cost of a couple beers where you'll enjoy a sponsored bar, pub-fare food, and amazingly funny developer talks. <br /><br /><strong>Space is limited, and we will sell out. Don't wait!</strong></div>
+        <div class="text-lg">You can attend PubConf for the cost of a couple beers where you'll enjoy a sponsored bar, pub-fare food, and amazingly funny developer talks. <br /><br /><strong>Space is limited, don't wait!</strong></div>
       </div>
 
       <div class="ticket-list">
@@ -268,13 +284,6 @@
       </div>
 
       <ul class="sponsor-list">
-      {% for sponsor in site.data.global-sponsors %}
-        <li class="sponsor-item">
-          <a href="{{ sponsor.url }}" target="_blank">
-            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
-          </a>
-        </li>
-      {% endfor; %}
       {% for sponsor in include.event.sponsors %}
         <li class="sponsor-item">
           <a href="{{ sponsor.url }}" target="_blank">

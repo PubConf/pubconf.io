@@ -1,0 +1,77 @@
+city: minneapolis
+title: PubConf Minneapolis
+date: 2017-04-21
+time: 7PM - 12AM
+location: Nomad World Pub
+status: preorder
+ticketURL:
+permalink: /events/2017/minneapolis.html
+
+bannerURL: /assets/images/2017-minneapolis.jpg
+bannerAlt: PubConf in Minneapolis
+
+cfp: true
+speakers:
+  - name: April King
+    url: https://twitter.com/aprilmpls
+    title: 20 Technology Acronyms that Keep you Safe
+    description:
+    imageUrl: /assets/images/speakers/aprilking.png
+
+  - name: B. Lemon
+    url: http://ahoylemon.xyz/
+    title: I Got Popular (Oops)
+    description: Aspiring Aspirational Figure
+    imageUrl: /assets/images/speakers/blemon.jpg
+
+  - name: Donnie Berkholz
+    url: https://twitter.com/dberkholz
+    title: (Coming Soon)
+    description:
+    imageUrl: /assets/images/speakers/donnieberkholz.jpg
+
+  - name: Eric Brandes
+    url: https://twitter.com/brandeseric
+    title: One Weird Trick to Avoid Losing Money in the Cloud
+    description: Professional Typist
+    imageUrl: /assets/images/speakers/ericbrandes.jpg
+
+  - name: Jake Good
+    url: https://twitter.com/gooberdlx
+    title: You're Wrong About Being Right
+    description: Professional Oversimplifier
+    imageUrl: /assets/images/speakers/jakegood.jpeg
+
+  - name: John Sheehan
+    url: https://twitter.com/johnsheehan
+    title: (Coming Soon)
+    description:
+    imageUrl: /assets/images/speakers/johnsheehan.jpeg
+
+# music:
+#   name: Dylan Beattie
+#   title: You know, the one with the hat.
+#   description: Software Parodies of Yesterday's Greatest Hits
+#   imageURL: /assets/images/speakers/dylan.jpg
+
+venue:
+  description: Travel the world and never leave your barstool.
+  imageURL: /assets/images/nomadworldpub.jpg
+  imageAlt: Nomad World Pub
+  address: Nomad World Pub <br>
+    501 Cedar Ave S <br>
+    Minneapolis, MN 55454
+  mapURL: "https://www.google.com/maps/place/Nomad+World+Pub/@44.9687327,-93.2470588,15z/data=!4m2!3m1!1s0x0:0xc2adcb8c4b711ee1?sa=X&ved=0ahUKEwj-5ZmGquPRAhXs54MKHcwbDBUQ_BIIcTAO"
+
+sponsors:
+  - name: TrackJS
+    url: https://trackjs.com/
+    imageUrl: /assets/images/sponsors/trackjs.png
+
+  - name: OrderCloud
+    url: https://ordercloud.io/
+    imageUrl: /assets/images/sponsors/ordercloud.png
+
+  # - name: Pluralsight
+  #   url: https://www.pluralsight.com/
+  #   imageUrl: /assets/images/sponsors/pluralsight.png
