@@ -3,8 +3,8 @@ title: PubConf Minneapolis
 date: 2017-04-21
 time: 7PM - 12AM
 location: Nomad World Pub
-status: preorder
-ticketURL:
+status: onsale
+ticketURL: https://www.eventbrite.com/e/pubconf-minneapolis-tickets-32542878626
 permalink: /events/2017/minneapolis.html
 
 bannerURL: /assets/images/2017-minneapolis.jpg
@@ -15,7 +15,7 @@ speakers:
   - name: April King
     url: https://twitter.com/aprilmpls
     title: 20 Technology Acronyms that Keep you Safe
-    description:
+    description: Mozilla's CAO (Chief Acronym Officer)
     imageUrl: /assets/images/speakers/aprilking.png
 
   - name: B. Lemon
@@ -48,6 +48,12 @@ speakers:
     description:
     imageUrl: /assets/images/speakers/johnsheehan.jpeg
 
+  - name: Maggie Pint
+    url: https://twitter.com/maggiepint
+    title: (Coming Soon)
+    description:
+    imageUrl: /assets/images/speakers/maggiepint.jpg
+
 # music:
 #   name: Dylan Beattie
 #   title: You know, the one with the hat.
@@ -71,6 +77,10 @@ sponsors:
   - name: OrderCloud
     url: https://ordercloud.io/
     imageUrl: /assets/images/sponsors/ordercloud.png
+
+  - name: Leadpages
+    url: https://www.leadpages.net
+    imageUrl: /assets/images/sponsors/leadpages.png
 
   # - name: Pluralsight
   #   url: https://www.pluralsight.com/
