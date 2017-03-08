@@ -70,40 +70,6 @@
     src="https://www.facebook.com/tr?id=604896013037279&ev=PageView&noscript=1"
   /></noscript>
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ site.title }}",
-    "url": "{{ site.url }}"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "logo": "{{site.url}}{{site.image}}",
-    "sameAs": [
-      "https://www.facebook.com/{{ site.facebook_username }}",
-      "https://twitter.com/{{ site.twitter_username }}",
-      "https://plus.google.com/{{ site.googleplus_username }}"
-    ],
-    "email": "{{ site.email }}",
-    "events": [
-      {% assign currentEvents = (site.data.events | sort:"startTime" %}
-      {% for event in currentEvents %}
-      {% if event.status != 'archive' %}
-      {% include event-structureddata.json event=event %}{% if forloop.last != true %},{% endif; %}
-      {% endif; %}
-      {% endfor; %}
-    ]
-  }
-  </script>
-
   {% stylesheet main %}
   {% javascript main async defer %}
 

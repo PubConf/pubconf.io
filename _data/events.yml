@@ -602,7 +602,7 @@
     url: http://www.nomadpub.com/
     image: /assets/images/nomadworldpub.jpg
 
-  cfp: false
+  cfp: true
   speakers:
     - name: April King
       url: https://twitter.com/aprilmpls
@@ -618,8 +618,8 @@
 
     - name: Donnie Berkholz
       url: https://twitter.com/dberkholz
-      title:
-      description:
+      title: Assholes Are Killing Your Project
+      description: Asshole-Avoidance Strategist
       image: /assets/images/speakers/donnieberkholz.jpg
 
     - name: Eric Brandes
