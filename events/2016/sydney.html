@@ -9,7 +9,7 @@ title: PubConf Sydney - August 5 2016
 
 <div class="sydney2016">
 
-  {% assign event = site.data.2016-sydney %}
+  {% assign event = (site.data.events | where:"id","Sydney-2016" | first) %}
 
   <header>
     <nav>

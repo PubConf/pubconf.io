@@ -1,0 +1,809 @@
+### 2016 Events ###
+
+- id: London-2016
+  name: PubConf London
+  city: london
+  future: false
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2016/london.html
+  image: /assets/images/2017-london.jpg
+
+  date: 2016-01-16
+  startTime: 2016-01-16T18:00:00
+
+  partner:
+    title: NDC London
+    url: http://ndc-london.com/
+    imageUrl: /assets/images/ndc-black.png
+
+  sponsors:
+
+    - name: NDC London
+      url: http://ndc-london.com/
+      imageUrl: /assets/images/sponsors/ndc.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      imageUrl: /assets/images/sponsors/trackjs.png
+
+    - name: Zopa
+      url: https://www.zopa.com/
+      imageUrl: /assets/images/sponsors/zopa.png
+
+    - name: Red Gate
+      url: https://www.red-gate.com/
+      imageUrl: /assets/images/sponsors/redgate.png
+
+  speakers:
+
+    - name: Calum Gunn
+      url: http://www.calumgunn.com/
+      title: Coding Music
+      description: Computer musician, specialising in elasticated rave objects.
+      imageUrl: /assets/images/speakers/calum.jpg
+      theme: managing-yourself
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-coding-music-by-calum-gunn
+
+    - name: Basia Fusińska
+      url: http://barbarafusinska.com
+      title: Conference Talk Contract
+      description: A mentor to aspiring developers.
+      imageUrl: /assets/images/speakers/basia.png
+      theme: managing-yourself
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-conference-talk-contract-by-basia-fukinska
+
+    - name: Ben Hall
+      url: http://Katacoda.com
+      title: Learning Patterns for the Overworked Developer
+      description: Founder of Ocelot Uproar, launched Katacoda.
+      imageUrl: /assets/images/speakers/ben.jpg
+      theme: managing-yourself
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-learning-patterns-for-the-overworked-developer-by-ben-hall
+
+    - name: Mark Rendle
+      url: https://blog.markrendle.net/
+      title: Being a Programmer is Awesome
+      description: Grand High Mystic Of The Eternal Church Of Made-up Titles.
+      imageUrl: /assets/images/speakers/mark.jpg
+      theme: managing-yourself
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-being-a-programmer-is-awesome-by-mark-rendle
+
+    - name: Sam Elamin
+      url: https://twitter.com/samelamin
+      title: Failure is Awesome
+      description: Software Developer at JustEat.
+      imageUrl: /assets/images/speakers/sam.jpg
+      theme: managing-yourself
+      presentationUrl:
+
+    - name: Chris Massey
+      url: https://twitter.com/camassey
+      title: Seamless Computering
+      description: Community architect at RedGate.
+      imageUrl: /assets/images/speakers/chris.jpg
+      theme: future-computering
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-seamless-computering-by-chris-massey
+
+    - name: Doug Sillars
+      url: https://twitter.com/dougsillars
+      title: Why 3G 4G 5G is Not the Solution
+      description: Leader in mobile performance.
+      imageUrl: /assets/images/speakers/doug.jpg
+      theme: future-computering
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-faster-apps-why-3g-4g-5g-is-not-the-solution-by-doug-sillars
+
+    - name: Liam Westley
+      url: http://geekswithblogs.net/twickers
+      title: What Is the Point Of Microsoft?
+      description: Application Architect at Huddle.
+      imageUrl: /assets/images/speakers/liam.jpg
+      theme: future-computering
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-what-is-the-point-of-microsoft-by-liam-westley
+
+    - name: Dylan Beattie
+      url: http://backstage.spotlight.com/
+      title: The Face of Things to Come
+      description: Lead Developer at Spotlight.
+      imageUrl: /assets/images/speakers/dylan.jpg
+      theme: future-computering
+      presentationUrl: https://vimeo.com/152890042
+
+    - name: Jimmy Bogard
+      url: https://lostechies.com/jimmybogard/
+      title: When You've Fucked Up
+      description: Chief Architect at Headspring.
+      imageUrl: /assets/images/speakers/jimmy.jpg
+      theme: everything-wrong
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-when-youve-fucked-up-by-jimmy-bogard
+
+    - name: Ian Cooper
+      url: http://codebetter.com/iancooper/
+      title: RPC is Evil
+      description: Once corporate, his current version comes complete with beard, tattoos and piercings.
+      imageUrl: /assets/images/speakers/ian.jpg
+      theme: everything-wrong
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-rpc-is-evil-by-ian-cooper
+
+    - name: Pete Smith
+      url: http://beyond-code.com/
+      title: The Next Big Thing
+      description: One time he finished something.
+      imageUrl: /assets/images/speakers/pete.jpg
+      theme: everything-wrong
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-the-next-big-thing-by-pete-smith
+
+    - name: Sebastien Lambla
+      url: http://serialseb.com/
+      title: The Illogical 17:00 Split
+      description: Runs Caffeine IT, a consultancy helping clients across Europe.
+      imageUrl: /assets/images/speakers/sebastien.jpg
+      theme: everything-wrong
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-the-illogical-17-00-split-by-sebastien-lambla
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Let's Face It–Security is Pointless
+      description: World-renowned internet security specialist.
+      imageUrl: /assets/images/speakers/troy.jpg
+      theme: everything-wrong
+      presentationUrl: https://speakerdeck.com/toddhgardner/pubconf-lets-face-it-security-is-pointless-by-troy-hunt
+
+- id: Oslo-2016
+  name: PubConf Oslo
+  city: oslo
+  future: false
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2016/oslo.html
+  image: /assets/images/2017-oslo.jpg
+
+  date: 2016-06-11
+  startTime: 2016-06-11T18:00:00+200
+
+  partner:
+    title: NDC Oslo
+    url: http://ndcoslo.com/
+    imageUrl: /assets/images/sponsors/ndcoslo-black.png
+
+  sponsors:
+
+    - name: NDC Oslo
+      url: http://ndcoslo.com/
+      imageUrl: /assets/images/sponsors/ndcoslo-white.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      imageUrl: /assets/images/sponsors/trackjs.png
+
+  speakers:
+
+    - name: Ben Cull
+      url: https://twitter.com/BenWhoLikesBeer
+      title: How to Brew Beer
+      description: Cheif Beer Drinker (after Todd)
+      imageUrl: /assets/images/speakers/bencull.jpg
+      presentationUrl:
+
+    - name: David Neal
+      url: http://reverentgeek.com/
+      title: Win Hearts with Your Craptastic Drawings
+      description: Bacon Believer
+      imageUrl: /assets/images/speakers/davidneal.jpg
+      presentationUrl:
+
+    - name: Dylan Beattie
+      url: http://www.dylanbeattie.net
+      title: So You Think Your Code Isn't Mission Critical?
+      description: You know. The one in the hat.
+      imageUrl: /assets/images/speakers/dylan.jpg
+      presentationUrl:
+
+    - name: Einar Høst
+      url: http://einarwh.wordpress.com
+      title: Pragmatism is Poison
+      description: Ivory tower zealot. Basically Saruman.
+      imageUrl: /assets/images/speakers/einar.jpg
+      presentationUrl:
+
+    - name: Evelina Gabasova
+      url: http://evelinag.com/
+      title: Welcoming our AI Overlords
+      description: Machine learning researcher, clerk at the ministry of silly talks
+      imageUrl: /assets/images/speakers/evelina.jpg
+      presentationUrl:
+
+    - name: Jimmy Bogard
+      url: https://lostechies.com/jimmybogard/
+      title: When You've Fucked Up
+      description: Chief Architect at Headspring.
+      imageUrl: /assets/images/speakers/jimmy.jpg
+      theme: everything-wrong
+      presentationUrl:
+
+    - name: Karl-Henrik Nilsson
+      url: https://twitter.com/KHNilsson
+      title: The Internet of Less-Useless Things
+      description: If you ever need to build a smarter toaster, I'm your guy
+      imageUrl: /assets/images/speakers/karl.jpg
+      presentationUrl:
+
+    - name: Karoline Klever
+      url: http://www.karolikl.com/
+      title: The Miscommunicating Developer
+      description: Passionate feminist developer lured into the corporate world.
+      imageUrl: /assets/images/speakers/karoline.jpg
+      presentationUrl:
+
+    - name: Lars Klint
+      url: http://larsklint.com
+      title: The Day Kittens Took Over the World Using HoloLens
+      description: Freelance Geek, Banjo Enthusiast and Petrol Head
+      imageUrl: /assets/images/speakers/lars.jpg
+      presentationUrl:
+
+    - name: Sebastien Lambla
+      url: http://serialseb.com/
+      title: How to Always Be Right on the Internets
+      description: International bits fiddler. ReSTing all the things. Create bugs in most languages.
+      imageUrl: /assets/images/speakers/sebastien.jpg
+      presentationUrl:
+
+    - name: Stefan Daugaard Poulsen
+      url: http://cyberzed.dk
+      title: IoT is Misspelled IoU
+      description: Software Charlatan
+      imageUrl: /assets/images/speakers/stefan.jpg
+      presentationUrl:
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Let's Face It--Security is Pointless
+      description: Rather Stupid Security Researcher.
+      imageUrl: /assets/images/speakers/troy.jpg
+      presentationUrl:
+
+- id: Sydney-2016
+  name: PubConf Sydney
+  city: sydney
+  future: false
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2016/sydney.html
+  image: /assets/images/2017-sydney.jpg
+
+  date: 2016-08-05
+  startTime: 2016-08-05T18:00:00+1000
+
+  partner:
+    title: NDC Sydney
+    url: http://ndcsydney.com/
+    imageUrl: /assets/images/sponsors/ndcsydney-black.png
+
+  ticketUrl: http://www.eventbrite.com.au/e/pubconf-syndey-2016-tickets-26399378251
+
+  sponsors:
+
+    - name: NDC Sydney
+      url: http://ndcsydney.com/
+      imageUrl: /assets/images/sponsors/ndcsydney-white.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      imageUrl: /assets/images/sponsors/trackjs.png
+
+    - name: Just Digital People
+      url: http://www.justdigitalpeople.com.au/
+      imageUrl: /assets/images/sponsors/justdigitalpeople.png
+
+    - name: Pluralsight
+      url: https://www.pluralsight.com/
+      imageUrl: /assets/images/sponsors/pluralsight.png
+
+  speakers:
+
+    - name: Ben Hall
+      url: http://Katacoda.com
+      title: So You Want to Build a Software Company...
+      description: Founder of Ocelot Uproar, launched Katacoda.
+      imageUrl: /assets/images/speakers/ben.jpg
+
+    - name: Cathy Hunt
+      url: http://www.ipadartroom.com
+      title:  Teachers Tech and 'Tools'
+      description: Yes, I tried turning it off and on again...
+      imageUrl: /assets/images/speakers/cathyhunt.jpg
+
+    - name: Damian Brady
+      url: http://www.damianbrady.com.au
+      title: Humans Ruin Everything
+      description: 16th-best developer at Octopus Deploy
+      imageUrl: /assets/images/speakers/damian.jpg
+      presentationUrl:
+
+    - name: Dylan Beattie
+      url: http://www.dylanbeattie.net
+      title: Everybody's Free (To Use Flatscreens)
+      description: You know. The one in the hat.
+      imageUrl: /assets/images/speakers/dylan.jpg
+      presentationUrl:
+
+    - name: Jimmy Bogard
+      url: https://lostechies.com/jimmybogard/
+      title: Code So Bad It Made the News
+      description: The Barley Architect
+      imageUrl: /assets/images/speakers/jimmy.jpg
+      presentationUrl:
+
+    - name: Kris Howard
+      url: http://www.krishoward.org/
+      title: Granny Was a Hacker
+      description: Former dev. Yarn stash exceeds life expectancy.
+      imageUrl: /assets/images/speakers/krishoward.jpg
+      presentationUrl:
+
+    - name: Kylie Hunt
+      url: http://www.kyliehunt.com
+      title: 5 Ninja-Tricks to Thriving at Work
+      description: I make workplaces suck less. And keep Troy Hunt in line.
+      imageUrl: /assets/images/speakers/kylie.jpg
+      presentationUrl:
+
+    - name: Lars Klint
+      url: http://larsklint.com
+      title:  Banjo Coding in the Outback
+      description: Freelance Geek, Banjo Enthusiast and Petrol Head
+      imageUrl: /assets/images/speakers/lars.jpg
+      presentationUrl:
+
+    - name: Liam Westley
+      url: http://geekswithblogs.net/twickers
+      title: The Secret Life of Programmers
+      description: Top Trumps analysis of developer personalities.
+      imageUrl: /assets/images/speakers/liam.jpg
+
+    - name: Magnus Mårtensson
+      url: http://loftysoft.com/
+      title: "#cloud #itoldyouso"
+      description: Air Force Cloud Pilot and Meteorologist for Cloudy weather
+      imageUrl: /assets/images/speakers/magnus.jpg
+      presentationUrl:
+
+    - name: Niall Merrigan
+      elementId: niall-xss-talk
+      url: http://www.certsandprogs.com
+      title: XSS - What Does It Really Mean
+      description: >
+        p0wned!<script>
+        (function() {
+          var step = 50;
+          var beat = 100;
+          var e = document.getElementById("niall-xss-talk");
+          if (!e) return;
+          e.style.position = "relative";
+          setInterval(function() {
+            e.style.top = (Math.floor(Math.random()*step) - step/2) + "px";
+            e.style.right = (Math.floor(Math.random()*step) - step/2) + "px";
+            e.style.left = (Math.floor(Math.random()*step) - step/2) + "px";
+            e.style.bottom = (Math.floor(Math.random()*step) - step/2) + "px";
+            e.style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+            e.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+          }, beat);
+        })();
+        </script>
+      imageUrl: /assets/images/speakers/niall.jpg
+      presentationUrl:
+
+    - name: Nik Molnar
+      url: http://nikcodes.com
+      title: Grokking Gastronomy
+      description: Bit Butcher
+      imageUrl: /assets/images/speakers/nik.jpg
+      presentationUrl:
+
+    - name: Scott Allen
+      url: http://odetocode.com
+      title: How The Gods Punish Us With New Web Standards
+      description: The Profit of Pluralsight
+      imageUrl: /assets/images/speakers/scottallen.jpg
+      presentationUrl:
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Let's Face It--Security is Pointless
+      description: Rather Stupid Security Researcher.
+      imageUrl: /assets/images/speakers/troy.jpg
+      presentationUrl:
+
+    - name: Xharmagne Carandang
+      url: https://twitter.com/xharmagne
+      title: Fight Your Way Into UX Design
+      description: Loves designing, building and debugging magic
+      imageUrl: /assets/images/speakers/xharmagne.jpg
+      presentationUrl:
+
+### 2017 Events ###
+
+- id: London-2017
+  name: PubConf London
+  description: "PubConf returns to London for our first anniversary! Come celebrate with some amazing developers doing amusing things at the pub."
+  city: london
+  future: false
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2017/london.html
+  image: /assets/images/2017-london.jpg
+
+  doorTime: 2017-01-20T18:00:00Z
+  startTime: 2017-01-20T19:00:00Z
+  endTime: 2017-01-20T23:30:00Z
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  tickets:
+    price: 10
+    currency: GBP
+    url: https://www.eventbrite.co.uk/e/pubconf-london-2017-tickets-28725750493
+
+  location:
+    name: The Fine Line
+    address: 29-30 Fishermen’s Walk - 10 Cabot Square, London E14 4DH, United Kingdom
+    url: http://www.nomadpub.com/
+    image: /assets/images/fineline.jpg
+
+  cfp: false
+  speakers:
+    - name: Ben Cull
+      url: https://twitter.com/BenWhoLikesBeer
+      title: Continuous Delivery of Beer to my Face
+      description: Likes beer a little too much
+      image: /assets/images/speakers/BenCull.jpg
+
+    - name: Damian Brady
+      url: https://twitter.com/damovisa
+      title: How to Code Like an Arsehole
+      description: 16th best developer at Octopus Deploy
+      image: /assets/images/speakers/damianbrady.jpg
+
+    - name: Dan North
+      url: http://dannorth.net
+      title: Why Every Single Element of SOLID is Wrong
+      description: Unclean Coder
+      image: /assets/images/speakers/dan.jpg
+
+    - name: Dylan Beattie
+      url: http://www.dylanbeattie.net
+      title: Why Is Talking About Software So Weird?
+      description: You know. The one in the hat.
+      image: /assets/images/speakers/dylan.jpg
+
+    - name: Evelina Gabasova
+      url: http://evelinag.com/
+      title: R Wat?!… and a Parrot
+      description: Machine learning researcher, clerk at the ministry of silly talks
+      image: /assets/images/speakers/evelina.jpg
+
+    - name: Jennifer Wong
+      url: http://mochimachine.org/
+      title: Mobile Safari, Whyyyy?!!?
+      description: The Bay Area's Leading Crapmapper
+      image: /assets/images/speakers/jennwong.jpg
+
+    - name: Jonathan Mills
+      url: http://jonathanfmills.com
+      title: JavaScript, The Weird Parts?
+      description: Still confused by JavaScript
+      image: /assets/images/speakers/jonmills.jpg
+
+    - name: Kasia Mrowca
+      url: https://twitter.com/MrowcaKasia
+      title: GDD (Gantt-Chart Driven Development)
+      description: Product Leech, ups I meant Product Lead
+      image: /assets/images/speakers/kasiamrwoca.jpg
+
+    - name: Lars Klint
+      url: http://larsklint.com
+      title: "Why We Can’t Have Nice Things: A Love Story"
+      description: Holographic pirate and Galactic Viceroy
+      image: /assets/images/speakers/lars.jpg
+
+    - name: Liam Westley
+      url: http://geekswithblogs.net/twickers
+      title: The Secret Life of Programmers
+      description: Top Trumps analysis of developer personalities.
+      image: /assets/images/speakers/liam.jpg
+
+    - name: Mark Rendle
+      url: https://blog.markrendle.net/
+      title: "My Combined Language-Framework-Platform-Methodology: \"SilverBullet\""
+      description: Chief Technology Ossifier
+      image: /assets/images/speakers/mark.jpg
+
+    - name: Niall Merrigan
+      url: http://www.certsandprogs.com
+      title: How to Sound Smart at Conferences
+      description: "Doesn't follow instructions"
+      image: /assets/images/speakers/niall.jpg
+
+    - name: Pete Smith
+      url: http://beyond-code.com/
+      title: What Having a Software Project Has Taught Me About Babies
+      description: One time he finished something.
+      image: /assets/images/speakers/pete.jpg
+
+    - name: Sebastien Lambla
+      url: http://serialseb.com/
+      title: Bugs, Is It Rocket Science?
+      description: International bits fiddler. ReSTing all the things. Create bugs in most languages.
+      image: /assets/images/speakers/sebastien.jpg
+
+    - name: Tomas Petricek
+      url: http://tomasp.net
+      title: 16th Century Programming Myths
+      description: Self-interested peddler of Whizbang Technologies
+      image: /assets/images/speakers/tomaspetricek.jpg
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Let's Face It--Security is Pointless
+      description: Rather Stupid Security Researcher.
+      image: /assets/images/speakers/troy.jpg
+
+  music:
+    name: Dylan Beattie
+    title: You know, the one with the hat.
+    description: Software Parodies of Yesterday's Greatest Hits
+    image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: NDC Conferences
+      url: http://ndcconferences.com/
+      image: /assets/images/sponsors/ndc.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png
+
+    - name: Pluralsight
+      url: https://www.pluralsight.com/
+      image: /assets/images/sponsors/pluralsight.png
+
+    - name: Titania
+      url: https://www.titania.com/
+      image: /assets/images/sponsors/titania.png
+
+    - name: Equal Experts
+      url: https://www.equalexperts.com/
+      image: /assets/images/sponsors/equalexperts.png
+
+    - name: Katacoda
+      url: https://www.katacoda.com/
+      image: /assets/images/sponsors/katacoda.png
+
+- id: Minneapolis-2017
+  name: PubConf Minneapolis
+  description: "Join us for the Minneapolis debut of PubConf at the Nomad World Pub on April 21. Amazing developers doing entertaining things-at the bar."
+  city: minneapolis
+  future: true
+  status: onsale # preorder, onsale, soldout, archive
+  url: /events/2017/minneapolis.html
+  image: /assets/images/2017-minneapolis.jpg
+
+  doorTime: 2017-04-21T18:00:00-500
+  startTime: 2017-04-21T19:00:00-500
+  endTime: 2017-04-21T23:30:00-500
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  tickets:
+    price: 10
+    currency: USD
+    url: https://www.eventbrite.com/e/pubconf-minneapolis-tickets-32542878626
+
+  location:
+    name: Nomad World Pub
+    address: 501 Cedar Ave S Minneapolis, MN 55454
+    url: http://www.nomadpub.com/
+    image: /assets/images/nomadworldpub.jpg
+
+  cfp: false
+  speakers:
+    - name: April King
+      url: https://twitter.com/aprilmpls
+      title: 20 Technology Acronyms that Keep you Safe
+      description: Mozilla's CAO (Chief Acronym Officer)
+      image: /assets/images/speakers/aprilking.png
+
+    - name: B. Lemon
+      url: http://ahoylemon.xyz/
+      title: I Got Popular (Oops)
+      description: Aspiring Aspirational Figure
+      image: /assets/images/speakers/blemon.jpg
+
+    - name: Donnie Berkholz
+      url: https://twitter.com/dberkholz
+      title:
+      description:
+      image: /assets/images/speakers/donnieberkholz.jpg
+
+    - name: Eric Brandes
+      url: https://twitter.com/brandeseric
+      title: One Weird Trick to Avoid Losing Money in the Cloud
+      description: Professional Typist
+      image: /assets/images/speakers/ericbrandes.jpg
+
+    - name: Jake Good
+      url: https://twitter.com/gooberdlx
+      title: You're Wrong About Being Right
+      description: Professional Oversimplifier
+      image: /assets/images/speakers/jakegood.jpeg
+
+    - name: John Sheehan
+      url: https://twitter.com/johnsheehan
+      title:
+      description:
+      image: /assets/images/speakers/johnsheehan.jpeg
+
+    - name: Maggie Pint
+      url: https://twitter.com/maggiepint
+      title:
+      description:
+      image: /assets/images/speakers/maggiepint.jpg
+
+  # music:
+  #   name: Dylan Beattie
+  #   title: You know, the one with the hat.
+  #   description: Software Parodies of Yesterday's Greatest Hits
+  #   image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: TrackJS
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png
+
+    - name: OrderCloud
+      url: https://ordercloud.io/
+      image: /assets/images/sponsors/ordercloud.png
+
+    - name: Leadpages
+      url: https://www.leadpages.net
+      image: /assets/images/sponsors/leadpages.png
+
+- id: Oslo-2017
+  name: PubConf Oslo
+  description: "PubConf moving to Friday Night after NDCOslo. Join us and some amazing developers doing amusing things at the pub."
+  city: oslo
+  future: true
+  status: preorder # preorder, onsale, soldout, archive
+  url: /events/2017/oslo.html
+  image: /assets/images/2017-oslo.jpg
+
+  doorTime: 2017-06-16T18:00:00+200
+  startTime: 2017-06-16T19:00:00+200
+  endTime: 2017-06-16T23:30:00+200
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  # tickets:
+  #   price: 20
+  #   currency: NOK
+  #   url:
+
+  # location:
+  #   name: Nomad World Pub
+  #   address: 501 Cedar Ave S Minneapolis, MN 55454
+  #   url: http://www.nomadpub.com/
+  #   image: /assets/images/nomadworldpub.jpg
+
+  cfp: true
+  speakers:
+    # - name: Maggie Pint
+    #   url: https://twitter.com/maggiepint
+    #   title:
+    #   description:
+    #   image: /assets/images/speakers/maggiepint.jpg
+
+  music:
+    name: Dylan Beattie
+    title: You know, the one with the hat.
+    description: Software Parodies of Yesterday's Greatest Hits
+    image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: NDC Conferences
+      url: http://ndcconferences.com/
+      image: /assets/images/sponsors/ndc.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png
+
+- id: KansasCity-2017
+  name: PubConf Kansas City
+  description: "PubConf debuts in Kansas City with KCDC on Friday August 4! Join us and some amazing developers doing amusing things at the pub."
+  city: kansascity
+  future: true
+  status: preorder # preorder, onsale, soldout, archive
+  url: /events/2017/kansascity.html
+  image: /assets/images/2017-kc.jpg
+
+  doorTime: 2017-08-04T18:00:00-500
+  startTime: 2017-08-04T19:00:00-500
+  endTime: 2017-08-04T23:30:00-500
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  # tickets:
+  #   price: 10
+  #   currency: USD
+  #   url:
+
+  # location:
+  #   name: Nomad World Pub
+  #   address: 501 Cedar Ave S Minneapolis, MN 55454
+  #   url: http://www.nomadpub.com/
+  #   image: /assets/images/nomadworldpub.jpg
+
+  cfp: true
+  speakers:
+    # - name: Maggie Pint
+    #   url: https://twitter.com/maggiepint
+    #   title:
+    #   description:
+    #   image: /assets/images/speakers/maggiepint.jpg
+
+  # music:
+  #   name: Dylan Beattie
+  #   title: You know, the one with the hat.
+  #   description: Software Parodies of Yesterday's Greatest Hits
+  #   image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: TrackJS
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png
+
+- id: Sydney-2017
+  name: PubConf Sydney
+  description: "PubConf goes downunder for NDCSydney on Friday August 18! Join us and some amazing developers doing amusing things at the pub."
+  city: sydney
+  future: true
+  status: preorder # preorder, onsale, soldout, archive
+  url: /events/2017/sydney.html
+  image: /assets/images/2017-sydney.jpg
+
+  doorTime: 2017-08-18T18:00:00+1000
+  startTime: 2017-08-18T19:00:00+1000
+  endTime: 2017-08-18T23:30:00+1000
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  # tickets:
+  #   price: 10
+  #   currency: USD
+  #   url:
+
+  # location:
+  #   name: Nomad World Pub
+  #   address: 501 Cedar Ave S Minneapolis, MN 55454
+  #   url: http://www.nomadpub.com/
+  #   image: /assets/images/nomadworldpub.jpg
+
+  cfp: true
+  speakers:
+    # - name: Maggie Pint
+    #   url: https://twitter.com/maggiepint
+    #   title:
+    #   description:
+    #   image: /assets/images/speakers/maggiepint.jpg
+
+  # music:
+  #   name: Dylan Beattie
+  #   title: You know, the one with the hat.
+  #   description: Software Parodies of Yesterday's Greatest Hits
+  #   image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: NDC Conferences
+      url: http://ndcconferences.com/
+      image: /assets/images/sponsors/ndc.png
+
+    - name: TrackJS
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png

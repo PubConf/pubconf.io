@@ -2,6 +2,8 @@
 layout: event
 title: PubConf Minneapolis - Apr 21 2017
 image: /assets/images/2017-minneapolis.jpg
+excerpt: Join us for the Minneapolis debut of PubConf at the Nomad World Pub on April 21. Amazing developers doing entertaining things-at the bar.
 ---
 
-{% include event-page-2017.html event=site.data.2017-minneapolis %}
+{% assign event = (site.data.events | where:"id","Minneapolis-2017" | first) %}
+{% include event-page-2017.html event=event %}

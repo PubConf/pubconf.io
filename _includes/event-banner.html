@@ -1,11 +1,11 @@
 <section class="section-event-banner section-light">
   <div class="wrapper">
     <div class="event-title clearfix">
-      <h1>{{ include.event.title }}</h1>
-      <h2>{{ include.event.date | date: "%B %d, %Y" }}</h2>
+      <h1>{{ include.event.name }}</h1>
+      <h2>{{ include.event.startTime | date: "%B %d, %Y" }}</h2>
     </div>
   </div>
-  <a href="{{ include.event.permalink }}" class="banner-wrapper">
+  <a href="{{ include.event.url }}" class="banner-wrapper">
     {% if include.event.status == "preorder" %}
     <div class="ribbon-wrapper">
       <div class="ribbon ribbon-blue">Preorder</div>
@@ -22,7 +22,7 @@
     </div>
     {% endif %}
     <div class="wrapper shadow">
-        <img src="{{ include.event.bannerURL }}" alt="{{ include.event.bannerAlt }}"/>
+        <img src="{{ include.event.image }}" alt="{{ include.event.name }}"/>
     </div>
   </a>
 </section>

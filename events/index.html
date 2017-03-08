@@ -11,9 +11,9 @@ title: PubConf Events
     </div>
   </section>
 
-  {% include event-banner.html event=site.data.2017-london %}
-  {% include event-banner.html event=site.data.2016-sydney %}
-  {% include event-banner.html event=site.data.2016-oslo %}
-  {% include event-banner.html event=site.data.2016-london %}
+  {% assign events = (site.data.events | sort:"startTime" | reverse ) %}
+  {% for event in events %}
+  {% include event-banner.html event=event %}
+  {% endfor; %}
 
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PubConf - Developer Variety Show
+title: PubConf - The Software Variety Show and Afterparty
 ---
 
 <div class="home-page">
@@ -9,7 +9,7 @@ title: PubConf - Developer Variety Show
     <div class="wrapper">
       <div class="fade-in text-center">
         <p class="text-lg" style="margin:0">
-          The Software Conference Variety Show and Afterparty.
+          The Software Variety Show and Afterparty.
         </p>
         <p>
           Rapid-fire Ignite talks, musical acts, and comedy stunts
@@ -19,7 +19,8 @@ title: PubConf - Developer Variety Show
     </div>
   </section>
 
-  {% include event-banner.html event=site.data.2017-minneapolis %}
+  {% assign nextEvent = (site.data.events | where:"future",true | sort:"startTime" | first) %}
+  {% include event-banner.html event=nextEvent %}
 
   <section class="section-dark section-sponsors" style="margin-top:-30px;">
     <div class="wrapper">
@@ -38,10 +39,9 @@ title: PubConf - Developer Variety Show
     </div>
   </section>
 
-  {% include event-banner.html event=site.data.2017-oslo %}
-
-  {% include event-banner.html event=site.data.2017-kansascity %}
-
-  {% include event-banner.html event=site.data.2017-sydney %}
+  {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
+  {% for event in futureEvents offset: 1 %}
+  {% include event-banner.html event=event %}
+  {% endfor; %}
 
 </div>

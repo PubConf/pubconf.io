@@ -5,7 +5,7 @@ title: PubConf London - January 16 2016
 
 <div class="london2016">
 
-  {% assign event = site.data.2016-london %}
+  {% assign event = (site.data.events | where:"id","London-2016" | first) %}
 
   <header>
     <nav>

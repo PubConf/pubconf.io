@@ -8,11 +8,11 @@
         <div class="footer-col footer-col-1">
           <h3>Events</h3>
           <ul>
-            <li><a href="/events/2017/minneapolis.html">PubConf Minneapolis</a></li>
-            <li><a href="/events/2017/oslo.html">PubConf Oslo</a></li>
-            <li><a href="/events/2017/kansascity.html">PubConf Kansas City</a></li>
-            <li><a href="/events/2017/sydney.html">PubConf Sydney</a></li>
-            <li><a href="/events/">Event Archive</a></li>
+            {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
+            {% for event in futureEvents %}
+            <li><a href="{{ event.url }}">{{ event.name }}</a></li>
+            {% endfor; %}
+            <li><a href="/events/">Archive</a></li>
           </ul>
         </div>
 

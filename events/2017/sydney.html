@@ -2,6 +2,8 @@
 layout: event
 title: PubConf Sydney - August 18 2017
 image: /assets/images/2017-sydney.jpg
+excerpt: PubConf goes downunder for NDCSydney on Friday August 18! Join us and some amazing developers doing amusing things at the pub.
 ---
 
-{% include event-page-2017.html event=site.data.2017-sydney %}
+{% assign event = (site.data.events | where:"id","Sydney-2017" | first) %}
+{% include event-page-2017.html event=event %}

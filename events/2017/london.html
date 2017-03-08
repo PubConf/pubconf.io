@@ -2,6 +2,8 @@
 layout: event
 title: PubConf London - Jan 20 2017
 image: /assets/images/2017-london.jpg
+excerpt: PubConf returns to London for our first anniversary! Come celebrate with some amazing developers doing amusing things at the pub.
 ---
 
-{% include event-page-2017.html event=site.data.2017-london %}
+{% assign event = (site.data.events | where:"id","London-2017" | first) %}
+{% include event-page-2017.html event=event %}

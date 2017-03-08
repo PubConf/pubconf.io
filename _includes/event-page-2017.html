@@ -4,16 +4,16 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="#guests">Guests</a></li>
+        <li><a href="#featuring">Featuring</a></li>
         <li><a href="#venue">Venue</a></li>
         <li><a href="#tickets">Tickets</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
       </ul>
     </nav>
     <div class="section-event-banner" style="padding-top:36px;">
-      <a href="{{ include.event.permalink }}" class="banner-wrapper">
+      <a href="{{ include.event.url }}" class="banner-wrapper">
         <div class="wrapper shadow">
-            <img src="{{ include.event.bannerURL }}" alt="{{ include.event.bannerAlt }}"/>
+          <img src="{{ include.event.image }}" alt="{{ include.event.name }}"/>
         </div>
       </a>
       <div class="text-center" style="background-color:white;">
@@ -27,8 +27,9 @@
       <div class="hero-col-wrapper">
         <div class="hero-col hero-col-1 text-center">
           <h1 class="hero-title">{{ include.event.title }}</h1>
-          <div class="hero-when">{{ include.event.date | date: "%B %d, %Y" }} @ {{ include.event.time }}</div>
-          <div class="hero-where">{{ include.event.location }}</div>
+          <div class="hero-when">{{ include.event.startTime | date: "%B %d, %Y" }} @ {{ include.event.startDisplay }}</div>
+          <small>Doors open at {{ include.event.doorDisplay }}</small>
+          <div class="hero-where"><a href="#venue">{{ include.event.location.name }}</a></div>
         </div>
         <div class="hero-col hero-col-2 text-center">
           {% if include.event.status == "preorder" %}
@@ -60,18 +61,25 @@
             </div>
           </div>
           {% elsif include.event.status == "onsale" %}
-          <a class="button button-hero" href="{{ include.event.ticketURL }}">
+          <a class="button button-hero tickets" href="{{ include.event.tickets.url }}">
             Get Tickets Now
           </a>
           <div class="hero-info">
             Grab yours quick before they're gone!
           </div>
           {% elsif include.event.status == "soldout" %}
-          <a class="button button-hero" href="{{ include.event.ticketURL }}">
+          <a class="button button-hero tickets" href="{{ include.event.tickets.url }}">
             Join Waitlist
           </a>
           <div class="hero-info">
             Sorry! General tickets have sold out. Join the ticket waitlist.
+          </div>
+          {% elsif include.event.status == "archive" %}
+          <button type="button" class="button button-hero button-alt js-waitlist-toggle">
+            Signup for Info
+          </button>
+          <div class="hero-info">
+            This event already happened. Sign up to know the next time we come to your city!
           </div>
           {% endif %}
         </div>
@@ -119,7 +127,7 @@
     <div class="wrapper">
 
       <div class="section-head">
-        <h2 id="guests">Featuring</h2>
+        <h2 id="featuring">Featuring</h2>
         <div class="text-lg">Talks will be lively, entertaining, and presented in Ignite-format, <br />5 minutes, 20 slides, 15 seconds per slide. It's going to be fun!</div>
       </div>
       <ul class="talk-list">
@@ -127,12 +135,11 @@
         {% assign speakers = (include.event.speakers | sort: "name") %}
         {% for speaker in speakers %}
         <li class="talk-item">
-          <img src="{{ speaker.imageUrl }}" width="100px" height="100px" alt="{{ speaker.name }}">
+          <img src="{{ speaker.image }}" width="100px" height="100px" alt="{{ speaker.name }}">
           <div class="talk-content">
-            <h4>{{ speaker.title }}</h4>
+            <h4>{% if speaker.title %}{{ speaker.title }}{% else %}(Coming Soon){% endif; %}</h4>
             <h5><a href="{{ speaker.url }}">{{ speaker.name }}</a></h5>
             <div class="talk-desc"><small>{{ speaker.description }}</small></div>
-            {% if speaker.presentationUrl %}<div><a href="{{ speaker.presentationUrl }}">Presentation</a></div>{% endif %}
           </div>
         </li>
         {% endfor; %}
@@ -155,7 +162,7 @@
       </div>
       <ul class="talk-list">
         <li class="talk-item" style="float:none;">
-          <img src="{{ include.event.music.imageURL }}" width="100px" height="100px" alt="{{ include.event.music.name }}">
+          <img src="{{ include.event.music.image }}" width="100px" height="100px" alt="{{ include.event.music.name }}">
           <div class="talk-content">
             <h4>{{ include.event.music.name }}</h4>
             <h5>{{ include.event.music.title }}</h5>
@@ -196,17 +203,17 @@
 
   <section class="section-light section-venue text-center">
     <div class="wrapper">
-      {% if include.event.venue and include.event.venue.description  %}
+      {% if include.event.location %}
       <div class="section-head">
         <h2 id="venue">Venue</h2>
-        <div class="text-lg">{{ include.event.venue.description }}</div>
+        <div class="text-lg">{{ include.event.location.name }}</div>
       </div>
       <div class="venue-image">
-        <img src="{{ include.event.venue.imageURL }}" alt="{{ include.event.venue.imageAlt }}" width="360px" height="360px">
+        <img src="{{ include.event.location.image }}" alt="{{ include.event.location.name }}" width="360px" height="360px">
       </div>
       <div class="venue-address">
-        {{ include.event.venue.address }} <br />
-        <a href="{{ include.event.venue.mapURL }}" target="_blank">Google Map</a>
+        {{ include.event.location.address }} <br />
+        <a href="https://www.google.com/maps/search/{{ include.event.location.address }}" target="_blank">Google Map</a>
       </div>
       {% else %}
       <div class="section-head">
@@ -247,11 +254,11 @@
         </div>
         {% elsif include.event.status == "onsale" %}
         <div class="ticket-item">
-          <div class="pull-right text-muted ticket-release"><strong>Available Now!</strong></div>
+          <div class="pull-right text-muted ticket-release"><strong>{{ include.event.tickets.price }} {{ include.event.tickets.currency }}</strong></div>
           <h3>General Tickets</h3>
           <div>PubConf is open to the public for a small fee to help us keep your hunger fed and thirst quenched.</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <a class="button button-large" href="{{ include.event.ticketURL }}">
+            <a class="button button-large tickets" href="{{ include.event.tickets.url }}">
               Get Tickets Now
             </a>
           </div>
@@ -261,7 +268,7 @@
           <h3>Sold Out</h3>
           <div>Sorry! General tickets have sold out. Join the ticket waitlist.</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <a class="button button-large" href="{{ include.event.ticketURL }}">
+            <a class="button button-large tickets" href="{{ include.event.ticketURL }}">
               Join Waitlist
             </a>
           </div>
@@ -287,7 +294,7 @@
       {% for sponsor in include.event.sponsors %}
         <li class="sponsor-item">
           <a href="{{ sponsor.url }}" target="_blank">
-            <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
+            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
           </a>
         </li>
       {% endfor; %}
@@ -305,3 +312,65 @@
   </section>
 
 </div>
+
+<script>
+  (function() {
+    fbq('track', 'ViewContent', {
+      'content_type': 'event',
+      'content_name': '{{ include.event.city }}'
+    });
+
+    if (!document.querySelector || !window.addEventListener) { return; }
+
+    var ticketLinks = document.querySelectorAll('.tickets');
+    for(var i = 0; i < ticketLinks.length; i++) {
+      ticketLinks[i].addEventListener('click', function() {
+        ga('send', {
+          'hitType': 'event',
+          'eventCategory': 'Tickets',
+          'eventAction': 'ClickOut',
+          'eventLabel': '{{ include.event.city }}'
+        });
+        fbq('track', 'InitiateCheckout', {
+          'content_type': 'event',
+          'content_name': '{{ include.event.city }}'
+        });
+      });
+    }
+
+    var newsletterEl = document.querySelector('.js-newsletter-form');
+    if (newsletterEl) {
+      newsletterEl.addEventListener('submit', function() {
+        ga('send', {
+          'hitType': 'event',
+          'eventCategory': 'Newsletter',
+          'eventAction': 'Subscribe',
+          'eventLabel': '{{ include.event.city }}'
+        });
+        fbq('track', 'AddToWishlist', {
+          'content_type': 'event',
+          'content_name': '{{ include.event.city }}'
+        });
+      });
+    }
+
+  })();
+</script>
+
+<!-- <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "{{ site.url }}/events",
+      "name": "Events"
+    }
+  }]
+}
+</script> -->
+<script type="application/ld+json">
+{% include event-structureddata.json event=include.event %}
+</script>
