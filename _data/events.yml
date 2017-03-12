@@ -604,6 +604,12 @@
 
   cfp: true
   speakers:
+    - name: Andrew Murray
+      url: https://twitter.com/asketchyfish
+      title: I Told You There Was a 20% Chance of Rain!
+      description: Professional Cloud Watcher
+      image: /assets/images/speakers/andrewmurray.jpeg
+
     - name: April King
       url: https://twitter.com/aprilmpls
       title: 20 Technology Acronyms that Keep you Safe
@@ -646,11 +652,11 @@
       description:
       image: /assets/images/speakers/maggiepint.jpg
 
-  # music:
-  #   name: Dylan Beattie
-  #   title: You know, the one with the hat.
-  #   description: Software Parodies of Yesterday's Greatest Hits
-  #   image: /assets/images/speakers/dylan.jpg
+  music:
+    name: Ghost House Running
+    title: Maybe you shouldn't be running in the freaking ghost house.
+    description:
+    image: /assets/images/speakers/ghosthouserunning.gif
 
   sponsors:
     - name: TrackJS
