@@ -652,6 +652,12 @@
       description:
       image: /assets/images/speakers/maggiepint.jpg
 
+    - name: Joggernaughts
+      url: http://joggernauts.tumblr.com/
+      title: Joggernaughts
+      description: An interstellar party platformer for 2-4 friends by Space Mace.
+      image: /assets/images/speakers/joggernaughts.png
+
   music:
     name: Ghost House Running
     title: Maybe you shouldn't be running in the freaking ghost house.

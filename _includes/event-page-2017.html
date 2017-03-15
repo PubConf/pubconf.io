@@ -67,7 +67,8 @@
             Get Tickets Now
           </a>
           <div class="hero-info">
-            Grab yours quick before they're gone!
+            Grab yours quick before they're gone! <br/>
+            Legal Drinking Age Required.
           </div>
           {% elsif include.event.status == "soldout" %}
           <a class="button button-hero tickets" href="{{ include.event.tickets.url }}">
@@ -264,6 +265,7 @@
               Get Tickets Now
             </a>
           </div>
+          <div class="text-center"><small>Must be of legal drinking age.</small></div>
         </div>
         {% elsif include.event.status == "soldout" %}
         <div class="ticket-item">
@@ -357,82 +359,4 @@
     }
 
   })();
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Event",
-  "name": "{{ include.event.name }}",
-  "description": "{{ include.event.description }}",
-  "url": "{{ site.url }}{{ include.event.url }}",
-  "image": "{{ site.url }}{{ include.event.image }}",
-  "doorTime": "{{ include.event.doorTime }}",
-  "startDate": "{{ include.event.startTime }}",
-  "endDate": "{{ include.event.endTime }}",
-  "organizer": {
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "logo": "{{site.url}}{{site.image}}",
-    "sameAs": [
-      "https://www.facebook.com/{{ site.facebook_username }}",
-      "https://twitter.com/{{ site.twitter_username }}",
-      "https://plus.google.com/{{ site.googleplus_username }}"
-    ],
-    "email": "{{ site.email }}"
-  },
-  {% if include.event.location %}
-  "location": {
-    "@type": "Place",
-    "name": "{{ include.event.location.name }}",
-    "sameAs": "{{ include.event.location.url }}",
-    "address": "{{ include.event.location.address }}"
-  },
-  {% else %}
-  "location": {
-    "@type": "Place",
-    "name": "{{ include.event.city }}",
-    "address": "{{ include.event.city }}"
-  },
-  {% endif; %}
-  {% if include.event.tickets %}
-  "offers": [{
-    "@type": "Offer",
-    "name": "Ticket",
-    {% if include.event.status == "preorder" %}
-    "availability": "PreOrder",
-    {% elsif include.event.status == "onsale" %}
-    "availability": "InStock",
-    {% elsif include.event.status == "soldout" %}
-    "availability": "SoldOut",
-    {% endif; %}
-    "priceCurrency": "{{ include.event.tickets.currency }}",
-    "price": "{{ include.event.tickets.price }}",
-    "url": "{{ include.event.tickets.url }}"
-  }],
-  {% endif; %}
-  {% if include.event.speakers %}
-  "performers": [
-    {% for speaker in include.event.speakers %}
-    {
-      "@type": "Person",
-      "name": "{{ speaker.name }}",
-      "description": "{{ speaker.description }}",
-      "url": "{{ speaker.url }}",
-      "image": "{{ site.url }}{{ speaker.image }}"
-    }{% if forloop.last != true %},{% endif; %}
-    {% endfor; %}
-  ],
-  {% endif; %}
-  "sponsor": {
-    "@type": "Organization",
-    "name": "TrackJS",
-    "url": "https://trackjs.com",
-    "image": "{{ site.url }}/assets/images/sponsors/trackjs.png"
-  },
-  "eventStatus": "EventScheduled"
-}
-
 </script>

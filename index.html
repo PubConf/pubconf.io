@@ -69,73 +69,81 @@ title: PubConf - The Software Variety Show and Afterparty
     "https://twitter.com/{{ site.twitter_username }}",
     "https://plus.google.com/{{ site.googleplus_username }}"
   ],
-  "email": "{{ site.email }}",
-  "events": [
-    {% assign currentEvents = (site.data.events | sort:"startTime" %}
-    {% for event in currentEvents %}
-    {% if event.future %}
-    {
-      "@type": "Event",
-      "name": "{{ event.name }}",
-      "description": "{{ event.description }}",
-      "url": "{{ site.url }}{{ event.url }}",
-      "image": "{{ site.url }}{{ event.image }}",
-      "doorTime": "{{ event.doorTime }}",
-      "startDate": "{{ event.startTime }}",
-      "endDate": "{{ event.endTime }}",
-      {% if event.location %}
-      "location": {
-        "@type": "Place",
-        "name": "{{ event.location.name }}",
-        "sameAs": "{{ event.location.url }}",
-        "address": "{{ event.location.address }}"
-      },
-      {% else %}
-      "location": {
-        "@type": "Place",
-        "name": "{{ event.city }}",
-        "address": "{{ event.city }}"
-      },
-      {% endif; %}
-      {% if event.tickets %}
-      "offers": [{
-        "@type": "Offer",
-        "name": "Ticket",
-        {% if event.status == "preorder" %}
-        "availability": "PreOrder",
-        {% elsif event.status == "onsale" %}
-        "availability": "InStock",
-        {% elsif event.status == "soldout" %}
-        "availability": "SoldOut",
-        {% endif; %}
-        "priceCurrency": "{{ event.tickets.currency }}",
-        "price": "{{ event.tickets.price }}",
-        "url": "{{ event.tickets.url }}"
-      }],
-      {% endif; %}
-      {% if event.speakers %}
-      "performers": [
-        {% for speaker in event.speakers %}
-        {
-          "@type": "Person",
-          "name": "{{ speaker.name }}",
-          "description": "{{ speaker.description }}",
-          "url": "{{ speaker.url }}",
-          "image": "{{ site.url }}{{ speaker.image }}"
-        }{% if forloop.last != true %},{% endif; %}
-        {% endfor; %}
-      ],
-      {% endif; %}
-      "sponsor": {
-        "@type": "Organization",
-        "name": "TrackJS",
-        "url": "https://trackjs.com",
-        "image": "{{ site.url }}/assets/images/sponsors/trackjs.png"
-      },
-      "eventStatus": "EventScheduled"
-    }{% if forloop.last != true %},{% endif; %}
-    {% endif; %}
-    {% endfor; %}
-  ]
+  "email": "{{ site.email }}"
 }
 </script>
+{% assign currentEvents = (site.data.events | sort:"startTime" %}
+{% for event in currentEvents %}
+{% if event.future %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Event",
+  "name": "{{ include.event.name }}",
+  "description": "{{ include.event.description }}",
+  "url": "{{ site.url }}{{ include.event.url }}",
+  "image": "{{ site.url }}{{ include.event.image }}",
+  "doorTime": "{{ include.event.doorTime }}",
+  "startDate": "{{ include.event.startTime }}",
+  "endDate": "{{ include.event.endTime }}",
+  "organizer": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.email }}"
+  },
+  {% if include.event.location %}
+  "location": {
+    "@type": "Place",
+    "name": "{{ include.event.location.name }}",
+    "sameAs": "{{ include.event.location.url }}",
+    "address": "{{ include.event.location.address }}"
+  },
+  {% else %}
+  "location": {
+    "@type": "Place",
+    "name": "{{ include.event.city }}",
+    "address": "{{ include.event.city }}"
+  },
+  {% endif; %}
+  {% if include.event.tickets %}
+  "offers": [{
+    "@type": "Offer",
+    "name": "Ticket",
+    {% if include.event.status == "preorder" %}
+    "availability": "PreOrder",
+    {% elsif include.event.status == "onsale" %}
+    "availability": "InStock",
+    {% elsif include.event.status == "soldout" %}
+    "availability": "SoldOut",
+    {% endif; %}
+    "priceCurrency": "{{ include.event.tickets.currency }}",
+    "price": "{{ include.event.tickets.price }}",
+    "url": "{{ include.event.tickets.url }}"
+  }],
+  {% endif; %}
+  {% if include.event.speakers %}
+  "performers": [
+    {% for speaker in include.event.speakers %}
+    {
+      "@type": "Person",
+      "name": "{{ speaker.name }}",
+      "description": "{{ speaker.description }}",
+      "url": "{{ speaker.url }}",
+      "image": "{{ site.url }}{{ speaker.image }}"
+    }{% if forloop.last != true %},{% endif; %}
+    {% endfor; %}
+  ],
+  {% endif; %}
+  "sponsor": {
+    "@type": "Organization",
+    "name": "TrackJS",
+    "url": "https://trackjs.com",
+    "image": "{{ site.url }}/assets/images/sponsors/trackjs.png"
+  },
+  "eventStatus": "EventScheduled"
+}
+</script>
+{% endif; %}
+{% endfor; %}
