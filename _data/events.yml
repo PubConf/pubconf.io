@@ -602,7 +602,7 @@
     url: http://www.nomadpub.com/
     image: /assets/images/nomadworldpub.jpg
 
-  cfp: true
+  cfp: false
   speakers:
     - name: Andrew Murray
       url: https://twitter.com/asketchyfish
@@ -621,6 +621,12 @@
       title: I Got Popular (Oops)
       description: Aspiring Aspirational Figure
       image: /assets/images/speakers/blemon.jpg
+
+    - name: Dan Lew
+      url: https://twitter.com/danlew42
+      title: Hostile Design Patterns
+      description: Universal Philosopher of Absolute Reality
+      image: /assets/images/speakers/danlew.jpg
 
     - name: Donnie Berkholz
       url: https://twitter.com/dberkholz
@@ -646,15 +652,9 @@
       description:
       image: /assets/images/speakers/johnsheehan.jpeg
 
-    - name: Maggie Pint
-      url: https://twitter.com/maggiepint
-      title:
-      description:
-      image: /assets/images/speakers/maggiepint.jpg
-
-    - name: Joggernaughts
+    - name: Joggernauts
       url: http://joggernauts.tumblr.com/
-      title: Joggernaughts
+      title: Joggernauts
       description: An interstellar party platformer for 2-4 friends by Space Mace.
       image: /assets/images/speakers/joggernaughts.png
 
@@ -676,6 +676,10 @@
     - name: Leadpages
       url: https://www.leadpages.net
       image: /assets/images/sponsors/leadpages.png
+
+    - name: Super Go Faster
+      url: http://supergofaster.com/
+      image: /assets/images/sponsors/supergofaster.png
 
 - id: Oslo-2017
   name: PubConf Oslo
