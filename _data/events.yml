@@ -658,6 +658,12 @@
       description: An interstellar party platformer for 2-4 friends by Space Mace.
       image: /assets/images/speakers/joggernaughts.png
 
+    - name: Marc Grabanski
+      url: https://twitter.com/1Marc
+      title: Web Development is Easy
+      description: I wrote jQueryUI Datepicker
+      image: /assets/images/speakers/marcgrabanski.jpg
+
   music:
     name: Ghost House Running
     title: Maybe you shouldn't be running in the freaking ghost house.
