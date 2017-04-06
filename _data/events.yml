@@ -687,6 +687,10 @@
       url: http://supergofaster.com/
       image: /assets/images/sponsors/supergofaster.png
 
+    - name: NDC Conferences
+      url: http://ndcconferences.com/
+      image: /assets/images/sponsors/ndc.png
+
 - id: Oslo-2017
   name: PubConf Oslo
   description: "PubConf moving to Friday Night after NDCOslo. Join us and some amazing developers doing amusing things at the pub."
@@ -707,11 +711,11 @@
   #   currency: NOK
   #   url:
 
-  # location:
-  #   name: Nomad World Pub
-  #   address: 501 Cedar Ave S Minneapolis, MN 55454
-  #   url: http://www.nomadpub.com/
-  #   image: /assets/images/nomadworldpub.jpg
+  location:
+    name: The Scotsman
+    address: Karl Johans Gate 17 - 0159 Oslo Norway
+    url: http://scotsman.no/
+    image: /assets/images/thescotsman.jpg
 
   cfp: true
   speakers:
