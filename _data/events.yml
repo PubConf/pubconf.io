@@ -646,12 +646,6 @@
       description: Professional Oversimplifier
       image: /assets/images/speakers/jakegood.jpeg
 
-    - name: John Sheehan
-      url: https://twitter.com/johnsheehan
-      title:
-      description:
-      image: /assets/images/speakers/johnsheehan.jpeg
-
     - name: Joggernauts
       url: http://joggernauts.tumblr.com/
       title: Joggernauts
@@ -686,6 +680,10 @@
     - name: Super Go Faster
       url: http://supergofaster.com/
       image: /assets/images/sponsors/supergofaster.png
+
+    - name: Runscope
+      url: https://www.runscope.com/
+      image: /assets/images/sponsors/runscope.png
 
     - name: NDC Conferences
       url: http://ndcconferences.com/
