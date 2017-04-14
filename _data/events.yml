@@ -717,11 +717,23 @@
 
   cfp: true
   speakers:
-    # - name: Maggie Pint
-    #   url: https://twitter.com/maggiepint
-    #   title:
-    #   description:
-    #   image: /assets/images/speakers/maggiepint.jpg
+    # - name: Damian Brady
+    #   url: https://twitter.com/damovisa
+    #   title: How to Code Like an Asshole
+    #   description: An Aussie dev living in Canada. Sorry Mate.
+    #   image: /assets/images/speakers/damianbrady.jpg
+    #
+    # - name: Lars Klint
+    #   url: https://twitter.com/larsklint
+    #   title: The Rise of Windows Phone: A Satire Variety Show
+    #   description: Retired Storm Trooper
+    #   image: /assets/images/speakers/larsklint.jpg
+    #
+    # - name: Lyndsey Padget
+    #   url: https://twitter.com/LyndseyPadget
+    #   title: Calibrating Your Fuckometer
+    #   description: Token Female
+    #   image: /assets/images/speakers/lyndseypadget.jpg
 
   music:
     name: Dylan Beattie
