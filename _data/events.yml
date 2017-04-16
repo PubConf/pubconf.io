@@ -604,6 +604,12 @@
 
   cfp: false
   speakers:
+    - name: Angeliki Beyko
+      url: https://twitter.com/abeyko
+      title: Refactor your Fitness Routine
+      description: Mind Hacker Extraordinaire
+      image: /assets/images/speakers/angelikibeyko.jpg
+
     - name: Andrew Murray
       url: https://twitter.com/asketchyfish
       title: I Told You There Was a 20% Chance of Rain!
