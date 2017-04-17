@@ -740,6 +740,12 @@
     #   title: Calibrating Your Fuckometer
     #   description: Token Female
     #   image: /assets/images/speakers/lyndseypadget.jpg
+    #
+    # - name: Troy Hunt
+    #   url: http://troyhunt.com
+    #   title: Make Cyber Great Again
+    #   description: Rather Stupid Security Researcher.
+    #   image: /assets/images/speakers/troy.jpg
 
   music:
     name: Dylan Beattie
