@@ -725,13 +725,19 @@
   speakers:
     # - name: Damian Brady
     #   url: https://twitter.com/damovisa
-    #   title: How to Code Like an Asshole
+    #   title: "How to Code Like an Asshole"
     #   description: An Aussie dev living in Canada. Sorry Mate.
     #   image: /assets/images/speakers/damianbrady.jpg
+    # 
+    # - name: Edith Harbaugh
+    #   url: https://twitter.com/edith_h
+    #   title: "How to Fail at Software & Running 100 Miles"
+    #   description: Failed Runner
+    #   image: /assets/images/speakers/edithharbaugh.jpg
     #
     # - name: Lars Klint
     #   url: https://twitter.com/larsklint
-    #   title: The Rise of Windows Phone: A Satire Variety Show
+    #   title: "The Rise of Windows Phone: A Satire Variety Show"
     #   description: Retired Storm Trooper
     #   image: /assets/images/speakers/larsklint.jpg
     #
@@ -740,6 +746,12 @@
     #   title: Calibrating Your Fuckometer
     #   description: Token Female
     #   image: /assets/images/speakers/lyndseypadget.jpg
+    #
+    # - name: Mark Rendle
+    #   url: https://blog.markrendle.net/
+    #   title: "Dante's InVerNo: .NET Version Numbers Explained"
+    #   description: Keeper of the Profane Keywords
+    #   image: /assets/images/speakers/mark.jpg
     #
     # - name: Troy Hunt
     #   url: http://troyhunt.com
