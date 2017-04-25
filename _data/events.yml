@@ -19,18 +19,22 @@
   sponsors:
 
     - name: NDC London
+      level: topshelf
       url: http://ndc-london.com/
       imageUrl: /assets/images/sponsors/ndc.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       imageUrl: /assets/images/sponsors/trackjs.png
 
     - name: Zopa
+      level: topshelf
       url: https://www.zopa.com/
       imageUrl: /assets/images/sponsors/zopa.png
 
     - name: Red Gate
+      level: topshelf
       url: https://www.red-gate.com/
       imageUrl: /assets/images/sponsors/redgate.png
 
@@ -167,10 +171,12 @@
   sponsors:
 
     - name: NDC Oslo
+      level: topshelf
       url: http://ndcoslo.com/
       imageUrl: /assets/images/sponsors/ndcoslo-white.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       imageUrl: /assets/images/sponsors/trackjs.png
 
@@ -282,18 +288,22 @@
   sponsors:
 
     - name: NDC Sydney
+      level: topshelf
       url: http://ndcsydney.com/
       imageUrl: /assets/images/sponsors/ndcsydney-white.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       imageUrl: /assets/images/sponsors/trackjs.png
 
     - name: Just Digital People
+      level: topshelf
       url: http://www.justdigitalpeople.com.au/
       imageUrl: /assets/images/sponsors/justdigitalpeople.png
 
     - name: Pluralsight
+      level: topshelf
       url: https://www.pluralsight.com/
       imageUrl: /assets/images/sponsors/pluralsight.png
 
@@ -553,26 +563,32 @@
 
   sponsors:
     - name: NDC Conferences
+      level: topshelf
       url: http://ndcconferences.com/
       image: /assets/images/sponsors/ndc.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
     - name: Pluralsight
+      level: topshelf
       url: https://www.pluralsight.com/
       image: /assets/images/sponsors/pluralsight.png
 
     - name: Titania
+      level: topshelf
       url: https://www.titania.com/
       image: /assets/images/sponsors/titania.png
 
     - name: Equal Experts
+      level: topshelf
       url: https://www.equalexperts.com/
       image: /assets/images/sponsors/equalexperts.png
 
     - name: Katacoda
+      level: topshelf
       url: https://www.katacoda.com/
       image: /assets/images/sponsors/katacoda.png
 
@@ -580,8 +596,8 @@
   name: PubConf Minneapolis
   description: "Join us for the Minneapolis debut of PubConf at the Nomad World Pub on April 21. Amazing developers doing entertaining things-at the bar."
   city: minneapolis
-  future: true
-  status: onsale # preorder, onsale, soldout, archive
+  future: false
+  status: archive # preorder, onsale, soldout, archive
   url: /events/2017/minneapolis.html
   image: /assets/images/2017-minneapolis.jpg
 
@@ -672,26 +688,32 @@
 
   sponsors:
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
     - name: OrderCloud
+      level: topshelf
       url: https://ordercloud.io/
       image: /assets/images/sponsors/ordercloud.png
 
     - name: Leadpages
+      level: topshelf
       url: https://www.leadpages.net
       image: /assets/images/sponsors/leadpages.png
 
     - name: Super Go Faster
+      level: topshelf
       url: http://supergofaster.com/
       image: /assets/images/sponsors/supergofaster.png
 
     - name: Runscope
+      level: topshelf
       url: https://www.runscope.com/
       image: /assets/images/sponsors/runscope.png
 
     - name: NDC Conferences
+      level: topshelf
       url: http://ndcconferences.com/
       image: /assets/images/sponsors/ndc.png
 
@@ -710,10 +732,10 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # tickets:
-  #   price: 20
-  #   currency: NOK
-  #   url:
+  tickets:
+    price: 250
+    currency: kr
+    url:
 
   location:
     name: The Scotsman
@@ -721,43 +743,67 @@
     url: http://scotsman.no/
     image: /assets/images/thescotsman.jpg
 
-  cfp: true
+  cfp: false
   speakers:
-    # - name: Damian Brady
-    #   url: https://twitter.com/damovisa
-    #   title: "How to Code Like an Asshole"
-    #   description: An Aussie dev living in Canada. Sorry Mate.
-    #   image: /assets/images/speakers/damianbrady.jpg
-    # 
-    # - name: Edith Harbaugh
-    #   url: https://twitter.com/edith_h
-    #   title: "How to Fail at Software & Running 100 Miles"
-    #   description: Failed Runner
-    #   image: /assets/images/speakers/edithharbaugh.jpg
-    #
-    # - name: Lars Klint
-    #   url: https://twitter.com/larsklint
-    #   title: "The Rise of Windows Phone: A Satire Variety Show"
-    #   description: Retired Storm Trooper
-    #   image: /assets/images/speakers/larsklint.jpg
-    #
-    # - name: Lyndsey Padget
-    #   url: https://twitter.com/LyndseyPadget
-    #   title: Calibrating Your Fuckometer
-    #   description: Token Female
-    #   image: /assets/images/speakers/lyndseypadget.jpg
-    #
-    # - name: Mark Rendle
-    #   url: https://blog.markrendle.net/
-    #   title: "Dante's InVerNo: .NET Version Numbers Explained"
-    #   description: Keeper of the Profane Keywords
-    #   image: /assets/images/speakers/mark.jpg
-    #
-    # - name: Troy Hunt
-    #   url: http://troyhunt.com
-    #   title: Make Cyber Great Again
-    #   description: Rather Stupid Security Researcher.
-    #   image: /assets/images/speakers/troy.jpg
+    - name: Damian Brady
+      url: https://twitter.com/damovisa
+      title: "How to Code Like an Asshole"
+      description: An Aussie dev living in Canada. Sorry Mate.
+      image: /assets/images/speakers/damianbrady.jpg
+
+    - name: Edith Harbaugh
+      url: https://twitter.com/edith_h
+      title: "How to Fail at Software & Running 100 Miles"
+      description: Failed Runner
+      image: /assets/images/speakers/edithharbaugh.jpg
+
+    - name: Eric Brandes
+      url: https://twitter.com/brandeseric
+      title: One Weird Trick to Avoid Losing Money in the Cloud
+      description: Professional Typist
+      image: /assets/images/speakers/ericbrandes.jpg
+
+    - name: Jessica Kerr
+      url: https://twitter.com/jessitron
+      title:
+      description:
+      image: /assets/images/logo.png
+
+    - name: Kylie Hunt
+      url: http://www.kyliehunt.com
+      title: "From Crappy to Happy: Have You Turned It Off and On Again?"
+      description: Workplace Happiness Guru
+      image: /assets/images/speakers/kylie.jpg
+
+    - name: Lars Klint
+      url: https://twitter.com/larsklint
+      title: "The Rise of Windows Phone: A Satire Variety Show"
+      description: Retired Storm Trooper
+      image: /assets/images/speakers/larsklint.jpg
+
+    - name: Lyndsey Padget
+      url: https://twitter.com/LyndseyPadget
+      title: Calibrating Your Fuckometer
+      description: Token Female
+      image: /assets/images/speakers/lyndseypadget.jpg
+
+    - name: Mark Rendle
+      url: https://blog.markrendle.net/
+      title: "Dante's InVerNo: .NET Version Numbers Explained"
+      description: Keeper of the Profane Keywords
+      image: /assets/images/speakers/mark.jpg
+
+    - name: Niall Merrigan
+      url: http://www.certsandprogs.com
+      title:
+      description:
+      image: /assets/images/speakers/niall.jpg
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Make Cyber Great Again
+      description: Rather Stupid Security Researcher.
+      image: /assets/images/speakers/troy.jpg
 
   music:
     name: Dylan Beattie
@@ -767,10 +813,12 @@
 
   sponsors:
     - name: NDC Conferences
+      level: topshelf
       url: http://ndcconferences.com/
       image: /assets/images/sponsors/ndc.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
@@ -816,6 +864,7 @@
 
   sponsors:
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
@@ -861,9 +910,11 @@
 
   sponsors:
     - name: NDC Conferences
+      level: topshelf
       url: http://ndcconferences.com/
       image: /assets/images/sponsors/ndc.png
 
     - name: TrackJS
+      level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png

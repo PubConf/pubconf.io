@@ -119,7 +119,7 @@
   <section class="section-decor section-about">
     <div class="wrapper">
       <div class="fade-in text-center text-lg">
-        Rapid-fire Ignite talks, musical acts, and comedy stunts from amazing developers in an intimate atmosphere.
+        Rapid-fire Ignite talks, musical acts, and comedy stunts from amazing developers in a relaxed pub atmosphere.
         <br><br>
         You don't want to miss it.
       </div>
@@ -196,9 +196,9 @@
   <section class="section-decor section-karaoke">
     <div class="wrapper">
       <div class="fade-in text-center">
-        <h2>Ignite Battle</h2>
+        <h2>Ignite Championship</h2>
         <p class="text-lg">
-          The ultimate speaker test: take the stage at PubConf and bullshit your way through a blind deck to the crowd against an opponent.
+          The ultimate speaker competition: the best speakers of the night compete for the PubConf Trophy by bullshitting their way through a never-before-seen Ignite presentation.
         </p>
       </div>
     </div>
@@ -240,7 +240,7 @@
     <div class="wrapper">
       <div class="section-head">
         <h2 id="tickets">Tickets</h2>
-        <div class="text-lg">You can attend PubConf for the cost of a couple beers where you'll enjoy a sponsored bar, pub-fare food, and amazingly funny developer talks. <br /><br /><strong>Space is limited, don't wait!</strong></div>
+        <div class="text-lg">You can attend PubConf for the cost of a few beers where you'll enjoy a sponsored bar, pub-fare food, and amazingly funny developers. <br /><br /><strong>Space is limited, don't wait!</strong></div>
       </div>
 
       <div class="ticket-list">
@@ -294,15 +294,35 @@
         <div class="text-lg">PubConf is possible thanks to the generosity and expertise of our Sponsors. Please visit them and find out more about their awesomeness.</div>
       </div>
 
-      <ul class="sponsor-list">
-      {% for sponsor in include.event.sponsors %}
-        <li class="sponsor-item">
-          <a href="{{ sponsor.url }}" target="_blank">
-            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
-          </a>
-        </li>
-      {% endfor; %}
-      </ul>
+      <div class="clearfix">
+        <h3 class="text-center">Top-Shelf Sponsors</h3>
+        <ul class="sponsor-list">
+        {% for sponsor in include.event.sponsors %}
+        {% if sponsor.level == 'topshelf' %}
+          <li class="sponsor-item">
+            <a href="{{ sponsor.url }}" target="_blank">
+              <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
+            </a>
+          </li>
+        {% endif; %}
+        {% endfor; %}
+        </ul>
+      </div>
+
+      <div class="clearfix" style="margin:20px 0;">
+        <h3 class="text-center">Draft Sponsors</h3>
+        <ul class="sponsor-list">
+        {% for sponsor in include.event.sponsors %}
+        {% if sponsor.level == 'draft' %}
+          <li class="sponsor-item draft">
+            <a href="{{ sponsor.url }}" target="_blank">
+              <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
+            </a>
+          </li>
+        {% endif; %}
+        {% endfor; %}
+        </ul>
+      </div>
 
     </div>
     <div class="wrapper">
