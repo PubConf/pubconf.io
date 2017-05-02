@@ -795,8 +795,8 @@
 
     - name: Niall Merrigan
       url: http://www.certsandprogs.com
-      title:
-      description:
+      title: "When Words Aren’t Enough"
+      description: "Featured in Damian’s Talk"
       image: /assets/images/speakers/niall.jpg
 
     - name: Troy Hunt
@@ -821,6 +821,11 @@
       level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
+
+    - name: BEKK
+      level: draft
+      url: https://www.bekk.no/
+      image: /assets/images/sponsors/bekk.png
 
 - id: KansasCity-2017
   name: PubConf Kansas City
