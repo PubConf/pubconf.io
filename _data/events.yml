@@ -837,6 +837,11 @@
       url: https://www.episerver.no/
       image: /assets/images/sponsors/episerver.png
 
+    - name: Wintellect
+      level: draft
+      url: https://www.wintellectnow.com/
+      image: /assets/images/sponsors/wintellect.png
+
 - id: KansasCity-2017
   name: PubConf Kansas City
   description: "PubConf debuts in Kansas City with KCDC on Friday August 4! Join us and some amazing developers doing amusing things at the pub."
