@@ -722,7 +722,7 @@
   description: "PubConf moving to Friday Night after NDCOslo. Join us and some amazing developers doing amusing things at the pub."
   city: oslo
   future: true
-  status: preorder # preorder, onsale, soldout, archive
+  status: onsale # preorder, onsale, soldout, archive
   url: /events/2017/oslo.html
   image: /assets/images/2017-oslo.jpg
 
@@ -735,7 +735,7 @@
   tickets:
     price: 250
     currency: kr
-    url:
+    url: https://www.eventbrite.co.uk/e/pubconf-ndc-oslo-2017-tickets-34715026579
 
   location:
     name: The Scotsman
@@ -826,6 +826,16 @@
       level: draft
       url: https://www.bekk.no/
       image: /assets/images/sponsors/bekk.png
+
+    - name: Atomist
+      level: draft
+      url: https://www.atomist.com/
+      image: /assets/images/sponsors/atomist.png
+
+    - name: Episerver
+      level: draft
+      url: https://www.episerver.no/
+      image: /assets/images/sponsors/episerver.png
 
 - id: KansasCity-2017
   name: PubConf Kansas City
