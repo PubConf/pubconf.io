@@ -782,7 +782,7 @@
       image: /assets/images/speakers/larsklint.jpg
 
     - name: Lyndsey Padget
-      url: https://twitter.com/LyndseyPadget
+      url: http://www.lyndseypadget.com
       title: Calibrating Your Fuckometer
       description: Token Female
       image: /assets/images/speakers/lyndseypadget.jpg
@@ -839,8 +839,13 @@
 
     - name: Wintellect
       level: draft
-      url: https://www.wintellectnow.com/
+      url: https://www.wintellect.com/
       image: /assets/images/sponsors/wintellect.png
+
+    - name: Fuse
+      level: draft
+      url: https://www.fusetools.com/
+      image: /assets/images/sponsors/fusetools.png
 
 - id: KansasCity-2017
   name: PubConf Kansas City
