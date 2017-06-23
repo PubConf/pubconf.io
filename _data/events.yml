@@ -721,8 +721,8 @@
   name: PubConf Oslo
   description: "PubConf moving to Friday Night after NDCOslo. Join us and some amazing developers doing amusing things at the pub."
   city: oslo
-  future: true
-  status: onsale # preorder, onsale, soldout, archive
+  future: false
+  status: archive # preorder, onsale, soldout, archive
   url: /events/2017/oslo.html
   image: /assets/images/2017-oslo.jpg
 
@@ -862,24 +862,78 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # tickets:
-  #   price: 10
-  #   currency: USD
-  #   url:
+  tickets:
+    price: 30
+    currency: USD
+    url:
 
-  # location:
-  #   name: Nomad World Pub
-  #   address: 501 Cedar Ave S Minneapolis, MN 55454
-  #   url: http://www.nomadpub.com/
-  #   image: /assets/images/nomadworldpub.jpg
+  location:
+    name: PBR Big Sky
+    address: 111 E 13th St, Kansas City, MO 64106
+    url: http://www.pbrbigskykc.com/
+    image: /assets/images/pbrbigsky.png
 
-  cfp: true
+  cfp: false
   speakers:
-    # - name: Maggie Pint
-    #   url: https://twitter.com/maggiepint
-    #   title:
-    #   description:
-    #   image: /assets/images/speakers/maggiepint.jpg
+    - name: Christina Aldan
+      url: https://twitter.com/luckygirliegirl
+      title: Coming Soon
+      description:
+      image: /assets/images/speakers/anonymous.png
+
+    - name: Damian Brady
+      url: https://twitter.com/damovisa
+      title: "How to Code Like an Asshole"
+      description: An Aussie dev living in Canada. Sorry Mate.
+      image: /assets/images/speakers/damianbrady.jpg
+
+    - name: David Neal
+      url: https://twitter.com/reverentgeek
+      title: "Punching Bears and Other Questionable Advice"
+      description: Bearded Baconaholic
+      image: /assets/images/speakers/davidneal.jpg
+
+    - name: Eric Brandes
+      url: https://twitter.com/brandeseric
+      title: One Weird Trick to Avoid Losing Money in the Cloud
+      description: Professional Typist
+      image: /assets/images/speakers/ericbrandes.jpg
+
+    - name: Heather Downing
+      url: https://twitter.com/quorralyne
+      title: "Talk Dirty to Me"
+      description:
+      image: /assets/images/speakers/anonymous.png
+
+    - name: Jimmy Bogard
+      url: https://twitter.com/jbogard
+      title: Public Toilemetry
+      description: Untappd Architect
+      image: /assets/images/speakers/jimmybogard.jpg
+
+    - name: Jonathan Mills
+      url: http://jonathanfmills.com
+      title: JavaScript, The Weird Parts?
+      description: Still confused by JavaScript
+      image: /assets/images/speakers/jonmills.jpg
+
+    - name: Lyndsey Padget
+      url: http://www.lyndseypadget.com
+      title: Calibrating Your Fuckometer
+      description: Token Female
+      image: /assets/images/speakers/lyndseypadget.jpg
+
+    - name: Nik Molnar
+      url: http://nikcodes.com
+      title: Grokking Gastronomy
+      description: Bit Butcher
+      image: /assets/images/speakers/nik.jpg
+
+    - name: Shawn Wildermuth
+      url: http://wildermuth.com
+      title: "JavaScript: It Used To Be Bad…Now It’s Just Awful"
+      description: "Director of Self-Importance at Wildermuth.com"
+      image: /assets/images/speakers/shawnwildermuth.gif
 
   # music:
   #   name: Dylan Beattie
@@ -888,6 +942,11 @@
   #   image: /assets/images/speakers/dylan.jpg
 
   sponsors:
+    - name: KCDC
+      level: topshelf
+      url: http://www.kcdc.info/
+      image: /assets/images/sponsors/kcdc.png
+
     - name: TrackJS
       level: topshelf
       url: https://trackjs.com/
