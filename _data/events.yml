@@ -877,9 +877,9 @@
   speakers:
     - name: Christina Aldan
       url: https://twitter.com/luckygirliegirl
-      title: Coming Soon
+      title: "Douchbag Communication"
       description:
-      image: /assets/images/speakers/anonymous.png
+      image: /assets/images/speakers/christinaaldan.jpg
 
     - name: Damian Brady
       url: https://twitter.com/damovisa
@@ -902,14 +902,14 @@
     - name: Heather Downing
       url: https://twitter.com/quorralyne
       title: "Talk Dirty to Me"
-      description:
-      image: /assets/images/speakers/anonymous.png
+      description: Secretary of Offense
+      image: /assets/images/speakers/heatherdowning.jpg
 
     - name: Jimmy Bogard
       url: https://twitter.com/jbogard
       title: Public Toilemetry
       description: Untappd Architect
-      image: /assets/images/speakers/jimmybogard.jpg
+      image: /assets/images/speakers/jimmybogard.JPG
 
     - name: Jonathan Mills
       url: http://jonathanfmills.com
@@ -972,19 +972,73 @@
   #   currency: USD
   #   url:
 
-  # location:
-  #   name: Nomad World Pub
-  #   address: 501 Cedar Ave S Minneapolis, MN 55454
-  #   url: http://www.nomadpub.com/
-  #   image: /assets/images/nomadworldpub.jpg
+  location:
+    name: Hotel CBD
+    address: Corner of King and York Streets, Sydney, New South Wales, Australia
+    url: https://merivale.com.au/cbdbar
+    image: /assets/images/cbdmerivale.jpg
 
-  cfp: true
+  cfp: false
   speakers:
-    # - name: Maggie Pint
-    #   url: https://twitter.com/maggiepint
-    #   title:
-    #   description:
-    #   image: /assets/images/speakers/maggiepint.jpg
+    - name: Aaron Powell
+      url: https://twitter.com/slace
+      title: "Reimplementing Integers for Fun and Profit"
+      description: A lot funnier in small doses.
+      image: /assets/images/speakers/aaronpowell.jpg
+
+    - name: Jake Ginnivan
+      url: https://twitter.com/JakeGinnivan
+      title: Coming Soon
+      description:
+      image: /assets/images/speakers/anonymous.png
+
+    - name: Jimmy Bogard
+      url: https://twitter.com/jbogard
+      title: Public Toilemetry
+      description: Untappd Architect
+      image: /assets/images/speakers/jimmybogard.JPG
+
+    - name: Kylie Hunt
+      url: http://www.kyliehunt.com
+      title: "From Crappy to Happy: Have You Turned It Off and On Again?"
+      description: Workplace Happiness Guru
+      image: /assets/images/speakers/kylie.jpg
+
+    - name: Laura Bell
+      url: https://twitter.com/lady_nerd
+      title: Coming Soon
+      description:
+      image: /assets/images/speakers/anonymous.png
+
+    - name: Lars Klint
+      url: https://twitter.com/larsklint
+      title: "The Rise of Windows Phone: A Satire Variety Show"
+      description: Retired Storm Trooper
+      image: /assets/images/speakers/larsklint.jpg
+
+    - name: Mark Rendle
+      url: https://blog.markrendle.net/
+      title: "Dante's InVerNo: .NET Version Numbers Explained"
+      description: Keeper of the Profane Keywords
+      image: /assets/images/speakers/mark.jpg
+
+    - name: Scott Allen
+      url: https://twitter.com/stephenhaunts
+      title: "Cloud Pranks: Placing Your Teammates Into a State of Bewildered Rage"
+      description: The Profit of Pluralsight
+      image: /assets/images/speakers/scottallen.jpg
+
+    - name: Stephen Haunts
+      url: https://twitter.com/stephenhaunts
+      title: "How to Lead Like an Utter Bastard!"
+      description: Steve the Demotivator
+      image: /assets/images/speakers/stephenhaunts.jpg
+
+    - name: Troy Hunt
+      url: http://troyhunt.com
+      title: Make Cyber Great Again
+      description: Rather Stupid Security Researcher.
+      image: /assets/images/speakers/troy.jpg
 
   # music:
   #   name: Dylan Beattie
