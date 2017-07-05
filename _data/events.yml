@@ -852,7 +852,7 @@
   description: "PubConf debuts in Kansas City with KCDC on Friday August 4! Join us and some amazing developers doing amusing things at the pub."
   city: kansascity
   future: true
-  status: preorder # preorder, onsale, soldout, archive
+  status: onsale # preorder, onsale, soldout, archive
   url: /events/2017/kansascity.html
   image: /assets/images/2017-kc.jpg
 
@@ -865,7 +865,7 @@
   tickets:
     price: 30
     currency: USD
-    url:
+    url: https://www.eventbrite.sg/e/pubconf-after-kcdc-tickets-35603244262
 
   location:
     name: PBR Big Sky
