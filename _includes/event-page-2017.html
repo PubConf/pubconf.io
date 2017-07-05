@@ -63,7 +63,7 @@
             </div>
           </div>
           {% elsif include.event.status == "onsale" %}
-          <a class="button button-hero tickets" href="{{ include.event.tickets.url }}">
+          <a class="button button-hero" href="{{ include.event.tickets.url }}" data-click-event="tickets">
             Get Tickets Now
           </a>
           <div class="hero-info">
@@ -71,14 +71,14 @@
             Legal Drinking Age Required.
           </div>
           {% elsif include.event.status == "soldout" %}
-          <a class="button button-hero tickets" href="{{ include.event.tickets.url }}">
+          <a class="button button-hero" href="{{ include.event.tickets.url }}" data-click-event="tickets">
             Join Waitlist
           </a>
           <div class="hero-info">
             Sorry! General tickets have sold out. Join the ticket waitlist.
           </div>
           {% elsif include.event.status == "archive" %}
-          <button type="button" class="button button-hero button-alt js-waitlist-toggle">
+          <button type="button" class="button button-hero button-alt js-waitlist-toggle" data-click-event="tickets">
             Signup for Info
           </button>
           <div class="hero-info">
@@ -175,7 +175,7 @@
       </ul>
       {% endif; %}
 
-      <div class="section-head">
+      <div class="section-head" data-visible-event="speakers">
         <h2 id="speakers">Host</h2>
         <div class="text-lg">Introducing our guests, and making some jokes.</div>
       </div>
@@ -250,7 +250,7 @@
           <h3>Join Waitlist</h3>
           <div>Tickets are not on sale yet. Join the waitlist, and you'll be the first to know!</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <button type="button" class="button button-large button-alt js-waitlist-toggle">
+            <button type="button" class="button button-large button-alt js-waitlist-toggle" data-click-event="tickets">
               Join Waitlist
             </button>
           </div>
@@ -261,7 +261,7 @@
           <h3>General Tickets</h3>
           <div>PubConf is open to the public for a small fee to help us keep your hunger fed and thirst quenched.</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <a class="button button-large tickets" href="{{ include.event.tickets.url }}">
+            <a class="button button-large" href="{{ include.event.tickets.url }}" data-click-event="tickets">
               Get Tickets Now
             </a>
           </div>
@@ -272,7 +272,7 @@
           <h3>Sold Out</h3>
           <div>Sorry! General tickets have sold out. Join the ticket waitlist.</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <a class="button button-large tickets" href="{{ include.event.ticketURL }}">
+            <a class="button button-large" href="{{ include.event.ticketURL }}" data-click-event="tickets">
               Join Waitlist
             </a>
           </div>
@@ -336,47 +336,3 @@
   </section>
 
 </div>
-
-<script>
-  (function() {
-    fbq('track', 'ViewContent', {
-      'content_type': 'event',
-      'content_name': '{{ include.event.city }}'
-    });
-
-    if (!document.querySelector || !window.addEventListener) { return; }
-
-    var ticketLinks = document.querySelectorAll('.tickets');
-    for(var i = 0; i < ticketLinks.length; i++) {
-      ticketLinks[i].addEventListener('click', function() {
-        ga('send', {
-          'hitType': 'event',
-          'eventCategory': 'Tickets',
-          'eventAction': 'ClickOut',
-          'eventLabel': '{{ include.event.city }}'
-        });
-        fbq('track', 'InitiateCheckout', {
-          'content_type': 'event',
-          'content_name': '{{ include.event.city }}'
-        });
-      });
-    }
-
-    var newsletterEl = document.querySelector('.js-newsletter-form');
-    if (newsletterEl) {
-      newsletterEl.addEventListener('submit', function() {
-        ga('send', {
-          'hitType': 'event',
-          'eventCategory': 'Newsletter',
-          'eventAction': 'Subscribe',
-          'eventLabel': '{{ include.event.city }}'
-        });
-        fbq('track', 'AddToWishlist', {
-          'content_type': 'event',
-          'content_name': '{{ include.event.city }}'
-        });
-      });
-    }
-
-  })();
-</script>
