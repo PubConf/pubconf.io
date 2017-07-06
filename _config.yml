@@ -16,6 +16,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pubconf.io" # the base hostname & protocol for your site
 image: "/assets/images/logo.png"
 
+# Generic Google Analytics Property. May be overridden by events.
+UA: "UA-68386201-1"
+
 googleplus_username: +pubconfio
 facebook_username: pubconf
 twitter_username: pubconf
