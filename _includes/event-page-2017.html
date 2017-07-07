@@ -36,32 +36,11 @@
         </div>
         <div class="hero-col hero-col-2 text-center">
           {% if include.event.status == "preorder" %}
-          <button type="button" class="button button-hero button-alt js-waitlist-toggle">
-            Join Waitlist
-          </button>
+          <a class="button button-hero button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
+            Email Me!
+          </a>
           <div class="hero-info">
-            Tickets are not on sale yet. <br />Join the waitlist, and you'll be the first to know!
-          </div>
-          <div class="modal-overlay js-waitlist-wrap">
-            <div class="modal-wrap">
-              <button type="button" class="modal-close js-modal-close">&times;</button>
-              <h2>Join the {{ include.event.title }} Waitlist</h2>
-              <p class="preamble">Be the first to know when tickets are available!</p>
-
-              <!-- http://kb.mailchimp.com/lists/signup-forms/host-your-own-signup-forms -->
-              <form id="js-newsletter-form" method="POST" action="https://pubconf.us11.list-manage.com/subscribe/post">
-                <input type="hidden" name="u" value="33d7399517a3ee3a5e9b679f7">
-                <input type="hidden" name="id" value="05e06dc18c">
-                <input type="hidden" name="EVENT" value="{{ include.event.city }}">
-                <div style="margin: 0 auto 10px;">
-                  <label class="inside-label">
-                    <input type="email" name="EMAIL" placeholder="jane@example.com" required="required"/>
-                    <span>Email</span>
-                  </label>
-                </div>
-                <button type="submit" name="subscribe" class="button button-alt button-large">Join Waitlist</button>
-              </form>
-            </div>
+            Tickets are not on sale yet. <br />But we'll email you when we're ready!
           </div>
           {% elsif include.event.status == "onsale" %}
           <a class="button button-hero" href="{{ include.event.tickets.url }}" data-click-event="tickets">
@@ -79,9 +58,9 @@
             Sorry! General tickets have sold out. Join the ticket waitlist.
           </div>
           {% elsif include.event.status == "archive" %}
-          <button type="button" class="button button-hero button-alt js-waitlist-toggle" data-click-event="tickets">
-            Signup for Info
-          </button>
+          <a class="button button-hero button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
+            Email Me!
+          </a>
           <div class="hero-info">
             This event already happened. Sign up to know the next time we come to your city!
           </div>
@@ -123,6 +102,21 @@
         Rapid-fire Ignite talks, musical acts, and free beer with amazing developers in a relaxed pub atmosphere.
         <br><br>
         You don't want to miss it.
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark section-about">
+    <div class="wrapper">
+      <div class="text-center">
+        <div class=" text-lg">
+          Get email when we announce events, tickets, or tasty drinks.
+          <br /><br />
+        </div>
+        <a type="button" class="button button-large button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
+          <i class="icon icon-mail"></i>
+          Get Email Updates
+        </a>
       </div>
     </div>
   </section>
@@ -236,7 +230,6 @@
     </div>
   </section>
 
-
   <section class="section-light section-tickets">
     <div class="wrapper">
       <div class="section-head">
@@ -249,11 +242,11 @@
         <div class="ticket-item">
           <div class="pull-right text-muted ticket-release"><strong>Preorder!</strong></div>
           <h3>Join Waitlist</h3>
-          <div>Tickets are not on sale yet. Join the waitlist, and you'll be the first to know!</div>
+          <div>Tickets are not on sale yet. But we'll email you as soon as we're ready!</div>
           <div class="text-center text-lg" style="margin: 20px;">
-            <button type="button" class="button button-large button-alt js-waitlist-toggle" data-click-event="tickets">
-              Join Waitlist
-            </button>
+            <a type="button" class="button button-large button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
+              Email Me!
+            </a>
           </div>
         </div>
         {% elsif include.event.status == "onsale" %}
@@ -337,3 +330,74 @@
   </section>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Event",
+  "name": "{{ include.event.name }}",
+  "description": "{{ include.event.description }}",
+  "url": "{{ site.url }}{{ include.event.url }}",
+  "image": "{{ site.url }}{{ include.event.image }}",
+  "doorTime": "{{ include.event.doorTime }}",
+  "startDate": "{{ include.event.startTime }}",
+  "endDate": "{{ include.event.endTime }}",
+  "organizer": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.email }}"
+  },
+  {% if include.event.location %}
+  "location": {
+    "@type": "Place",
+    "name": "{{ include.event.location.name }}",
+    "sameAs": "{{ include.event.location.url }}",
+    "address": "{{ include.event.location.address }}"
+  },
+  {% else %}
+  "location": {
+    "@type": "Place",
+    "name": "{{ include.event.city }}",
+    "address": "{{ include.event.city }}"
+  },
+  {% endif; %}
+  {% if include.event.tickets %}
+  "offers": [{
+    "@type": "Offer",
+    "name": "Ticket",
+    {% if include.event.status == "preorder" %}
+    "availability": "PreOrder",
+    {% elsif include.event.status == "onsale" %}
+    "availability": "InStock",
+    {% elsif include.event.status == "soldout" %}
+    "availability": "SoldOut",
+    {% endif; %}
+    "priceCurrency": "{{ include.event.tickets.currency }}",
+    "price": "{{ include.event.tickets.price }}",
+    "url": "{{ include.event.tickets.url }}"
+  }],
+  {% endif; %}
+  {% if include.event.speakers %}
+  "performers": [
+    {% for speaker in include.event.speakers %}
+    {
+      "@type": "Person",
+      "name": "{{ speaker.name }}",
+      "description": "{{ speaker.description }}",
+      "url": "{{ speaker.url }}",
+      "image": "{{ site.url }}{{ speaker.image }}"
+    }{% if forloop.last != true %},{% endif; %}
+    {% endfor; %}
+  ],
+  {% endif; %}
+  "sponsor": {
+    "@type": "Organization",
+    "name": "TrackJS",
+    "url": "https://trackjs.com",
+    "image": "{{ site.url }}/assets/images/sponsors/trackjs.png"
+  },
+  "eventStatus": "EventScheduled"
+}
+</script>

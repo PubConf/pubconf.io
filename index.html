@@ -23,7 +23,27 @@ title: PubConf - The Software Variety Show and Afterparty
   {% assign nextEvent = (site.data.events | where:"future",true | sort:"startTime" | first) %}
   {% include event-banner.html event=nextEvent %}
 
-  <section class="section-dark section-sponsors" style="margin-top:-30px;">
+  <section class="section-dark section-about" style="margin-top:-30px;">
+    <div class="wrapper">
+      <div class="text-center">
+        <div class=" text-lg">
+          Get email when we announce events, tickets, or tasty drinks.
+          <br /><br />
+        </div>
+        <a type="button" class="button button-large button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
+          <i class="icon icon-mail"></i>
+          Get Email Updates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
+  {% for event in futureEvents offset: 1 %}
+  {% include event-banner.html event=event %}
+  {% endfor; %}
+
+  <section class="section-dark section-sponsors">
     <div class="wrapper">
       <div class="section-head">
         <h2 id="sponsors">Global Sponsor</h2>
@@ -40,22 +60,9 @@ title: PubConf - The Software Variety Show and Afterparty
     </div>
   </section>
 
-  {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
-  {% for event in futureEvents offset: 1 %}
-  {% include event-banner.html event=event %}
-  {% endfor; %}
-
 </div>
 
 <!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.title }}",
-  "url": "{{ site.url }}"
-}
-</script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -79,70 +86,19 @@ title: PubConf - The Software Variety Show and Afterparty
 {
   "@context": "http://schema.org/",
   "@type": "Event",
-  "name": "{{ include.event.name }}",
-  "description": "{{ include.event.description }}",
-  "url": "{{ site.url }}{{ include.event.url }}",
-  "image": "{{ site.url }}{{ include.event.image }}",
-  "doorTime": "{{ include.event.doorTime }}",
-  "startDate": "{{ include.event.startTime }}",
-  "endDate": "{{ include.event.endTime }}",
-  "organizer": {
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "email": "{{ site.email }}"
-  },
-  {% if include.event.location %}
+  "name": "{{ event.name }}",
+  "description": "{{ event.description }}",
+  "url": "{{ site.url }}{{ event.url }}",
+  "image": "{{ site.url }}{{ event.image }}",
+  "doorTime": "{{ event.doorTime }}",
+  "startDate": "{{ event.startTime }}",
+  "endDate": "{{ event.endTime }}",
   "location": {
     "@type": "Place",
-    "name": "{{ include.event.location.name }}",
-    "sameAs": "{{ include.event.location.url }}",
-    "address": "{{ include.event.location.address }}"
+    "name": "{{ event.city }}",
+    "address": "{{ event.city }}"
   },
-  {% else %}
-  "location": {
-    "@type": "Place",
-    "name": "{{ include.event.city }}",
-    "address": "{{ include.event.city }}"
-  },
-  {% endif; %}
-  {% if include.event.tickets %}
-  "offers": [{
-    "@type": "Offer",
-    "name": "Ticket",
-    {% if include.event.status == "preorder" %}
-    "availability": "PreOrder",
-    {% elsif include.event.status == "onsale" %}
-    "availability": "InStock",
-    {% elsif include.event.status == "soldout" %}
-    "availability": "SoldOut",
-    {% endif; %}
-    "priceCurrency": "{{ include.event.tickets.currency }}",
-    "price": "{{ include.event.tickets.price }}",
-    "url": "{{ include.event.tickets.url }}"
-  }],
-  {% endif; %}
-  {% if include.event.speakers %}
-  "performers": [
-    {% for speaker in include.event.speakers %}
-    {
-      "@type": "Person",
-      "name": "{{ speaker.name }}",
-      "description": "{{ speaker.description }}",
-      "url": "{{ speaker.url }}",
-      "image": "{{ site.url }}{{ speaker.image }}"
-    }{% if forloop.last != true %},{% endif; %}
-    {% endfor; %}
-  ],
-  {% endif; %}
-  "sponsor": {
-    "@type": "Organization",
-    "name": "TrackJS",
-    "url": "https://trackjs.com",
-    "image": "{{ site.url }}/assets/images/sponsors/trackjs.png"
-  },
-  "eventStatus": "EventScheduled"
+  "sameAs": ["{{ site.url }}{{ event.url }}"]
 }
 </script>
 {% endif; %}
