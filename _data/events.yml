@@ -952,6 +952,11 @@
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
+    - name: PlakeSide Studios
+      level: draft
+      url: http://plakeside.com/
+      image: /assets/images/sponsors/plakeside.png
+
 - id: Sydney-2017
   name: PubConf Sydney
   description: "PubConf goes downunder for NDCSydney on Friday August 18! Join us and some amazing developers doing amusing things at the pub."
@@ -959,7 +964,7 @@
   future: true
   status: preorder # preorder, onsale, soldout, archive
   url: /events/2017/sydney.html
-  image: /assets/images/2017-sydney.jpg
+  image: /assets/images/2017-sydney-2.jpg
 
   doorTime: 2017-08-18T18:00:00+1000
   startTime: 2017-08-18T19:00:00+1000
@@ -988,9 +993,9 @@
 
     - name: Jake Ginnivan
       url: https://twitter.com/JakeGinnivan
-      title: Coming Soon
-      description:
-      image: /assets/images/speakers/anonymous.png
+      title: Radvertising vs. Badvertising
+      description: "Beer Party Enthusiast"
+      image: /assets/images/speakers/jakeginnivan.jpg
 
     - name: Jimmy Bogard
       url: https://twitter.com/jbogard
@@ -1006,21 +1011,15 @@
 
     - name: Laura Bell
       url: https://twitter.com/lady_nerd
-      title: Coming Soon
-      description:
-      image: /assets/images/speakers/anonymous.png
+      title: The Nihilist's Guide to Cyber
+      description: Princess Luna meets GladOs
+      image: /assets/images/speakers/laurabell.jpg
 
     - name: Lars Klint
       url: https://twitter.com/larsklint
       title: "The Rise of Windows Phone: A Satire Variety Show"
       description: Retired Storm Trooper
       image: /assets/images/speakers/larsklint.jpg
-
-    - name: Mark Rendle
-      url: https://blog.markrendle.net/
-      title: "Dante's InVerNo: .NET Version Numbers Explained"
-      description: Keeper of the Profane Keywords
-      image: /assets/images/speakers/mark.jpg
 
     - name: Scott Allen
       url: https://twitter.com/stephenhaunts
