@@ -854,7 +854,7 @@
   future: true
   status: onsale # preorder, onsale, soldout, archive
   url: /events/2017/kansascity.html
-  image: /assets/images/2017-kc.jpg
+  image: /assets/images/2017-kc-2.jpg
 
   doorTime: 2017-08-04T18:00:00-500
   startTime: 2017-08-04T19:00:00-500
@@ -915,7 +915,7 @@
       url: http://jonathanfmills.com
       title: JavaScript, The Weird Parts?
       description: Still confused by JavaScript
-      image: /assets/images/speakers/jonmills.jpg
+      image: /assets/images/speakers/jonmills-2.jpg
 
     - name: Lyndsey Padget
       url: http://www.lyndseypadget.com
@@ -957,12 +957,17 @@
       url: http://plakeside.com/
       image: /assets/images/sponsors/plakeside.png
 
+    - name: Arana Software
+      level: draft
+      url: http://www.aranasoft.com/
+      image: /assets/images/sponsors/aranasoftware.png
+
 - id: Sydney-2017
   name: PubConf Sydney
   description: "PubConf goes downunder for NDCSydney on Friday August 18! Join us and some amazing developers doing amusing things at the pub."
   city: sydney
   future: true
-  status: preorder # preorder, onsale, soldout, archive
+  status: onsale # preorder, onsale, soldout, archive
   url: /events/2017/sydney.html
   image: /assets/images/2017-sydney-2.jpg
 
@@ -972,13 +977,13 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # tickets:
-  #   price: 10
-  #   currency: USD
-  #   url:
+  tickets:
+    price: 40
+    currency: AUD
+    url: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
 
   location:
-    name: Hotel CBD
+    name: Hotel CBD Fourth Floor
     address: Corner of King and York Streets, Sydney, New South Wales, Australia
     url: https://merivale.com.au/cbdbar
     image: /assets/images/cbdmerivale.jpg
@@ -990,6 +995,12 @@
       title: "Reimplementing Integers for Fun and Profit"
       description: A lot funnier in small doses.
       image: /assets/images/speakers/aaronpowell.jpg
+
+    - name: Barbara Fusinska
+      url: https://twitter.com/basiafusinska
+      title: Coming Soon
+      description:
+      image: /assets/images/speakers/basia.png
 
     - name: Jake Ginnivan
       url: https://twitter.com/JakeGinnivan
@@ -1022,7 +1033,7 @@
       image: /assets/images/speakers/larsklint.jpg
 
     - name: Scott Allen
-      url: https://twitter.com/stephenhaunts
+      url: https://twitter.com/OdeToCode
       title: "Cloud Pranks: Placing Your Teammates Into a State of Bewildered Rage"
       description: The Profit of Pluralsight
       image: /assets/images/speakers/scottallen.jpg
