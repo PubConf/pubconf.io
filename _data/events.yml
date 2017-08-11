@@ -1002,6 +1002,12 @@
       description: Only Artificial Intelligence
       image: /assets/images/speakers/basia.jpg
 
+    - name: Heather Downing
+      url: https://twitter.com/quorralyne
+      title: "Talk Dirty to Me"
+      description: Secretary of Offense
+      image: /assets/images/speakers/heatherdowning.jpg
+
     - name: Jake Ginnivan
       url: https://twitter.com/JakeGinnivan
       title: Radvertising vs. Badvertising
@@ -1031,13 +1037,7 @@
       title: "The Rise of Windows Phone: A Satire Variety Show"
       description: Retired Storm Trooper
       image: /assets/images/speakers/larsklint.jpg
-
-    - name: Scott Allen
-      url: https://twitter.com/OdeToCode
-      title: "Cloud Pranks: Placing Your Teammates Into a State of Bewildered Rage"
-      description: The Profit of Pluralsight
-      image: /assets/images/speakers/scottallen.jpg
-
+      
     - name: Stephen Haunts
       url: https://twitter.com/stephenhaunts
       title: "How to Lead Like an Utter Bastard!"
