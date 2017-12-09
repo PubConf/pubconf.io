@@ -54,6 +54,7 @@
 
 // Fix some spacing issues.
 .comedian,
+.section.gallery,
 .section.contact,
 .section.sponsor {
 
@@ -62,6 +63,22 @@
 
   .page-title {
     margin: 0;
+  }
+
+}
+
+.section.gallery {
+
+  .page-title {
+    margin-bottom: 30px;
+  }
+
+  .w-item {
+    margin-bottom: 0;
+  }
+
+  .popup-gallery > div:nth-of-type(n+4) {
+    padding-top: 20px;
   }
 
 }
