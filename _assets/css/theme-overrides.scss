@@ -34,7 +34,8 @@
 }
 
 // Fix some spacing issues.
-.comedian {
+.comedian,
+.section.contact {
 
   padding-bottom: 50px;
   padding-top: 50px;
@@ -46,6 +47,30 @@
 }
 
 // Base styles (TODO: Move once the old stuff is cleaned up)
+
+$color-primary: #ff9318;
+
+a[type='button'] {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 300px;
+  margin: 30px auto 0;
+
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 2px;
+
+  color: white;
+  font-size: 24px;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+}
 
 .site-footer {
 
