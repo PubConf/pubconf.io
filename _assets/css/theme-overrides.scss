@@ -1,0 +1,45 @@
+.page-title {
+
+  margin: 0;
+
+  text-transform: uppercase;
+
+}
+
+// We've rearranged the theme's sections, so we need some different backgrounds.
+.section.comedian,
+.section.welcome,
+.section.sponsor {
+  background-color: #242424;
+}
+
+.events,
+.section.gallery,
+.section.contact {
+  background-color: #2f2f2f;
+}
+
+// The theme's carousel doesn't do well with large screens; this makes it a bit
+// better, but at the cost of stretching images. Need to research further.
+.section.banner {
+
+  .carousel,
+  .carousel-inner,
+  .carousel-inner > .item,
+  .carousel-inner > .item > img {
+    height: 100%;
+  }
+
+}
+
+// Fix some spacing issues.
+.comedian {
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  .page-title {
+    margin: 0;
+  }
+
+}
