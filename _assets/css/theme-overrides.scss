@@ -9,7 +9,8 @@
 // We've rearranged the theme's sections, so we need some different backgrounds.
 .section.comedian,
 .section.welcome,
-.section.sponsor {
+.section.sponsor,
+.site-footer {
   background-color: #242424;
 }
 
@@ -40,6 +41,25 @@
 
   .page-title {
     margin: 0;
+  }
+
+}
+
+// Base styles (TODO: Move once the old stuff is cleaned up)
+
+.site-footer {
+
+  padding: 50px;
+
+  p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p + p {
+    margin-top: 15px;
   }
 
 }
