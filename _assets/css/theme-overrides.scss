@@ -1,5 +1,18 @@
 $color-primary: #ff9318;
 
+.navbar-brand {
+  width: 200px;
+}
+
+.navbar-main .nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-sosmed {
+  margin-left: 30px;
+}
+
 .page-title {
 
   margin: 0;
@@ -76,6 +89,7 @@ $color-primary: #ff9318;
 
 .carousel-caption {
   line-height: 1;
+  text-shadow: none;
 }
 
 .caption-heading {
