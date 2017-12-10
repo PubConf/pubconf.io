@@ -7,23 +7,25 @@
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      {% for speaker in include.speakers limit:3 %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
+      {% endfor; %}
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       {% for speaker in include.speakers limit:3 %}
         <div class="item {% if forloop.index0 == 0 %}active{% endif %}">
-          <img src="/vendor/images/slide-1.jpg" alt="slide-1">
+          <div class="backdrop" style="background-image: url('{{ speaker.image }}')"></div>
+          <img src="{{ speaker.image }}" alt="slide-1">
           <div class="carousel-caption">
-            <div class="caption-heading">{{ speaker.name }}</div>
-            <div class="caption-desc">
+            <div class="caption-heading">
+              <span class="name">{{ speaker.name }}</span>
               <small>{{ speaker.description }}</small>
+            </div>
+            <div class="caption-desc">
               {{ speaker.title }}
             </div>
-            <a href="#" title="" class="btn btn-default">BUY TICKET</a>
           </div>
         </div>
       {% endfor; %}

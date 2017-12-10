@@ -52,6 +52,67 @@ $color-primary: #ff9318;
     height: 100%;
   }
 
+  .item img {
+    border-radius: 100%;
+    box-shadow: 0 0 100px 50px black;
+    transform: translate(-50%) scale(1.1);
+  }
+
+  .item:nth-child(2n) img {
+    transform: translate(50%) scale(1.1);
+  }
+
+}
+
+.section.banner {
+  height: 500px;
+  padding-top: 100px;
+  background-color: #000;
+}
+
+.carousel-indicators {
+  bottom: 15px;
+}
+
+.carousel-caption {
+  line-height: 1;
+}
+
+.caption-heading {
+
+  line-height: 1;
+
+  small {
+    display: block;
+    color: #7f7f7f;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .name {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+}
+
+.caption-desc {
+  font-size: 30px;
+  margin-top: 100px;
+
+}
+
+.carousel .backdrop {
+  position: absolute;
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  top: -10px;
+  left: -10px;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(10px);
+  opacity: 0.25;
 }
 
 // Fix some spacing issues.

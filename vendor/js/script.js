@@ -20,8 +20,7 @@ $(document).ready(function(){
 	=================================== */
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
-		var batas = jQuery(window).height() - 100;
-	  //alert(batas);
+		var batas = $('.section').eq(1).offset().top;
 
 	  if (top > batas) {
 		jQuery('.navbar-main').addClass('stiky');
