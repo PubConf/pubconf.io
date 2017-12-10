@@ -1,18 +1,32 @@
 <div class="section comedian">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
         <div class="page-title">
           <h2 class="lead2">Speakers</h2>
         </div>
+        <p>Talks will be lively, entertaining, and presented in Ignite-style, 5 minutes, 20 slides, 15 seconds per slide. It’s going to be fun!</p>
       </div>
     </div>
 
     <div class="row">
 
-      {% for speaker in include.speakers %}
-        <h1>{{ speaker.name }}</h1>
-      {% endfor; %}
+      <ul class="speaker-list">
+        {% for speaker in include.speakers %}
+          <li>
+            <figure class="speaker-item">
+              <img src="{{ speaker.image }}" alt="">
+              <figcaption>
+                <span class="title">{{ speaker.title }}</span>
+                <span class="name">{{ speaker.name }}</span>
+                <span class="description">{{ speaker.description }}</span>
+              </figcaption>
+            </figure>
+          </li>
+        {% endfor; %}
+      </ul>
+
+
 
       <!-- <div>
 
