@@ -1,3 +1,5 @@
+$color-primary: #ff9318;
+
 .page-title {
 
   margin: 0;
@@ -68,6 +70,80 @@
 
 }
 
+.events {
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+}
+
+.section.events-content {
+
+  background-color: #383838;
+
+  .events-list {
+    padding: 40px 0;
+  }
+
+  .event-item {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    & + .event-item {
+      margin-top: 20px;
+    }
+
+    * {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+  }
+
+  .event-left {
+
+    font-size: 24px;
+
+  }
+
+  .event-body {
+
+    flex-grow: 1;
+    width: auto;
+
+    h3,
+    p {
+      margin: 0;
+      line-height: 1;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    p {
+      color: #7f7f7f;
+      font-size: 14px;
+    }
+
+  }
+
+  .btn-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 30px;
+    width: 120px;
+
+    background-color: $color-primary;
+  }
+
+}
+
 .section.welcome {
 
   p {
@@ -91,7 +167,7 @@
       display: block;
       height: 25px;
       width: 100px;
-      margin-left: -50px;
+      margin-left: -45px;
 
       background-image: url('/assets/images/bg-emphasis.png');
       background-size: cover;
@@ -119,8 +195,6 @@
 }
 
 // Base styles (TODO: Move once the old stuff is cleaned up)
-
-$color-primary: #ff9318;
 
 a[type='button'] {
 
