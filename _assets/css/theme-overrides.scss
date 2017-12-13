@@ -1,5 +1,9 @@
 $color-primary: #ff9318;
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar-brand {
   width: 200px;
 }
@@ -50,6 +54,10 @@ $color-primary: #ff9318;
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+
   }
 
 }
@@ -81,6 +89,11 @@ $color-primary: #ff9318;
   height: 500px;
   padding-top: 100px;
   background-color: #000;
+
+  @media screen and (max-width: 768px) {
+    height: 250px;
+    padding-top: 51px;
+  }
 }
 
 .carousel-indicators {
@@ -88,13 +101,11 @@ $color-primary: #ff9318;
 }
 
 .carousel-caption {
-  line-height: 1;
-  text-shadow: none;
+  line-height: 1.25;
+  text-shadow: 0 2px 1px black;
 }
 
 .caption-heading {
-
-  line-height: 1;
 
   small {
     display: block;
@@ -109,11 +120,27 @@ $color-primary: #ff9318;
     text-transform: uppercase;
   }
 
+  @media screen and (max-width: 768px) {
+    .name {
+      font-size: 20px;
+    }
+    small {
+      font-size: 16px;
+    }
+  }
+
 }
 
 .caption-desc {
   font-size: 30px;
-  margin-top: 100px;
+  line-height: inherit;
+  margin-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 250px;
+  }
 
 }
 
@@ -175,11 +202,28 @@ $color-primary: #ff9318;
       flex-shrink: 0;
     }
 
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
   }
 
   .event-left {
 
     font-size: 24px;
+
+    // These are all theme overrides. :(
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+      line-height: 42px;
+      min-width: 120px;
+      width: auto;
+    }
+
+    @media screen and (max-width: 560px) {
+      font-size: 18px;
+      min-width: 80px;
+    }
 
   }
 
@@ -187,6 +231,14 @@ $color-primary: #ff9318;
 
     flex-grow: 1;
     width: auto;
+
+    @media screen and (max-width: 768px) {
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: 560px) {
+      max-width: 40%;
+    }
 
     h3,
     p {
@@ -204,6 +256,12 @@ $color-primary: #ff9318;
       font-size: 14px;
     }
 
+  }
+
+  .event-right .btn {
+    @media screen and (max-width: 560px) {
+      width: 90px;
+    }
   }
 
   .btn-default {
@@ -268,6 +326,18 @@ $color-primary: #ff9318;
     padding-top: 20px;
   }
 
+  @media screen and (max-width: 768px) {
+    .popup-gallery > div {
+      padding-top: 20px;
+    }
+  }
+
+  .w-item a:hover .project-icon {
+    @media screen and (max-width: 768px) {
+      top: -60px;
+    }
+  }
+
 }
 
 // Base styles (TODO: Move once the old stuff is cleaned up)
@@ -297,6 +367,10 @@ a[type='button'] {
 .sponsor-item {
   margin: 15px 0 0;
   padding: 0 50px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
 }
 
 .site-footer {
@@ -330,6 +404,22 @@ a[type='button'] {
     &:nth-last-of-type(n + 3) {
       padding-bottom: 20px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    padding: 0 30px;
+    width: 100%;
+
+    li {
+      padding-bottom: 20px;
+      width: 100%;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
   }
 
 }
