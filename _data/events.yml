@@ -1101,23 +1101,23 @@
   speakers:
     - name: Adam Ralph
       url: https://twitter.com/adamralph
-      title:
-      description:
-      image:
+      title: Coming Soon
+      description: Lazy Bastard
+      image: 
 
     - name: Amie Dansby
       url: https://twitter.com/amiedoubleD
       title: "You're Never Weird on the Internet."
       description: That girl still plays with LEGO
-      image:
+      image: /assets/images/speakers/amiedansby.jpg
       featured: true
       featuredImage: /assets/images/speakers/amiedansby-featured.jpg
 
     - name: Chris O'Dell
-      url: https://twitter.com/adamralph
+      url: https://twitter.com/ChrisAnnODell
       title: "Logging #Fails"
       description: ~/developers/chris
-      image:
+      image: /assets/images/speakers/chrisodell.gif
 
     - name: Heather Downing
       url: https://twitter.com/quorralyne
@@ -1126,16 +1126,16 @@
       image: /assets/images/speakers/heatherdowning.jpg
 
     - name: Ian Cooper
-      url:
-      title:
-      description:
+      url: https://twitter.com/ICooper
+      title: Coming Soon
+      description: Lazy Asshole
       image:
 
     - name: Jessica White
-      url:
+      url: https://twitter.com/JessPWhite
       title: Dicking About With Data
       description: Coffee Fueld Hobbit
-      image:
+      image: /assets/images/speakers/jessicawhite.jpg
 
     - name: Mark Rendle
       url: https://blog.markrendle.net/
@@ -1154,10 +1154,18 @@
       featuredImage: /assets/images/speakers/troyhunt-featured.jpg
 
     - name: Kesha Williams
-      url:
+      url: http://www.kesha.tech/
       title: I Know My Code Sucks
       description: Paid her technical debts.
-      image:
+      image: /assets/images/speakers/keshawilliams.jpg
+
+    - name: Dylan Beattie
+      url: https://twitter.com/dylanbeattie
+      title: "Developer Musical Medley"
+      description: and the Line Breakers
+      image: /assets/images/speakers/dylan.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
 
 # music:
 #   name: Dylan Beattie
