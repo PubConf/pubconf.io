@@ -1074,36 +1074,33 @@
 
 - id: London-2018
   name: PubConf London
-  description: ""
+  description: "londonish can i put a lot of text here, will it show up well?"
   city: london
   future: true
   status: archive # preorder, onsale, soldout, archive
   url: /events/2017/sydney.html
   image: /assets/images/2017-sydney-2.jpg
 
-  doorTime: 2018-01-19T18:00:00+1000
-  startTime: 2018-01-19T19:00:00+1000
-  endTime: 2018-01-19T23:30:00+1000
+  doorTime: 2018-01-19T18:00:00+0000
+  startTime: 2018-01-19T19:00:00+0000
+  endTime: 2018-01-19T23:30:00+0000
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  tickets:
-    price: 40
-    currency: AUD
-    url: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
+  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
 
-# location:
-#   name: Hotel CBD Fourth Floor
-#   address: Corner of King and York Streets, Sydney, New South Wales, Australia
-#   url: https://merivale.com.au/cbdbar
-#   image: /assets/images/cbdmerivale.jpg
+  # location:
+  #   name: Hotel CBD Fourth Floor
+  #   address: Corner of King and York Streets, Sydney, New South Wales, Australia
+  #   url: https://merivale.com.au/cbdbar
+  #   image: /assets/images/cbdmerivale.jpg
 
   speakers:
     - name: Adam Ralph
       url: https://twitter.com/adamralph
       title: Coming Soon
       description: Lazy Bastard
-      image: 
+      image:
 
     - name: Amie Dansby
       url: https://twitter.com/amiedoubleD
@@ -1167,7 +1164,7 @@
       featured: true
       featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
 
-# music:
+  # music:
 #   name: Dylan Beattie
 #   title: You know, the one with the hat.
 #   description: Software Parodies of Yesterday's Greatest Hits
@@ -1185,7 +1182,27 @@
       image: /assets/images/sponsors/trackjs.png
 
 - id: Minnesota-2018
+  name: PubConf Minnesota
+  description: ""
+  city: minneapolis
+  future: true
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2017/sydney.html
+  image: /assets/images/2017-sydney-2.jpg
+
+  doorTime: 2018-05-10T18:00:00-0500
+  startTime: 2018-05-10T19:00:00-0500
+  endTime: 2018-05-10T23:30:00-0500
 
 - id: Oslo-2018
+  name: PubConf Oslo
+  description: ""
+  city: oslo
+  future: true
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2017/sydney.html
+  image: /assets/images/2017-sydney-2.jpg
 
-- id: KansasCity-2018
+  doorTime: 2018-06-15T18:00:00+0200
+  startTime: 2018-06-15T19:00:00+0200
+  endTime: 2018-06-15T23:30:00+0200

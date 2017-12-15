@@ -301,6 +301,24 @@ body {
     background-color: $color-primary;
   }
 
+  .btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 30px;
+    width: 120px;
+
+    border-color: black;
+    color: white;
+    border-radius: 0;
+    background-color: $color-secondary;
+
+    &:active,&:hover,&:focus {
+      border-color: white;
+    }
+  }
+
 }
 
 .section.welcome,

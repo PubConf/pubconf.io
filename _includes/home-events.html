@@ -16,18 +16,24 @@
     <div class="row">
       <div class="col-sm-12 col-md-7 col-md-offset-4">
         <div class="events-list">
-          {% assign futureEvents = (site.data.events | sort:"startTime") %} {% for event in futureEvents limit: 3 %}
+          {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
+          {% for event in futureEvents limit: 3 %}
           <div class="event-item">
             <div class="event-left">
               {{ event.startTime | date: '%-d %b' }}
             </div>
             <div class="event-body">
               <h3>{{ event.name }}</h3>
-              <p>Lorem ipsum...</p>
             </div>
+            {% if event.ticketUrl %}
             <div class="event-right">
-              <a href="#contact" title="" class="btn btn-default">Buy Tickets!</a>
+              <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default">Buy Tickets</a>
             </div>
+            {% else %}
+            <div class="event-right">
+              <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-secondary">Email Me!</a>
+            </div>
+            {% endif; %}
           </div>
           {% endfor; %}
         </div>
