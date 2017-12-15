@@ -1,0 +1,22 @@
+<div class="section sponsor">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="page-title">
+					<h2 class="lead2">Sponsors</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			{% for sponsor in include.local %}
+				<div class="col-xs-6 col-sm-6 col-md-4">
+					<div class="sponsor-item">
+						<a href="{{ sponsor.url }}" title="">
+							<img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+						</a>
+					</div>
+				</div>
+		  {% endfor; %}
+		</div>
+	</div>
+</div>

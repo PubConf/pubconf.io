@@ -3,7 +3,18 @@ layout: default
 title: PubConf - The Software Variety Show and Afterparty
 ---
 
-<div class="home-page">
+{% assign nextEvent = (site.data.events | where:"future",true | sort:"startTime" | first) %}
+
+{% include home-featured.html speakers=nextEvent.speakers %}
+{% include home-speakers.html speakers=nextEvent.speakers %}
+{% include home-events.html events=site.data.events %}
+{% include home-welcome.html %}
+{% include home-pics.html %}
+{% include home-video.html %}
+{% include home-sponsors.html local=nextEvent.sponsors %}
+{% include home-contact.html %}
+
+<div class="home-page" style="display: none">
 
   <section class="section-light">
     <div class="wrapper">
@@ -20,7 +31,6 @@ title: PubConf - The Software Variety Show and Afterparty
     </div>
   </section>
 
-  {% assign nextEvent = (site.data.events | where:"future",true | sort:"startTime" | first) %}
   {% include event-banner.html event=nextEvent %}
 
   <section class="section-dark section-about" style="margin-top:-30px;">

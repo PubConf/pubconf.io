@@ -1,0 +1,27 @@
+<div class="section gallery" id="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<div class="page-title">
+					<h2 class="lead2">Pics</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row popup-gallery">
+			{% for i in (1..6) %}
+				<div class="col-xs-6 col-sm-6 col-md-4">
+					<div class="w-item">
+						<a href="http://placekitten.com/g/510/300" title="Gallery #1">
+							<img src="http://placekitten.com/g/510/300" alt="" class="img-responsive" />
+							<div class="project-info">
+								<div class="project-icon">
+									<span class="fa fa-search"></span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

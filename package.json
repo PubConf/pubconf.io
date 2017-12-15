@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "PubConf Website",
   "readme": "README.md",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/toddhgardner/pubconf.git"

@@ -1,67 +1,128 @@
-@charset "utf-8";
+$color-primary: #ff9318;
 
+a[type='button'] {
 
-// Our variables
-$base-font-family: "Oxygen", Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 300px;
+  margin: 30px auto 0;
 
-$spacing-unit:     30px;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 2px;
 
-$text-color:       #111;
-$text-color-light: #eee;
-$background-color: #fdfdfd;
-$brand-color:      #8D1303;
-$accent-color:     #FFB061;
-$alt-color:        #408EA0;
+  color: white;
+  font-size: 24px;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+  &:hover {
+    background-color: transparent;
+  }
 
-// Width of the content area
-$content-width:    960px;
-$minimum-width:    380px;
-$on-palm:          600px;
-$on-laptop:        920px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
 }
 
+.sponsor-item {
+  margin: 15px 0 0;
+  padding: 0 50px;
 
-@import
-  "_base",
-  "_animations",
-  "_buttons",
-  "_icons",
-  "_forms",
-  "_modal",
-  "_nav",
-  "_page",
-  "_ribbon",
-  "_sections",
-  "_typography",
-  "pages/_home",
-  "pages/_events",
-  "pages/_london2016",
-  "pages/_oslo2016",
-  "pages/_sponsoring",
-  "includes/_event-page-2017",
-  "includes/_event-banner",
-  "includes/_footer",
-  "includes/_header"
-;
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.site-footer {
+
+  padding: 50px;
+
+  p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p + p {
+    margin-top: 15px;
+  }
+
+}
+
+.speaker-list {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 830px;
+  margin: 30px auto 0;
+
+  li {
+    width: calc(50% - 15px);
+
+    &:nth-last-of-type(n + 3) {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    padding: 0 30px;
+    width: 100%;
+
+    li {
+      padding-bottom: 20px;
+      width: 100%;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+  }
+
+}
+
+.speaker-item {
+
+  display: flex;
+  width: 100%;
+
+  img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 150px;
+    width: 150px;
+  }
+
+  figcaption {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #2f2f2f;
+  }
+
+  p {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .title {
+    flex-grow: 1;
+    font-size: 18px;
+  }
+
+  .name {
+    color: $color-primary;
+    font-size: 18px;
+  }
+
+  .description {
+    color: #7F7F7F;
+    font-size: 12px;
+  }
+
+}
+
+@import '_theme-overrides';
