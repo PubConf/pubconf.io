@@ -1200,6 +1200,13 @@
   startTime: 2018-05-10T19:00:00-0500
   endTime: 2018-05-10T23:30:00-0500
 
+  partner:
+    name: NDC Minnesota
+    description: Inspiring Software Developers since 2008
+    title:
+    featuredImage:
+
+
 - id: Oslo-2018
   name: PubConf Oslo
   description: ""
@@ -1212,3 +1219,9 @@
   doorTime: 2018-06-15T18:00:00+0200
   startTime: 2018-06-15T19:00:00+0200
   endTime: 2018-06-15T23:30:00+0200
+
+  partner:
+    name: NDC Oslo
+    description: Inspiring Software Developers since 2008
+    title:
+    featuredImage:
