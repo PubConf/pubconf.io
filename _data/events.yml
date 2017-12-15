@@ -966,8 +966,8 @@
   name: PubConf Sydney
   description: "PubConf goes downunder for NDCSydney on Friday August 18! Join us and some amazing developers doing amusing things at the pub."
   city: sydney
-  future: true
-  status: onsale # preorder, onsale, soldout, archive
+  future: false
+  status: archive # preorder, onsale, soldout, archive
   url: /events/2017/sydney.html
   image: /assets/images/2017-sydney-2.jpg
 
@@ -1037,7 +1037,7 @@
       title: "The Rise of Windows Phone: A Satire Variety Show"
       description: Retired Storm Trooper
       image: /assets/images/speakers/larsklint.jpg
-      
+
     - name: Stephen Haunts
       url: https://twitter.com/stephenhaunts
       title: "How to Lead Like an Utter Bastard!"
@@ -1071,3 +1071,67 @@
       level: topshelf
       url: https://www.pluralsight.com/
       image: /assets/images/sponsors/pluralsight.png
+
+- id: London-2018
+  name: PubConf London
+  description: ""
+  city: london
+  future: true
+  status: archive # preorder, onsale, soldout, archive
+  url: /events/2017/sydney.html
+  image: /assets/images/2017-sydney-2.jpg
+
+  doorTime: 2018-01-19T18:00:00+1000
+  startTime: 2018-01-19T19:00:00+1000
+  endTime: 2018-01-19T23:30:00+1000
+  startDisplay: 7:00 pm
+  doorDisplay: 6:00 pm
+
+  tickets:
+    price: 40
+    currency: AUD
+    url: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
+
+# location:
+#   name: Hotel CBD Fourth Floor
+#   address: Corner of King and York Streets, Sydney, New South Wales, Australia
+#   url: https://merivale.com.au/cbdbar
+#   image: /assets/images/cbdmerivale.jpg
+
+  speakers:
+    - name: Adam Ralph
+      url: https://twitter.com/adamralph
+      title:
+      description:
+      image:
+
+    - name: Amie Dansby
+      url: https://twitter.com/amiedoubleD
+      title: "You're Never Weird on the Internet."
+      description: That girl still plays with LEGO
+      image:
+      featured: true
+      featuredImage: /assets/images/speakers/amiedansby-featured.jpg
+
+# music:
+#   name: Dylan Beattie
+#   title: You know, the one with the hat.
+#   description: Software Parodies of Yesterday's Greatest Hits
+#   image: /assets/images/speakers/dylan.jpg
+
+  sponsors:
+    - name: NDC Conferences
+      level: topshelf
+      url: http://ndcconferences.com/
+      image: /assets/images/sponsors/ndc.png
+
+    - name: TrackJS
+      level: topshelf
+      url: https://trackjs.com/
+      image: /assets/images/sponsors/trackjs.png
+
+- id: Minnesota-2018
+
+- id: Oslo-2018
+
+- id: KansasCity-2018

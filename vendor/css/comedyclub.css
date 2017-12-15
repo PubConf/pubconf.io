@@ -14,7 +14,7 @@ CSS Style Structure
 5. Offers
 6. Schedule
 7. Gallery
-8. Sponsor 
+8. Sponsor
 9. Contact
 10. Footer
 
@@ -38,8 +38,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -50,7 +50,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -90,7 +90,7 @@ html, body{
 }
 
 
-/* 
+/*
 gold:#FF9318
 b1:#1B1B1B
 b2:#2F2F2F
@@ -782,7 +782,7 @@ h3, h4, h5 {
 	font-size: 30px;
     color: #FF9318;
     line-height: 42px;
-	
+
 }
 .video-desc .video-heading:after{
 	width: 30px;
@@ -914,14 +914,14 @@ h3, h4, h5 {
 	}
 }
 @media (max-width: 992px) {
-	
+
 	.navbar-main .nav > li > a {
         padding-left: 15px;
         padding-right: 15px;
 	}
 }
 @media (max-width: 768px) {
-	
+
 	.navbar-brand {
 		padding: 6px 15px;
 	}
@@ -954,16 +954,16 @@ h3, h4, h5 {
 	.top-sosmed{
 		display:none;
 	}
-	
+
 	.comedian-item .comedian-left,
 	.comedian-item .comedian-body {
 		width: 100%;
 	}
-	
+
 	.event-item .event-body {
 		max-width: 345px;
 	}
-	
+
 	.footer-sosmed {
 		float: none;
 		display: block;
@@ -985,13 +985,13 @@ h3, h4, h5 {
 		border-right: 0;
 		padding-right: 0;
 	}
-	
-	
+
+
 	.page-title .lead {
 		font-size: 30px;
 		line-height: 40px;
 	}
-	
+
 }
 @media (max-width: 767px) {
 	.carousel-caption .btn-default {
@@ -1006,7 +1006,7 @@ h3, h4, h5 {
 	}
 	.event-item .event-body {
 		max-width: 300px;
-	}	
+	}
 	.event-item .event-left {
 		font-size: 18px;
 		line-height: 25px;
@@ -1022,5 +1022,5 @@ h3, h4, h5 {
 	}
 }
 @media (max-width: 479px) {
-	
+
 }

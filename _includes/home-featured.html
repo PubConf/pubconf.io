@@ -1,23 +1,23 @@
 <!-- Currently, grab the first three speakers from the next event. -->
-<!-- TODO: Switch to "featured" speakers. -->
 
 <div class="section banner" id="home">
+  {% assign featuredSpeakers = include.speakers | where:"featured",true | limit: 3 %}
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      {% for speaker in include.speakers limit:3 %}
+      {% for speaker in featuredSpeakers %}
         <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
       {% endfor; %}
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      {% for speaker in include.speakers limit:3 %}
+      {% for speaker in featuredSpeakers %}
         <div class="item {% if forloop.index0 == 0 %}active{% endif %}">
-          <div class="backdrop" style="background-image: url('{{ speaker.image }}')"></div>
-          <img src="{{ speaker.image }}" alt="slide-1">
+          <div class="backdrop" style="background-image: url('{{ speaker.featuredImage }}')"></div>
+          <img src="{{ speaker.featuredImage }}" alt="slide-1">
           <div class="carousel-caption">
             <div class="caption-heading">
               <span class="name">{{ speaker.name }}</span>
