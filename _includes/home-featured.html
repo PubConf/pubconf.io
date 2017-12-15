@@ -1,21 +1,41 @@
 <!-- Currently, grab the first three speakers from the next event. -->
 
 <div class="section banner" id="home">
-  {% assign featuredSpeakers = include.speakers | where:"featured",true | limit: 3 | reverse %}
-
+  {% assign partner = include.event.partner %}
+  {% assign featuredSpeakers = include.event.speakers | where:"featured",true | limit: 3 | reverse %}
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
     <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
       {% for speaker in featuredSpeakers %}
-        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 | plus:1 }}"></li>
       {% endfor; %}
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="backdrop" style="background-image: url('{{ partner.featuredImage }}')"></div>
+        <img src="{{ partner.featuredImage }}" alt="slide-1">
+        <div class="carousel-caption">
+          <div class="caption-heading">
+            <h1 class="featuring">after</h1>
+            <span class="name">{{ partner.name }}</span>
+            <small>{{ partner.description }}</small>
+          </div>
+          <div class="caption-desc">
+            {{ partner.title }}
+          </div>
+          {% if event.ticketUrl %}
+            <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default">Buy Tickets!</a>
+          {% else %}
+            <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default">Email Me!</a>
+          {% endif; %}
+        </div>
+      </div>
       {% for speaker in featuredSpeakers %}
-        <div class="item {% if forloop.index0 == 0 %}active{% endif %}">
+        <div class="item">
           <div class="backdrop" style="background-image: url('{{ speaker.featuredImage }}')"></div>
           <img src="{{ speaker.featuredImage }}" alt="slide-1">
           <div class="carousel-caption">
@@ -27,7 +47,11 @@
             <div class="caption-desc">
               {{ speaker.title }}
             </div>
-            <a href="#" title="" class="btn btn-default">Buy Tickets!</a>
+            {% if event.ticketUrl %}
+              <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default">Buy Tickets!</a>
+            {% else %}
+              <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default">Email Me!</a>
+            {% endif; %}
           </div>
         </div>
       {% endfor; %}

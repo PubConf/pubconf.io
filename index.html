@@ -5,7 +5,7 @@ title: PubConf - The Software Variety Show and Afterparty
 
 {% assign nextEvent = (site.data.events | where:"future",true | sort:"startTime" | first) %}
 
-{% include home-featured.html speakers=nextEvent.speakers %}
+{% include home-featured.html event=nextEvent %}
 {% include home-speakers.html speakers=nextEvent.speakers %}
 {% include home-events.html events=site.data.events %}
 {% include home-welcome.html %}

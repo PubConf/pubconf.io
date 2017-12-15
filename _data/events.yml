@@ -1095,6 +1095,12 @@
   #   url: https://merivale.com.au/cbdbar
   #   image: /assets/images/cbdmerivale.jpg
 
+  partner:
+    name: NDC London
+    description: Inspiring Software Developers since 2008
+    title: "15 - 19 January 2018"
+    featuredImage: /assets/images/sponsors/ndclondon-featured.png
+
   speakers:
     - name: Adam Ralph
       url: https://twitter.com/adamralph
