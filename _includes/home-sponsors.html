@@ -1,4 +1,4 @@
-<div class="section sponsor">
+<div class="section sponsor" id="sponsors">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
@@ -8,10 +8,10 @@
 			</div>
 		</div>
 		<div class="row">
-			{% for sponsor in include.local %}
-				<div class="col-xs-6 col-sm-6 col-md-4">
+			{% for sponsor in include.sponsors %}
+				<div class="col-xs-12 col-md-6">
 					<div class="sponsor-item">
-						<a href="{{ sponsor.url }}" title="">
+						<a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
 							<img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
 						</a>
 					</div>

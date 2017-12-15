@@ -1180,7 +1180,7 @@
     - name: NDC Conferences
       level: topshelf
       url: http://ndcconferences.com/
-      image: /assets/images/sponsors/ndc.png
+      image: /assets/images/sponsors/ndclondon.png
 
     - name: TrackJS
       level: topshelf
