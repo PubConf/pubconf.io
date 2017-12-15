@@ -1,7 +1,7 @@
 <!-- Currently, grab the first three speakers from the next event. -->
 
 <div class="section banner" id="home">
-  {% assign featuredSpeakers = include.speakers | where:"featured",true | limit: 3 %}
+  {% assign featuredSpeakers = include.speakers | where:"featured",true | limit: 3 | reverse %}
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -20,6 +20,7 @@
           <img src="{{ speaker.featuredImage }}" alt="slide-1">
           <div class="carousel-caption">
             <div class="caption-heading">
+              <h1 class="featuring">featuring</h1>
               <span class="name">{{ speaker.name }}</span>
               <small>{{ speaker.description }}</small>
             </div>
