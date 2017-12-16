@@ -71,6 +71,12 @@
       description: Coffee Fueled Hobbit
       image: /assets/images/speakers/jessicawhite.jpg
 
+    - name: Kesha Williams
+      url: http://www.kesha.tech/
+      title: I Know My Code Sucks
+      description: Paid her technical debts.
+      image: /assets/images/speakers/keshawilliams.jpg
+
     - name: Mark Rendle
       url: https://blog.markrendle.net/
       title: "Dante's InVerNo: .NET Version Numbers Explained"
@@ -86,12 +92,6 @@
       image: /assets/images/speakers/troy.jpg
       featured: true
       featuredImage: /assets/images/speakers/troyhunt-featured.jpg
-
-    - name: Kesha Williams
-      url: http://www.kesha.tech/
-      title: I Know My Code Sucks
-      description: Paid her technical debts.
-      image: /assets/images/speakers/keshawilliams.jpg
 
     - name: Dylan Beattie
       url: https://twitter.com/dylanbeattie
