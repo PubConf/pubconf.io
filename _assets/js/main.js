@@ -11,35 +11,6 @@
 
   if (!document.querySelector || !window.addEventListener) { return; }
 
-  // Metadata gathered from the document.
-  var meta = {
-    city: document.querySelector('meta[name=city]').content,
-    eventId: document.querySelector('meta[name=eventId]').content
-  };
-
-  (function toggleNewsletterModal() {
-    var toggleEls = document.querySelectorAll(".js-waitlist-toggle");
-    var wrapEl = document.querySelector(".js-waitlist-wrap");
-    var closeEl = document.querySelector(".js-modal-close");
-    if (!toggleEls.length || !wrapEl || !closeEl) return;
-
-    for(var i = 0; i < toggleEls.length; i++) {
-      toggleEls[i].href = "javascript:void(0);";
-      toggleEls[i].addEventListener("click", function () {
-        wrapEl.classList.toggle("visible");
-      });
-    }
-
-    window.addEventListener("keyup", function (evt) {
-      if (evt.keyCode == 27) {
-        wrapEl.classList.remove("visible");
-      }
-    });
-    closeEl.addEventListener("click", function () {
-      wrapEl.classList.remove("visible");
-    });
-  })();
-
   /**
     * addVisibleElementAnalytics
     * IIFE that will find annotated elements and attach event listeners for
@@ -64,8 +35,7 @@
               var event = {
                 'hitType': 'event',
                 'eventCategory': category,
-                'eventAction': 'visible',
-                'eventLabel': meta.eventId
+                'eventAction': 'visible'
               };
               console.info('send element visible event', el, event);
               ga('send', event);
@@ -95,8 +65,7 @@
         var event = {
           'hitType': 'event',
           'eventCategory': category,
-          'eventAction': 'click',
-          'eventLabel': meta.eventId
+          'eventAction': 'click'
         };
         console.info('send element click event', el, event);
         ga('send', event);

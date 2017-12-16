@@ -1,5 +1,5 @@
 <div class="events" id="schedule">
-  <div class="container">
+  <div class="container" data-visible-event="tickets">
     <div class="row">
       <div class="col-sm-12 col-md-12">
         <div class="page-title">
@@ -28,11 +28,11 @@
             </div>
             {% if event.ticketUrl %}
             <div class="event-right">
-              <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default">Buy Tickets</a>
+              <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-event="buy">Buy Tickets</a>
             </div>
             {% else %}
             <div class="event-right">
-              <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-secondary">Email Me!</a>
+              <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-secondary" data-click-event="email">Email Me!</a>
             </div>
             {% endif; %}
           </div>
