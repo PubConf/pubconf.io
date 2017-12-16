@@ -14,64 +14,6 @@ title: PubConf - The Software Variety Show and Afterparty
 {% include home-video.html %}
 {% include home-sponsors.html sponsors=nextEvent.sponsors %}
 
-<div class="home-page" style="display: none">
-
-  <section class="section-light">
-    <div class="wrapper">
-      <div class="fade-in text-center">
-        <h1>PubConf</h1>
-        <p class="text-lg" style="margin:0">
-          The Software Variety Show and Afterparty.
-        </p>
-        <p>
-          Rapid-fire funny talks, musical acts, and comedy stunts
-          from amazing developers in an intimate atmosphere.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  {% include event-banner.html event=nextEvent %}
-
-  <section class="section-dark section-about" style="margin-top:-30px;">
-    <div class="wrapper">
-      <div class="text-center">
-        <div class=" text-lg">
-          Get email when we announce events, tickets, or tasty drinks.
-          <br /><br />
-        </div>
-        <a type="button" class="button button-large button-alt" href="{{ site.newsletter_signup }}" data-click-event="newsletter">
-          <i class="icon icon-mail"></i>
-          Get Email Updates
-        </a>
-      </div>
-    </div>
-  </section>
-
-  {% assign futureEvents = (site.data.events | where:"future",true | sort:"startTime") %}
-  {% for event in futureEvents offset: 1 %}
-  {% include event-banner.html event=event %}
-  {% endfor; %}
-
-  <section class="section-dark section-sponsors">
-    <div class="wrapper">
-      <div class="section-head">
-        <h2 id="sponsors">Global Sponsor</h2>
-      </div>
-      <ul class="sponsor-list">
-        {% for sponsor in site.data.global-sponsors %}
-          <li class="sponsor-item" style="float:none;width:inherit;">
-            <a href="{{ sponsor.url }}" target="_blank">
-              <img src="{{ sponsor.imageUrl }}" alt="{{ sponsor.name }}">
-            </a>
-          </li>
-        {% endfor; %}
-      </ul>
-    </div>
-  </section>
-
-</div>
-
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
