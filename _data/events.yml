@@ -1,11 +1,9 @@
 - id: London-2018
   name: PubConf London
-  description: "londonish can i put a lot of text here, will it show up well?"
+  description: "PubConf moves to central London this January with our return to NDC London!"
   city: london
   future: true
-  status: archive # preorder, onsale, soldout, archive
-  url: /events/2017/sydney.html
-  image: /assets/images/2017-sydney-2.jpg
+  url: /
 
   doorTime: 2018-01-19T18:00:00+0000
   startTime: 2018-01-19T19:00:00+0000
@@ -15,11 +13,10 @@
 
   # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
 
-  # location:
-  #   name: Hotel CBD Fourth Floor
-  #   address: Corner of King and York Streets, Sydney, New South Wales, Australia
-  #   url: https://merivale.com.au/cbdbar
-  #   image: /assets/images/cbdmerivale.jpg
+  location:
+    name: The Comedy Pub
+    address: 7 Oxendon St, London SW1Y 4EE, UK
+    url: https://www.craft-pubs.co.uk/comedy
 
   partner:
     name: NDC London
@@ -116,12 +113,10 @@
 
 - id: Minnesota-2018
   name: PubConf Minnesota
-  description: ""
+  description: "PubConf is back in Minnesota with the debut of NDC Minnesota. Coming soon to a Saint Paul Pub near you!"
   city: minneapolis
   future: true
-  status: archive # preorder, onsale, soldout, archive
-  url: /events/2017/sydney.html
-  image: /assets/images/2017-sydney-2.jpg
+  url: /
 
   doorTime: 2018-05-10T18:00:00-0500
   startTime: 2018-05-10T19:00:00-0500
@@ -133,15 +128,12 @@
     title:
     featuredImage:
 
-
 - id: Oslo-2018
   name: PubConf Oslo
-  description: ""
+  description: "Break out the Aquavit, PubConf comes home to Oslo this June."
   city: oslo
   future: true
-  status: archive # preorder, onsale, soldout, archive
-  url: /events/2017/sydney.html
-  image: /assets/images/2017-sydney-2.jpg
+  url: /
 
   doorTime: 2018-06-15T18:00:00+0200
   startTime: 2018-06-15T19:00:00+0200
