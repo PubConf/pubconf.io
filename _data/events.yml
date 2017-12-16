@@ -20,9 +20,9 @@
 
   partner:
     name: NDC London
-    description: Inspiring Software Developers since 2008
+    description:
     title: "15 - 19 January 2018"
-    featuredImage: /assets/images/sponsors/ndclondon-featured.png
+    featuredImage: /assets/images/sponsors/ndclondon-featured.jpg
 
   host:
     name: Todd Gardner
@@ -67,7 +67,7 @@
     - name: Jessica White
       url: https://twitter.com/JessPWhite
       title: Dicking About With Data
-      description: Coffee Fueld Hobbit
+      description: Coffee Fueled Hobbit
       image: /assets/images/speakers/jessicawhite.jpg
 
     - name: Mark Rendle

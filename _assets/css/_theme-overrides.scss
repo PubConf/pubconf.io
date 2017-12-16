@@ -5,8 +5,18 @@ body {
 .navbar-brand {
   width: 200px;
 }
+@media screen and (max-width: 768px) {
+  .navbar-main.stiky .navbar-brand > img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top-sosmed { display: none; }
+}
 
 .navbar-main .nav > li > a {
+  display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
 }

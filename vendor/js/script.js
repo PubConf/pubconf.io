@@ -43,10 +43,10 @@ $(document).ready(function(){
 		goToByScroll(dataslide);
     });
 
-	buy.on('click', function(e){
-        var dataslide = $(this).attr('href');
-		goToByScroll(dataslide);
-    });
+	// buy.on('click', function(e){
+  //       var dataslide = $(this).attr('href');
+	// 	goToByScroll(dataslide);
+  //   });
 
 	function goToByScroll(mc) {
 		htmlbody = $('html,body');
