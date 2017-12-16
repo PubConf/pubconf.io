@@ -1101,12 +1101,19 @@
     title: "15 - 19 January 2018"
     featuredImage: /assets/images/sponsors/ndclondon-featured.png
 
+  host:
+    name: Todd Gardner
+    url: https://twitter.com/toddhgardner
+    title:
+    description: Aspiring digital comedian and occasional JavaScript developer.
+    image: /assets/images/speakers/toddgardner.jpg
+
   speakers:
     - name: Adam Ralph
       url: https://twitter.com/adamralph
       title: Coming Soon
       description: Lazy Bastard
-      image:
+      image: /assets/images/speakers/anonymous.png
 
     - name: Amie Dansby
       url: https://twitter.com/amiedoubleD
@@ -1132,7 +1139,7 @@
       url: https://twitter.com/ICooper
       title: Coming Soon
       description: Lazy Asshole
-      image:
+      image: /assets/images/speakers/anonymous.png
 
     - name: Jessica White
       url: https://twitter.com/JessPWhite
@@ -1169,12 +1176,6 @@
       image: /assets/images/speakers/dylan.jpg
       featured: true
       featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
-
-  # music:
-#   name: Dylan Beattie
-#   title: You know, the one with the hat.
-#   description: Software Parodies of Yesterday's Greatest Hits
-#   image: /assets/images/speakers/dylan.jpg
 
   sponsors:
     - name: NDC Conferences

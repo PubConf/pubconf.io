@@ -7,12 +7,12 @@ title: PubConf - The Software Variety Show and Afterparty
 
 {% include home-featured.html event=nextEvent %}
 {% include home-welcome.html %}
-{% include home-speakers.html speakers=nextEvent.speakers %}
+{% include home-speakers.html event=nextEvent %}
 {% include home-events.html events=site.data.events %}
+{% include home-email.html %}
 {% include home-pics.html %}
 {% include home-video.html %}
 {% include home-sponsors.html sponsors=nextEvent.sponsors %}
-{% include home-contact.html %}
 
 <div class="home-page" style="display: none">
 

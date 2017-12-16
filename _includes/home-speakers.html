@@ -1,6 +1,6 @@
 <div class="section comedian" id="speakers">
   <div class="container">
-    <div class="row">
+    <div class="row" style="margin-top:40px;">
       <div class="col-sm-12 col-md-8 col-md-offset-2">
         <div class="page-title">
           <h2 class="lead2">Special Guests</h2>
@@ -9,12 +9,11 @@
     </div>
 
     <div class="row">
-
       <ul class="speaker-list">
-        {% for speaker in include.speakers %}
+        {% for speaker in include.event.speakers %}
           <li>
             <figure class="speaker-item">
-              <img src="{{ speaker.image }}" alt="">
+              <img src="{{ speaker.image }}" alt="{{ speaker.name }}">
               <figcaption>
                 <span class="title">{{ speaker.title }}</span>
                 <span class="name"><a href="{{speaker.url}}">{{ speaker.name }}</a></span>
@@ -24,7 +23,28 @@
           </li>
         {% endfor; %}
       </ul>
+    </div>
 
+    <div class="row" style="margin-top:40px;">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <div class="page-title">
+          <h3 class="lead2">Hosted By</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="speaker-list">
+        <li style="margin:0 auto">
+          <figure class="speaker-item">
+            <img src="{{ include.event.host.image }}" alt="{{ include.event.host.name }}">
+            <figcaption>
+              <span class="title"></span>
+              <span class="name"><a href="{{ include.event.host.url }}">{{ include.event.host.name }}</a></span>
+              <span class="description">{{ include.event.host.description }}</span>
+            </figcaption>
+          </figure>
+        </li>
+      </div>
     </div>
 
   </div>
