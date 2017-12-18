@@ -1,10 +1,6 @@
 // VENDOR SCRIPTS
-@import '/vendor/css/bootstrap.css';
-@import '/vendor/css/font-awesome.min.css';
-@import '/vendor/css/owl.carousel.css';
-@import '/vendor/css/owl.theme.css';
-@import '/vendor/css/magnific-popup.css';
-@import '/vendor/css/comedyclub.css';
+@import '/assets/css/bootstrap.min.css';
+@import '/assets/css/comedyclub.min.css';
 
 $color-primary: #ff9318;
 $color-secondary: #4452B9;
@@ -34,6 +30,10 @@ a[type='button'] {
 .sponsor-item {
   margin: 15px 0 0;
   padding: 0 50px;
+
+  img {
+    margin: 0 auto;
+  }
 
   @media screen and (max-width: 768px) {
     padding: 0 15px;
@@ -136,3 +136,4 @@ a[type='button'] {
 
 @import '_theme-overrides';
 @import '_plainpage';
+@import '_lazyload';

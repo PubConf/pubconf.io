@@ -3,13 +3,82 @@
   * This is the main execution script for PubConf event pages.
   */
 
-/* global ga, util */
+/* global $, ga, util */
+
+//= require jquery
+//= require bootstrap
 //= require util.js
 
-(function(document, window, undefined) {                  // eslint-disable-line
+$(function() {
   'use strict';
 
+  /**
+    * Setup the navbar highlighting
+    */
+  $('body').scrollspy({ target: '#navbar-example' });
+
+
+  /**
+    * shrinkHeader
+    * Setup the header to shrink once the user has scrolled down.
+    */
+  (function shrinkHeader() {
+    var batas = $('.section').eq(1).offset().top;
+    $(window).scroll(function() {
+      var top = $(document).scrollTop();
+      if (top > batas) {
+        $('.navbar-main').addClass('stiky');
+      }
+      else {
+        $('.navbar-main').removeClass('stiky');
+      }
+    });
+  })();
+
+
+  /**
+    * scrollNavigation
+    * Setup the navigation links to scroll to their target.
+    */
+  (function scrollNavigation() {
+    var htmlbody = $('html,body');
+    $('.navbar-nav li a').on('click', function() {
+      var target = $(this).attr('href');
+      htmlbody.animate({
+        scrollTop: $(target).offset().top - 50
+      }, 1000);
+    });
+  })();
+
+
+  /**
+    * lazyLoadImages
+    * @see https://davidwalsh.name/lazyload-image-fade
+    * reduce the perceived load time by deferring some images to load later.
+    */
+  (function lazyLoadImages() {
+    var attr1 = 'data-lazy-style';
+    util.forEach(util.makeArray(document.querySelectorAll('[' + attr1 + ']')), function(el) {
+      el.setAttribute('style', el.getAttribute(attr1));
+      setTimeout(function() {
+        el.removeAttribute(attr1);
+      }, 500);
+    });
+    var attr2 = 'data-lazy-src';
+    util.forEach(util.makeArray(document.querySelectorAll('[' + attr2 + ']')), function(el) {
+      el.setAttribute('src', el.getAttribute(attr2));
+      el.onload = function() {
+        el.removeAttribute(attr2);
+      };
+    });
+  })();
+
+});
+
+(function(document, window, undefined) {                  // eslint-disable-line
+
   if (!document.querySelector || !window.addEventListener) { return; }
+
 
   /**
     * addVisibleElementAnalytics

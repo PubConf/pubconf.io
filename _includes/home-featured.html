@@ -16,8 +16,8 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <div class="backdrop" style="background-image: url('{{ partner.featuredImage }}')"></div>
-        <img src="{{ partner.featuredImage }}" alt="slide-1">
+        <div class="backdrop" data-lazy-style="background-image: url('{{ partner.featuredImage }}')"></div>
+        <img data-lazy-src="{{ partner.featuredImage }}" alt="slide-1">
         <div class="carousel-caption">
           <div class="caption-heading">
             <h1 class="featuring">after</h1>
@@ -36,8 +36,8 @@
       </div>
       {% for speaker in featuredSpeakers %}
         <div class="item">
-          <div class="backdrop" style="background-image: url('{{ speaker.featuredImage }}')"></div>
-          <img src="{{ speaker.featuredImage }}" alt="slide-1">
+          <div class="backdrop" data-lazy-style="background-image: url('{{ speaker.featuredImage }}')"></div>
+          <img data-lazy-src="{{ speaker.featuredImage }}" alt="slide-1">
           <div class="carousel-caption">
             <div class="caption-heading">
               <h1 class="featuring">featuring</h1>

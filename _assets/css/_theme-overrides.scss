@@ -1,4 +1,4 @@
-html, body, .navbar, .section {
+html, .container, .navbar, .section {
   overflow-x: hidden;
 }
 
@@ -74,11 +74,6 @@ html, body, .navbar, .section {
   .container {
 
     padding: 50px 0;
-
-    background-image: url('/assets/images/bg-video.jpg');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @media screen and (max-width: 768px) {
       padding: 0;
