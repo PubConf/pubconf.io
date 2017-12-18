@@ -6,6 +6,7 @@
 /* global $, ga, util */
 
 //= require jquery
+//= require jquery.magnific
 //= require bootstrap
 //= require util.js
 
@@ -47,6 +48,30 @@ $(function() {
       htmlbody.animate({
         scrollTop: $(target).offset().top - 50
       }, 1000);
+    });
+  })();
+
+  /**
+    * magnificPopup
+    * Setup the gallery popup images.
+    */
+  (function magnificPopupSetup() {
+    $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        titleSrc: function(item) {
+          return item.el.attr('title') + '';
+        }
+      }
     });
   })();
 

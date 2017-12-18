@@ -35,9 +35,9 @@
   speakers:
     - name: Adam Ralph
       url: https://twitter.com/adamralph
-      title: Coming Soon
-      description: Lazy Bastard
-      image: /assets/images/speakers/anonymous.png
+      title: 'git commit -m "add spaces"'
+      description: Whitespace bigot
+      image: /assets/images/speakers/adamralph.jpg
 
     - name: Amie Dansby
       url: https://twitter.com/amiedoubleD
@@ -61,9 +61,9 @@
 
     - name: Ian Cooper
       url: https://twitter.com/ICooper
-      title: Coming Soon
-      description: Lazy Asshole
-      image: /assets/images/speakers/anonymous.png
+      title: "The Duck Tape Programmer"
+      description: "Code knitter, system stitcher, and distributed puzzle solver"
+      image: /assets/images/speakers/iancooper.jpg
 
     - name: Jessica White
       url: https://twitter.com/JessPWhite

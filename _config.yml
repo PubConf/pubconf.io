@@ -33,9 +33,6 @@ exclude:
 
 assets:
   sources:
-    - _assets/vendor/bootstrap/css
-    - _assets/vendor/bootstrap/fonts
     - _assets/vendor/bootstrap/js
-    - _assets/vendor/jQuery
-    - _assets/vendor/owl
-    - _assets/vendor/tiny-slider
+    - _assets/vendor/jquery
+    - _assets/vendor/magnific
