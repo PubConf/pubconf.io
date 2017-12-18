@@ -27,8 +27,8 @@
           <div class="caption-desc">
             {{ partner.title }}
           </div>
-          {% if event.ticketUrl %}
-            <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-event="buy">Buy Tickets!</a>
+          {% if include.event.ticketUrl %}
+            <a href="{{ include.event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-event="buy">Buy Tickets!</a>
           {% else %}
             <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default" data-click-event="email">Email Me!</a>
           {% endif; %}
@@ -47,8 +47,8 @@
             <div class="caption-desc">
               {{ speaker.title }}
             </div>
-            {% if event.ticketUrl %}
-              <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-event="buy">Buy Tickets!</a>
+            {% if include.event.ticketUrl %}
+              <a href="{{ include.event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-event="buy">Buy Tickets!</a>
             {% else %}
               <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default" data-click-event="email">Email Me!</a>
             {% endif; %}

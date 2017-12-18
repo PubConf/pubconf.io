@@ -11,7 +11,7 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2017-tickets-36030386857
+  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-london-2018-tickets-41234340021
 
   location:
     name: The Comedy Pub
