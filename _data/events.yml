@@ -85,6 +85,12 @@
       featured: true
       featuredImage: /assets/images/speakers/markrendle-featured.jpg
 
+    - name: Rafał Legiędź
+      url: http://twitter.com/rafek
+      title: VR Will Save Us... Or Not
+      description: Virtually Anyone
+      image: /assets/images/speakers/rafallegiedz.jpg
+
     - name: Troy Hunt
       url: http://troyhunt.com
       title: Make Cyber Great Again
