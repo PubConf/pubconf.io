@@ -1,29 +1,29 @@
-- id: London-2018
-  name: PubConf London
-  description: "PubConf moves to central London this January with our return to NDC London!"
-  city: london
+- id: Minnesota-2018
+  name: PubConf Minnesota
+  description: "PubConf is back in Minnesota with the debut of NDC Minnesota. Coming soon to a Saint Paul Pub near you!"
+  city: minneapolis
   future: true
   url: /
 
-  doorTime: 2018-01-19T18:00:00+0000
-  startTime: 2018-01-19T19:00:00+0000
-  endTime: 2018-01-19T23:30:00+0000
+  doorTime: 2018-05-10T18:00:00-0500
+  startTime: 2018-05-10T19:00:00-0500
+  endTime: 2018-05-10T23:30:00-0500
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-london-2018-tickets-41234340021
+  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-london-2018-tickets-41234340021
 
   location:
-    name: The Comedy Pub
-    address: 7 Oxendon St, London SW1Y 4EE, UK
-    url: https://www.craft-pubs.co.uk/comedy
+    name: New Bohemia
+    address: 222 7th St W, St Paul, MN 55102
+    url: https://www.newbohemiausa.com/saint-paul/
 
   partner:
-    name: NDC London
+    name: NDC Minnesota
     description:
-    title: "15 - 19 January 2018"
-    url: https://ndc-london.com/
-    featuredImage: /assets/images/sponsors/ndclondon-featured.jpg
+    title: "7-10 May 2018"
+    url: https://ndcminnesota.com/
+    featuredImage: /assets/images/sponsors/ndcminnesota-featured.jpg
 
   host:
     name: Todd Gardner
@@ -33,49 +33,17 @@
     image: /assets/images/speakers/toddgardner.jpg
 
   speakers:
-    - name: Adam Ralph
-      url: https://twitter.com/adamralph
-      title: 'git commit -m "add spaces"'
-      description: Whitespace bigot
-      image: /assets/images/speakers/adamralph.jpg
-
-    - name: Amie Dansby
-      url: https://twitter.com/amiedoubleD
-      title: "You're Never Weird on the Internet."
-      description: That girl still plays with LEGO
-      image: /assets/images/speakers/amiedansby.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/amiedansby-featured.jpg
-
-    - name: Chris O'Dell
-      url: https://twitter.com/ChrisAnnODell
-      title: "Logging #Fails"
-      description: ~/developers/chris
-      image: /assets/images/speakers/chrisodell.gif
-
     - name: Heather Downing
       url: https://twitter.com/quorralyne
       title: "Talk Dirty to Me"
       description: Secretary of Offense
       image: /assets/images/speakers/heatherdowning.jpg
 
-    - name: Ian Cooper
-      url: https://twitter.com/ICooper
-      title: "The Duck Tape Programmer"
-      description: "Code knitter, system stitcher, and distributed puzzle solver"
-      image: /assets/images/speakers/iancooper.jpg
-
     - name: Jessica White
       url: https://twitter.com/JessPWhite
       title: Dicking About With Data
       description: Coffee Fueled Hobbit
       image: /assets/images/speakers/jessicawhite.jpg
-
-    - name: Kesha Williams
-      url: http://www.kesha.tech/
-      title: I Know My Code Sucks
-      description: Paid her technical debts.
-      image: /assets/images/speakers/keshawilliams.jpg
 
     - name: Mark Rendle
       url: https://blog.markrendle.net/
@@ -84,20 +52,6 @@
       image: /assets/images/speakers/mark.jpg
       featured: true
       featuredImage: /assets/images/speakers/markrendle-featured.jpg
-
-    - name: Rafał Legiędź
-      url: http://twitter.com/rafek
-      title: VR Will Save Us... Or Not
-      description: Virtually Anyone
-      image: /assets/images/speakers/rafallegiedz.jpg
-
-    - name: Troy Hunt
-      url: http://troyhunt.com
-      title: Make Cyber Great Again
-      description: Rather Stupid Security Researcher.
-      image: /assets/images/speakers/troy.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/troyhunt-featured.jpg
 
     - name: Dylan Beattie
       url: https://twitter.com/dylanbeattie
@@ -111,29 +65,12 @@
     - name: NDC Conferences
       level: topshelf
       url: http://ndcconferences.com/
-      image: /assets/images/sponsors/ndclondon.png
+      image: /assets/images/sponsors/ndcminnesota.png
 
     - name: TrackJS
       level: topshelf
       url: https://trackjs.com/
-      image: /assets/images/sponsors/trackjs.png
-
-- id: Minnesota-2018
-  name: PubConf Minnesota
-  description: "PubConf is back in Minnesota with the debut of NDC Minnesota. Coming soon to a Saint Paul Pub near you!"
-  city: minneapolis
-  future: true
-  url: /
-
-  doorTime: 2018-05-10T18:00:00-0500
-  startTime: 2018-05-10T19:00:00-0500
-  endTime: 2018-05-10T23:30:00-0500
-
-  partner:
-    name: NDC Minnesota
-    description: Inspiring Software Developers since 2008
-    title:
-    featuredImage:
+      image: /assets/images/sponsors/trackjs.png    
 
 - id: Oslo-2018
   name: PubConf Oslo
@@ -151,3 +88,21 @@
     description: Inspiring Software Developers since 2008
     title:
     featuredImage:
+
+- id: KansasCity-2018
+  name: PubConf Kansas City
+  description: "Burnt ends and beer, PubConf returns to Kansas City."
+  city: kansascity
+  future: true
+  url: /
+
+  doorTime: 2018-07-13T18:00:00+0200
+  startTime: 2018-07-13T19:00:00+0200
+  endTime: 2018-07-13T23:30:00+0200
+
+  partner:
+    name: KCDC
+    description: desc
+    title:
+    featuredImage:
+

@@ -49,6 +49,26 @@ html, .container, .navbar, .section {
 }
 
 .section.info {
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: center;
+
+  .faq {
+    margin-top: 20px;
+    .faq-question { 
+      margin-top: 25px;
+    }
+    .faq-answer {
+      font-size: 16px;
+      color: #ccc;
+      margin-top: 6px;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
   .container {
     padding: 50px 0;
   }
