@@ -35,15 +35,43 @@
   speakers:
     - name: Heather Downing
       url: https://twitter.com/quorralyne
-      title: "Talk Dirty to Me"
+      title: "Coming Soon"
       description: Secretary of Offense
       image: /assets/images/speakers/heatherdowning.jpg
+
+    - name: Ian Cooper
+      url: https://twitter.com/ICooper
+      title: "The Duck Tape Programmer"
+      description: "Code knitter, system stitcher, and distributed puzzle solver"
+      image: /assets/images/speakers/iancooper.jpg
 
     - name: Jessica White
       url: https://twitter.com/JessPWhite
       title: Dicking About With Data
       description: Coffee Fueled Hobbit
       image: /assets/images/speakers/jessicawhite.jpg
+
+    - name: Lars Klint
+      url: https://twitter.com/larsklint
+      title: "Time Zones Are Easy, Right?"
+      description: "Banjo Coding Expert"
+      image: /assets/images/speakers/larsklint.jpg
+
+    - name: Laura Bell
+      url: https://twitter.com/lady_nerd
+      title: "The Nihilist's Guide to Cyber"
+      description: Princess Luna meets GladOs
+      image: /assets/images/speakers/laurabell.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/laurabell-featured.jpg
+
+    - name: B. Lemon
+      url: http://ahoylemon.xyz/
+      title: "Please Your VP By Hating Your User"
+      description: "Aspiring Aspirational Figure"
+      image: /assets/images/speakers/blemon.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/blemon-featured.jpg
 
     - name: Mark Rendle
       url: https://blog.markrendle.net/
@@ -52,6 +80,18 @@
       image: /assets/images/speakers/mark.jpg
       featured: true
       featuredImage: /assets/images/speakers/markrendle-featured.jpg
+
+    - name: Niall Merrigan
+      url: http://www.certsandprogs.com/
+      title: "Coming Soon"
+      description: "Lazy Bastard"
+      image: /assets/images/speakers/niall.jpg
+
+    - name: Stephen Haunts
+      url: https://twitter.com/stephenhaunts
+      title: "How to Lead Like an Utter Bastard!"
+      description: "Steve the Demotivator"
+      image: /assets/images/speakers/stephenhaunts.jpg
 
     - name: Dylan Beattie
       url: https://twitter.com/dylanbeattie
