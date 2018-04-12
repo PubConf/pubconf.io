@@ -45,6 +45,12 @@
       description: "Code knitter, system stitcher, and distributed puzzle solver"
       image: /assets/images/speakers/iancooper.jpg
 
+    - name: Jake Ginnivan
+      url: https://twitter.com/JakeGinnivan
+      title: The Other Side of the Ad Blocker
+      description: Still an Optimist
+      image: /assets/images/speakers/jakeginnivan.jpg
+
     - name: Jessica White
       url: https://twitter.com/JessPWhite
       title: Dicking About With Data
