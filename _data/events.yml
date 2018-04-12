@@ -11,7 +11,7 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-london-2018-tickets-41234340021
+  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-minnesota-2018-tickets-45094584115
 
   location:
     name: New Bohemia
@@ -51,6 +51,13 @@
       description: Coffee Fueled Hobbit
       image: /assets/images/speakers/jessicawhite.jpg
 
+    - name: Jonathan Mills
+      champion: true
+      url: http://jonathanfmills.com/
+      title: "JavaScript, The Weird Parts?"
+      description: "Still confused by JavaScript"
+      image: /assets/images/speakers/jonmills-2.jpg
+
     - name: Lars Klint
       url: https://twitter.com/larsklint
       title: "Time Zones Are Easy, Right?"
@@ -58,6 +65,7 @@
       image: /assets/images/speakers/larsklint.jpg
 
     - name: Laura Bell
+      champion: true
       url: https://twitter.com/lady_nerd
       title: "The Nihilist's Guide to Cyber"
       description: Princess Luna meets GladOs
@@ -74,6 +82,7 @@
       featuredImage: /assets/images/speakers/blemon-featured.jpg
 
     - name: Mark Rendle
+      champion: true
       url: https://blog.markrendle.net/
       title: "Dante's InVerNo: .NET Version Numbers Explained"
       description: Keeper of the Profane Keywords
@@ -110,7 +119,7 @@
     - name: TrackJS
       level: topshelf
       url: https://trackjs.com/
-      image: /assets/images/sponsors/trackjs.png    
+      image: /assets/images/sponsors/trackjs.png
 
 - id: Oslo-2018
   name: PubConf Oslo
