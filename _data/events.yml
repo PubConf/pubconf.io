@@ -11,7 +11,7 @@
   startDisplay: 7:00 pm
   doorDisplay: 6:00 pm
 
-  # ticketUrl: https://www.eventbrite.co.uk/e/pubconf-minnesota-2018-tickets-45094584115
+  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-minnesota-2018-tickets-45094584115
 
   location:
     name: New Bohemia
@@ -98,8 +98,8 @@
 
     - name: Niall Merrigan
       url: http://www.certsandprogs.com/
-      title: "Coming Soon"
-      description: "Lazy Bastard"
+      title: "If the Irish Made the Internet"
+      description: "St Patrick's Younger Brother"
       image: /assets/images/speakers/niall.jpg
 
     - name: Stephen Haunts
