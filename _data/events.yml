@@ -127,6 +127,11 @@
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
 
+    - name: TEKsystems
+      level: draft
+      url: https://www.teksystems.com/en
+      image: /assets/images/sponsors/teksystems.png
+
 - id: Oslo-2018
   name: PubConf Oslo
   description: "Break out the Aquavit, PubConf comes home to Oslo this June."

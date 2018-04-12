@@ -8,7 +8,8 @@
 			</div>
 		</div>
 		<div class="row">
-			{% for sponsor in include.sponsors %}
+			{% assign topSponsors = include.sponsors | where:"level","topshelf" %}
+			{% for sponsor in topSponsors %}
 				<div class="col-xs-12 col-md-6">
 					<div class="sponsor-item">
 						<a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
@@ -17,6 +18,18 @@
 					</div>
 				</div>
 		  {% endfor; %}
+		</div>
+		<div class="row">
+			{% assign draftSponsors = include.sponsors | where:"level","draft" %}
+			{% for sponsor in draftSponsors %}
+				<div class="col-xs-6 col-md-4">
+					<div class="sponsor-item">
+						<a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
+							<img data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+						</a>
+					</div>
+				</div>
+			{% endfor; %}
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
