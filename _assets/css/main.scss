@@ -96,12 +96,19 @@ a[type='button'] {
 
   display: flex;
   width: 100%;
+  position: relative;
 
-  img {
+  img.speaker {
     flex-grow: 0;
     flex-shrink: 0;
     height: 150px;
     width: 150px;
+  }
+  img.champion {
+    position: absolute;
+    height: 100px;
+    left: -18px;
+    bottom: -10px;
   }
 
   figcaption {

@@ -13,7 +13,8 @@
         {% for speaker in include.event.speakers %}
           <li>
             <figure class="speaker-item">
-              <img data-lazy-src="{{ speaker.image }}" alt="{{ speaker.name }}">
+              <img data-lazy-src="{{ speaker.image }}" alt="{{ speaker.name }}" class="speaker">
+              {% if speaker.champion %}<img data-lazy-src="/assets/images/champion.png" alt="champion" title="Former PubConf Champion" class="champion">{% endif; %}
               <figcaption>
                 <span class="title">{{ speaker.title }}</span>
                 <span class="name"><a href="{{speaker.url}}">{{ speaker.name }}</a></span>
@@ -36,7 +37,7 @@
       <ul class="speaker-list">
         <li style="margin:0 auto">
           <figure class="speaker-item">
-            <img data-lazy-src="{{ include.event.host.image }}" alt="{{ include.event.host.name }}">
+            <img data-lazy-src="{{ include.event.host.image }}" alt="{{ include.event.host.name }}" class="speaker">
             <figcaption>
               <span class="title"></span>
               <span class="name"><a href="{{ include.event.host.url }}">{{ include.event.host.name }}</a></span>
