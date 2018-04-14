@@ -18,16 +18,50 @@
   <meta property="og:locale" content="en_US" />
   {% if site.facebook_username %}<meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
   {% if site.facebook_username %}<meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
-  {% if page.image %}<meta property="og:image" content="{{site.url}}{{page.image}}" />
-  {% else %}<meta property="og:image" content="{{site.url}}{{site.image}}" />{% endif %}
+  <meta property="og:image" content="{{site.url}}/assets/images/share/facebook.jpg" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
-  {% if page.image %}<meta name="twitter:image" content="{{site.url}}{{page.image}}" />
-  {% else %}<meta name="twitter:image" content="{{site.url}}{{site.image}}" />{% endif %}
+  <meta name="twitter:image" content="{{site.url}}{{site.url}}/assets/images/share/twitter.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "logo": "{{site.url}}{{site.image}}",
+      "sameAs": [
+        "https://www.facebook.com/{{ site.facebook_username }}",
+        "https://twitter.com/{{ site.twitter_username }}",
+        "https://plus.google.com/{{ site.googleplus_username }}"
+      ],
+      "email": "{{ site.email }}"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Event",
+      "name": "{{ event.name }}",
+      "description": "{{ event.description }}",
+      "url": "{{ site.url }}{{ event.url }}",
+      "image": "{{ site.url }}{{ event.image }}",
+      "doorTime": "{{ event.doorTime }}",
+      "startDate": "{{ event.startTime }}",
+      "endDate": "{{ event.endTime }}",
+      "location": {
+        "@type": "Place",
+        "name": "{{ event.city }}",
+        "address": "{{ event.city }}"
+      }
+    }
+  </script>
 
   <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Lato:400,900' rel='stylesheet' type='text/css' />
   <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css" />
