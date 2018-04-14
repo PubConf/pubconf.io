@@ -36,13 +36,23 @@
   <script type="text/javascript">window._trackJs = { token: '23cdb1761b31482d9e1ec76b6837cb37' };</script>
   <script type="text/javascript" src="https://cdn.trackjs.com/releases/canary/tracker.js"></script>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.UA }}"></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', '{% if page.UA %}{{ page.UA }}{% else %}{{ site.UA }}{% endif %}', 'auto');
-    ga('send', 'pageview');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.UA }}');
+    gtag.createTimeoutFn = function(callback, timeout) {
+      var called = false;
+      function fn() {
+        if (!called) {
+          called = true;
+          callback();
+        }
+      }
+      setTimeout(fn, timeout || 1000);
+      return fn;
+    }
   </script>
 
   <script>
