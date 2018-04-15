@@ -11,18 +11,13 @@ layout: null
     <priority>{{ page.sitemap.priority | default: '0.8' }}</priority>
   </url>
 {% endif %}{% endfor %}
+{% assign event = (site.data.events | where:"future",true | sort:"startTime" | first) %}
+{% if event.ticketUrl %}
   <url>
-    <loc>{{ site.url }}/blog/</loc>
+    <loc>{{ event.ticketUrl }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
-{% for post in site.posts %}
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-{% endfor %}
+{% endif %}
 </urlset>
