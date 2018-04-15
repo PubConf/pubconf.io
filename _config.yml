@@ -30,6 +30,7 @@ gems:
 
 exclude:
   - "Gemfile*"
+  - "README.md"
 
 assets:
   sources:
