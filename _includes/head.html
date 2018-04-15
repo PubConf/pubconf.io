@@ -44,6 +44,7 @@
       "email": "{{ site.email }}"
     }
   </script>
+  {% assign event = (site.data.events | where:"future",true | sort:"startTime" | first) %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
@@ -51,15 +52,24 @@
       "name": "{{ event.name }}",
       "description": "{{ event.description }}",
       "url": "{{ site.url }}{{ event.url }}",
-      "image": "{{ site.url }}{{ event.image }}",
+      "image": "{{ site.url }}/assets/images/share/twitter.jpg",
       "doorTime": "{{ event.doorTime }}",
       "startDate": "{{ event.startTime }}",
       "endDate": "{{ event.endTime }}",
       "location": {
         "@type": "Place",
-        "name": "{{ event.city }}",
-        "address": "{{ event.city }}"
-      }
+        "name": "{{ event.location.name }}",
+        "address": "{{ event.location.address }}"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ event.ticketUrl }}"
+      },
+      "performer": [{% for speaker in event.speakers %}{
+        "@type": "Person",
+        "name": "{{ speaker.name }}",
+        "url": "{{ speaker.url }}"
+      }{% if forloop.last == false %},{% endif; %}{% endfor; %}]
     }
   </script>
 
