@@ -108,6 +108,12 @@
       description: "Steve the Demotivator"
       image: /assets/images/speakers/stephenhaunts.jpg
 
+    - name: Mike Hodnik
+      url: http://kindohm.com/
+      title: "Music Made with Computers"
+      description: Kindohm
+      image: /assets/images/speakers/mikehodnik.jpg
+
     - name: Dylan Beattie
       url: https://twitter.com/dylanbeattie
       title: "Developer Musical Medley"
@@ -126,6 +132,11 @@
       level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
+
+    - name: Super Go Faster
+      level: topshelf
+      url: http://supergofaster.com/
+      image: /assets/images/sponsors/supergofaster.png
 
     - name: TEKsystems
       level: draft
