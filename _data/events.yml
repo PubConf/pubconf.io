@@ -5,6 +5,7 @@
   future: true
   url: /
   image: /assets/images/share/twitter-oslo.jpg
+  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-oslo-2018-tickets-46297297463
 
   doorTime: 2018-06-14T19:00:00+0200
   startTime: 2018-06-14T20:00:00+0200
