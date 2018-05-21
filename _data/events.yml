@@ -1,29 +1,26 @@
-- id: Minnesota-2018
-  name: PubConf Minnesota
-  description: "PubConf is back in Minnesota with the debut of NDC Minnesota. Coming soon to a Saint Paul Pub near you!"
-  city: minneapolis
+- id: Oslo-2018
+  name: PubConf Oslo
+  description: "Break out the Aquavit, PubConf comes home to Oslo this June."
+  city: oslo
   future: true
   url: /
 
-  doorTime: 2018-05-10T18:00:00-0500
-  startTime: 2018-05-10T19:00:00-0500
-  endTime: 2018-05-10T23:30:00-0500
-  startDisplay: 7:00 pm
-  doorDisplay: 6:00 pm
-
-  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-minnesota-2018-tickets-45094584115
+  doorTime: 2018-06-14T19:00:00+0200
+  startTime: 2018-06-14T20:00:00+0200
+  endTime: 2018-06-14T23:30:00+0200
+  startDisplay: 20:00
+  doorDisplay: 19:00
 
   location:
-    name: New Bohemia
-    address: 222 7th St W, St Paul, MN 55102
-    url: https://www.newbohemiausa.com/saint-paul/
+    name: Oslo Spektrum, NDC Attendee Party
+    address: Sonja Henies plass 2, 0185 Oslo, Norway
+    url: http://www.oslospektrum.no/
 
   partner:
-    name: NDC Minnesota
-    description:
-    title: "7-10 May 2018"
-    url: https://ndcminnesota.com/
-    featuredImage: /assets/images/sponsors/ndcminnesota-featured.jpg
+    name: NDC Oslo
+    description: Inspiring Software Developers since 2008
+    title: "11-15 June 2018"
+    featuredImage: /assets/images/sponsors/ndcoslo-featured.jpg
 
   host:
     name: Todd Gardner
@@ -33,9 +30,29 @@
     image: /assets/images/speakers/toddgardner.jpg
 
   speakers:
+    - name: Chris Klug
+      url: https://twitter.com/ZeroKoll
+      title: "The Devolution of the Human Species"
+      description: "Entitled Snowflake"
+      image: /assets/images/speakers/chrisklug.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/chrisklug-featured.jpg
+
+    - name: Elle Waters
+      url: https://twitter.com/Nethermind
+      title: "How to Suck at Acceessibility: Cock Block your users in 10 easy steps!"
+      description: "Mucker Upper for the Greater Good"
+      image: /assets/images/speakers/ellewaters.jpg
+
+    - name: Eric Brandes
+      url: https://twitter.com/BrandesEric
+      title: "Sprinting Towards Failure"
+      description: "Professional Typist"
+      image: /assets/images/speakers/ericbrandes.jpg
+
     - name: Heather Downing
       url: https://twitter.com/quorralyne
-      title: "Who Wants to Be a Conspiracy Theorist?"
+      title: "Talk Dirty to Me"
       description: Secretary of Offense
       image: /assets/images/speakers/heatherdowning.jpg
 
@@ -45,78 +62,44 @@
       description: "Code knitter, system stitcher, and distributed puzzle solver"
       image: /assets/images/speakers/iancooper.jpg
 
-    - name: Jake Ginnivan
-      url: https://twitter.com/JakeGinnivan
-      title: The Other Side of the Ad Blocker
-      description: Still an Optimist
-      image: /assets/images/speakers/jakeginnivan.jpg
-
-    - name: Jessica White
-      url: https://twitter.com/JessPWhite
-      title: Dicking About With Data
-      description: Coffee Fueled Hobbit
-      image: /assets/images/speakers/jessicawhite.jpg
-
-    - name: Jonathan Mills
-      champion: true
-      url: http://jonathanfmills.com/
-      title: "JavaScript, The Weird Parts?"
-      description: "Still confused by JavaScript"
-      image: /assets/images/speakers/jonmills-2.jpg
-
-    - name: Lars Klint
-      url: https://twitter.com/larsklint
-      title: "Time Zones Are Easy, Right?"
-      description: "Banjo Coding Expert"
-      image: /assets/images/speakers/larsklint.jpg
-
-    - name: Laura Bell
-      champion: true
-      url: https://twitter.com/lady_nerd
-      title: "The Nihilist's Guide to Cyber"
-      description: Princess Luna meets GladOs
-      image: /assets/images/speakers/laurabell.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/laurabell-featured.jpg
-
-    - name: B. Lemon
-      url: http://ahoylemon.xyz/
-      title: "Please Your VP By Hating Your User"
-      description: "Aspiring Aspirational Figure"
-      image: /assets/images/speakers/blemon.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/blemon-featured.jpg
+    - name: Jennifer Wadella
+      url: https://twitter.com/likeOMGitsFEDAY
+      title: "How to Run a Dev Team Into the Ground"
+      description: "That raging feminist 4chan warned you about"
+      image: /assets/images/speakers/jenniferwadella.jpg
 
     - name: Mark Rendle
       champion: true
       url: https://blog.markrendle.net/
-      title: "Dante's InVerNo: .NET Version Numbers Explained"
+      title: "Ready Coder One"
       description: Keeper of the Profane Keywords
       image: /assets/images/speakers/mark.jpg
       featured: true
       featuredImage: /assets/images/speakers/markrendle-featured.jpg
 
-    - name: Niall Merrigan
-      url: http://www.certsandprogs.com/
-      title: "If the Irish Made the Internet"
-      description: "St Patrick's Younger Brother"
-      image: /assets/images/speakers/niall.jpg
+    - name: Michelle Sandford
+      url: https://twitter.com/msandfor
+      title: "Toppling the Tech Gods and Stealing Their Secrets"
+      description: "Benevolent revolutionary / god toppler / superhero"
+      image: /assets/images/speakers/michellesandford.jpg
 
-    - name: Stephen Haunts
-      url: https://twitter.com/stephenhaunts
-      title: "How to Lead Like an Utter Bastard!"
-      description: "Steve the Demotivator"
-      image: /assets/images/speakers/stephenhaunts.jpg
+    - name: Spencer Schneidenbach
+      url: https://twitter.com/schneidenbach
+      title: "Working at a Tech Startup, or: Yesterday’s Job, Today"
+      description: "Technical Debt Collector"
+      image: /assets/images/speakers/spencerschneidenbach.jpg
 
-    - name: Mike Hodnik
-      url: http://kindohm.com/
-      title: "Music Made with Computers"
-      description: Kindohm
-      image: /assets/images/speakers/mikehodnik.jpg
+    - name: Troy Hunt
+      url: https://twitter.com/troyhunt
+      title: "Coming Soon"
+      description: "Rather Stupid Security Researcher"
+      image: /assets/images/speakers/troy.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/troyhunt-featured.jpg
 
     - name: Dylan Beattie
       url: https://twitter.com/dylanbeattie
-      title: "Developer Musical Medley"
+      title: "Developer Hits from the 80s 90s and Today"
       description: and the Line Breakers
       image: /assets/images/speakers/dylan.jpg
       featured: true
@@ -126,39 +109,12 @@
     - name: NDC Conferences
       level: topshelf
       url: http://ndcconferences.com/
-      image: /assets/images/sponsors/ndcminnesota.png
+      image: /assets/images/sponsors/ndcoslo-white.png
 
     - name: TrackJS
       level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
-
-    - name: Super Go Faster
-      level: topshelf
-      url: http://supergofaster.com/
-      image: /assets/images/sponsors/supergofaster.png
-
-    - name: TEKsystems
-      level: draft
-      url: https://www.teksystems.com/en
-      image: /assets/images/sponsors/teksystems.png
-
-- id: Oslo-2018
-  name: PubConf Oslo
-  description: "Break out the Aquavit, PubConf comes home to Oslo this June."
-  city: oslo
-  future: true
-  url: /
-
-  doorTime: 2018-06-15T18:00:00+0200
-  startTime: 2018-06-15T19:00:00+0200
-  endTime: 2018-06-15T23:30:00+0200
-
-  partner:
-    name: NDC Oslo
-    description: Inspiring Software Developers since 2008
-    title:
-    featuredImage:
 
 - id: KansasCity-2018
   name: PubConf Kansas City
