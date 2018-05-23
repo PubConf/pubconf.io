@@ -85,6 +85,12 @@
       description: "Benevolent revolutionary / god toppler / superhero"
       image: /assets/images/speakers/michellesandford.jpg
 
+    - name: Niall Merrigan
+      url: https://twitter.com/nmerrigan
+      title: "If the Irish Invented the Internet"
+      description: "St Patrick's Younger Brother"
+      image: /assets/images/speakers/niall.jpg
+
     - name: Spencer Schneidenbach
       url: https://twitter.com/schneidenbach
       title: "Working at a Tech Startup, or: Yesterday’s Job, Today"
@@ -93,7 +99,7 @@
 
     - name: Troy Hunt
       url: https://twitter.com/troyhunt
-      title: "Coming Soon"
+      title: "Passwords Too Strong"
       description: "Rather Stupid Security Researcher"
       image: /assets/images/speakers/troy.jpg
       featured: true
