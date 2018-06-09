@@ -42,7 +42,7 @@
 
     - name: Elle Waters
       url: https://twitter.com/Nethermind
-      title: "How to Suck at Acceessibility: Cock Block your users in 10 easy steps!"
+      title: "How to Suck at Accessibility: Cock Block your users in 10 easy steps!"
       description: "Mucker Upper for the Greater Good"
       image: /assets/images/speakers/ellewaters.jpg
 
@@ -70,14 +70,14 @@
       description: "That raging feminist 4chan warned you about"
       image: /assets/images/speakers/jenniferwadella.jpg
 
-    - name: Mark Rendle
-      champion: true
-      url: https://blog.markrendle.net/
-      title: "Ready Coder One"
-      description: Keeper of the Profane Keywords
-      image: /assets/images/speakers/mark.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/markrendle-featured.jpg
+    # - name: Mark Rendle
+    #   champion: true
+    #   url: https://blog.markrendle.net/
+    #   title: "Ready Coder One"
+    #   description: Keeper of the Profane Keywords
+    #   image: /assets/images/speakers/mark.jpg
+    #   featured: true
+    #   featuredImage: /assets/images/speakers/markrendle-featured.jpg
 
     - name: Michelle Sandford
       url: https://twitter.com/msandfor
@@ -93,7 +93,7 @@
 
     - name: Spencer Schneidenbach
       url: https://twitter.com/schneidenbach
-      title: "Working at a Tech Startup, or: Yesterday’s Job, Today"
+      title: "The Developer’s Startup Survival Guide"
       description: "Technical Debt Collector"
       image: /assets/images/speakers/spencerschneidenbach.jpg
 
