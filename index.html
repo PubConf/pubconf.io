@@ -27,7 +27,7 @@ sitemap:
         <img data-lazy-src="{{ partner.featuredImage }}" alt="slide-1">
         <div class="carousel-caption">
           <div class="caption-heading">
-            <h1 class="featuring">at</h1>
+            <h1 class="featuring">after</h1>
             <span class="name"><a href="{{ partner.url }}" style="color:white">{{ partner.name }}</a></span>
             <small>{{ partner.description }}</small>
           </div>
@@ -89,8 +89,7 @@ sitemap:
 					Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers.
 				</p>
 				<p>
-          Co-located with the NDC Oslo Attendee party at the Oslo Spektrum! NDC Oslo ticketholders already have access to PubConf Oslo.
-          Buying a PubConf ticket gets you full access to the NDC Oslo attendee party.
+          Plus, food and drinks are included in your ticket!
 				</p>
 			</div>
 		</div>
@@ -271,9 +270,8 @@ sitemap:
     <div class="row detail-content">
       <div class="col-sm-12 col-md-6">
         <h3 data-visible-category="discovery" data-visible-action="view_info">Times</h3>
-        <div><strong>Doors Open</strong> - {{ event.doorTime | date: "%R" }}</div>
-        <div><strong>Show Time</strong> - {{ event.startTime | date: "%R" }}</div>
-        <div><strong>Finished</strong> - {{ event.endTime | date: "%R" }}</div>
+        <div><strong>Doors Open</strong> - {{ event.doorDisplay }}</div>
+        <div><strong>Show Time</strong> - {{ event.startDisplay }}</div>
       </div>
       <div class="col-sm-12 col-md-6">
         <h3>Location</h3>
