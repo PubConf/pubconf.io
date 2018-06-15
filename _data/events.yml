@@ -97,6 +97,12 @@
       description: "Technical Debt Collector"
       image: /assets/images/speakers/spencerschneidenbach.jpg
 
+    - name: Stephen Haunts
+      url: https://twitter.com/stephenhaunts
+      title: "How to Lead Like an Utter Bastard!"
+      description: "Steve the Demotivator"
+      image: /assets/images/speakers/stephenhaunts.jpg
+
     - name: Troy Hunt
       url: https://twitter.com/troyhunt
       title: "Passwords Too Strong"
