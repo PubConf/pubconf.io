@@ -1,54 +1,61 @@
-- id: KansasCity-2018
-  name: PubConf Kansas City
-  description: "Burnt ends and beer, PubConf returns to Kansas City."
-  city: kansascity
+- id: Sydney-2018
+  name: PubConf Sydney
+  description: "Beers down under, the PubConf of Sydney"
+  city: sydney
   future: true
   url: /
-  image: /assets/images/share/twitter-kc.jpg
-  ticketUrl: https://www.eventbrite.sg/e/pubconf-after-kcdc-tickets-46309471877
+  image: /assets/images/share/twitter-sydney.jpg
+  #ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2018-tickets-48194065748
 
-  doorTime: 2018-07-13T18:00:00+0200
-  startTime: 2018-07-13T19:00:00+0200
-  endTime: 2018-07-13T23:30:00+0200
+  doorTime: 2018-09-21T18:00:00+1000
+  startTime: 2018-09-21T19:00:00+1000
+  endTime: 2018-09-21T23:30:00+1000
   startDisplay: 7:00pm
   doorDisplay: 6:00pm
 
   location:
-    name: Tom's Town Distillery
-    address: 1701 Main St, Kansas City, MO 64108
-    url: http://www.toms-town.com/
+    name: All Hands Brewing
+    address: 22 The Promenade, Sydney NSW 2000, Australia
+    url: https://www.allhandsbrewinghouse.com.au/
 
   partner:
-    name: KCDC
-    description: "10 Years of Kansas City Developer Conference"
-    title: "July 11th - 13th"
-    featuredImage: /assets/images/sponsors/kcdc-featured.jpg
+    name: NDC Sydney
+    description: "Inspiring Software Developers since 2008"
+    title: "September 17th - 21st"
+    featuredImage: /assets/images/sponsors/ndcsydney-featured.jpg
 
   host:
-    name: Todd Gardner
-    url: https://twitter.com/toddhgardner
+    name: Lars Klint
+    url: https://twitter.com/LarsKlint
     title:
-    description: Aspiring digital comedian and occasional JavaScript developer.
-    image: /assets/images/speakers/toddgardner.jpg
+    description: Not Todd.
+    image: /assets/images/speakers/larsklint.jpg
 
   speakers:
-    - name: Guy Royse
-      url: https://twitter.com/guyroyse
-      title: "Coding for Dollars"
-      description: "Bad-ass Santa the Software Craftsman"
-      image: /assets/images/speakers/guyroyse.jpg
 
-    - name: Hilary Weaver-Robb
-      url: https://twitter.com/g33klady
-      title: "Pro's Guide to Fucking With QA"
-      description: "Voted Most Likely To Make You Rewrite Your Code, 2018"
-      image: /assets/images/speakers/hilaryweaverrobb.jpg
+    # - name: Azadeh Khojandi
+    #   url: https://twitter.com/azadehkhojandi
+    #   title: "Coming Soon"
+    #   description:
+    #   image: /assets/images/speakers/anonymous.png
 
-    - name: Jeff Strauss
-      url: https://twitter.com/jeffreystrauss
-      title: "EULAs or: How I Learned to Stop Worrying and Love Getting Bent Over"
-      description: "No, the other Lazy Bastard"
-      image: /assets/images/speakers/jeffstrauss.jpg
+    - name: Barry Dorrans
+      url: https://twitter.com/blowdart
+      title: "XML == REST, Changing the Brackets Doesn't Make it New"
+      description: Permanently crying due to your bad coding choices
+      image: /assets/images/speakers/barrydorrans.gif
+
+    - name: Ben Cull
+      url: https://twitter.com/BenWhoLikesBeer
+      title: "The Tipsy Manifesto - Beer for Better Productivity"
+      description: That Guy Who Likes Beer
+      image: /assets/images/speakers/BenCull.jpg
+
+    - name: Heather Downing
+      url: https://twitter.com/quorralyne
+      title: "Talk Dirty to Me"
+      description: Secretary of Offense
+      image: /assets/images/speakers/heatherdowning.jpg
 
     - name: Jennifer Wadella
       url: https://twitter.com/likeOMGitsFEDAY
@@ -58,57 +65,65 @@
       featured: true
       featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
 
-    - name: Jimmy Bogard
-      url: https://twitter.com/jbogard
-      title: "Open Office Etiquette"
-      description: "Untappd Architect"
-      image: /assets/images/speakers/jimmybogard.jpg
-
-    - name: Jonathan Mills
-      url: https://twitter.com/jonathanfmills
-      title: "So You Want to Be a Speaker"
-      description: "Lazy Bastard"
-      image: /assets/images/speakers/jonmills-2.jpg
-      champion: true
-      featured: true
-      featuredImage: /assets/images/speakers/jonmills-featured.jpg
-
-    - name: Lars Klint
-      url: https://twitter.com/LarsKlint
-      title: "Time Zones Are Easy, Right?"
-      description: "Banjo Coding Expert"
-      image: /assets/images/speakers/larsklint.jpg
-
     - name: Lemon
       url: https://twitter.com/AhoyLemon
       title: "Please Your VP By Hating Your User"
-      description: "Aspiring Aspirational Figure"
+      description: "Currently Throwing You Under The Bus"
       image: /assets/images/speakers/blemon.jpg
       champion: true
       featured: true
       featuredImage: /assets/images/speakers/blemon-featured.jpg
 
-    - name: Lyndsey Padget
-      url: https://twitter.com/LyndseyPadget
-      title: "Have Fun Storming the Patriarchy!"
-      description: "Badassery Tribal Elder"
-      image: /assets/images/speakers/lyndseypadget.jpg
+    - name: Maria Naggaga
+      url: https://twitter.com/LadyNaggaga
+      title: "Coming Soon"
+      description:
+      image: /assets/images/speakers/anonymous.png
 
-    - name: Matthew Renze
-      url: https://twitter.com/MatthewRenze
-      title: "You Meatbags Had Your Chance!"
-      description: "Ugly bag of mostly water"
-      image: /assets/images/speakers/matthewrenze.jpg
+    - name: Mark Rendle
+      champion: true
+      url: https://blog.markrendle.net/
+      title: "Ready Coder One"
+      description: Keeper of the Profane Keywords
+      image: /assets/images/speakers/mark.jpg
       featured: true
-      featuredImage: /assets/images/speakers/matthewrenze-featured.jpg
+      featuredImage: /assets/images/speakers/markrendle-featured.jpg
+
+    - name: Scott Helme
+      url: https://twitter.com/ScottHelme
+      title: "Coming Soon"
+      description:
+      image: /assets/images/speakers/anonymous.png
+
+    - name: Troy Hunt
+      url: https://twitter.com/troyhunt
+      title: "Passwords Too Strong"
+      description: "Rather Stupid Security Researcher"
+      image: /assets/images/speakers/troy.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/troyhunt-featured.jpg
+
+    - name: Dylan Beattie
+      url: https://twitter.com/dylanbeattie
+      title: "Developer Hits from the 80s 90s and Today"
+      description: and the Line Breakers
+      image: /assets/images/speakers/dylan.jpg
+      featured: true
+      featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
+
 
   sponsors:
-    - name: KCDC
+    - name: NDC Sydney
       level: topshelf
-      url: http://www.kcdc.info/
-      image: /assets/images/sponsors/kcdc.png
+      url: https://ndcsydney.com/
+      image: /assets/images/sponsors/ndcsydney.png
 
     - name: TrackJS
       level: topshelf
       url: https://trackjs.com/
       image: /assets/images/sponsors/trackjs.png
+
+    - name: Azure Dev Advocates
+      level: topshelf
+      url: https://twitter.com/azureadvocates
+      image: /assets/images/sponsors/microsoftcda.png
