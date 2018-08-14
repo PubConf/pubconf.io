@@ -28,7 +28,7 @@
     name: Lars Klint
     url: https://twitter.com/LarsKlint
     title:
-    description: Not Todd.
+    description: Todd's Danish Twin.
     image: /assets/images/speakers/larsklint.jpg
 
   speakers:
@@ -51,16 +51,16 @@
       description: That Guy Who Likes Beer
       image: /assets/images/speakers/BenCull.jpg
 
-    - name: Heather Downing
-      url: https://twitter.com/quorralyne
-      title: "Talk Dirty to Me"
-      description: Secretary of Offense
-      image: /assets/images/speakers/heatherdowning.jpg
+    # - name: Heather Downing
+    #   url: https://twitter.com/quorralyne
+    #   title: "Talk Dirty to Me"
+    #   description: Secretary of Offense
+    #   image: /assets/images/speakers/heatherdowning.jpg
 
     - name: Jennifer Wadella
       url: https://twitter.com/likeOMGitsFEDAY
-      title: "How to Run a Dev Team... Into the Ground"
-      description: "That raging feminist 4chan warned you about"
+      title: "If choosing a JavaScript framework was like an episode of the Bachelor"
+      description: "Basic White Bitch"
       image: /assets/images/speakers/jenniferwadella.jpg
       featured: true
       featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
@@ -74,11 +74,11 @@
       featured: true
       featuredImage: /assets/images/speakers/blemon-featured.jpg
 
-    - name: Maria Naggaga
-      url: https://twitter.com/LadyNaggaga
-      title: "Coming Soon"
-      description:
-      image: /assets/images/speakers/anonymous.png
+    # - name: Maria Naggaga
+    #   url: https://twitter.com/LadyNaggaga
+    #   title: "Coming Soon"
+    #   description:
+    #   image: /assets/images/speakers/anonymous.png
 
     - name: Mark Rendle
       champion: true
