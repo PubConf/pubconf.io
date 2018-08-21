@@ -5,7 +5,7 @@
   future: true
   url: /
   image: /assets/images/share/twitter-sydney.jpg
-  #ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2018-tickets-48194065748
+  ticketUrl: https://www.eventbrite.co.uk/e/pubconf-sydney-2018-tickets-48194065748
 
   doorTime: 2018-09-21T18:00:00+1000
   startTime: 2018-09-21T19:00:00+1000
@@ -33,15 +33,9 @@
 
   speakers:
 
-    # - name: Azadeh Khojandi
-    #   url: https://twitter.com/azadehkhojandi
-    #   title: "Coming Soon"
-    #   description:
-    #   image: /assets/images/speakers/anonymous.png
-
     - name: Barry Dorrans
       url: https://twitter.com/blowdart
-      title: "XML == REST, Changing the Brackets Doesn't Make it New"
+      title: "XML == JSON, Changing the Brackets Doesn't Make it New"
       description: Permanently crying due to your bad coding choices
       image: /assets/images/speakers/barrydorrans.gif
 
@@ -51,11 +45,23 @@
       description: That Guy Who Likes Beer
       image: /assets/images/speakers/BenCull.jpg
 
-    # - name: Heather Downing
-    #   url: https://twitter.com/quorralyne
-    #   title: "Talk Dirty to Me"
-    #   description: Secretary of Offense
-    #   image: /assets/images/speakers/heatherdowning.jpg
+    - name: Damian Brady
+      url: https://twitter.com/damovisa
+      title: "How to Code Like an Arsehole"
+      description: "Microsoft corporate shill"
+      image: /assets/images/speakers/damianbrady.jpg
+
+    - name: David Burela
+      url: https://twitter.com/DavidBurela
+      title: "What the block?!?"
+      description: "ICO Consultant in containerised Blockchain AI"
+      image: /assets/images/speakers/davidburela.png
+
+    - name: Heather Downing
+      url: https://twitter.com/quorralyne
+      title: "Pair Programming: Resistance is Futile"
+      description: Just A Basic Peach
+      image: /assets/images/speakers/heatherdowning.jpg
 
     - name: Jennifer Wadella
       url: https://twitter.com/likeOMGitsFEDAY
@@ -73,12 +79,6 @@
       champion: true
       featured: true
       featuredImage: /assets/images/speakers/blemon-featured.jpg
-
-    # - name: Maria Naggaga
-    #   url: https://twitter.com/LadyNaggaga
-    #   title: "Coming Soon"
-    #   description:
-    #   image: /assets/images/speakers/anonymous.png
 
     - name: Mark Rendle
       champion: true
@@ -127,3 +127,8 @@
       level: topshelf
       url: https://twitter.com/azureadvocates
       image: /assets/images/sponsors/microsoftcda.png
+
+    - name: Pinch Payments
+      level: draft
+      url: https://getpinch.com.au/
+      image: /assets/images/sponsors/pinch.png
