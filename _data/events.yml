@@ -80,20 +80,20 @@
       featured: true
       featuredImage: /assets/images/speakers/blemon-featured.jpg
 
-    - name: Mark Rendle
-      champion: true
-      url: https://blog.markrendle.net/
-      title: "Ready Coder One"
-      description: Keeper of the Profane Keywords
-      image: /assets/images/speakers/mark.jpg
-      featured: true
-      featuredImage: /assets/images/speakers/markrendle-featured.jpg
+    # - name: Mark Rendle
+    #   champion: true
+    #   url: https://blog.markrendle.net/
+    #   title: "Ready Coder One"
+    #   description: Keeper of the Profane Keywords
+    #   image: /assets/images/speakers/mark.jpg
+    #   featured: true
+    #   featuredImage: /assets/images/speakers/markrendle-featured.jpg
 
     - name: Scott Helme
       url: https://twitter.com/ScottHelme
-      title: "Coming Soon"
-      description:
-      image: /assets/images/speakers/anonymous.png
+      title: "Make Australia Britain Again"
+      description: "Whinging Pom"
+      image: /assets/images/speakers/scotthelme.jpg
 
     - name: Troy Hunt
       url: https://twitter.com/troyhunt
