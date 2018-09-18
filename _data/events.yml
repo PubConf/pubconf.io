@@ -33,6 +33,12 @@
 
   speakers:
 
+    - name: Aaron Powell
+      url: https://twitter.com/slace
+      title: "JavaScript: The Tinder of Programming Languages"
+      description: "Likes long walks on the beach discussing JavaScript"
+      image: /assets/images/speakers/aaronpowell.jpg
+
     - name: Barry Dorrans
       url: https://twitter.com/blowdart
       title: "XML == JSON, Changing the Brackets Doesn't Make it New"
