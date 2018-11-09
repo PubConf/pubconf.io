@@ -24,8 +24,10 @@ $(function() {
     * Setup the header to shrink once the user has scrolled down.
     */
   (function shrinkHeader() {
+    if ($('.section').length < 2) { return; }
+
     var batas = $('.section').eq(1).offset().top;
-    $(window).scroll(function() {
+    function checkHeaderStiky() {
       var top = $(document).scrollTop();
       if (top > batas) {
         $('.navbar-main').addClass('stiky');
@@ -33,7 +35,10 @@ $(function() {
       else {
         $('.navbar-main').removeClass('stiky');
       }
-    });
+    }
+
+    $(window).scroll(checkHeaderStiky);
+    checkHeaderStiky();
   })();
 
 
@@ -46,7 +51,7 @@ $(function() {
     $('.navbar-nav li a').on('click', function() {
       var target = $(this).attr('href');
       htmlbody.animate({
-        scrollTop: $(target).offset().top - 50
+        scrollTop: $(target).offset().top - 30
       }, 1000);
     });
   })();
