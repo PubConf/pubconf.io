@@ -63,7 +63,9 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "{{ event.ticketUrl }}"
+        "url": "{{ event.ticketUrl }}",
+        "availability": "http://schema.org/InStock",
+        "validFrom": "2017-01-20T16:20-08:00"
       },
       "performer": [{% for speaker in event.speakers %}{
         "@type": "Person",
