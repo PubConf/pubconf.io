@@ -1,3 +1,4 @@
+{% assign event = (site.data.events | where:"future",true | sort:"startTime" | first) %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,7 +7,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% if site.googleplus_username %}<link rel="publisher" href="https://plus.google.com/{{ site.googleplus_username }}">{% endif %}
   {% if site.twitter_username %}<link rel="me" href="https://twitter.com/{{ site.twitter_username }}">{% endif %}
 
   <!-- Open Graph Sharing Info -->
@@ -18,14 +18,14 @@
   <meta property="og:locale" content="en_US" />
   {% if site.facebook_username %}<meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
   {% if site.facebook_username %}<meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook_username }}" />{% endif %}
-  <meta property="og:image" content="{{site.url}}/assets/images/share/facebook-sydney.jpg" />
+  <meta property="og:image" content="{{site.url}}{{event.facebookImage}}" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
-  <meta name="twitter:image" content="{{site.url}}/assets/images/share/twitter-sydney.jpg" />
+  <meta name="twitter:image" content="{{site.url}}{{event.twitterImage}}" />
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -38,13 +38,11 @@
       "logo": "{{site.url}}{{site.image}}",
       "sameAs": [
         "https://www.facebook.com/{{ site.facebook_username }}",
-        "https://twitter.com/{{ site.twitter_username }}",
-        "https://plus.google.com/{{ site.googleplus_username }}"
+        "https://twitter.com/{{ site.twitter_username }}"
       ],
       "email": "{{ site.email }}"
     }
   </script>
-  {% assign event = (site.data.events | where:"future",true | sort:"startTime" | first) %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
@@ -93,7 +91,6 @@
   <script>
     TrackJS.install({token: "23cdb1761b31482d9e1ec76b6837cb37"});
   </script>
-
 
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.UA }}"></script>
   <script>
