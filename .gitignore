@@ -1,5 +1,14 @@
-_site
-.DS_Store
+# Ruby
+Gemfile.lock
+
+# Jekyll
 .asset-cache
 .sass-cache
-.jekyll-metadata
+_site
+
+# OSX
+*.DS_Store
+
+# TravisCI
+.bundle
+vendor
