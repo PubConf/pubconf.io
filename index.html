@@ -24,7 +24,7 @@ sitemap:
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div class="backdrop" data-lazy-style="background-image: url('{{ partner.featuredImage }}')"></div>
-                <img data-lazy-src="{{ partner.featuredImage }}" alt="slide-1">
+                <img data-proofer-ignore data-lazy-src="{{ partner.featuredImage }}" alt="slide-1">
                 <div class="carousel-caption">
                     <div class="caption-heading">
                         <h1 class="featuring">after</h1>
@@ -44,7 +44,7 @@ sitemap:
             {% for speaker in featuredSpeakers %}
             <div class="item">
                 <div class="backdrop" data-lazy-style="background-image: url('{{ speaker.featuredImage }}')"></div>
-                <img data-lazy-src="{{ speaker.featuredImage }}" alt="slide-1">
+                <img data-proofer-ignore data-lazy-src="{{ speaker.featuredImage }}" alt="slide-1">
                 <div class="carousel-caption">
                     <div class="caption-heading">
                         <h1 class="featuring">featuring</h1>
@@ -111,8 +111,8 @@ sitemap:
                 {% for speaker in event.speakers %}
                 <li>
                     <figure class="speaker-item">
-                        <img data-lazy-src="{{ speaker.image }}" alt="{{ speaker.name }}" class="speaker">
-                        {% if speaker.champion %}<img data-lazy-src="/assets/images/champion.png" alt="champion" title="Former PubConf Champion" class="champion">{% endif; %}
+                        <img data-proofer-ignore data-lazy-src="{{ speaker.image }}" alt="{{ speaker.name }}" class="speaker">
+                        {% if speaker.champion %}<img data-proofer-ignore data-lazy-src="/assets/images/champion.png" alt="champion" title="Former PubConf Champion" class="champion">{% endif; %}
                         <figcaption>
                             <span class="title">{{ speaker.title }}</span>
                             <span class="name"><a href="{{speaker.url}}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker.name }}">{{ speaker.name }}</a></span>
@@ -135,7 +135,7 @@ sitemap:
             <ul class="speaker-list">
                 <li style="margin:0 auto">
                     <figure class="speaker-item">
-                        <img data-lazy-src="{{ event.host.image }}" alt="{{ event.host.name }}" class="speaker">
+                        <img data-proofer-ignore data-lazy-src="{{ event.host.image }}" alt="{{ event.host.name }}" class="speaker">
                         <figcaption>
                             <span class="title"></span>
                             <span class="name"><a href="{{ event.host.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ event.host.name }}">{{ event.host.name }}</a></span>
@@ -296,7 +296,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/kc2017-1.jpg" title="Stage at PubConf Kansas City 2017" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/kc2017-1.thumb.jpg" alt="Stage at PubConf Kansas City 2017" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-1.thumb.jpg" alt="Stage at PubConf Kansas City 2017" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -308,7 +308,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/london2017.jpg" title="The crowd at PubConf London 2017" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/london2017.thumb.jpg" alt="The crowd at PubConf London 2017" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/london2017.thumb.jpg" alt="The crowd at PubConf London 2017" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -320,7 +320,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/kc2017-2.jpg" title="Damian and Todd bantering on stage" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/kc2017-2.thumb.jpg" alt="Damian and Todd bantering on stage" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-2.thumb.jpg" alt="Damian and Todd bantering on stage" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -332,7 +332,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/kc2017-3.jpg" title="The crowd at PubConf Kansas City 2017" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/kc2017-3.thumb.jpg" alt="The crowd at PubConf Kansas City 2017" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-3.thumb.jpg" alt="The crowd at PubConf Kansas City 2017" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -344,7 +344,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/sydneyspeakers.gif" title="PubConf Sydney 2017 speakers having a bit of fun after the show" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/sydneyspeakers.thumb.jpg" alt="PubConf Sydney 2017 speakers having a bit of fun after the show" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/sydneyspeakers.thumb.jpg" alt="PubConf Sydney 2017 speakers having a bit of fun after the show" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -356,7 +356,7 @@ sitemap:
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="w-item">
                     <a href="/assets/images/gallery/oslo2017.jpg" title="Todd's Selfie at PubConf Oslo 2017" data-click-category="discovery" data-click-action="gallery_image">
-                        <img data-lazy-src="/assets/images/gallery/oslo2017.thumb.jpg" alt="Todd's Selfie at PubConf Oslo 2017" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="/assets/images/gallery/oslo2017.thumb.jpg" alt="Todd's Selfie at PubConf Oslo 2017" class="img-responsive" />
                         <div class="project-info">
                             <div class="project-icon">
                                 <span class="fa fa-search"></span>
@@ -376,7 +376,7 @@ sitemap:
             <div class="col-sm-12 col-md-6">
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" data-lazy-src="https://www.youtube.com/embed/rer85KwCsv0?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
+                    <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/rer85KwCsv0?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
                 </div>
             </div>
         </div>
@@ -399,7 +399,7 @@ sitemap:
             <div class="col-xs-12 col-md-6">
                 <div class="sponsor-item">
                     <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                        <img data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
                     </a>
                 </div>
             </div>
@@ -411,7 +411,7 @@ sitemap:
             <div class="col-xs-6 col-md-4">
                 <div class="sponsor-item">
                     <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                        <img data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+                        <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
                     </a>
                 </div>
             </div>
