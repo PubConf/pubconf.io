@@ -3,7 +3,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="version" content="{{ site.env.TRAVIS_COMMIT }}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -94,8 +93,7 @@
         if (location.host.indexOf("localhost") !== 0) {
             window.TrackJS && TrackJS.install({
                 token: "23cdb1761b31482d9e1ec76b6837cb37",
-                callback: { bindStack: true },
-                version: document.querySelector("meta[name=version]").content
+                callback: { bindStack: true }
             });
         }
         // TrackJS Asset Load Failure Monitoring Test
