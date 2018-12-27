@@ -1,8 +1,6 @@
 name: PubConf London
 description: "The Original PubConf London"
 image: /assets/images/share/twitter-london.jpg
-twitterImage: /assets/images/share/twitter-london.jpg
-facebookImage: /assets/images/share/facebook-london.jpg
 ticketUrl:
 
 doorTime: 2019-02-01T18:00:00+000
@@ -65,6 +63,12 @@ speakers:
     image: /assets/images/speakers/jenniferwadella.jpg
     featured: true
     featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
+
+  - name: Jon Skeet
+    url: https://twitter.com/jonskeet
+    title: "Life Moves Pretty Fast: Microservices with Kubernetes"
+    description: "The man. The cocktails. The trousers."
+    image: /assets/images/speakers/jonskeet.jpg
 
   - name: Jonathan Mills
     champion: true
