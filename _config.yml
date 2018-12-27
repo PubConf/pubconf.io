@@ -19,16 +19,16 @@ twitter_username: pubconf
 markdown: kramdown
 
 plugins:
-    - jekyll-assets
-    - jekyll-redirect-from
+  - jekyll-assets
+  - jekyll-redirect-from
 
 exclude:
-    - "Gemfile*"
-    - "README.md"
-    - "vendor"
+  - "Gemfile*"
+  - "README.md"
+  - "vendor"
 
 assets:
-    sources:
-        - _assets/vendor/bootstrap/js
-        - _assets/vendor/jquery
-        - _assets/vendor/magnific
+  sources:
+    - _assets/vendor/bootstrap/js
+    - _assets/vendor/jquery
+    - _assets/vendor/magnific
