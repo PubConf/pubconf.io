@@ -39,6 +39,12 @@ sponsors:
     image: /assets/images/sponsors/trackjs.png
 
 speakers:
+  - name: Amy Kapernick
+    url: https://twitter.com/aimhigherweb
+    title: "The Need for Pagespeed"
+    description: "Front End Jedi and Dog Lover"
+    image: /assets/images/speakers/amykapernick.jpg
+
   - name: Chris Klug
     url: https://twitter.com/ZeroKoll
     title: "Coming Soon"
@@ -46,6 +52,12 @@ speakers:
     image: /assets/images/speakers/chrisklug.jpg
     featured: true
     featuredImage: /assets/images/speakers/chrisklug-featured.jpg
+
+  - name: Dan North
+    url: https://twitter.com/tastapod
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/dan.jpg
 
   - name: Dylan Beattie
     url: https://twitter.com/dylanbeattie
