@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code of Conduct</title>
+    <meta name="description" content="Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.
+">
+    <link rel="canonical" href="https://pubconf.io/codeofconduct.html">
+    <link rel="me" href="https://twitter.com/pubconf">
+
+    <!-- Open Graph Sharing Info -->
+    <meta property="og:title" content="Code of Conduct" />
+    <meta property="og:site_name" content="PubConf"/>
+    <meta property="og:url" content="https://pubconf.io/codeofconduct.html/" />
+    <meta property="og:description" content="Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.
+" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://www.facebook.com/pubconf" />
+    <meta property="article:publisher" content="https://www.facebook.com/pubconf" />
+    <meta property="og:image" content="https://pubconf.io/assets/images/share/twitter-london.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Code of Conduct">
+    <meta name="twitter:description" content="Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.
+">
+    <meta name="twitter:site" content="@pubconf">
+    <meta name="twitter:image" content="https://pubconf.io/assets/images/share/twitter-london.jpg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "PubConf",
+            "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.
+",
+            "url": "https://pubconf.io",
+            "logo": "https://pubconf.io/assets/images/logo-horiz-dark.png",
+            "sameAs": [
+            "https://www.facebook.com/pubconf",
+            "https://twitter.com/pubconf"
+            ],
+            "email": "hello@pubconf.io"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Event",
+            "name": "PubConf London",
+            "description": "The Original PubConf London",
+            "url": "https://pubconf.io",
+            "image": "https://pubconf.io/assets/images/share/twitter-london.jpg,
+            "doorTime": "2019-02-01 18:00:00 +0000",
+            "startDate": "2019-02-01 19:00:00 +0000",
+            "endDate": "2018-02-01 23:00:00 +0000",
+            "location": {
+                "@type": "Place",
+                "name": "The Comedy Pub",
+                "address": "7 Oxendon St, London SW1Y 4EE, UK"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "",
+                "availability": "http://schema.org/InStock",
+                "validFrom": "2017-01-20T16:20-08:00"
+            },
+            "performer": [{
+                "@type": "Person",
+                "name": "Chris Klug",
+                "url": "https://twitter.com/ZeroKoll"
+            },{
+                "@type": "Person",
+                "name": "Dylan Beattie",
+                "url": "https://twitter.com/dylanbeattie"
+            },{
+                "@type": "Person",
+                "name": "Jennifer Wadella",
+                "url": "https://twitter.com/likeOMGitsFEDAY"
+            },{
+                "@type": "Person",
+                "name": "Jon Skeet",
+                "url": "https://twitter.com/jonskeet"
+            },{
+                "@type": "Person",
+                "name": "Jonathan Mills",
+                "url": "https://twitter.com/jonathanfmills"
+            },{
+                "@type": "Person",
+                "name": "Mark Rendle",
+                "url": "https://blog.markrendle.net/"
+            }]
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Lato:400,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/main-9b0bec637ecd3ebd80d3dcac0408224f35c1ca1efbd746cd0a7d9aec71d07a10.css">
+
+    <!-- TrackJS -->
+    <script src="https://cdn.trackjs.com/agent/v3/canary/t.js"></script>
+    <script>
+        if (location.host.indexOf("localhost") !== 0) {
+            window.TrackJS && TrackJS.install({
+                token: "23cdb1761b31482d9e1ec76b6837cb37",
+                callback: { bindStack: true }
+            });
+        }
+        // TrackJS Asset Load Failure Monitoring Test
+        (function listenForAssetFailures() {
+            function listenForError(node) {
+                if (["SCRIPT","LINK","IMG"].indexOf(node.tagName) >= 0) {
+                    var origOnError = node.onerror;
+                    node.onerror = function(evt) {
+                        evt = evt || { srcElement: {} };
+                        console.info({
+                            asset: evt.srcElement.src,
+                            integrity: evt.srcElement.integrity,
+                            element: evt.srcElement.outerHTML,
+                            path: evt.path.reduce(function(acc, cur, idx, src) {
+                                if (cur === window) { return acc + "Window"; }
+                                acc += cur.nodeName;
+                                acc += cur.id ? "#" + cur.id : "";
+                                acc += (cur.classList && cur.classList.length) ? "." + cur.classList.toString().replace(" ", ".") : "";
+                                if (idx < src.length) {
+                                    acc += " > ";
+                                }
+                                return acc;
+                            }, "")
+                        });
+                        console.error("Failed to load " + evt.srcElement.tagName + ": " + evt.srcElement.src);
+                        if (origOnError) { origOnError.call(node, evt); }
+                    }
+                }
+            }
+            var Observer = window.MutationObserver || window.WebKitMutationObserver;
+            if (!Observer) { return; }
+            new Observer((function(mutations) {
+                mutations.forEach(function(mutation) {
+                    mutation.addedNodes.forEach(listenForError);
+                });
+            })).observe(document, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68386201-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-68386201-1');
+        gtag.createTimeoutFn = function(callback, timeout) {
+            var called = false;
+            function fn() {
+                if (!called) {
+                    called = true;
+                    callback();
+                }
+            }
+            setTimeout(fn, timeout || 1000);
+            return fn;
+        }
+    </script>
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','nwb6k');
+        twq('track','PageView');
+    </script>
+
+    <script type="text/javascript" src="/assets/main-a11b27f18b661e2632aeed00b0c7c41f05bf8de6cdd2712d356ce62725eaccd6.js" async defer></script>
+</head>
+
+    <body>
+        <div class="navbar navbar-main navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/assets/images/logo-horiz.png" alt="PubConf"/></a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-example">
+      <div class="top-sosmed pull-right">
+        <a href="https://www.facebook.com/pubconf" title="Facebook" data-click-category="discovery" data-click-action="social_check" data-click-label="facebook"><span class="fa fa-facebook"></span></a>
+        <a href="https://twitter.com/pubconf" title="Twitter" data-click-category="discovery" data-click-action="social_check" data-click-label="twitter"><span class="fa fa-twitter"></span></a>
+        <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube" data-click-category="discovery" data-click-action="social_check" data-click-label="youtube"><span class="fa fa-youtube"></span></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right" role="tablist">
+        <li><a href="/#speakers">Special Guests</a></li>
+        <li><a href="/#tickets">Tickets</a></li>
+        <li><a href="/#info">Details</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/#sponsors">Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <article class="page page-plain">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <h1>Code of Conduct</h2>
+        <p>
+          All attendees, speakers, sponsors, and volunteers at our events are
+          required to agree with the following code of conduct. Organizers will
+          enforce this code throughout the event. We expect cooperation from all
+          participants to help ensure a fun environment for everyone.
+        </p>
+
+        <h2 class="lead2">Need Help?</h2>
+        <p>
+          If you feel something has violated the Code of conduct, please chat with
+          the PubConf host or any volunteer during the event. You can also
+          reach us before or after the events at <a href="mailto:hello@pubconf.io">hello@pubconf.io</a>.
+        </p>
+
+        <h2>The Quick Version</h2>
+        <p>
+          Don't be a jerk. Relax.
+        </p>
+
+        <h2>Expectations</h2>
+        <p>
+          PubConf is a technology comedy variety show. We create an intimate social
+          environment for amazing and funny technology conversations. In a pub.
+          Our attendees and speakers are encouraged to laugh, drink, meet new people
+          and share outrageous ideas. Innuendo, cursing, and NSFW materials will
+          make it into the show. If this is upsetting, PubConf may not be for you.
+        </p>
+        <p>
+          Negative or hateful language, comments, or slides will not be tolerated. This
+          includes racially-charged, sexual-orientation, disability, age, or religion. Do
+          not insult, stereotype, or make fun of others, even if you share the attribute.
+        </p>
+
+        <h2>Social Media</h2>
+        <p>
+          Many of our speakers are renowned in their fields. We want them to feel
+          relaxed and unencumbered as their talks will hopefully deviate into territory
+          they wouldn't normally speak about. <strong>We respectfully ask that no
+          video, pictures, or quotes from our speakers or their talks be shared on
+          social media</strong> without their express permission.
+        </p>
+        <p>
+          Please, share that you are having a good time and PubConf. Make your friends
+          jealous and want to come next year. But don't get anyone in trouble over
+          what is said at the pub.
+        </p>
+
+        <h2>Violations</h2>
+        <p>
+          If you are uncomfortable with something happening at PubConf, please have
+          a conversation with the individual first. Many conflicts are easily resolved
+          with a simple word.
+        </p>
+        <p>
+          If you need help, please contact the host or any PubConf volunteer.
+          Participants asked to stop any harassing behavior are expected to comply
+          immediately. PubConf reserves the right to expel participants violating
+          this code of conduct.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+        <footer class="site-footer">
+  <p>All speakers, sponsors, and attendees must respect the <a href="/codeofconduct.html">PubConf Code of Conduct</a>. All content appearing on this website is proprietary, copyrighted and owned or licensed by TrackJS LLC. Any unauthorized use of trademarks or content from this website is strictly prohibited. All rights reserved.</p>
+  <p>Looking for old stuff? Check out the <a href="/events/">Event Archive.</a></p>
+  <p>Copyright &copy; 2015-2018 <a href="https://trackjs.com/">TrackJS LLC</a></p>
+</footer>
+
+    </body>
+</html>

@@ -1,0 +1,90 @@
+name: PubConf London
+description: "The Original PubConf London"
+image: /assets/images/share/twitter-london.jpg
+ticketUrl:
+
+doorTime: 2019-02-01T18:00:00+000
+startTime: 2019-02-01T19:00:00+000
+endTime: 2018-02-01T23:00:00+000
+startDisplay: 7:00pm
+doorDisplay: 6:00pm
+
+location:
+  name: The Comedy Pub
+  address: 7 Oxendon St, London SW1Y 4EE, UK
+  url: https://www.craft-pubs.co.uk/comedy
+
+partner:
+  name: NDC London
+  description: "Inspiring Software Developers since 2008"
+  title: "28 Jan - 1 Feb 2019"
+  featuredImage: /assets/images/sponsors/ndclondon-featured.jpg
+
+host:
+  name: Todd Gardner
+  url: https://twitter.com/toddhgardner
+  title:
+  description: Occasional JavaScript Developer and Pub Enthusiast
+  image: /assets/images/speakers/toddgardner.jpg
+
+sponsors:
+  - name: NDC London
+    level: topshelf
+    url: https://ndc-london.com/
+    image: /assets/images/sponsors/ndclondon.png
+
+  - name: TrackJS
+    level: topshelf
+    url: https://trackjs.com/
+    image: /assets/images/sponsors/trackjs.png
+
+speakers:
+  - name: Chris Klug
+    url: https://twitter.com/ZeroKoll
+    title: "Coming Soon"
+    description: "Entitled Snowflake."
+    image: /assets/images/speakers/chrisklug.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/chrisklug-featured.jpg
+
+  - name: Dylan Beattie
+    url: https://twitter.com/dylanbeattie
+    title: "Coming Soon"
+    description: "The Guy with the Hat."
+    image: /assets/images/speakers/dylan.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
+
+  - name: Jennifer Wadella
+    champion: true
+    url: https://twitter.com/likeOMGitsFEDAY
+    title: "Coming Soon"
+    description: "Get Away from Her You Bitch!"
+    image: /assets/images/speakers/jenniferwadella.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
+
+  - name: Jon Skeet
+    url: https://twitter.com/jonskeet
+    title: "Life Moves Pretty Fast: Microservices with Kubernetes"
+    description: "The man. The cocktails. The trousers."
+    image: /assets/images/speakers/jonskeet.jpg
+
+  - name: Jonathan Mills
+    champion: true
+    url: https://twitter.com/jonathanfmills
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/jonmills-2.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/jonmills-featured.jpg
+
+  - name: Mark Rendle
+    champion: true
+    url: https://blog.markrendle.net/
+    title: "Ready Coder One"
+    description: Keeper of the Profane Keywords
+    image: /assets/images/speakers/mark.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/markrendle-featured.jpg
+

@@ -1,0 +1,147 @@
+// VENDOR SCRIPTS
+@import '/assets/css/bootstrap.min.css';
+@import '/assets/css/comedyclub.min.css';
+@import '/assets/css/magnific.min.css';
+
+$color-primary: #ff9318;
+$color-secondary: #4452B9;
+
+a[type='button'] {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 300px;
+  margin: 30px auto 0;
+
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 2px;
+
+  color: white;
+  font-size: 24px;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+}
+
+.sponsor-item {
+  margin: 15px 0 0;
+  padding: 0 50px;
+
+  img {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.site-footer {
+
+  padding: 50px;
+
+  p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p + p {
+    margin-top: 15px;
+  }
+
+}
+
+.speaker-list {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 830px;
+  margin: 30px auto 0;
+
+  li {
+    width: calc(50% - 15px);
+
+    &:nth-last-of-type(n + 3) {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    padding: 0 30px;
+    width: 100%;
+
+    li {
+      padding-bottom: 20px;
+      width: 100%;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+  }
+
+}
+
+.speaker-item {
+
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  img.speaker {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 150px;
+    width: 150px;
+  }
+  img.champion {
+    position: absolute;
+    height: 100px;
+    left: -18px;
+    bottom: -10px;
+  }
+
+  figcaption {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #2f2f2f;
+  }
+
+  p {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .title {
+    flex-grow: 1;
+    font-size: 18px;
+  }
+
+  .name {
+    color: $color-primary;
+    font-size: 18px;
+  }
+
+  .description {
+    color: #7F7F7F;
+    font-size: 12px;
+  }
+
+}
+
+@import '_theme-overrides';
+@import '_plainpage';
+@import '_lazyload';

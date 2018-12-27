@@ -1,0 +1,13 @@
+# Ruby
+Gemfile.lock
+
+# Jekyll
+.asset-cache
+.sass-cache
+
+# OSX
+*.DS_Store
+
+# TravisCI
+.bundle
+vendor

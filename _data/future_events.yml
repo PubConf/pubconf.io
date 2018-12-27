@@ -1,0 +1,18 @@
+-   name: PubConf Minnesota
+    startTime: 2019-05-09T00:00:00-500
+    partner:
+        name: NDC Minnesota
+    ticketUrl:
+
+-   name: PubConf Oslo
+    startTime: 2019-06-21T00:00:00+200
+    partner:
+        name: NDC Oslo
+    ticketUrl:
+
+-   name: PubConf Kansas City
+    startTime: 2019-07-14T00:00:00-500
+    partner:
+        name: KCDC
+    ticketUrl:
+

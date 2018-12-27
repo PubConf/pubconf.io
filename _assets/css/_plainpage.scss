@@ -1,0 +1,24 @@
+.page.page-plain {
+
+  padding-top: 100px;
+  background-color: white;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 40px;
+
+  h1,h2,h3,h4,h5 {
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 100%;
+  }
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px; }
+
+  a {
+    color:$color-secondary;
+  }
+
+}
