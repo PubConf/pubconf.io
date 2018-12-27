@@ -39,5 +39,5 @@ deploy:
   keep-history: true
   on:
     branch: sources
-    target-branch: master
-    local-dir: _site
+  target-branch: master
+  local-dir: _site
