@@ -91,10 +91,16 @@ speakers:
     featured: true
     featuredImage: /assets/images/speakers/jonmills-featured.jpg
 
+  - name: Lewis Denham-Parry
+    url: https://twitter.com/denhamparry
+    title: "Shaun of the Dev"
+    description: "What's the matter David? Never deployed to production before?"
+    image: /assets/images/speakers/lewisdenhamparry.jpg
+
   - name: Mark Rendle
     champion: true
     url: https://blog.markrendle.net/
-    title: "Ready Coder One"
+    title: "Full Metal Hackit"
     description: Keeper of the Profane Keywords
     image: /assets/images/speakers/mark.jpg
     featured: true
