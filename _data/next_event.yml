@@ -90,10 +90,10 @@ speakers:
     featuredImage: /assets/images/speakers/jonmills-featured.jpg
 
   - name: Layla Porter
-    url:
-    title: "Coming Soon"
-    description: "Lazy Bastard"
-    image: /assets/images/speakers/anonymous.png
+    url: https://twitter.com/LaylaCodesIt
+    title: "Skyscraping Security"
+    description: "Wait, wasn't her hair...?"
+    image: /assets/images/speakers/laylaporter.jpg
 
   - name: Lewis Denham-Parry
     url: https://twitter.com/denhamparry
