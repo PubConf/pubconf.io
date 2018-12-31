@@ -1,7 +1,10 @@
 name: PubConf London
 description: "The Original PubConf London"
 image: /assets/images/share/twitter-london.jpg
-ticketUrl:
+ticketUrl: https://www.eventbrite.co.uk/e/pubconf-ndc-london-2019-tickets-52300860281
+price: 35
+priceCurrency: gbp
+onSaleDate: 2019-01-01T00:00:00+000
 
 doorTime: 2019-02-01T18:00:00+000
 startTime: 2019-02-01T19:00:00+000

@@ -36,8 +36,8 @@
             "url": "{{ site.url }}",
             "logo": "{{ site.url }}{{ site.image }}",
             "sameAs": [
-            "https://www.facebook.com/{{ site.facebook_username }}",
-            "https://twitter.com/{{ site.twitter_username }}"
+                "https://www.facebook.com/{{ site.facebook_username }}",
+                "https://twitter.com/{{ site.twitter_username }}"
             ],
             "email": "{{ site.email }}"
         }
@@ -62,7 +62,9 @@
                 "@type": "Offer",
                 "url": "{{ event.ticketUrl }}",
                 "availability": "http://schema.org/InStock",
-                "validFrom": "2017-01-20T16:20-08:00"
+                "validFrom": "{{ event.onSaleDate }}",
+                "price": "{{ event.price }}",
+                "priceCurrency": "{{ event.priceCurrency }}"
             },
             "performer": [{% for speaker in event.speakers %}{
                 "@type": "Person",
