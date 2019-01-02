@@ -123,16 +123,13 @@
     <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Lato:400,900' rel='stylesheet' type='text/css' />
-    <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css" />
-    <link type="text/css" rel="stylesheet" href="/assets/main-9b0bec637ecd3ebd80d3dcac0408224f35c1ca1efbd746cd0a7d9aec71d07a10.css">
-
     <!-- TrackJS -->
     <script src="https://cdn.trackjs.com/agent/v3/canary/t.js"></script>
     <script>
         if (location.host.indexOf("localhost") !== 0) {
             window.TrackJS && TrackJS.install({
-                token: "23cdb1761b31482d9e1ec76b6837cb37",
+                token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+                application: "pubconf",
                 callback: { bindStack: true }
             });
         }
@@ -142,23 +139,30 @@
                 if (["SCRIPT","LINK","IMG"].indexOf(node.tagName) >= 0) {
                     var origOnError = node.onerror;
                     node.onerror = function(evt) {
-                        evt = evt || { srcElement: {} };
+                        // NOTE [Todd] Without the srcElement, there is nothing to go on. May as well ignore.
+                        if (!evt || !evt.srcElement) { return; }
+                        evt.path = evt.path || [];
+                        var path = "";
+                        for(var elIdx = 0; elIdx < evt.path.length; elIdx++) {
+                            var currentEl = evt.path[elIdx];
+                            if (currentEl === window) {
+                                path += "Window";
+                                continue;
+                            }
+                            path += currentEl.nodeName;
+                            path += currentEl.id ? "#" + currentEl.id : "";
+                            path += currentEl.className ? "." + currentEl.className.split(" ").join(".") : "";
+                            if (elIdx < evt.path.length) {
+                                path += " > ";
+                            }
+                        }
                         console.info({
                             asset: evt.srcElement.src,
                             integrity: evt.srcElement.integrity,
                             element: evt.srcElement.outerHTML,
-                            path: evt.path.reduce(function(acc, cur, idx, src) {
-                                if (cur === window) { return acc + "Window"; }
-                                acc += cur.nodeName;
-                                acc += cur.id ? "#" + cur.id : "";
-                                acc += (cur.classList && cur.classList.length) ? "." + cur.classList.toString().replace(" ", ".") : "";
-                                if (idx < src.length) {
-                                    acc += " > ";
-                                }
-                                return acc;
-                            }, "")
+                            path: path
                         });
-                        console.error("Failed to load " + evt.srcElement.tagName + ": " + evt.srcElement.src);
+                        console.error("Failed to load " + evt.srcElement.tagName + ": " + (evt.srcElement.src || evt.srcElement.href));
                         if (origOnError) { origOnError.call(node, evt); }
                     }
                 }
@@ -166,12 +170,16 @@
             var Observer = window.MutationObserver || window.WebKitMutationObserver;
             if (!Observer) { return; }
             new Observer((function(mutations) {
-                mutations.forEach(function(mutation) {
-                    mutation.addedNodes.forEach(listenForError);
+                [].forEach.call(mutations, function(mutation) {
+                    [].forEach.call(mutation.addedNodes, listenForError);
                 });
             })).observe(document, { childList: true, subtree: true });
         })();
     </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Lato:400,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/main-9b0bec637ecd3ebd80d3dcac0408224f35c1ca1efbd746cd0a7d9aec71d07a10.css">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68386201-1"></script>
@@ -304,7 +312,7 @@
         <footer class="site-footer">
   <p>All speakers, sponsors, and attendees must respect the <a href="/codeofconduct.html">PubConf Code of Conduct</a>. All content appearing on this website is proprietary, copyrighted and owned or licensed by TrackJS LLC. Any unauthorized use of trademarks or content from this website is strictly prohibited. All rights reserved.</p>
   <p>Looking for old stuff? Check out the <a href="/events/">Event Archive.</a></p>
-  <p>Copyright &copy; 2015-2018 <a href="https://trackjs.com/">TrackJS LLC</a></p>
+  <p>Copyright &copy; 2015-2019 <a href="https://trackjs.com/">TrackJS LLC</a></p>
 </footer>
 
     </body>
