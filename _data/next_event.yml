@@ -50,8 +50,8 @@ speakers:
 
   - name: Dan North
     url: https://twitter.com/tastapod
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "Say 'TDD is about testing' one more time!"
+    description: "Beset on all sides by the tyrannies of evil men"
     image: /assets/images/speakers/dan.jpg
 
   - name: Dylan Beattie
