@@ -110,6 +110,12 @@ speakers:
     description: "What's the matter David? Never deployed to production before?"
     image: /assets/images/speakers/lewisdenhamparry.jpg
 
+  - Liam Westley
+    url: https://twitter.com/westleyl
+    title: "The Visual Basix: Taking the Red Pill"
+    description: "Still pining for VB 6.0 Enterprise Edition"
+    image: /assets/images/speakers/liam.jpg
+
   - name: Mark Rendle
     champion: true
     url: https://blog.markrendle.net/
