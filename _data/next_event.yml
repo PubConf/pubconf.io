@@ -62,6 +62,12 @@ speakers:
     featured: true
     featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
 
+  - name: Ian Cooper
+    url: https://twitter.com/ICooper
+    title: "Production is a deep ocean of secrets!"
+    description: "Code knitter, system stitcher, and distributed puzzle solver"
+    image: /assets/images/speakers/iancooper.jpg
+
 #  - name: Edward Thomson
 #    url: https://twitter.com/ethomson
 #    title: "Git is Destroying the World"
