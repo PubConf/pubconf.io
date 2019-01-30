@@ -62,11 +62,11 @@ speakers:
     featured: true
     featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
 
-  - name: Edward Thomson
-    url: https://twitter.com/ethomson
-    title: "Git is Destroying the World"
-    description: "Drunk Git"
-    image: /assets/images/speakers/edwardthomson.jpg
+#  - name: Edward Thomson
+#    url: https://twitter.com/ethomson
+#    title: "Git is Destroying the World"
+#    description: "Drunk Git"
+#    image: /assets/images/speakers/edwardthomson.jpg
 
   - name: Jennifer Wadella
     champion: true
@@ -92,11 +92,11 @@ speakers:
     featured: true
     featuredImage: /assets/images/speakers/jonmills-featured.jpg
 
-  - name: Layla Porter
-    url: https://twitter.com/LaylaCodesIt
-    title: "Skyscraping Security"
-    description: "Wait, wasn't her hair...?"
-    image: /assets/images/speakers/laylaporter.jpg
+#  - name: Layla Porter
+#    url: https://twitter.com/LaylaCodesIt
+#    title: "Skyscraping Security"
+#    description: "Wait, wasn't her hair...?"
+#    image: /assets/images/speakers/laylaporter.jpg
 
   - name: Lewis Denham-Parry
     url: https://twitter.com/denhamparry
