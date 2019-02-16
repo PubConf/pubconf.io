@@ -1,0 +1,24 @@
+---
+layout: vote
+title: PubConf Voting
+permalink: /vote/
+---
+
+{% assign event = site.data.next_event %}
+
+<h1>vote!</h1>
+
+<form id="js-ballot" method="GET" action="/vote/thanks/">
+    <button type="submit" disabled="disabled" class="disabled">Submit</button>
+    <ul>
+        {% for speaker in event.speakers %}
+        <li>
+            <label>
+                <span>{{ speaker.name }}</span>
+                <input type="checkbox" name="speaker" value="{{ speaker.name }}">
+            </label>
+        </li>
+        {% endfor; %}
+    </ul>
+    <button type="submit" disabled="disabled" class="disabled">Submit</button>
+</form>
