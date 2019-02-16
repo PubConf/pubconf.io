@@ -31,11 +31,6 @@ var util = {
 })(function () { /* the document is now ready. */
     console.info("vote.js starting");
 
-    var eventHash = util.getSearchParam("eventHash");
-    if (!eventHash) { return util.handleFault("Invalid EventHash"); }
-
-    console.info("setting up ballot for event", eventHash);
-
     (function addBallotConstraints() {
         var ballotForm = document.querySelector("#js-ballot");
         if (!ballotForm) { return; }
@@ -92,6 +87,9 @@ var util = {
             return;
         }
 
+        var eventHash = util.getSearchParam("eventHash");
+        if (!eventHash) { return util.handleFault("Invalid EventHash"); }
+
         ballotForm.addEventListener("submit", function(evt) {
             evt.preventDefault();
             var selectedSpeakers = [].map.call(document.querySelectorAll("input[name=speaker]:checked"), function(input) {
@@ -127,6 +125,9 @@ var util = {
     (function showResults() {
         var resultsList = document.querySelector("#js-results");
         if (!resultsList) { return; }
+
+        var eventHash = util.getSearchParam("eventHash");
+        if (!eventHash) { return util.handleFault("Invalid EventHash"); }
 
         var voteTally = {};
         fetch(API_BASE + eventHash + "/_query", {
