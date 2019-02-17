@@ -1,0 +1,142 @@
+$color-primary: #FF9318;
+$color-secondary: #4452B9;
+$color-grey: #1B1B1B;
+$color-light-grey: #2f2f2f;
+$color-dark-grey: #242424;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $color-grey;
+    color: white;
+    font-family:Lato,sans-serif;
+}
+
+header {
+    background: url(/vote/images/pubconf-vote-head.png) repeat-x center;
+    height: 80px;
+}
+
+form {
+    padding: 10px;
+    background-color: $color-light-grey;
+}
+
+button {
+    background-color: $color-primary;
+    border-radius: 2px;
+    border: 1px solid $color-primary;
+    display: block;
+    color: $color-dark-grey;
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 20px;
+    cursor: pointer;
+    &.disabled {
+        background-color: $color-dark-grey;
+        border: 1px solid $color-primary;
+        color: #ddd;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0 0 0;
+
+    border-radius: 2px;
+    label {
+        display: flex;
+        background-color: $color-dark-grey;
+        &.checked {
+            background-color:  $color-secondary;
+            color: white;
+        }
+        &.disabled {
+            background-color: $color-light-grey;
+            color: #AAA;
+        }
+        img {
+            width: 64px;
+            height: 64px;
+            flex: 0 0 64px;
+            border-radius: 2px;
+        }
+        .desc {
+            width: calc(100% - 140px);
+            padding: 10px 4px;
+            flex: 1 1;
+            .title { font-size: 18px; }
+            .name {}
+            .title, .name {
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        input {
+            margin: 26px;
+            transform: scale(2);
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    color: #ccc;
+    padding: 20px;
+    a { color: #ccc; }
+}
+
+.thanks {
+    text-align: center;
+    h1 {
+        font-size: 20px;
+    }
+    img {
+        margin: 10px 0;
+    }
+}
+
+.voted {
+    text-align: center;
+    h1 {
+        font-size: 20px;
+    }
+    img {
+        margin: 10px 0;
+    }
+}
+
+.results {
+    ul {
+        padding: 10px;
+    }
+    li {
+        position: relative;
+        background-color: $color-dark-grey;
+        &.winner {
+            .tally-bar {
+                background-color: $color-primary;
+            }
+        }
+    }
+    .tally-bar {
+        background-color: #999;
+        height: 40px;
+    }
+    .tally-title {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        > * {
+            padding: 10px;
+        }
+    }
+}

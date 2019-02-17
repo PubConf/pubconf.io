@@ -48,10 +48,12 @@ var util = {
                     if (checkedSpeakerCount >= MAX_VOTE_COUNT) {
                         speakerInput.classList.add("disabled");
                         speakerInput.setAttribute("disabled", "disabled");
+                        speakerInput.parentElement.classList.add("disabled");
                     }
                     else {
                         speakerInput.classList.remove("disabled");
                         speakerInput.removeAttribute("disabled");
+                        speakerInput.parentElement.classList.remove("disabled");
                     }
                 });
 
@@ -71,6 +73,12 @@ var util = {
         }
         ballotForm.addEventListener("change", function(evt) {
             if (evt.target.name !== "speaker") { return; }
+            if (evt.target.checked) {
+                evt.target.parentElement.classList.add("checked");
+            }
+            else {
+                evt.target.parentElement.classList.remove("checked");
+            }
             updateFormConstraints();
         });
         updateFormConstraints();
@@ -82,8 +90,10 @@ var util = {
 
         var votedCookie = util.getCookie(VOTED_COOKIE);
         if (votedCookie) {
-            ballotForm.innerHTML = "<h2>You've Already Voted!</h2>" +
-                                   "<div>You can try again on " + votedCookie + "</div>";
+            ballotForm.innerHTML = "<div class='voted'><h2>You've Already Voted!</h2>" +
+                                   "<div>Did you forget?</div>" +
+                                   "<img src='/vote/images/confused.webp' alt='' />" +
+                                   "<div>You can try again on " + votedCookie + "</div></div>";
             return;
         }
 
@@ -143,6 +153,7 @@ var util = {
         })
         .then(function(resp) {
             resp.json().then(function(ballots) {
+                var totalVotes = 0;
                 ballots.forEach(function(ballot) {
                     if (ballot.speakers.length > MAX_VOTE_COUNT) {
                         console.error("found vote for too many speakers", votes);
@@ -151,6 +162,7 @@ var util = {
                     ballot.speakers.forEach(function(speaker) {
                         voteTally[speaker] = voteTally[speaker] || 0;
                         voteTally[speaker]++;
+                        totalVotes++;
                     });
                 });
 
@@ -163,9 +175,12 @@ var util = {
                         return b.votes - a.votes;
                     });
 
-                sortedVoteTally.forEach(function(tally) {
+                sortedVoteTally.forEach(function(tally, idx) {
                     var resultEl = document.createElement("li");
-                    resultEl.innerHTML = "<div class='tally-bar'></div>" +
+                    if (idx < MAX_VOTE_COUNT) {
+                        resultEl.classList.add("winner");
+                    }
+                    resultEl.innerHTML = "<div class='tally-bar' style='width:" + (tally.votes/totalVotes)*100 + "%'></div>" +
                                          "<div class='tally-title'><span>" + tally.speaker + "</span><span>" + tally.votes + "</span></div>";
                     resultsList.appendChild(resultEl);
                 });
