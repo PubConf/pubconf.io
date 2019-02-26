@@ -1,14 +1,14 @@
-name: PubConf London
-description: "The Original PubConf London"
+name: PubConf Porto
+description: "The Original PubConf"
 image: /assets/images/share/twitter-london.jpg
-ticketUrl: https://www.eventbrite.co.uk/e/pubconf-ndc-london-2019-tickets-52300860281
-price: 35
-priceCurrency: gbp
-onSaleDate: 2019-01-01T00:00:00+000
+ticketUrl:
+price:
+priceCurrency:
+onSaleDate:
 
-doorTime: 2019-02-01T18:00:00+000
-startTime: 2019-02-01T19:00:00+000
-endTime: 2018-02-01T23:00:00+000
+doorTime: 2019-02-28T18:00:00+000
+startTime: 2019-02-28T19:00:00+000
+endTime: 2018-02-28T23:00:00+000
 startDisplay: 7:00pm
 doorDisplay: 6:00pm
 
@@ -18,7 +18,7 @@ location:
   url: https://www.craft-pubs.co.uk/comedy
 
 partner:
-  name: NDC London
+  name: NDC Porto
   description: "Inspiring Software Developers since 2008"
   title: "28 Jan - 1 Feb 2019"
   featuredImage: /assets/images/sponsors/ndclondon-featured.jpg
@@ -42,18 +42,6 @@ sponsors:
     image: /assets/images/sponsors/tjs.png
 
 speakers:
-  - name: Amy Kapernick
-    url: https://twitter.com/aimhigherweb
-    title: "The Need for Pagespeed"
-    description: "Front End Jedi and Dog Lover"
-    image: /assets/images/speakers/amykapernick.jpg
-
-  - name: Dan North
-    url: https://twitter.com/tastapod
-    title: "Say 'TDD is about testing' one more time!"
-    description: "Beset on all sides by the tyrannies of evil men"
-    image: /assets/images/speakers/dan.jpg
-
   - name: Dylan Beattie
     url: https://twitter.com/dylanbeattie
     title: "Raiders of the Lost Code"
@@ -68,47 +56,14 @@ speakers:
     description: "Code knitter, system stitcher, and distributed puzzle solver"
     image: /assets/images/speakers/iancooper.jpg
 
-#  - name: Edward Thomson
-#    url: https://twitter.com/ethomson
-#    title: "Git is Destroying the World"
-#    description: "Drunk Git"
-#    image: /assets/images/speakers/edwardthomson.jpg
-
   - name: Jennifer Wadella
     champion: true
     url: https://twitter.com/likeOMGitsFEDAY
-    title: "All the basic front-end shit .NET devs are too dumb to figure out"
+    title: "Nuke the Front-End From Orbit, It's the Only Way to be Sure!"
     description: "Get Away from Her You Bitch!"
     image: /assets/images/speakers/jenniferwadella.jpg
     featured: true
     featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
-
-  - name: Jon Skeet
-    url: https://twitter.com/jonskeet
-    title: "Life Moves Pretty Fast: Microservices with Kubernetes"
-    description: "The man. The cocktails. The trousers."
-    image: /assets/images/speakers/jonskeet.jpg
-
-  - name: Jonathan Mills
-    champion: true
-    url: https://twitter.com/jonathanfmills
-    title: "The Dude's Guide to Conferencing"
-    description: "Lazy Bastard"
-    image: /assets/images/speakers/jonmills-2.jpg
-    featured: true
-    featuredImage: /assets/images/speakers/jonmills-featured.jpg
-
-#  - name: Layla Porter
-#    url: https://twitter.com/LaylaCodesIt
-#    title: "Skyscraping Security"
-#    description: "Wait, wasn't her hair...?"
-#    image: /assets/images/speakers/laylaporter.jpg
-
-  - name: Lewis Denham-Parry
-    url: https://twitter.com/denhamparry
-    title: "Shaun of the Dev"
-    description: "What's the matter David? Never deployed to production before?"
-    image: /assets/images/speakers/lewisdenhamparry.jpg
 
   - name: Liam Westley
     url: https://twitter.com/westleyl
