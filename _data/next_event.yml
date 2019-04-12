@@ -1,27 +1,27 @@
-name: PubConf Porto
+name: PubConf Minnesota
 description: "The Original PubConf"
-image: /assets/images/share/twitter-london.jpg
+image: /assets/images/share/twitter-minnesota.jpg
 ticketUrl:
-price:
-priceCurrency:
-onSaleDate:
+price: 25
+priceCurrency: USD
+onSaleDate: 2019-04-11
 
-doorTime: 2019-02-28T18:00:00+000
-startTime: 2019-02-28T19:00:00+000
-endTime: 2018-02-28T23:00:00+000
-startDisplay: 7:00pm
+doorTime: 2019-05-08T18:00:00-500
+startTime: 2019-05-08T19:30:00-500
+endTime: 2019-05-08T23:00:00-500
+startDisplay: 7:30pm
 doorDisplay: 6:00pm
 
 location:
-  name: The Comedy Pub
-  address: 7 Oxendon St, London SW1Y 4EE, UK
-  url: https://www.craft-pubs.co.uk/comedy
+  name: The Amsterdam
+  address: 6 W 6th St, St Paul, MN 55102
+  url: http://www.amsterdambarandhall.com/
 
 partner:
-  name: NDC Porto
+  name: NDC Minnesota
   description: "Inspiring Software Developers since 2008"
-  title: "28 Jan - 1 Feb 2019"
-  featuredImage: /assets/images/sponsors/ndclondon-featured.jpg
+  title: "6 - 9 May 2019"
+  featuredImage: /assets/images/sponsors/ndcminnesota-featured.jpg
 
 host:
   name: Todd Gardner
@@ -31,52 +31,82 @@ host:
   image: /assets/images/speakers/toddgardner.jpg
 
 sponsors:
-  - name: NDC London
+  - name: NDC Minnesota
     level: topshelf
-    url: https://ndc-london.com/
-    image: /assets/images/sponsors/ndclondon.png
+    url: https://ndcminnesota.com/
+    image: /assets/images/sponsors/ndcminnesota.png
 
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/sponsors/tjs.png
 
+  - name: SuperGoFaster
+    level: topshelf
+    url: http://supergofaster.com/
+    image: /assets/images/sponsors/supergofaster.png
+
 speakers:
-  - name: Dylan Beattie
-    url: https://twitter.com/dylanbeattie
-    title: "Raiders of the Lost Code"
-    description: "The Guy with the Hat."
-    image: /assets/images/speakers/dylan.jpg
-    featured: true
-    featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
+  - name: Damian Brady
+    url: https://twitter.com/damovisa
+    title: "AI: You're Not My Supervisor!"
+    description: "Semi-ripe Developer Avacado"
+    image: "/assets/images/speakers/damianbrady.jpg"
 
-  - name: Ian Cooper
-    url: https://twitter.com/ICooper
-    title: "Production is a deep ocean of secrets!"
-    description: "Code knitter, system stitcher, and distributed puzzle solver"
-    image: /assets/images/speakers/iancooper.jpg
+  - name: Dan Lew
+    url: https://twitter.com/danlew42
+    title: "Smart Phones, Dumb Apps"
+    description: "Code-O-Mancer"
+    image: "/assets/images/speakers/danlew.jpg"
 
-  - name: Jennifer Wadella
+  - name: Jimmy Bogard
+    url: https://twitter.com/jbogard
+    title: Coming Soon
+    description: Untappd Architect
+    image: "/assets/images/speakers/jimmybogard.jpg"
+
+  - name: Jonathan Mills
     champion: true
-    url: https://twitter.com/likeOMGitsFEDAY
-    title: "Nuke the Front-End From Orbit, It's the Only Way to be Sure!"
-    description: "Get Away from Her You Bitch!"
-    image: /assets/images/speakers/jenniferwadella.jpg
+    url: https://twitter.com/jonathanfmills
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: "/assets/images/speakers/jonmills-2.jpg"
     featured: true
-    featuredImage: /assets/images/speakers/jenniferwadella-featured.jpg
+    featuredImage: "/assets/images/speakers/jonmills-featured.jpg"
 
-  - name: Liam Westley
-    url: https://twitter.com/westleyl
-    title: "The Visual Basix: Taking the Red Pill"
-    description: "Still pining for VB 6.0 Enterprise Edition"
-    image: /assets/images/speakers/liam.jpg
+  - name: Kristina Durivage
+    url: https://twitter.com/gelicia
+    title: Coming Soon
+    description: Lazy Bastard
+    image: "/assets/images/speakers/anonymous.png"
+    # featured: true
+    # featuredImage:
 
-  - name: Mark Rendle
+  - name: Lemon
     champion: true
-    url: https://blog.markrendle.net/
-    title: "Full Metal Hackit"
-    description: Keeper of the Profane Keywords
-    image: /assets/images/speakers/mark.jpg
+    url: https://twitter.com/ahoylemon
+    title: Coming Soon
+    description: Lazy Bastard
+    image: "/assets/images/speakers/blemon.jpg"
     featured: true
-    featuredImage: /assets/images/speakers/markrendle-featured.jpg
+    featuredImage: "/assets/images/speakers/blemon-featured.jpg"
 
+  - name: Lewis Denham-Parry
+    url: https://twitter.com/denhamparry
+    title: "Captain Planet: Not the Hero We Want or Need"
+    description: "His talk was an absolute joke"
+    image: "/assets/images/speakers/lewisdenhamparry.jpg"
+
+  - name: Lynn Langit
+    url: https://twitter.com/lynnlangit
+    title: "SV Startup: Everything is Awesome!"
+    description: "Funny-lookin' Fargo Native"
+    image: "/assets/images/speakers/lynnlangit.jpg"
+
+  - name: Troy Hunt
+    url: https://twitter.com/troyhunt
+    title: Coming Soon
+    description: "Rather Stupid Security Researcher"
+    image: "/assets/images/speakers/troy.jpg"
+    featured: true
+    featuredImage: "/assets/images/speakers/troyhunt-featured.jpg"
