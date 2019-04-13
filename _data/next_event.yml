@@ -67,9 +67,9 @@ speakers:
 
   - name: Jimmy Bogard
     url: https://twitter.com/jbogard
-    title: Coming Soon
-    description: Untappd Architect
-    image: "/assets/images/speakers/jimmybogard.jpg"
+    title: "Coming Soon"
+    description: "Untappd Architect"
+    image: /assets/images/speakers/jimmybogard.jpg
 
   - name: Jonathan Mills
     champion: true
