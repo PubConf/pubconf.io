@@ -1,7 +1,7 @@
 name: PubConf Minnesota
 description: "The Original PubConf"
 image: /assets/images/share/twitter-minnesota.jpg
-ticketUrl:
+ticketUrl: https://www.eventbrite.co.uk/e/pubconf-ndc-minnesota-2019-tickets-60113714739
 price: 25
 priceCurrency: USD
 onSaleDate: 2019-04-11
@@ -47,6 +47,12 @@ sponsors:
     image: /assets/images/sponsors/supergofaster.png
 
 speakers:
+  - name: Ashley Grant
+    url: https://twitter.com/ashleymgrant
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: "/assets/images/speakers/anonymous.png"
+
   - name: Damian Brady
     url: https://twitter.com/damovisa
     title: "AI: You're Not My Supervisor!"
@@ -68,19 +74,19 @@ speakers:
   - name: Jonathan Mills
     champion: true
     url: https://twitter.com/jonathanfmills
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "JavaScript Inside Out"
+    description: "JavaScript Guy"
     image: "/assets/images/speakers/jonmills-2.jpg"
     featured: true
     featuredImage: "/assets/images/speakers/jonmills-featured.jpg"
 
   - name: Kristina Durivage
     url: https://twitter.com/gelicia
-    title: Coming Soon
-    description: Lazy Bastard
-    image: "/assets/images/speakers/anonymous.png"
-    # featured: true
-    # featuredImage:
+    title: "Pokemon Champion to Web Dev: A Career Path"
+    description: "Lifelong Pokemon Trainer. Sometimes web developer."
+    image: "/assets/images/speakers/kristinadurivage.jpg"
+    featured: true
+    featuredImage: "/assets/images/speakers/kristinadurivage-featured.jpg"
 
   - name: Lemon
     champion: true
