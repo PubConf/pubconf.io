@@ -91,8 +91,8 @@ speakers:
   - name: Lemon
     champion: true
     url: https://twitter.com/ahoylemon
-    title: Coming Soon
-    description: Lazy Bastard
+    title: "ACME Bears No Responsibility For Mr. Coyote Exploding"
+    description: "Not Technically Responsible"
     image: "/assets/images/speakers/blemon.jpg"
     featured: true
     featuredImage: "/assets/images/speakers/blemon-featured.jpg"
