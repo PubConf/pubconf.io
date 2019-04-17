@@ -111,7 +111,7 @@ speakers:
 
   - name: Troy Hunt
     url: https://twitter.com/troyhunt
-    title: Coming Soon
+    title: "Emoji Your Passwords"
     description: "Rather Stupid Security Researcher"
     image: "/assets/images/speakers/troy.jpg"
     featured: true
