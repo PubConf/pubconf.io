@@ -167,6 +167,24 @@ sitemap:
             <div class="row">
                 <div class="col-sm-12 col-md-7 col-md-offset-4">
                     <div class="events-list">
+                        <div class="event-item">
+                            <div class="event-left">
+                                {{ event.startTime | date: '%-d %b' }}
+                            </div>
+                            <div class="event-body">
+                                <h3>{{ event.name }}</h3>
+                                <p>after {{ event.partner.name }}</p>
+                            </div>
+                            {% if event.ticketUrl %}
+                            <div class="event-right">
+                                <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="view_tickets" data-click-label="list">Buy Tickets</a>
+                            </div>
+                            {% else %}
+                            <div class="event-right">
+                                <a href="{{ site.newsletter_signup }}" title="Email Me" class="btn btn-secondary" data-click-category="funnel" data-click-action="newsletter" data-click-label="list">Notify Me!</a>
+                            </div>
+                            {% endif; %}
+                        </div>
                         {% assign futureEvents = site.data.future_events | sort:"startTime" %}
                         {% for event in futureEvents limit: 3 %}
                         <div class="event-item">
