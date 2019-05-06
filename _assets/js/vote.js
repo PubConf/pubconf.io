@@ -1,5 +1,5 @@
 var API_BASE = "https://api.pubconf.io/";
-var MAX_VOTE_COUNT = 2;
+var MAX_VOTE_COUNT = 3;
 var VOTED_COOKIE = "PUBCONF_VOTED";
 var VOTE_RESULTS_LOOKBACK_MS = 1000 * 60 * 30; // 30 minutes
 
