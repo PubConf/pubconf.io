@@ -1,27 +1,27 @@
-name: PubConf Minnesota
+name: PubConf Kansas City
 description: "The Original PubConf"
-image: /assets/images/share/twitter-minnesota.jpg
-ticketUrl: https://www.eventbrite.co.uk/e/pubconf-ndc-minnesota-2019-tickets-60113714739
-price: 25
+image: /assets/images/share/twitter-kc.jpg
+ticketUrl:
+price:
 priceCurrency: USD
-onSaleDate: 2019-04-11
+onSaleDate: 2019-06-19
 
-doorTime: 2019-05-08T18:00:00-500
-startTime: 2019-05-08T19:30:00-500
-endTime: 2019-05-08T23:00:00-500
-startDisplay: 7:30pm
+doorTime: 2019-07-19T18:00:00-500
+startTime: 2019-07-19T19:30:00-500
+endTime: 2019-07-19T23:00:00-500
+startDisplay: 7:00pm
 doorDisplay: 6:00pm
 
 location:
-  name: The Amsterdam
-  address: 6 W 6th St, St Paul, MN 55102
-  url: http://www.amsterdambarandhall.com/
+  name: Tom's Town Distillery
+  address: 1701 Main St, Kansas City, MO 64108
+  url: https://www.toms-town.com/
 
 partner:
-  name: NDC Minnesota
-  description: "Inspiring Software Developers since 2008"
-  title: "6 - 9 May 2019"
-  featuredImage: /assets/images/sponsors/ndcminnesota-featured.jpg
+  name: KCDC
+  description: "We are developers that love to grow community."
+  title: "July 17-19"
+  featuredImage: /assets/images/sponsors/kcdc-featured.jpg
 
 host:
   name: Todd Gardner
@@ -31,88 +31,58 @@ host:
   image: /assets/images/speakers/toddgardner.jpg
 
 sponsors:
-  - name: NDC Minnesota
+  - name: KCDC
     level: topshelf
-    url: https://ndcminnesota.com/
-    image: /assets/images/sponsors/ndcminnesota.png
+    url: https://www.kcdc.info
+    image: /assets/images/sponsors/kcdc.png
 
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/sponsors/tjs.png
 
-  - name: SuperGoFaster
-    level: topshelf
-    url: http://supergofaster.com/
-    image: /assets/images/sponsors/supergofaster.png
-
 speakers:
-  - name: Ashley Grant
-    url: https://twitter.com/ashleymgrant
-    title: "Modern Nursery Rhymes for the Senior JavaScript Developer"
-    description: "Lazy Bastard"
-    image: "/assets/images/speakers/ashleygrant.jpg"
+  - name: Coming Soon!
+    url: https://twitter.com/toddhgardner
+    title: "The one and only."
+    description: "Silly developer person"
+    image: /assets/images/speakers/anonymous.png
+  - name: Coming Soon!
+    url: https://twitter.com/toddhgardner
+    title: "The one and only."
+    description: "Silly developer person"
+    image: /assets/images/speakers/anonymous.png
+  - name: Coming Soon!
+    url: https://twitter.com/toddhgardner
+    title: "The one and only."
+    description: "Silly developer person"
+    image: /assets/images/speakers/anonymous.png
+  - name: Coming Soon!
+    url: https://twitter.com/toddhgardner
+    title: "The one and only."
+    description: "Silly developer person"
+    image: /assets/images/speakers/anonymous.png
+  # - name: Jimmy Bogard
+  #   url: https://twitter.com/jbogard
+  #   title: "Ayn Rand the CSM: AgiLibertarianism"
+  #   description: "Untappd Architect"
+  #   image: /assets/images/speakers/jimmybogard-2.jpg
 
-  - name: Damian Brady
-    url: https://twitter.com/damovisa
-    title: "AI: You're Not My Supervisor!"
-    description: "Semi-ripe Developer Avacado"
-    image: "/assets/images/speakers/damianbrady.jpg"
+  # - name: Jonathan Mills
+  #   champion: true
+  #   url: https://twitter.com/jonathanfmills
+  #   title: "JavaScript Inside Out"
+  #   description: "JavaScript Guy"
+  #   image: "/assets/images/speakers/jonmills-2.jpg"
+  #   featured: true
+  #   featuredImage: "/assets/images/speakers/jonmills-featured.jpg"
 
-  - name: Dan Lew
-    url: https://twitter.com/danlew42
-    title: "Smart Phones, Dumb Apps"
-    description: "Code-O-Mancer"
-    image: "/assets/images/speakers/danlew.jpg"
+  # - name: Lemon
+  #   champion: true
+  #   url: https://twitter.com/ahoylemon
+  #   title: "ACME Bears No Responsibility For Mr. Coyote Exploding"
+  #   description: "Not Technically Responsible"
+  #   image: "/assets/images/speakers/blemon.jpg"
+  #   featured: true
+  #   featuredImage: "/assets/images/speakers/blemon-featured.jpg"
 
-  - name: Jimmy Bogard
-    url: https://twitter.com/jbogard
-    title: "Ayn Rand the CSM: AgiLibertarianism"
-    description: "Untappd Architect"
-    image: /assets/images/speakers/jimmybogard-2.jpg
-
-  - name: Jonathan Mills
-    champion: true
-    url: https://twitter.com/jonathanfmills
-    title: "JavaScript Inside Out"
-    description: "JavaScript Guy"
-    image: "/assets/images/speakers/jonmills-2.jpg"
-    featured: true
-    featuredImage: "/assets/images/speakers/jonmills-featured.jpg"
-
-  - name: Kristina Durivage
-    url: https://twitter.com/gelicia
-    title: "Pokemon Champion to Web Dev: A Career Path"
-    description: "Lifelong Pokemon Trainer. Sometimes web developer."
-    image: "/assets/images/speakers/kristinadurivage2.jpg"
-    featured: true
-    featuredImage: "/assets/images/speakers/kristinadurivage-featured.jpg"
-
-  - name: Lemon
-    champion: true
-    url: https://twitter.com/ahoylemon
-    title: "ACME Bears No Responsibility For Mr. Coyote Exploding"
-    description: "Not Technically Responsible"
-    image: "/assets/images/speakers/blemon.jpg"
-    featured: true
-    featuredImage: "/assets/images/speakers/blemon-featured.jpg"
-
-  - name: Lewis Denham-Parry
-    url: https://twitter.com/denhamparry
-    title: "Captain Planet: Not the Hero We Want or Need"
-    description: "His talk was an absolute joke"
-    image: "/assets/images/speakers/lewisdenhamparry.jpg"
-
-  - name: Lynn Langit
-    url: https://twitter.com/lynnlangit
-    title: "SV Startup: Everything is Awesome!"
-    description: "Funny-lookin' Fargo Native"
-    image: "/assets/images/speakers/lynnlangit.jpg"
-
-  - name: Troy Hunt
-    url: https://twitter.com/troyhunt
-    title: "Emoji Your Passwords"
-    description: "Rather Stupid Security Researcher"
-    image: "/assets/images/speakers/troy.jpg"
-    featured: true
-    featuredImage: "/assets/images/speakers/troyhunt-featured.jpg"
