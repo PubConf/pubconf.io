@@ -42,47 +42,71 @@ sponsors:
     image: /assets/images/sponsors/tjs.png
 
 speakers:
-  - name: Coming Soon!
-    url: https://twitter.com/toddhgardner
-    title: "The one and only."
-    description: "Silly developer person"
-    image: /assets/images/speakers/anonymous.png
-  - name: Coming Soon!
-    url: https://twitter.com/toddhgardner
-    title: "The one and only."
-    description: "Silly developer person"
-    image: /assets/images/speakers/anonymous.png
-  - name: Coming Soon!
-    url: https://twitter.com/toddhgardner
-    title: "The one and only."
-    description: "Silly developer person"
-    image: /assets/images/speakers/anonymous.png
-  - name: Coming Soon!
-    url: https://twitter.com/toddhgardner
-    title: "The one and only."
-    description: "Silly developer person"
-    image: /assets/images/speakers/anonymous.png
-  # - name: Jimmy Bogard
-  #   url: https://twitter.com/jbogard
-  #   title: "Ayn Rand the CSM: AgiLibertarianism"
-  #   description: "Untappd Architect"
-  #   image: /assets/images/speakers/jimmybogard-2.jpg
 
-  # - name: Jonathan Mills
-  #   champion: true
-  #   url: https://twitter.com/jonathanfmills
-  #   title: "JavaScript Inside Out"
-  #   description: "JavaScript Guy"
-  #   image: "/assets/images/speakers/jonmills-2.jpg"
-  #   featured: true
-  #   featuredImage: "/assets/images/speakers/jonmills-featured.jpg"
+  - name: Ash Bzak
+    url: https://twitter.com/ashbzak
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/anonymous.png
 
-  # - name: Lemon
-  #   champion: true
-  #   url: https://twitter.com/ahoylemon
-  #   title: "ACME Bears No Responsibility For Mr. Coyote Exploding"
-  #   description: "Not Technically Responsible"
-  #   image: "/assets/images/speakers/blemon.jpg"
-  #   featured: true
-  #   featuredImage: "/assets/images/speakers/blemon-featured.jpg"
+  - name: Cassandra Faris
+    url: https://twitter.com/cassandrafaris
+    title: "Sh*t My Candidates Say"
+    description: "The Tech Community's Biggest Fangirl"
+    image: /assets/images/speakers/cassandrafaris.jpg
 
+  - name: Christina Aldan
+    url: https://twitter.com/luckygirliegirl
+    title: "How Product Delivery is Like a Telenovela"
+    description: "Trashy Code & Trashier TV Diva"
+    image: /assets/images/speakers/christinaldan2.jpg
+
+  - name: Dylan Beattie
+    url: https://twitter.com/dylanbeattie
+    title: "Coming Soon"
+    description: "The guy with the hat"
+    image: /assets/images/speakers/dylan.jpg
+    featured: true
+    featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
+
+  - name: Hannes Lowette
+    url: https://twitter.com/hannes_lowette
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/anonymous.png
+
+  - name: Jennifer Wadella
+    url: https://twitter.com/likeOMGitsFEDAY
+    title: "If Choosing a JavaScript Framework Was Like an Episode of the Bachelorette"
+    description: "Portable on Demand"
+    image: /assets/images/speakers/jenniferwadella.jpg
+    champion: true
+    featured: true
+    featuredImage: "/assets/images/speakers/jenniferwadella-featured.jpg"
+
+  - name: Krista LaFentres
+    url: https://twitter.com/lafentres
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/anonymous.png
+
+  - name: Lemon
+    url: https://twitter.com/ahoylemon
+    title: "Coming Soon"
+    description: "Not Technically Responsible"
+    image: "/assets/images/speakers/blemon.jpg"
+    champion: true
+    featured: true
+    featuredImage: "/assets/images/speakers/blemon-featured.jpg"
+
+  - name: Richard Campbell
+    url: https://twitter.com/richcampbell
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/anonymous.png
+
+  - name: Sandi Barr
+    url: https://twitter.com/sandikbarr
+    title: "Lunch Provided"
+    description: "Portable on Demand"
+    image: /assets/images/speakers/sandibarr.jpg
