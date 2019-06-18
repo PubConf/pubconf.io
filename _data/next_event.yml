@@ -45,9 +45,9 @@ speakers:
 
   - name: Ash Bzak
     url: https://twitter.com/ashbzak
-    title: "Coming Soon"
-    description: "Lazy Bastard"
-    image: /assets/images/speakers/anonymous.png
+    title: "UX'd It!"
+    description: "UX Guru"
+    image: /assets/images/speakers/ashbzak.jpg
 
   - name: Cassandra Faris
     url: https://twitter.com/cassandrafaris
@@ -88,7 +88,7 @@ speakers:
     url: https://twitter.com/lafentres
     title: "Coming Soon"
     description: "Lazy Bastard"
-    image: /assets/images/speakers/anonymous.png
+    image: /assets/images/speakers/kristalafentres.jpg
 
   - name: Lemon
     url: https://twitter.com/ahoylemon
@@ -103,7 +103,7 @@ speakers:
     url: https://twitter.com/richcampbell
     title: "Coming Soon"
     description: "Lazy Bastard"
-    image: /assets/images/speakers/anonymous.png
+    image: /assets/images/speakers/richardcampbell.jpg
 
   - name: Sandi Barr
     url: https://twitter.com/sandikbarr
