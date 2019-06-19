@@ -71,14 +71,14 @@ speakers:
 
   - name: Hannes Lowette
     url: https://twitter.com/hannes_lowette
-    title: "Coming Soon"
-    description: "Lazy Bastard"
-    image: /assets/images/speakers/anonymous.png
+    title: "Parks & Code Creation"
+    description: "Backend VBScript Architect"
+    image: /assets/images/speakers/hanneslowette.jpg
 
   - name: Jennifer Wadella
     url: https://twitter.com/likeOMGitsFEDAY
     title: "If Choosing a JavaScript Framework Was Like an Episode of the Bachelorette"
-    description: "Portable on Demand"
+    description: "Get Away from Her You Bitch!"
     image: /assets/images/speakers/jenniferwadella.jpg
     champion: true
     featured: true
