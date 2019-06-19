@@ -1,10 +1,10 @@
 name: PubConf Kansas City
 description: "The Original PubConf"
 image: /assets/images/share/twitter-kc.jpg
-ticketUrl:
-price:
+ticketUrl: https://www.eventbrite.sg/e/pubconf-kansas-city-2019-tickets-63696283298
+price: 30
 priceCurrency: USD
-onSaleDate: 2019-06-19
+onSaleDate: 2019-06-21
 
 doorTime: 2019-07-19T18:00:00-500
 startTime: 2019-07-19T19:30:00-500
