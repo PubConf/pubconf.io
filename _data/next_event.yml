@@ -61,6 +61,12 @@ speakers:
     description: "Trashy Code & Trashier TV Diva"
     image: /assets/images/speakers/christinaldan2.jpg
 
+  - name: Damian Brady
+    url: https://twitter.com/damovisa
+    title: "AI: You're Not My Supervisor!"
+    description: "Semi-ripe Developer Avacado"
+    image: /assets/images/speakers/damianbrady.jpg
+
   - name: Dylan Beattie
     url: https://twitter.com/dylanbeattie
     title: "How to Succeed in the Enterprise"
@@ -99,11 +105,11 @@ speakers:
     featured: true
     featuredImage: "/assets/images/speakers/blemon-featured.jpg"
 
-  - name: Richard Campbell
-    url: https://twitter.com/richcampbell
-    title: "Coming Soon"
-    description: "Lazy Bastard"
-    image: /assets/images/speakers/richardcampbell.jpg
+  # - name: Richard Campbell
+  #   url: https://twitter.com/richcampbell
+  #   title: "Coming Soon"
+  #   description: "Lazy Bastard"
+  #   image: /assets/images/speakers/richardcampbell.jpg
 
   - name: Sandi Barr
     url: https://twitter.com/sandikbarr
