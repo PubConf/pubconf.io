@@ -1,118 +1,119 @@
-name: PubConf Kansas City
-description: "The Original PubConf"
-image: /assets/images/share/twitter-kc.jpg
-ticketUrl: https://www.eventbrite.sg/e/pubconf-kansas-city-2019-tickets-63696283298
+name: PubConf Perth
+description: "An entire software conference distilled to one booze-filled evening of laughs."
+image: /assets/images/share/twitter-perth.jpg
+ticketUrl: https://ti.to/dddperth/pubconf-perth/
 price: 30
 priceCurrency: USD
-onSaleDate: 2019-06-21
+onSaleDate: 2019-07-22
 
-doorTime: 2019-07-19T18:00:00-500
-startTime: 2019-07-19T19:30:00-500
-endTime: 2019-07-19T23:00:00-500
-startDisplay: 7:00pm
-doorDisplay: 6:00pm
+doorTime: 2019-08-03T19:30:00+080
+startTime: 2019-08-03T20:00:00+800
+endTime: 2019-08-03T22:30:00+800
+startDisplay: 8:00pm
+doorDisplay: 7:30pm
 
 location:
-  name: Tom's Town Distillery
-  address: 1701 Main St, Kansas City, MO 64108
-  url: https://www.toms-town.com/
+  name: Flour Factory
+  address: 16 Queen St, Perth WA 6000, Australia
+  url: http://theflourfactory.com/
 
 partner:
-  name: KCDC
-  description: "We are developers that love to grow community."
+  name: DDD Perth
+  description: "An inclusive non-profit conference for the Perth software community"
   title: "July 17-19"
-  featuredImage: /assets/images/sponsors/kcdc-featured.jpg
+  url: https://dddperth.com/
+  featuredImage: /assets/images/sponsors/dddperth-featured.jpg
 
 host:
-  name: Todd Gardner
-  url: https://twitter.com/toddhgardner
+  name: Lars Klint
+  url: https://twitter.com/larsklint
   title:
-  description: Occasional JavaScript Developer and Pub Enthusiast
-  image: /assets/images/speakers/toddgardner.jpg
+  description: Todd's Danish Twin
+  image: /assets/images/speakers/larsklint.jpg
 
 sponsors:
-  - name: KCDC
-    level: topshelf
-    url: https://www.kcdc.info
-    image: /assets/images/sponsors/kcdc.png
-
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/sponsors/tjs.png
 
+  - name: Shoutout
+    level: draft
+    url: https://shoutout.cloud/
+    image: /assets/images/sponsors/shoutout.png
+
+  - name: Valrose
+    level: draft
+    url: https://valrose.com.au/
+    image: /assets/images/sponsors/valrose.png
+
+  - name: Level19
+    level: draft
+    url: https://levelnineteen.com/
+    image: /assets/images/sponsors/level19.jpg
+
 speakers:
 
-  - name: Ash Bzak
-    url: https://twitter.com/ashbzak
-    title: "UX'd It!"
-    description: "UX Rapscallion"
-    image: /assets/images/speakers/ashbzak.jpg
+  - name: Amy Kapernick
+    url: https://twitter.com/Amys_Kapers
+    title: "So You Think You Know HTML?"
+    description: "Front-End Jedi and Dog Lover"
+    image: /assets/images/speakers/amykapernick.jpg
 
-  - name: Cassandra Faris
-    url: https://twitter.com/cassandrafaris
-    title: "Sh*t My Candidates Say"
-    description: "The Tech Community's Biggest Fangirl"
-    image: /assets/images/speakers/cassandrafaris.jpg
+  - name: Aaron Powell
+    url: https://twitter.com/slace
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/aaronpowell.jpg
 
-  - name: Christina Aldan
-    url: https://twitter.com/luckygirliegirl
-    title: "How Product Delivery is Like a Telenovela"
-    description: "Trashy Code & Trashier TV Diva"
-    image: /assets/images/speakers/christinaldan2.jpg
+  - name: Cairo Malet
+    url:
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/cairomalet.jpg
 
-  - name: Damian Brady
-    url: https://twitter.com/damovisa
-    title: "The Singularity Is, Like, Really Far Way"
-    description: "Semi-ripe Developer Avacado"
-    image: /assets/images/speakers/damianbrady.jpg
-
-  - name: Dylan Beattie
-    url: https://twitter.com/dylanbeattie
-    title: "How to Succeed in the Enterprise"
-    description: "The guy with the hat"
-    image: /assets/images/speakers/dylan.jpg
+  - name: David Neal
+    url: https://twitter.com/reverentgeek
+    title: "A Brief, Sad History of JavaScript"
+    description: "Drawer of Things"
+    image: /assets/images/speakers/davidneal.jpg
     featured: true
-    featuredImage: /assets/images/speakers/dylanbeattie-featured.jpg
+    featuredImage: /assets/images/speakers/davidneal-featured.jpg
 
-  - name: Hannes Lowette
-    url: https://twitter.com/hannes_lowette
-    title: "Parks & Code Creation"
-    description: "Backend VBScript Architect"
-    image: /assets/images/speakers/hanneslowette.jpg
+  - name: Jake Ginnivan
+    url: https://twitter.com/JakeGinnivan
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/jakeginnivan.jpg
 
-  - name: Jennifer Wadella
-    url: https://twitter.com/likeOMGitsFEDAY
-    title: "If Choosing a JavaScript Framework Was Like an Episode of the Bachelorette"
-    description: "Here for the right reasons: bourbon and fame"
-    image: /assets/images/speakers/jenniferwadella.jpg
-    champion: true
+  - name: Josh Michielsen
+    url: https://twitter.com/jmickey_
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/joshmichielsen.jpg
+
+  - name: Julie Grundy
+    url:
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/juliegrundy.jpg
+
+  - name: Michelle Sandford
+    url: https://twitter.com/msandfor
+    title: "Swipe Right to Code"
+    description: "Code Matchmaker"
+    image: /assets/images/speakers/michellesandford.jpg
     featured: true
-    featuredImage: "/assets/images/speakers/jenniferwadella-featured.jpg"
+    featuredImage: /assets/images/speakers/michellesandford-featured.jpg
 
-  - name: Krista LaFentres
-    url: https://twitter.com/lafentres
-    title: "AdTech-Files: The Money is Out There"
-    description: "Can exit vim, but that's about it"
-    image: /assets/images/speakers/kristalafentres.jpg
+  - name: Ming Johanson
+    url: https://twitter.com/MingJohanson
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: "/assets/images/speakers/mingjohanson.jpg"
 
-  - name: Lemon
-    url: https://twitter.com/ahoylemon
-    title: "Oops! I Made A Simpsons Porno?!"
-    description: "Made One Tiny Mistake and Look What Happened"
-    image: "/assets/images/speakers/blemon2.jpg"
-    champion: true
-    featured: true
-    featuredImage: "/assets/images/speakers/blemon-featured.jpg"
-
-  # - name: Richard Campbell
-  #   url: https://twitter.com/richcampbell
-  #   title: "Coming Soon"
-  #   description: "Lazy Bastard"
-  #   image: /assets/images/speakers/richardcampbell.jpg
-
-  - name: Sandi Barr
-    url: https://twitter.com/sandikbarr
-    title: "Lunch Provided"
-    description: "Portable on Demand"
-    image: /assets/images/speakers/sandibarr.jpg
+  - name: Rob Crowley
+    url: https://twitter.com/robdcrowley
+    title: "Coming Soon"
+    description: "Lazy Bastard"
+    image: /assets/images/speakers/robcrowley.jpg
