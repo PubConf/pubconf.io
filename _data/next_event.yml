@@ -2,8 +2,8 @@ name: PubConf Perth
 description: "An entire software conference distilled to one booze-filled evening of laughs."
 image: /assets/images/share/twitter-perth.jpg
 ticketUrl: https://ti.to/dddperth/pubconf-perth/
-price: 30
-priceCurrency: USD
+price: 65
+priceCurrency: AUD
 onSaleDate: 2019-07-22
 
 doorTime: 2019-08-03T19:30:00+080
