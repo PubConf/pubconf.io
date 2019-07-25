@@ -66,10 +66,10 @@ speakers:
     description: "10x Avocado"
     image: /assets/images/speakers/aaronpowell.jpg
 
-  - name: Cairo Malet
+  - name: Cairo Likethecity
     url:
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "Going Marie Kondo on Cyber Security"
+    description: "Amy told me I could rant for 5 minutes so here I am"
     image: /assets/images/speakers/cairomalet.jpg
 
   - name: David Neal
