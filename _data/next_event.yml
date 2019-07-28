@@ -53,7 +53,6 @@ sponsors:
     image: /assets/images/sponsors/level19.jpg
 
 speakers:
-
   - name: Amy Kapernick
     url: https://twitter.com/Amys_Kapers
     title: "So You Think You Know HTML?"
@@ -82,14 +81,14 @@ speakers:
 
   - name: Jake Ginnivan
     url: https://twitter.com/JakeGinnivan
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "Tales from the GitHubs"
+    description: "Enabler"
     image: /assets/images/speakers/jakeginnivan.jpg
 
   - name: Josh Michielsen
     url: https://twitter.com/jmickey_
     title: "Coming Soon"
-    description: "Lazy Bastard"
+    description: "Professional Proclaimer of Opinions"
     image: /assets/images/speakers/joshmichielsen.jpg
 
   - name: Julie Grundy
