@@ -92,7 +92,7 @@ speakers:
     image: /assets/images/speakers/joshmichielsen.jpg
 
   - name: Julie Grundy
-    url:
+    url: https://twitter.com/stringy
     title: "Coming Soon"
     description: "Lazy Bastard"
     image: /assets/images/speakers/juliegrundy.jpg
@@ -107,7 +107,7 @@ speakers:
 
   - name: Ming Johanson
     url: https://twitter.com/MingJohanson
-    title: "Coming Soon"
+    title: "Comebacks I've prepared for that I've never had to say (and some I have)"
     description: "Mother of Unicorns"
     image: "/assets/images/speakers/mingjohanson.jpg"
 
