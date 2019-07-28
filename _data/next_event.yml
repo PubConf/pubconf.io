@@ -66,7 +66,7 @@ speakers:
     image: /assets/images/speakers/aaronpowell.jpg
 
   - name: Cairo Likethecity
-    url:
+    url: https://twitter.com/Caiwrote
     title: "Going Marie Kondo on Cyber Security"
     description: "Amy told me I could rant for 5 minutes so here I am"
     image: /assets/images/speakers/cairomalet.jpg
@@ -87,14 +87,14 @@ speakers:
 
   - name: Josh Michielsen
     url: https://twitter.com/jmickey_
-    title: "Coming Soon"
+    title: "How to be a Real Engineer in 5 Minutes or your Money Back*"
     description: "Professional Proclaimer of Opinions"
     image: /assets/images/speakers/joshmichielsen.jpg
 
   - name: Julie Grundy
     url: https://twitter.com/stringy
     title: "Coming Soon"
-    description: "Lazy Bastard"
+    description: "Champion of Accessibility"
     image: /assets/images/speakers/juliegrundy.jpg
 
   - name: Michelle Sandford
