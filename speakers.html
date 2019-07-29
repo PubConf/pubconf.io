@@ -1,0 +1,19 @@
+---
+layout: event-2019
+permalink: /speakers/
+---
+
+{% for speaker_hash in site.data.speakers %}
+    {% assign speaker_id = speaker_hash[0] %}
+    {% assign speaker_profile = speaker_hash[1] %}
+
+    {{ speaker_profile.name }} <br />
+
+    {% for post in site.posts %}
+        {% if post.speakers[speaker_id] %}
+            {{ post.title }} {{ post.url }}
+        {% endif %}
+    {% endfor %}
+
+{% endfor %}
+

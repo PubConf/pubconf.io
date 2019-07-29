@@ -7,6 +7,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pubconf.io" # the base hostname & protocol for your site
 image: "/assets/images/logo-horiz-dark.png"
 
+future: true
+permalink: /events/:categories/:year/
+
+
+
 # Generic Google Analytics Property. May be overridden by events.
 UA: "UA-68386201-1"
 

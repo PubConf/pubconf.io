@@ -1,0 +1,18 @@
+<aside class="sidebar">
+    <label for="hamburger-activator" class="hamburger">
+        <div class="icon">☰</div>
+    </label>
+    <input type="checkbox" class="hamburger-activator" id="hamburger-activator">
+    <div class="sidebar-container">
+        <div class="overlay"></div>
+        <label for="hamburger-activator" class="close"></label>
+        <div class="drawer">
+            <header>
+                <a href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS"></a>
+            </header>
+            <nav class="menu">
+                {{ include.links }}
+            </nav>
+        </div>
+    </div>
+</aside>

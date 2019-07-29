@@ -1,11 +1,11 @@
 ---
 layout: null
 ---
+
 <!DOCTYPE html>
 <html lang="en_US">
     {% include head.html %}
-    <body>
-        {% include header.html %}
+    <body class="{{ page.body-class }}">
         {{ content }}
         {% include footer.html %}
     </body>
