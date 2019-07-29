@@ -53,7 +53,6 @@ sponsors:
     image: /assets/images/sponsors/level19.jpg
 
 speakers:
-
   - name: Amy Kapernick
     url: https://twitter.com/Amys_Kapers
     title: "So You Think You Know HTML?"
@@ -67,7 +66,7 @@ speakers:
     image: /assets/images/speakers/aaronpowell.jpg
 
   - name: Cairo Likethecity
-    url:
+    url: https://twitter.com/Caiwrote
     title: "Going Marie Kondo on Cyber Security"
     description: "Amy told me I could rant for 5 minutes so here I am"
     image: /assets/images/speakers/cairomalet.jpg
@@ -82,20 +81,20 @@ speakers:
 
   - name: Jake Ginnivan
     url: https://twitter.com/JakeGinnivan
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "Tales from the GitHubs"
+    description: "Enabler"
     image: /assets/images/speakers/jakeginnivan.jpg
 
   - name: Josh Michielsen
     url: https://twitter.com/jmickey_
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "How to be a Real Engineer in 5 Minutes or your Money Back*"
+    description: "Professional Proclaimer of Opinions"
     image: /assets/images/speakers/joshmichielsen.jpg
 
   - name: Julie Grundy
-    url:
+    url: https://twitter.com/stringy
     title: "Coming Soon"
-    description: "Lazy Bastard"
+    description: "Champion of Accessibility"
     image: /assets/images/speakers/juliegrundy.jpg
 
   - name: Michelle Sandford
@@ -108,8 +107,8 @@ speakers:
 
   - name: Ming Johanson
     url: https://twitter.com/MingJohanson
-    title: "Coming Soon"
-    description: "Lazy Bastard"
+    title: "Comebacks I've prepared for that I've never had to say (and some I have)"
+    description: "Mother of Unicorns"
     image: "/assets/images/speakers/mingjohanson.jpg"
 
   - name: Rob Crowley
