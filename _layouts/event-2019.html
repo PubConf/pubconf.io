@@ -1,34 +1,53 @@
 ---
-layout: null
-title: PubConf Software Comedy Variety Show and Afterparty
+layout: default
+body_class: "event-2019"
 sitemap:
     priority: 1.0
 ---
 
-<!DOCTYPE html>
-<html lang="en_US">
-    <head>
-
-    </head>
-    <body>
-        <div class="hero">
-            <h1></h1>
-            <nav></nav>
-            <div class="call-to-action"></div>
+<div class="hero">
+    <div class="container">
+        <div class="title">
+            <img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS">
         </div>
-
-
-        {% for speaker_hash in page.speakers %}
-            {% assign speaker_id = speaker_hash[0] %}
-            {% assign talk_title = speaker_hash[1] %}
-            {% assign speaker_profile = site.data.speakers[speaker_id] %}
-            {% if speaker_profile %}
-                {{ speaker_profile.name }}
-                {{ talk_title }}
+        <div class="subtitle">
+            <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
+        </div>
+    </div>
+    {% capture event_links %}
+    <ol>
+        {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+        {% for post in site.posts %}
+            {% capture post_date %}{{ post.date | date: '%s' | plus: 0 }}{% endcapture %}
+            {% if post_date > now %}
+            <li>
+                <a href="{{ post.url }}">{{ post.category }}</a>
+            </li>
             {% endif %}
         {% endfor %}
-        {{ content }}
+    </ol>
+    {% endcapture %}
+    {% include menu.html links=event_links %}
+</div>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css" />
-    </body>
-</html>
+<div>{{ page.name }}</div>
+
+<div>
+    <h2>All Speakers</h2>
+    {% for speaker in site.speakers %}
+        <div>{{ speaker.name }}</div>
+    {% endfor %}
+</div>
+
+<div>
+    <h2>Event Speakers</h2>
+    {% for speaker_hash in page.speakers %}
+    {% assign speaker_slug = speaker_hash[0] %}
+    {% assign speaker_info = speaker_hash[1] %}
+    {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+    {% if speaker_profile %}
+        <div><a href="{{ speaker_profile.url }}">{{ speaker_profile.name }}</a></div>
+        <div>{{ speaker_info.talk }}</div>
+    {% endif %}
+    {% endfor %}
+</div>

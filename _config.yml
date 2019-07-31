@@ -37,3 +37,20 @@ assets:
     - _assets/vendor/bootstrap/js
     - _assets/vendor/jquery
     - _assets/vendor/magnific
+
+
+
+
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path/
+  speakers:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"

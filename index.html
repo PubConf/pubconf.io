@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PubConf Software Comedy Variety Show and Afterparty
-body-class: page-index
+body_class: page-index
 sitemap:
     priority: 1.0
 ---
@@ -15,29 +15,29 @@ sitemap:
             <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
         </div>
     </div>
-    {% capture event_links %}
+    {% capture menu_links %}
     <ol>
-        {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
-        {% for post in site.posts %}
-            {% capture post_date %}{{ post.date | date: '%s' | plus: 0 }}{% endcapture %}
-            {% if post_date > now %}
-            <li>
-                <a href="{{ post.url }}">{{ post.category }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
+    {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+    {% for event in site.events %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if event_date > now %}
+        <li>
+            <a href="{{ event.url }}">{{ event.name }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
     </ol>
     {% endcapture %}
-    {% include menu.html links=event_links %}
+    {% include menu.html links=menu_links %}
 </div>
 
 <ol class="event-list">
     {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
-    {% for post in site.posts %}
-        {% capture post_date %}{{ post.date | date: '%s' | plus: 0 }}{% endcapture %}
-        {% if post_date > now %}
+    {% for event in site.events %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if event_date > now %}
         <li>
-            <a href="{{ post.url }}">{{ post.category }}</a>
+            <a href="{{ event.url }}">{{ event.name }}</a>
         </li>
         {% endif %}
     {% endfor %}
