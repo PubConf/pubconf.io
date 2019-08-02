@@ -28,6 +28,9 @@ sitemap:
         {% endif %}
     {% endfor %}
         <li>
+            <a href="/speakers/">Speakers</a>
+        </li>
+        <li>
             <a href="/about/">About</a>
         </li>
         <li>
@@ -76,31 +79,5 @@ sitemap:
     </div>
 </div>
 
-<div class="image-gallery">
-    <div class="container">
-        <h2>Gallery</h2>
-        <ul>
-        {% for file in site.static_files %}
-            {% if file.path contains 'gallery' %}
-            {% if file.extname == '.jpg' %}
-            {% assign filenameparts = file.path | split: "/" %}
-            {% assign filename = filenameparts | last | replace: file.extname,"" %}
-            <li>
-                <a href="{{ file.path }}" title="{{ filename }}">
-                    <img src="https://images.weserv.nl/?url=https://pubconf.io/{{ file.path }}&w=300&h=200&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" />
-                </a>
-            </li>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        </ul>
-    </div>
-</div>
-
-<div class="video">
-    <div class="container">
-        <div class="vid">
-            <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/USmUlshjcd4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
-        </div>
-    </div>
-</div>
+{% include gallery.html %}
+{% include video.html %}

@@ -5,49 +5,72 @@ sitemap:
     priority: 1.0
 ---
 
-<div class="hero">
+{% assign event = page %}
+
+<div class="hero" style="background: #000 url({{ event.background }}) center center no-repeat;background-size:cover;">
     <div class="container">
         <div class="title">
-            <img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS">
+            <h1 style="display: none;">{{ event.name }}</h1>
+            <img src="{{ event.logo }}" alt="{{ event.name }}">
         </div>
         <div class="subtitle">
             <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
         </div>
     </div>
-    {% capture event_links %}
+    {% capture menu_links %}
     <ol>
-        {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
-        {% for post in site.posts %}
-            {% capture post_date %}{{ post.date | date: '%s' | plus: 0 }}{% endcapture %}
-            {% if post_date > now %}
-            <li>
-                <a href="{{ post.url }}">{{ post.category }}</a>
-            </li>
-            {% endif %}
-        {% endfor %}
+        <li><a href="#details">Details</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#wtf">WTF?!</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="/code-of-conduct/">Code of Conduct</a></li>
     </ol>
     {% endcapture %}
-    {% include menu.html links=event_links %}
+    {% include menu.html links=menu_links %}
 </div>
 
-<div>{{ page.name }}</div>
-
-<div>
-    <h2>All Speakers</h2>
-    {% for speaker in site.speakers %}
-        <div>{{ speaker.name }}</div>
-    {% endfor %}
+<div class="details">
+    <div class="container">
+        <h2 id="details">Details</h2>
+    </div>
 </div>
 
-<div>
-    <h2>Event Speakers</h2>
-    {% for speaker_hash in page.speakers %}
-    {% assign speaker_slug = speaker_hash[0] %}
-    {% assign speaker_info = speaker_hash[1] %}
-    {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
-    {% if speaker_profile %}
-        <div><a href="{{ speaker_profile.url }}">{{ speaker_profile.name }}</a></div>
-        <div>{{ speaker_info.talk }}</div>
-    {% endif %}
-    {% endfor %}
+<div class="speakers">
+    <div class="container">
+        <h2 id="speakers">Featured Speakers</h2>
+        {% for speaker_hash in page.speakers %}
+        {% assign speaker_slug = speaker_hash[0] %}
+        {% assign speaker_info = speaker_hash[1] %}
+        {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+        {% if speaker_profile %}
+            <div><a href="{{ speaker_profile.url }}">{{ speaker_profile.name }}</a></div>
+            <div>{{ speaker_info.talk }}</div>
+        {% endif %}
+        {% endfor %}
+    </div>
 </div>
+
+<div class="tickets">
+    <div class="container">
+        <h2 id="tickets">Get Your Ticket</h2>
+    </div>
+</div>
+
+stay in touch
+
+<div class="wtf">
+    <div class="container">
+        <h2 id="wtf">WTF is This?!</h2>
+    </div>
+</div>
+
+{% include gallery.html %}
+
+<div class="sponsors">
+    <div class="container">
+        <h2 id="sponsors">Sponsors</h2>
+    </div>
+</div>
+
+{% include video.html %}

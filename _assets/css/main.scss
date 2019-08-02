@@ -8,6 +8,7 @@ html, body {
     padding: 0;
     min-width: 320px;
     font-family: $font-family;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,5 +24,8 @@ ul, ol {
 
 @import '_icons.scss';
 @import 'includes/_footer.scss';
+@import 'includes/_gallery.scss';
 @import 'includes/_menu.scss';
+@import 'includes/_video.scss';
+@import 'layouts/_event-2019.scss';
 @import 'pages/_index.scss';
