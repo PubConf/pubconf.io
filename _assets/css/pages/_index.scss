@@ -1,5 +1,15 @@
 .page-index {
 
+    .container {
+        overflow-x: hidden;
+        width: 100%;
+
+        @media screen and (min-width: 1100px) {
+            width: 1100px;
+            margin: 0 auto;
+        }
+    }
+
     .hero {
         $hero-height: 300px;
         background: #000 url(/assets/images/index/hero-bg.jpg) center center no-repeat;
@@ -8,6 +18,7 @@
         height: $hero-height;
 
         .container {
+            background-image: radial-gradient(circle at center, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 100%);
             position: absolute;
             top: 0;
             left: 10px;
@@ -29,21 +40,221 @@
             }
         }
         .subtitle h2 {
-            font-size: 30px;
+            font-size: 1.6em;
             color: $brand-orange;
             line-height: 100%;
             font-weight: 900;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 0 0 0;
             margin: 0 auto;
             max-width: 700px;
         }
     }
 
     .event-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid $brand-med-grey;
+
+        li {
+            border-bottom: 2px solid $brand-med-grey;
+        }
+        a {
+            display: block;
+            padding: 28px 14px;
+            background-image: linear-gradient(to right, $brand-dark-grey, $brand-dark-grey 60%, black 95%);
+            position: relative;
+            text-decoration: none;
+
+            h2 {
+                color: white;
+                text-shadow: 3px 3px 3px black;
+                font-size: 1.8em;
+                font-weight: 700;
+            }
+            .event-date {
+                color: #ccc;
+                font-size: 1.2em;
+            }
+
+            @media screen and (max-width: 420px) {
+                h2 {
+                    font-size: 1.4em;
+                }
+                .event-date {
+                    font-size: 1em;
+                }
+            }
+
+            &::after {
+                content: ">";
+                right: 24px;
+                top: 30px;
+                position: absolute;
+                font-size: 3em;
+                font-weight: 700;
+                color: $brand-orange;
+            }
+
+            &:hover,&:active,&:focus {
+                background-image: linear-gradient(to right, lighten($brand-dark-grey, 10%), lighten($brand-dark-grey, 10%) 60%, black 95%);
+                &::after {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .newsletter {
+        background-color: #2f2f2f;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 2em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 300px;
+            margin: 30px auto 0;
+            background-color: $brand-orange;
+            border: 1px solid $brand-orange;
+            border-radius: 2px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+
+    .global-sponsor {
+        $sponsor-height: 300px;
+        background: #fff url(/assets/images/index/sponsor-bg.png) center center no-repeat;
+        background-size: cover;
+        position: relative;
+        height: $sponsor-height;
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            right: 10px;
+            bottom: $sponsor-height;
+            min-height: $sponsor-height;
+            display: flex;
+            flex-direction: column;
+            padding: 65px 0 0 0;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.2em;
+            color: $brand-dark-grey;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0 0 20px;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: space-around;
+            a {
+                width: 100%;
+                text-align: center;
+            }
+            img {
+                width: 50%;
+                min-width: 240px;
+                max-width: 360px;
+            }
+        }
+    }
+
+    .image-gallery {
+        background-color: #2f2f2f;
+        color: white;
+        text-align: center;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 2em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            display: grid;
+            grid-gap: 50px;
+            justify-content: center;
+            padding: 0 50px;
+            text-align: center;
+            grid-template-columns: repeat(1, 1fr);
+
+            @media screen and (min-width: 750px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (min-width: 1100px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            a {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    .video {
+        background:#000 url('/assets/images/index/bg-video.jpg') left center no-repeat;
+        background-size:cover;
+        padding: 50px 0;
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .vid {
+            flex: 0 0 50%;
+            position: relative;
+            display: block;
+            height: 0;
+            padding-bottom: 25.25%;
+            overflow: hidden;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media screen and (max-width: 750px) {
+            padding: 0;
+            .vid {
+                flex: 0 0 100%;
+                padding-bottom: 52.25%;
+            }
+         }
     }
 
 }

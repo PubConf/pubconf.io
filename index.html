@@ -9,6 +9,7 @@ sitemap:
 <div class="hero">
     <div class="container">
         <div class="title">
+            <h1 style="display: none;">PubConf by TrackJS</h1>
             <img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS">
         </div>
         <div class="subtitle">
@@ -26,6 +27,12 @@ sitemap:
         </li>
         {% endif %}
     {% endfor %}
+        <li>
+            <a href="/about/">About</a>
+        </li>
+        <li>
+            <a href="/code-of-conduct/">Code of Conduct</a>
+        </li>
     </ol>
     {% endcapture %}
     {% include menu.html links=menu_links %}
@@ -37,9 +44,63 @@ sitemap:
         {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
         {% if event_date > now %}
         <li>
-            <a href="{{ event.url }}">{{ event.name }}</a>
+            <a href="{{ event.url }}">
+                <h2>{{ event.name }}</h2>
+                <div class="event-date">{{ event.date | date: "%A, %B %e, %Y" }}</div>
+            </a>
         </li>
         {% endif %}
     {% endfor %}
 </ol>
 
+<div class="newsletter">
+    <div class="container">
+        <h2>Get Email Updates</h2>
+        <p>Join our newsletter to be the first to know about tickets and events.</p>
+        <a href="{{ site.newsletter_url }}" class="button">
+            <i class="icon-paper-plane-empty"></i>
+            Subscribe to PubConf
+        </a>
+    </div>
+</div>
+
+<div class="global-sponsor">
+    <div class="container">
+        <h3>Global Founding Sponsor</h3>
+        <h2>
+            <a href="https://trackjs.com/">
+                <span style="display: none;">TrackJS Front-End Error Monitoring</span>
+                <img src="/assets/images/index/sponsor-logo.svg" alt="TrackJS">
+            </a>
+        </h2>
+    </div>
+</div>
+
+<div class="image-gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <ul>
+        {% for file in site.static_files %}
+            {% if file.path contains 'gallery' %}
+            {% if file.extname == '.jpg' %}
+            {% assign filenameparts = file.path | split: "/" %}
+            {% assign filename = filenameparts | last | replace: file.extname,"" %}
+            <li>
+                <a href="{{ file.path }}" title="{{ filename }}">
+                    <img src="https://images.weserv.nl/?url=https://pubconf.io/{{ file.path }}&w=300&h=200&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" />
+                </a>
+            </li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="video">
+    <div class="container">
+        <div class="vid">
+            <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/USmUlshjcd4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
+        </div>
+    </div>
+</div>

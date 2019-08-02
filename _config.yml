@@ -10,12 +10,15 @@ image: "/assets/images/logo-horiz-dark.png"
 future: true
 permalink: /events/:categories/:year/
 
-
+newsletter_url: "http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c"
+youtube_url: "https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw"
+twitter_url: "https://twitter.com/pubconf"
 
 # Generic Google Analytics Property. May be overridden by events.
 UA: "UA-68386201-1"
 
 newsletter_signup: "http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c"
+
 
 facebook_username: pubconf
 twitter_username: pubconf
