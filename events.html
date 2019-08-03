@@ -1,0 +1,20 @@
+---
+layout: page
+title: "PubConf Events"
+permalink: /events/
+body_class: events
+sitemap:
+  priority: 0.8
+---
+
+<ol class="event-list">
+    {% assign sorted_events = site.events | sort: 'date' | reverse %}
+    {% for event in sorted_events %}
+        <li>
+            <a href="{{ event.url }}">
+                <h2>{{ event.name }}</h2>
+                <div class="event-date">{{ event.date | date: "%A, %B %e, %Y" }}</div>
+            </a>
+        </li>
+    {% endfor %}
+</ol>

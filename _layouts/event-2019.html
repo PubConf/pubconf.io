@@ -7,22 +7,68 @@ sitemap:
 
 {% assign event = page %}
 
-<div class="hero" style="background: #000 url({{ event.background }}) center center no-repeat;background-size:cover;">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "{{ event.title }}",
+        "description": "{{ site.description | strip_html | strip_newlines }}",
+        "url": "{{ site.url }}{{ event.url }}",
+        "image": "{{ site.url }}{{ event.images.share }}",
+        "startDate": "{{ event.date | date_to_xmlschema }}",
+        "endDate": "{{ event.end_date | date_to_xmlschema }}",
+        {% if event.venue %}
+        "location": {
+            "@type": "Place",
+            "name": "{{ event.venue.name }}",
+            "address": "{{ event.venue.address }}"
+        },
+        {% endif %}
+        {% if event.tickets %}
+        "offers": {
+            "@type": "Offer",
+            "url": "{{ event.tickets.url }}",
+            "availability": "http://schema.org/InStock",
+            "validFrom": "{{ 'now' | date: "%F" }}",
+            "price": "{{ event.tickets.price }}",
+            "priceCurrency": "{{ event.tickets.currency }}"
+        },
+        {% endif %}
+        {% if event.speakers %}
+        "performer": [
+            {% for speaker_hash in event.speakers %}
+            {% assign speaker_slug = speaker_hash[0] %}
+            {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+            {% if speaker_profile %}
+            {
+                "@type": "Person",
+                "name": "{{ speaker_profile.name }}",
+                "url": "{{ site.url }}{{ speaker_profile.url }}",
+                "sameAs": ["https://twitter.com/{{ speaker_profile.twitter }}"]
+            }{% if forloop.last == false %},{% endif %}
+            {% endif %}
+            {% endfor %}
+        ]
+        {% endif %}
+    }
+</script>
+
+<div class="hero" style="background: #000 url({{ event.images.background }}) center center no-repeat;background-size:cover;">
     <div class="container">
         <div class="title">
-            <h1 style="display: none;">{{ event.name }}</h1>
-            {% if event.logo %}<img src="{{ event.logo }}" alt="{{ event.name }}">
-            {% else %}<img src="/assets/images/index/title-logo.svg" alt="{{ event.name }}">{% endif %}
+            <h1 style="display: none;">{{ event.title }}</h1>
+            {% if event.images.logo %}<img src="{{ event.images.logo }}" alt="{{ event.title }}">
+            {% else %}<img src="/assets/images/index/title-logo.svg" alt="{{ event.title }}">{% endif %}
         </div>
         <div class="subtitle">
             <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
         </div>
         {% if event.tickets %}
-        <a class="cta" href="{{ event.tickets }}" alt="Buy Tickets to {{ event.name }}">
+        <a class="cta" href="{{ event.tickets.url }}" alt="Buy Tickets to {{ event.title }}">
             Buy Tickets
         </a>
         {% else %}
-        <a class="cta secondary" href="{{ site.newsletter_url }}" alt="Get Notified for {{ event.name }}">
+        <a class="cta secondary" href="{{ site.newsletter_url }}" alt="Get Notified for {{ event.title }}">
             <i class="icon-paper-plane-empty"></i> Email Me
         </a>
         {% endif %}
@@ -125,9 +171,9 @@ sitemap:
     <div class="container">
         <h2 id="tickets">Get Your Ticket</h2>
         <div class="ticket-cta">
-            <p>Tickets to {{ event.name }} sell out fast, so don't wait. Get yours today!</p>
+            <p>Tickets to {{ event.title }} sell out fast, so don't wait. Get yours today!</p>
             <div>
-                <a class="cta" href="{{ event.tickets }}" alt="Buy Tickets to {{ event.name }}">
+                <a class="cta" href="{{ event.tickets.url }}" alt="Buy Tickets to {{ event.title }}">
                     Buy Tickets
                 </a>
             </div>
@@ -141,7 +187,7 @@ sitemap:
         <div class="ticket-cta">
             <p>Join our newsletter to be the first to know about PubConf tickets and events.</p>
             <div>
-                <a class="cta" href="{{ site.newsletter_url }}" alt="Subscribe to {{ event.name }}">
+                <a class="cta" href="{{ site.newsletter_url }}" alt="Subscribe to {{ event.title }}">
                     <i class="icon-paper-plane-empty"></i>
                     Subscribe to PubConf
                 </a>

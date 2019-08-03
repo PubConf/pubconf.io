@@ -42,37 +42,6 @@
             "email": "{{ site.email }}"
         }
     </script>
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/",
-            "@type": "Event",
-            "name": "{{ event.name }}",
-            "description": "{{ event.description | strip_html | strip_newlines }}",
-            "url": "{{ site.url }}",
-            "image": "{{ site.url }}{{ event.image }}",
-            "doorTime": "{{ event.doorTime }}",
-            "startDate": "{{ event.startTime }}",
-            "endDate": "{{ event.endTime }}",
-            "location": {
-                "@type": "Place",
-                "name": "{{ event.location.name }}",
-                "address": "{{ event.location.address }}"
-            },
-            "offers": {
-                "@type": "Offer",
-                "url": "{{ event.ticketUrl }}",
-                "availability": "http://schema.org/InStock",
-                "validFrom": "{{ event.onSaleDate }}",
-                "price": "{{ event.price }}",
-                "priceCurrency": "{{ event.priceCurrency }}"
-            },
-            "performer": [{% for speaker in event.speakers %}{
-                "@type": "Person",
-                "name": "{{ speaker.name }}",
-                "url": "{{ speaker.url }}"
-            }{% if forloop.last == false %},{% endif; %}{% endfor; %}]
-        }
-    </script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">

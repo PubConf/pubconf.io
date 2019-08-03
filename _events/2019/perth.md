@@ -1,15 +1,19 @@
 ---
-layout: event-2019
 slug: perth-2019
-name: PubConf Perth 2019
-location: perth
+title: PubConf Perth 2019
 date: 2019-08-03T19:30:00+8:00
+end_date: 2019-08-03T23:30:00+8:00
 local_time: 2019-08-03T19:30
-tickets: https://ti.to/dddperth/pubconf-perth/
+tickets:
+  url: https://ti.to/dddperth/pubconf-perth/
+  price: 65
+  currency: AUD
 
 #images
-logo: /assets/images/events/perth/perth-logo.svg
-background: /assets/images/events/perth/perth-hero-bg.jpg
+images:
+  share: /assets/images/events/perth/perth-share.jpg
+  logo: /assets/images/events/perth/perth-logo.svg
+  background: /assets/images/events/perth/perth-hero-bg.jpg
 
 #partner
 partner:

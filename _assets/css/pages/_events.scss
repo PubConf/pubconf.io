@@ -1,0 +1,57 @@
+.events {
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid $brand-med-grey;
+
+        li {
+            border-bottom: 2px solid $brand-med-grey;
+        }
+        a {
+            display: block;
+            padding: 28px 14px;
+            background-image: linear-gradient(to right, $brand-darkest-grey, $brand-darkest-grey 60%, black 95%);
+            position: relative;
+            text-decoration: none;
+
+            h2 {
+                color: white;
+                text-shadow: 3px 3px 3px black;
+                font-size: 1.8em;
+                font-weight: 700;
+            }
+            .event-date {
+                color: $brand-light-grey;
+                font-size: 1.2em;
+            }
+
+            @media screen and (max-width: 420px) {
+                h2 {
+                    font-size: 1.4em;
+                }
+                .event-date {
+                    font-size: 1em;
+                }
+            }
+
+            &::after {
+                content: ">";
+                right: 24px;
+                top: 30px;
+                position: absolute;
+                font-size: 3em;
+                font-weight: 700;
+                color: $brand-orange;
+            }
+
+            &:hover,&:active,&:focus {
+                background-image: linear-gradient(to right, lighten($brand-darkest-grey, 10%), lighten($brand-darkest-grey, 10%) 60%, black 95%);
+                &::after {
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
