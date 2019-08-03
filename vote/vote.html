@@ -1,8 +1,18 @@
 ---
 layout: vote
 title: PubConf Voting
-permalink: /vote/
 ---
+
+{% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+{% for event in site.events %}
+    {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+    {% if event_date > now %}
+    <li>
+        <a href="{{ event.url }}">{{ event.title }}</a>
+    </li>
+    {% endif %}
+{% endfor %}
+
 
 {% assign event = site.data.next_event %}
 

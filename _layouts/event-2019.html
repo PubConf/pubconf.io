@@ -125,7 +125,7 @@ sitemap:
             <li>
                 <a class="speaker-link" href="{{ speaker_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker_profile.name }}">
                 <figure class="speaker-item">
-                    <img src="{{ speaker_profile.image }}" alt="{{ speaker_profile.name }}" class="speaker">
+                    <img data-proofer-ignore data-lazy-src="{{ speaker_profile.image }}" alt="{{ speaker_profile.name }}" class="speaker">
                     {% if speaker_info.place == "champion" %}<img src="/assets/images/champion.png" alt="PubConf Champion" title="PubConf Champion" class="champion">{% endif; %}
                     {% if speaker_info.place == "finalist" %}<img src="/assets/images/finalist.png" alt="PubConf Finalist" title="PubConf Finalist" class="finalist">{% endif; %}
                     <figcaption>
@@ -150,7 +150,7 @@ sitemap:
                 <li>
                     <a class="speaker-link" href="{{ host_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ host_profile.name }}">
                     <figure class="speaker-item">
-                        <img src="{{ host_profile.image }}" alt="{{ host_profile.name }}" class="speaker">
+                        <img data-proofer-ignore data-lazy-src="{{ host_profile.image }}" alt="{{ host_profile.name }}" class="speaker">
                         <figcaption>
                             <span class="name">{{ host_profile.name }}</span>
                             <span class="description">{{ host_profile.bio }}</span>
@@ -251,7 +251,7 @@ sitemap:
             {% for sponsor in rail_sponsors %}
             <li class="sponsor-item">
                 <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                    <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+                    <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
                 </a>
             </li>
             {% endfor; %}

@@ -10,7 +10,7 @@
             {% assign filename = filenameparts | last | replace: file.extname,"" %}
             <li>
                 <a href="{{ file.path }}" title="{{ filename }}">
-                    <img src="https://images.weserv.nl/?url=https://pubconf.io/{{ file.path }}&w=300&h=200&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" />
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io/{{ file.path }}&w=300&h=200&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" />
                 </a>
             </li>
             {% endif %}

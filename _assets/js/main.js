@@ -1,45 +1,44 @@
-/**
-* main.js
-* This is the main execution script for PubConf event pages.
-*/
-
-var util = {
-    makeArray: function(thing) {
-        return Array.prototype.slice.call(thing, 0);
-    },
-
-    elementIsVisible: function(el) {
-        var rect = el.getBoundingClientRect();
-        var vWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        var vHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-        // Return false if it's not in the viewport
-        if (rect.right < 0 ||
-            rect.bottom < 0 ||
-            rect.left > vWidth ||
-            rect.top > vHeight) { return false; }
-
-        // Return true if all of its four corners are visible
-        return (el.contains(document.elementFromPoint(rect.left + 1,  rect.top + 1)) &&
-        el.contains(document.elementFromPoint(rect.right - 1, rect.top + 1)) &&
-        el.contains(document.elementFromPoint(rect.right - 1, rect.bottom - 1)) &&
-        el.contains(document.elementFromPoint(rect.left + 1,  rect.bottom - 1)));
-    },
-
-    forEach: function(array, callback, context) {
-        if (Array.prototype.forEach) {
-            return Array.prototype.forEach.call(array, callback, context);
-        }
-        for (var i = 0; i < array.length; i++) {
-            callback.call(context, array[i], i, array);
-        }
-    }
-},
-
 (function (ready) {
-    if (document.readyState === "complete") { ready(); }
-    else { document.addEventListener("DOMContentLoaded", ready); }
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        ready();
+    }
+    else {
+        document.addEventListener("DOMContentLoaded", ready);
+    }
 })(function () { /* the document is now ready. */
+
+    var util = {
+        makeArray: function(thing) {
+            return Array.prototype.slice.call(thing, 0);
+        },
+
+        elementIsVisible: function(el) {
+            var rect = el.getBoundingClientRect();
+            var vWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var vHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+            // Return false if it's not in the viewport
+            if (rect.right < 0 ||
+                rect.bottom < 0 ||
+                rect.left > vWidth ||
+                rect.top > vHeight) { return false; }
+
+            // Return true if all of its four corners are visible
+            return (el.contains(document.elementFromPoint(rect.left + 1,  rect.top + 1)) &&
+            el.contains(document.elementFromPoint(rect.right - 1, rect.top + 1)) &&
+            el.contains(document.elementFromPoint(rect.right - 1, rect.bottom - 1)) &&
+            el.contains(document.elementFromPoint(rect.left + 1,  rect.bottom - 1)));
+        },
+
+        forEach: function(array, callback, context) {
+            if (Array.prototype.forEach) {
+                return Array.prototype.forEach.call(array, callback, context);
+            }
+            for (var i = 0; i < array.length; i++) {
+                callback.call(context, array[i], i, array);
+            }
+        }
+    };
 
     (function attachClickAnalytics() {
         var categoryAttr = 'data-click-category';
