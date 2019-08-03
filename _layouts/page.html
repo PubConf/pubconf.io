@@ -1,0 +1,38 @@
+---
+layout: default
+body_class: "page"
+---
+
+<header class="page-header">
+    <a class="header-brand" href="/"><img src="/assets/images/logo-horiz.png" alt="PubConf"/></a>
+    {% capture menu_links %}
+    <ol>
+    {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+    {% for event in site.events %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if event_date > now %}
+        <li>
+            <a href="{{ event.url }}">{{ event.name }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+        <li>
+            <a href="/events/">Event Archive</a>
+        </li>
+        <li>
+            <a href="/speakers/">Speakers</a>
+        </li>
+        <li>
+            <a href="/about/">About</a>
+        </li>
+        <li>
+            <a href="/code-of-conduct/">Code of Conduct</a>
+        </li>
+    </ol>
+    {% endcapture %}
+    {% include menu.html links=menu_links %}
+</header>
+
+<div class="page-content">
+    {{ content }}
+</div>
