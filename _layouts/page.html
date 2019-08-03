@@ -12,7 +12,7 @@ body_class: "page"
         {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
         {% if event_date > now %}
         <li>
-            <a href="{{ event.url }}">{{ event.name }}</a>
+            <a href="{{ event.url }}">{{ event.title }}</a>
         </li>
         {% endif %}
     {% endfor %}
