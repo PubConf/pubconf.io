@@ -62,7 +62,7 @@
         a {
             display: block;
             padding: 28px 14px;
-            background-image: linear-gradient(to right, $brand-dark-grey, $brand-dark-grey 60%, black 95%);
+            background-image: linear-gradient(to right, $brand-darkest-grey, $brand-darkest-grey 60%, black 95%);
             position: relative;
             text-decoration: none;
 
@@ -73,7 +73,7 @@
                 font-weight: 700;
             }
             .event-date {
-                color: #ccc;
+                color: $brand-light-grey;
                 font-size: 1.2em;
             }
 
@@ -97,7 +97,7 @@
             }
 
             &:hover,&:active,&:focus {
-                background-image: linear-gradient(to right, lighten($brand-dark-grey, 10%), lighten($brand-dark-grey, 10%) 60%, black 95%);
+                background-image: linear-gradient(to right, lighten($brand-darkest-grey, 10%), lighten($brand-darkest-grey, 10%) 60%, black 95%);
                 &::after {
                     color: white;
                 }
@@ -107,7 +107,7 @@
     }
 
     .newsletter {
-        background-color: #2f2f2f;
+        background-color: $brand-dark-grey;
         color: white;
         text-align: center;
         padding: 50px 0;
@@ -161,7 +161,7 @@
         h3 {
             text-align: center;
             font-size: 1.2em;
-            color: $brand-dark-grey;
+            color: $brand-darkest-grey;
             text-transform: uppercase;
             font-weight: 700;
             padding: 0 0 20px;

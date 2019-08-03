@@ -55,7 +55,7 @@
             bottom: 0;
             z-index: 4;
             font-size: 1.4em;
-            background-color: $brand-dark-grey;
+            background-color: $brand-darkest-grey;
             width: 80vw;
             right: -80vw;
             transition: right 200ms ease-in-out;
@@ -100,7 +100,7 @@
                     text-decoration: none;
 
                     &:hover,&:active,&:focus {
-                        background-color: $brand-dark-grey;
+                        background-color: $brand-darkest-grey;
                         font-weight: 700;
                     }
                 }
