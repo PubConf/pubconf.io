@@ -1,5 +1,5 @@
 # pubconf.io
-Event website for PubConf Conferences
+Website for PubConf Events
 
 ## Developer Setup
 
@@ -16,3 +16,14 @@ This is a Jekyll static site hosted on GitHub Pages, fronted by Cloudflare. The 
 ### Structure
 
 Content is based on YAML data files in the `_data` directory.
+
+## Creating and Managing Your Event
+
+If you are hosting a PubConf event, and have already chatted with the PubConf team, you are welcome to submit a PR with changes and details for your event. If you have not chatted with the PubConf team yet, start there. Email `hello@pubconf.io`
+
+Each PubConf event is defined as a file in the `_events` collection. There is a template there defining the structure.
+
+PubConf speakers are defined as a file in the `_speakers` collection. This allows speakers to maintain a profile between events and reduce data collection work. Events and Speakers cross-reference by the `speaker.slug`.
+
+In general, you shouldn't need to make changes to templates or CSS files.
+
