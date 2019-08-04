@@ -1,40 +1,42 @@
 ---
 layout: vote
 title: PubConf Voting
+permalink: /vote/
 ---
+
+<header></header>
 
 {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
 {% for event in site.events %}
     {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
     {% if event_date > now %}
-    <li>
-        <a href="{{ event.url }}">{{ event.title }}</a>
-    </li>
+    <div id="{{ event.slug }}" style="display:none;">
+        <form class="js-ballot" method="GET" action="/vote/thanks/" data-max-votes="{{ event.finalist_count }}">
+            <button type="submit" disabled="disabled" class="disabled">Submit</button>
+            <ul>
+                {% for speaker_hash in event.speakers %}
+                {% assign speaker_slug = speaker_hash[0] %}
+                {% assign speaker_info = speaker_hash[1] %}
+                {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+                {% if speaker_profile %}
+                <li>
+                    <label>
+                        <img src="{{ speaker_profile.image }}" alt="{{ speaker_profile.name }}" />
+                        <div class="desc">
+                            <div class="title">{{ speaker_info.talk }}</div>
+                            <div class="name">{{ speaker_profile.name }}</div>
+                        </div>
+                        <input type="checkbox" name="speaker" value="{{ speaker_profile.name }}">
+                    </label>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <button type="submit" disabled="disabled" class="disabled">Submit</button>
+        </form>
+    </div>
     {% endif %}
 {% endfor %}
-
-
-{% assign event = site.data.next_event %}
-
-<header></header>
-<form id="js-ballot" method="GET" action="/vote/thanks/">
-    <button type="submit" disabled="disabled" class="disabled">Submit</button>
-    <ul>
-        {% for speaker in event.speakers %}
-        <li>
-            <label>
-                <img src="{{ speaker.image }}" alt="{{ speaker.name }}" />
-                <div class="desc">
-                    <div class="title">{{ speaker.title }}</div>
-                    <div class="name">{{ speaker.name }}</div>
-                </div>
-                <input type="checkbox" name="speaker" value="{{ speaker.name }}">
-            </label>
-        </li>
-        {% endfor; %}
-    </ul>
-    <button type="submit" disabled="disabled" class="disabled">Submit</button>
-</form>
 
 <div class="footer">
     Copyright &copy; 2015-{{ site.time | date: '%Y' }} <a href="https://trackjs.com/">TrackJS LLC</a>
