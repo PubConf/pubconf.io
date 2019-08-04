@@ -1,0 +1,16 @@
+---
+layout: page
+title: "PubConf Speakers"
+permalink: /speakers/
+body_class: speakers
+sitemap:
+  priority: 0.8
+---
+
+<ol class="speaker-list">
+    {% for speaker in site.speakers | sort: 'name' %}
+    <li>
+        <a href="{{ speaker.url }}" title="{{ speaker.name }}">{{ speaker.name }}</a>
+    </li>
+    {% endfor %}
+</ol>

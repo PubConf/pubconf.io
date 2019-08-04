@@ -21,7 +21,7 @@ permalink: /vote/
                 {% if speaker_profile %}
                 <li>
                     <label>
-                        <img src="{{ speaker_profile.image }}" alt="{{ speaker_profile.name }}" />
+                        <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.name }}" />
                         <div class="desc">
                             <div class="title">{{ speaker_info.talk }}</div>
                             <div class="name">{{ speaker_profile.name }}</div>
