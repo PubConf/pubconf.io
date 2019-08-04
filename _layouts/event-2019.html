@@ -1,0 +1,263 @@
+---
+layout: default
+body_class: "event-2019"
+sitemap:
+    priority: 1.0
+---
+
+{% assign event = page %}
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "{{ event.title }}",
+        "description": "{{ site.description | strip_html | strip_newlines }}",
+        "url": "{{ site.url }}{{ event.url }}",
+        "image": "{{ site.url }}{{ event.images.share }}",
+        "startDate": "{{ event.date | date_to_xmlschema }}",
+        "endDate": "{{ event.end_date | date_to_xmlschema }}",
+        {% if event.venue %}
+        "location": {
+            "@type": "Place",
+            "name": "{{ event.venue.name }}",
+            "address": "{{ event.venue.address }}"
+        },
+        {% endif %}
+        {% if event.tickets %}
+        "offers": {
+            "@type": "Offer",
+            "url": "{{ event.tickets.url }}",
+            "availability": "http://schema.org/InStock",
+            "validFrom": "{{ 'now' | date: "%F" }}",
+            "price": "{{ event.tickets.price }}",
+            "priceCurrency": "{{ event.tickets.currency }}"
+        },
+        {% endif %}
+        {% if event.speakers %}
+        "performer": [
+            {% for speaker_hash in event.speakers %}
+            {% assign speaker_slug = speaker_hash[0] %}
+            {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+            {% if speaker_profile %}
+            {
+                "@type": "Person",
+                "name": "{{ speaker_profile.name }}",
+                "url": "{{ site.url }}{{ speaker_profile.url }}",
+                "sameAs": ["https://twitter.com/{{ speaker_profile.twitter }}"]
+            }{% if forloop.last == false %},{% endif %}
+            {% endif %}
+            {% endfor %}
+        ]
+        {% endif %}
+    }
+</script>
+
+<div class="hero" style="background: #000 url({{ event.images.background }}) center center no-repeat;background-size:cover;">
+    <div class="container">
+        <div class="title">
+            <h1 style="display: none;">{{ event.title }}</h1>
+            {% if event.images.logo %}<img src="{{ event.images.logo }}" alt="{{ event.title }}">
+            {% else %}<img src="/assets/images/index/title-logo.svg" alt="{{ event.title }}">{% endif %}
+        </div>
+        <div class="subtitle">
+            <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
+        </div>
+        {% if event.tickets %}
+        <a class="cta" href="{{ event.tickets.url }}" alt="Buy Tickets to {{ event.title }}">
+            Buy Tickets
+        </a>
+        {% else %}
+        <a class="cta secondary" href="{{ site.newsletter_url }}" alt="Get Notified for {{ event.title }}">
+            <i class="icon-paper-plane-empty"></i> Email Me
+        </a>
+        {% endif %}
+    </div>
+    {% capture menu_links %}
+    <ol>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#wtf">WTF?!</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="/code-of-conduct/">Code of Conduct</a></li>
+    </ol>
+    {% endcapture %}
+    {% include menu.html links=menu_links %}
+</div>
+
+{% if event.partner %}
+<div class="partner">
+    <div class="container">
+        <h2>In Partnership With</h2>
+        <a href="{{ event.partner.url }}" title="{{ event.partner.name }}">
+            <img src="{{ event.partner.logo }}" alt="{{ event.partner.name }}" />
+        </a>
+    </div>
+</div>
+{% endif %}
+
+<div class="details">
+    <div class="container">
+        <h2 id="details">Details</h2>
+        <p>
+            Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers.
+            Food, drinks, and laughs are included with your ticket.
+        </p>
+        <p>
+            {% if event.local_time %} <strong>{{ event.local_time | date: "%A, %B %e, %Y @%I:%M %P"  }}</strong>{% endif %}
+            {% if event.venue %} at <strong><a href="{{ event.venue.url }}" title="{{ event.venue.name }}">{{ event.venue.name }}</a></strong>.{% endif %}
+        </p>
+        {{ content }}
+    </div>
+</div>
+
+{% if event.speakers %}
+<div class="speakers">
+    <div class="container">
+        <h2 id="speakers">Featured Speakers</h2>
+        <ul class="speaker-list">
+            {% for speaker_hash in event.speakers %}
+            {% assign speaker_slug = speaker_hash[0] %}
+            {% assign speaker_info = speaker_hash[1] %}
+            {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
+            {% if speaker_profile %}
+            <li>
+                <a class="speaker-link" href="{{ speaker_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker_profile.name }}">
+                <figure class="speaker-item">
+                    <img data-proofer-ignore data-lazy-src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.name }}" class="speaker">
+                    {% if speaker_info.place == "champion" %}<img src="/assets/images/champion.png" alt="PubConf Champion" title="PubConf Champion" class="champion">{% endif; %}
+                    {% if speaker_info.place == "finalist" %}<img src="/assets/images/finalist.png" alt="PubConf Finalist" title="PubConf Finalist" class="finalist">{% endif; %}
+                    <figcaption>
+                        <span class="title">{% if speaker_info.talk %}{{ speaker_info.talk }}{% else %}Coming Soon{% endif %}</span>
+                        <span class="name">{{ speaker_profile.name }}</span>
+                        <span class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <div data-visible-category="discovery" data-visible-action="view_speakers"></div>
+
+        {% if event.host %}
+        <div class="host">
+            {% assign host_profile = site.speakers | where: 'slug', event.host | first %}
+            {% if host_profile %}
+            <h3 class="lead2">Hosted By</h3>
+            <ul class="speaker-list">
+                <li>
+                    <a class="speaker-link" href="{{ host_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ host_profile.name }}">
+                    <figure class="speaker-item">
+                        <img data-proofer-ignore data-lazy-src="{{ host_profile.image }}" alt="{{ host_profile.name }}" class="speaker">
+                        <figcaption>
+                            <span class="name">{{ host_profile.name }}</span>
+                            <span class="description">{{ host_profile.bio }}</span>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+{% if event.tickets %}
+<div class="tickets">
+    <div class="container">
+        <h2 id="tickets">Get Your Ticket</h2>
+        <div class="ticket-cta">
+            <p>Tickets to {{ event.title }} sell out fast, so don't wait. Get yours today!</p>
+            <div>
+                <a class="cta" href="{{ event.tickets.url }}" alt="Buy Tickets to {{ event.title }}">
+                    Buy Tickets
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="tickets">
+    <div class="container">
+        <h2 id="tickets">Get Email Updates</h2>
+        <div class="ticket-cta">
+            <p>Join our newsletter to be the first to know about PubConf tickets and events.</p>
+            <div>
+                <a class="cta" href="{{ site.newsletter_url }}" alt="Subscribe to {{ event.title }}">
+                    <i class="icon-paper-plane-empty"></i>
+                    Subscribe to PubConf
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="wtf">
+    <div class="container">
+        <h2 id="wtf">WTF is This?!</h2>
+        <p>PubConf is a comedy variety show for software folks. We partner with conferences around the world to bring you lighthearted fun and community in a non-professional setting.</p>
+        <div class="question">
+            <h3>Is this a joke?</h3>
+            <p>
+                Yes. Well, kind of. We're really throwing this party, these speakers are really going to speak on these topics, and we're really going to have some drinks. But it's all light-hearted and fun.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Is this a professional event?</h3>
+            <p>
+                No, This is a comedy variety show at a pub.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Can I go to PubConf if I didn't attend {{ event.partner.name }}?</h3>
+            <p>
+                Absolutely! While PubConf is in partnership with {{ event.partner.name }}, it is a separately ticketed event and we'd love to have you there!
+            </p>
+        </div>
+        <div class="question">
+            <h3>What's included with my ticket?</h3>
+            <p>
+                We'll provide pub-fare food, some adult beverages, a great show, and amazing people. If you need something more, well, maybe this isn't the event for you.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include gallery.html %}
+
+{% if event.sponsors %}
+<div class="sponsors">
+    <div class="container">
+        <h2 id="sponsors">Sponsors</h2>
+        <h3>Top-Shelf Sponsors</h3>
+        <ul class="top-shelf-sponsors">
+            {% assign top_sponsors = event.sponsors | where:"level","topshelf" %}
+            {% for sponsor in top_sponsors %}
+            <li class="sponsor-item">
+                <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
+                    <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+                </a>
+            </li>
+            {% endfor; %}
+        </ul>
+        <h3>Rail Sponsors</h3>
+        <ul class="rail-sponsors">
+            {% assign rail_sponsors = event.sponsors | where:"level","rail" %}
+            {% for sponsor in rail_sponsors %}
+            <li class="sponsor-item">
+                <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
+                    <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+                </a>
+            </li>
+            {% endfor; %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+
+{% include video.html %}

@@ -1,0 +1,123 @@
+.sidebar {
+
+    .hamburger {
+        display: block;
+        color: white;
+        padding: 10px 10px 8px 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        z-index: 4;
+        .icon {
+            font-size: 30px;
+        }
+    }
+
+    .hamburger-activator {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:checked {
+            & + .sidebar-container {
+                .overlay { opacity: .5; visibility: visible; }
+                .close { opacity: 1; visibility: visible; }
+                .drawer { right: 0; }
+            }
+        }
+    }
+
+    .sidebar-container {
+        background-color: black;
+        box-shadow: inset -8px 0 8px -5px rgba(0,0,0,0.8);
+        overflow-y: auto;
+        overflow-x: hidden;
+        .overlay {
+            z-index: 1;
+            display: initial;
+            visibility: hidden;
+            opacity: 0;
+            position: fixed;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            transition: all 200ms ease-in-out;
+        }
+        .drawer {
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            top: 0;
+            bottom: 0;
+            z-index: 4;
+            font-size: 1.4em;
+            background-color: $brand-darkest-grey;
+            width: 80vw;
+            right: -80vw;
+            transition: right 200ms ease-in-out;
+            header {
+                height: 70px;
+                display: flex;
+                img {
+                    height: 40px;
+                    padding: 15px 0 15px 30px;
+                }
+            }
+        }
+        .close {
+            z-index: 5;
+            &::after {
+                content: "\00d7";
+                color: white;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 65px;
+            }
+            display: initial;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+            position: fixed;
+            text-shadow: 2px 2px 6px #333;
+            top: 0;
+            right: 20px;
+            transition: all 200ms ease-in-out;
+        }
+        nav {
+            border-top: 4px solid $brand-med-grey;
+            border-bottom: 4px solid $brand-med-grey;
+            li {
+                border-bottom: 1px solid $brand-med-grey;
+                a {
+                    display: block;
+                    padding: 20px 10px;
+                    background-color: black;
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover,&:active,&:focus {
+                        background-color: $brand-darkest-grey;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .social {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px 0;
+
+                a i {
+                    color: white;
+                    font-size: 2.2em;
+                }
+            }
+        }
+
+    }
+
+}

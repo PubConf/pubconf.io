@@ -1,0 +1,27 @@
+footer.site-footer {
+    background-color: $brand-darkest-grey;
+    padding: 50px;
+
+    .social .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        max-width: 600px;
+        margin: 0 auto 30px;
+        a {
+            font-size: 3em;
+        }
+    }
+
+    p {
+        color: white;
+        margin: 15px auto 0;
+        max-width: 800px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    a {
+        color: $brand-orange;
+    }
+}

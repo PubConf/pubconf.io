@@ -1,0 +1,329 @@
+.event-2019 {
+
+    .container {
+        overflow-x: hidden;
+        width: 100%;
+
+        @media screen and (min-width: 1100px) {
+            width: 1100px;
+            margin: 0 auto;
+        }
+    }
+
+    h2 {
+        font-size: 2em;
+        color: $brand-orange;
+        line-height: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .hero {
+        $hero-height: 300px;
+        background: #000 url(/assets/images/index/hero-bg.jpg) center center no-repeat;
+        background-size: cover;
+        position: relative;
+        height: $hero-height;
+
+        .container {
+            background-image: radial-gradient(circle at center, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 100%);
+            position: absolute;
+            top: 0;
+            bottom: $hero-height;
+            min-height: $hero-height;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-around;
+            img {
+                width: 33%;
+                min-width: 240px;
+                max-width: 360px;
+            }
+        }
+        .subtitle h2 {
+            font-size: 1.6em;
+            color: $brand-orange;
+            line-height: 100%;
+            font-weight: 900;
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .cta {
+            background-color: $brand-orange;
+            color: white;
+            margin: 0 auto;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            margin: 18px auto;
+            font-size: 1.6em;
+            font-weight: 900;
+            padding: 12px 24px;
+            box-shadow:#000 2px 2px 10px 2px;
+            text-decoration: none;
+
+            &.secondary {
+                background-color: $brand-light-grey;
+                color: black;
+            }
+        }
+    }
+
+    .partner {
+        background-color: $brand-darkest-grey;
+        .container {
+            padding: 50px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            & > * {
+                flex: 0 0 50%;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .details {
+        background-color: $brand-dark-grey;
+        padding: 50px 0;
+        .container {
+            text-align: center;
+            a {
+                color: $brand-orange;
+            }
+            p {
+                margin: 20px;
+                color: white;
+                font-size: 1.4em;
+            }
+        }
+    }
+
+    .speakers {
+        background-color: $brand-darkest-grey;
+        .container {
+            padding: 50px 0;
+        }
+        .speaker-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 830px;
+            margin: 30px auto 0;
+
+            li {
+                width: calc(50% - 15px);
+
+                &:nth-last-of-type(n + 3) {
+                    padding-bottom: 20px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                li {
+                    padding: 0 20px 20px 20px;
+                    width: 100%;
+
+                    &:last-of-type {
+                    padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .speaker-link {
+            display: block;
+            text-decoration: none;
+        }
+
+        .speaker-item {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            position: relative;
+
+            img.speaker {
+                flex-grow: 0;
+                flex-shrink: 0;
+                height: 150px;
+                width: 150px;
+            }
+            img.champion {
+                position: absolute;
+                height: 100px;
+                left: -18px;
+                bottom: -10px;
+            }
+            img.finalist {
+                position: absolute;
+                height: 60px;
+                left: -18px;
+                bottom: -10px;
+            }
+
+            figcaption {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                background-color: $brand-dark-grey;
+            }
+
+            p {
+                flex-grow: 0;
+                flex-shrink: 0;
+                margin: 0;
+            }
+
+            .title {
+                flex-grow: 1;
+                font-size: 1.2em;
+                color: white;
+                font-weight: 700;
+            }
+
+            .name {
+                color: $brand-orange;
+                font-size: 1.2em;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .description {
+                color: #7F7F7F;
+                font-size: 12px;
+            }
+
+        }
+
+        .host {
+            padding: 30px 0 0 0;
+            h3 {
+                font-size: 1.8em;
+                color: $brand-orange;
+                line-height: 42px;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .speaker-list {
+                justify-content: center;
+            }
+        }
+    }
+
+    .tickets {
+        background-color: $brand-dark-grey;
+        .container {
+            padding: 50px 0;
+            margin: 0 20px;
+            width: auto;
+        }
+        .ticket-cta {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            text-align: center;
+            align-items: center;
+            & > * {
+                flex: 0 0 50%;
+            }
+
+            p {
+                color: white;
+                font-size: 1.6em;
+            }
+            .cta {
+                background-color: $brand-orange;
+                color: white;
+                margin: 0 auto;
+                display: inline-block;
+                text-align: center;
+                margin: 18px auto;
+                font-size: 1.6em;
+                font-weight: 900;
+                padding: 12px 24px;
+                box-shadow:#000 2px 2px 10px 2px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .wtf {
+        background-color: $brand-darkest-grey;
+        text-align: center;
+        .container {
+            padding: 50px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h3 {
+            font-size: 1.6em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 700;
+        }
+        p {
+            color: white;
+            font-size: 1.4em;
+        }
+    }
+
+    .sponsors {
+        background-color: $brand-darkest-grey;
+        .container {
+            padding: 50px 0;
+        }
+        h3 {
+            font-size: 1.6em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 700;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        ul.top-shelf-sponsors {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li {
+                flex: 0 0 50%;
+                a {
+                    display: block;
+                    padding: 20px;
+                }
+            }
+        }
+        ul.rail-sponsors {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            li {
+                flex: 0 0 33%;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+
+}

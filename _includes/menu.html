@@ -1,0 +1,39 @@
+<aside class="sidebar">
+    <label for="hamburger-activator" class="hamburger">
+        <div class="icon">☰</div>
+    </label>
+    <input type="checkbox" class="hamburger-activator" id="hamburger-activator">
+    <div class="sidebar-container">
+        <div class="overlay"></div>
+        <label for="hamburger-activator" class="close"></label>
+        <div class="drawer">
+            <header>
+                <a href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS"></a>
+            </header>
+            <nav class="menu">
+                {{ include.links }}
+                <div class="social">
+                    <a href="{{ site.youtube_url }}" title="YouTube"><i class="icon-youtube-play"></i></a>
+                    <a href="{{ site.twitter_url }}" title="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="{{ site.newsletter_url }}" title="Email"><i class="icon-mail"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+
+<script>
+    // tiny function to close the drawer on hash click
+    (function() {
+        if (!document.querySelector) { return; }
+        var nav = document.querySelector('nav.menu');
+        var activator = document.querySelector('#hamburger-activator');
+        if (!nav || !activator) { return; }
+
+        nav.addEventListener('click', function(evt) {
+            if (evt && evt.target && evt.target.getAttribute('href').indexOf("#") === 0) {
+                activator.checked = false;
+            }
+        });
+    })();
+</script>

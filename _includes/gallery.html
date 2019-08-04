@@ -1,0 +1,21 @@
+
+<div class="image-gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <ul>
+        {% for file in site.static_files %}
+            {% if file.path contains 'gallery' %}
+            {% if file.extname == '.jpg' %}
+            {% assign filenameparts = file.path | split: "/" %}
+            {% assign filename = filenameparts | last | replace: file.extname,"" %}
+            <li>
+                <a href="{{ file.path }}" title="{{ filename }}">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io/{{ file.path }}&w=300&h=200&output=jpg&q=50&t=square" alt="{{ filename }}" title="{{ filename }}" />
+                </a>
+            </li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>

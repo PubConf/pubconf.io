@@ -1,5 +1,4 @@
 var API_BASE = "https://api.pubconf.io/";
-var MAX_VOTE_COUNT = 3;
 var VOTED_COOKIE = "PUBCONF_VOTED";
 var VOTE_RESULTS_LOOKBACK_MS = 1000 * 60 * 30; // 30 minutes
 
@@ -30,10 +29,21 @@ var util = {
     else { document.addEventListener("DOMContentLoaded", ready); }
 })(function () { /* the document is now ready. */
     console.info("vote.js starting");
+    var activeEventId = util.getSearchParam("event");
+    var activeSection = null;
+
+    (function showActiveEvent() {
+        activeSection = document.querySelector("#" + activeEventId);
+        if (activeSection) {
+            activeSection.style.display = "block";
+        }
+    })();
 
     (function addBallotConstraints() {
-        var ballotForm = document.querySelector("#js-ballot");
+        var ballotForm = activeSection && activeSection.querySelector(".js-ballot");
         if (!ballotForm) { return; }
+
+        var maxVotes = parseInt(ballotForm.getAttribute("data-max-votes"), 10);
 
         var speakerInputs = [].slice.call(ballotForm.querySelectorAll("input[name=speaker]"), 0);
         var submitInputs = [].slice.call(ballotForm.querySelectorAll("button[type=submit]"), 0);
@@ -45,7 +55,7 @@ var util = {
             speakerInputs
                 .filter(function(speakerInput) { return !speakerInput.checked })
                 .forEach(function(speakerInput) {
-                    if (checkedSpeakerCount >= MAX_VOTE_COUNT) {
+                    if (checkedSpeakerCount >= maxVotes) {
                         speakerInput.classList.add("disabled");
                         speakerInput.setAttribute("disabled", "disabled");
                         speakerInput.parentElement.classList.add("disabled");
@@ -59,7 +69,7 @@ var util = {
 
             submitInputs
                 .forEach(function(submitInput) {
-                    if (checkedSpeakerCount == MAX_VOTE_COUNT) {
+                    if (checkedSpeakerCount == maxVotes) {
                         submitInput.classList.remove("disabled");
                         submitInput.removeAttribute("disabled");
                         submitInput.innerHTML = "Submit Vote"
@@ -67,7 +77,7 @@ var util = {
                     else {
                         submitInput.classList.add("disabled");
                         submitInput.setAttribute("disabled", "disabled");
-                        submitInput.innerHTML = "Pick Your Favorite <strong>" + (MAX_VOTE_COUNT-checkedSpeakerCount) + "</strong> Talks"
+                        submitInput.innerHTML = "Pick Your Favorite <strong>" + (maxVotes-checkedSpeakerCount) + "</strong> Talks"
                     }
                 });
         }
@@ -85,8 +95,10 @@ var util = {
     })();
 
     (function addBallotIntercept() {
-        var ballotForm = document.querySelector("#js-ballot");
+        var ballotForm = activeSection && activeSection.querySelector(".js-ballot");
         if (!ballotForm) { return; }
+
+        var maxVotes = parseInt(ballotForm.getAttribute("data-max-votes"), 10);
 
         var votedCookie = util.getCookie(VOTED_COOKIE);
         if (votedCookie) {
@@ -97,8 +109,7 @@ var util = {
             return;
         }
 
-        var eventHash = util.getSearchParam("eventHash");
-        if (!eventHash) { return util.handleFault("Invalid EventHash"); }
+        var eventHash = util.getSearchParam("hash") || "empty";
 
         ballotForm.addEventListener("submit", function(evt) {
             evt.preventDefault();
@@ -106,11 +117,11 @@ var util = {
                 return input.value;
             });
 
-            if (selectedSpeakers.length > MAX_VOTE_COUNT) {
+            if (selectedSpeakers.length > maxVotes) {
                 return fault("Too many speakers selected");
             }
 
-            fetch(API_BASE + eventHash + "/", {
+            fetch(API_BASE + activeEventId + "-" + eventHash + "/", {
                 method: "POST",
                 mode: "cors",
                 cache: "no-cache",
@@ -133,14 +144,14 @@ var util = {
     })();
 
     (function showResults() {
-        var resultsList = document.querySelector("#js-results");
+        var resultsList = activeSection && activeSection.querySelector(".js-results");
         if (!resultsList) { return; }
 
-        var eventHash = util.getSearchParam("eventHash");
-        if (!eventHash) { return util.handleFault("Invalid EventHash"); }
+        var eventHash = util.getSearchParam("hash") || "empty";
+        var maxVotes = parseInt(resultsList.getAttribute("data-max-votes"), 10);
 
         var voteTally = {};
-        fetch(API_BASE + eventHash + "/_query", {
+        fetch(API_BASE + activeEventId + "-" + eventHash + "/_query", {
             method: "POST",
             mode: "cors",
             cache: "no-cache",
@@ -155,7 +166,7 @@ var util = {
             resp.json().then(function(ballots) {
                 var totalVotes = 0;
                 ballots.forEach(function(ballot) {
-                    if (ballot.speakers.length > MAX_VOTE_COUNT) {
+                    if (ballot.speakers.length > maxVotes) {
                         console.error("found vote for too many speakers", votes);
                         return; // discard bad data.
                     }
@@ -177,7 +188,7 @@ var util = {
 
                 sortedVoteTally.forEach(function(tally, idx) {
                     var resultEl = document.createElement("li");
-                    if (idx < MAX_VOTE_COUNT) {
+                    if (idx < maxVotes) {
                         resultEl.classList.add("winner");
                     }
                     resultEl.innerHTML = "<div class='tally-bar' style='width:" + (tally.votes/totalVotes)*100 + "%'></div>" +

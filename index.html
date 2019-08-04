@@ -1,457 +1,83 @@
 ---
 layout: default
 title: PubConf Software Comedy Variety Show and Afterparty
+body_class: page-index
 sitemap:
     priority: 1.0
 ---
 
-{% assign event = site.data.next_event %}
-<article>
-    <section class="section banner" id="home">
-        {% assign featuredSpeakers = event.speakers | where:"featured",true | limit: 3 | reverse %}
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                {% for speaker in featuredSpeakers %}
-                <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 | plus:1 }}"></li>
-                {% endfor; %}
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="backdrop" data-lazy-style="background-image: url('{{ event.partner.featuredImage }}')"></div>
-                    <img data-proofer-ignore data-lazy-src="{{ event.partner.featuredImage }}" alt="slide-1">
-                    <div class="carousel-caption">
-                        <div class="caption-heading">
-                            <h1 class="featuring">after</h1>
-                            <span class="name"><a href="{{ event.partner.url }}" style="color:white">{{ event.partner.name }}</a></span>
-                            <small>{{ event.partner.description }}</small>
-                        </div>
-                        <div class="caption-desc">
-                            {{ event.partner.title }}
-                        </div>
-                        {% if event.ticketUrl %}
-                        <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="view_tickets" data-click-label="hero">Buy Tickets!</a>
-                        {% else %}
-                        <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="newsletter" data-click-label="hero">Notify Me!</a>
-                        {% endif; %}
-                    </div>
-                </div>
-                {% for speaker in featuredSpeakers %}
-                <div class="item">
-                    <div class="backdrop" data-lazy-style="background-image: url('{{ speaker.featuredImage }}')"></div>
-                    <img data-proofer-ignore data-lazy-src="{{ speaker.featuredImage }}" alt="slide-1">
-                    <div class="carousel-caption">
-                        <div class="caption-heading">
-                            <h1 class="featuring">featuring</h1>
-                            <span class="name">{{ speaker.name }}</span>
-                            <small>{{ speaker.description }}</small>
-                        </div>
-                        <div class="caption-desc">
-                            {{ speaker.title }}
-                        </div>
-                        {% if event.ticketUrl %}
-                        <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="view_tickets" data-click-label="hero">Buy Tickets!</a>
-                        {% else %}
-                        <a href="{{ site.newsletter_signup }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="newsletter" data-click-label="hero">Notify Me!</a>
-                        {% endif; %}
-                    </div>
-                </div>
-                {% endfor; %}
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" data-click-category="discovery" data-click-action="hero_carousel">
-                <span class="fa fa-chevron-left" ></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" data-click-category="discovery" data-click-action="hero_carousel">
-                <span class="fa fa-chevron-right" ></span>
-                <span class="sr-only">Next</span>
-            </a>
-
+<div class="hero">
+    <div class="container">
+        <div class="title">
+            <h1 style="display: none;">PubConf by TrackJS</h1>
+            <img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS">
         </div>
-
-    </section>
-
-    <section class="section welcome" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <div class="page-title">
-                        <h2 class="lead2">The Software <em>Variety Show</em> and Afterparty</h2>
-                    </div>
-                    <p>
-                        Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers.
-                    </p>
-                    <p>{{ event.startTime | date: "%A, %B %e, %Y" }}</p>
-                    <p>
-                        Plus, food and drinks are included in your ticket!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section comedian" id="speakers">
-        <div class="container">
-            <div class="row" style="margin-top:40px;">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <div class="page-title">
-                        <h2 class="lead2">Special Guests</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <ul class="speaker-list">
-                    {% for speaker in event.speakers %}
-                    <li>
-                        <figure class="speaker-item">
-                            <img data-proofer-ignore data-lazy-src="{{ speaker.image }}" alt="{{ speaker.name }}" class="speaker">
-                            {% if speaker.champion %}<img data-proofer-ignore data-lazy-src="/assets/images/champion.png" alt="champion" title="Former PubConf Champion" class="champion">{% endif; %}
-                            <figcaption>
-                                <span class="title">{{ speaker.title }}</span>
-                                <span class="name"><a href="{{speaker.url}}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker.name }}">{{ speaker.name }}</a></span>
-                                <span class="description">{{ speaker.description }}</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    {% endfor; %}
-                </ul>
-            </div>
-
-            <div class="row" style="margin-top:40px;" data-visible-category="discovery" data-visible-action="view_speakers">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <div class="page-title">
-                        <h3 class="lead2">Hosted By</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <ul class="speaker-list">
-                    <li style="margin:0 auto">
-                        <figure class="speaker-item">
-                            <img data-proofer-ignore data-lazy-src="{{ event.host.image }}" alt="{{ event.host.name }}" class="speaker">
-                            <figcaption>
-                                <span class="title"></span>
-                                <span class="name"><a href="{{ event.host.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ event.host.name }}">{{ event.host.name }}</a></span>
-                                <span class="description">{{ event.host.description }}</span>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="events" id="tickets">
-        <div class="container" data-visible-event="tickets">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h2 class="lead2">Tickets</h2>
-                    </div>
-                </div>
-            </div>
+        <div class="subtitle">
+            <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
         </div>
     </div>
-    <div class="section events-content">
-        <div class="bg-side col-sm-3 col-md-4" data-lazy-style="background:#000 url('/assets/images/bg-events.jpg') top right no-repeat;">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-7 col-md-offset-4">
-                    <div class="events-list">
-                        <div class="event-item">
-                            <div class="event-left">
-                                {{ event.startTime | date: '%-d %b' }}
-                            </div>
-                            <div class="event-body">
-                                <h3>{{ event.name }}</h3>
-                                <p>after {{ event.partner.name }}</p>
-                            </div>
-                            {% if event.ticketUrl %}
-                            <div class="event-right">
-                                <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="view_tickets" data-click-label="list">Buy Tickets</a>
-                            </div>
-                            {% else %}
-                            <div class="event-right">
-                                <a href="{{ site.newsletter_signup }}" title="Email Me" class="btn btn-secondary" data-click-category="funnel" data-click-action="newsletter" data-click-label="list">Notify Me!</a>
-                            </div>
-                            {% endif; %}
-                        </div>
-                        {% assign futureEvents = site.data.future_events | sort:"startTime" %}
-                        {% for event in futureEvents limit: 3 %}
-                        <div class="event-item">
-                            <div class="event-left">
-                                {{ event.startTime | date: '%-d %b' }}
-                            </div>
-                            <div class="event-body">
-                                <h3>{{ event.name }}</h3>
-                                <p>after {{ event.partner.name }}</p>
-                            </div>
-                            {% if event.ticketUrl %}
-                            <div class="event-right">
-                                <a href="{{ event.ticketUrl }}" title="Buy Tickets" class="btn btn-default" data-click-category="funnel" data-click-action="view_tickets" data-click-label="list">Buy Tickets</a>
-                            </div>
-                            {% else %}
-                            <div class="event-right">
-                                <a href="{{ site.newsletter_signup }}" title="Email Me" class="btn btn-secondary" data-click-category="funnel" data-click-action="newsletter" data-click-label="list">Notify Me!</a>
-                            </div>
-                            {% endif; %}
-                        </div>
-                        {% endfor; %}
-                    </div>
-                </div>
-            </div>
-        </div>
+    {% capture menu_links %}
+    <ol>
+    {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+    {% for event in site.events %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if event_date > now %}
+        <li>
+            <a href="{{ event.url }}">{{ event.title }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+        <li>
+            <a href="/events/">Event Archive</a>
+        </li>
+        <li>
+            <a href="/speakers/">Speakers</a>
+        </li>
+        <li>
+            <a href="/code-of-conduct/">Code of Conduct</a>
+        </li>
+    </ol>
+    {% endcapture %}
+    {% include menu.html links=menu_links %}
+</div>
+
+<ol class="event-list">
+    {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
+    {% for event in site.events %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if event_date > now %}
+        <li>
+            <a href="{{ event.url }}">
+                <h2>{{ event.title }}</h2>
+                <div class="event-date">{{ event.date | date: "%A, %B %e, %Y" }}</div>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ol>
+
+<div class="newsletter">
+    <div class="container">
+        <h2>Get Email Updates</h2>
+        <p>Join our newsletter to be the first to know about tickets and events.</p>
+        <a href="{{ site.newsletter_url }}" class="button">
+            <i class="icon-paper-plane-empty"></i>
+            Subscribe to PubConf
+        </a>
     </div>
+</div>
 
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h2 class="lead2">Get Updates</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <div class="row">
-                        <p style="text-align:center;font-size:18px;margin:10px 0 0 0">
-                            Join our newsletter to be the first to know about tickets and events.
-                        </p>
-                        <a type="button" href="{{ site.newsletter_signup }}" data-click-category="funnel" data-click-action="newsletter" data-click-label="updates">
-                            Get Email Updates
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="global-sponsor">
+    <div class="container">
+        <h3>Global Founding Sponsor</h3>
+        <h2>
+            <a href="https://trackjs.com/">
+                <span style="display: none;">TrackJS Front-End Error Monitoring</span>
+                <img src="/assets/images/index/sponsor-logo.svg" alt="TrackJS">
+            </a>
+        </h2>
+    </div>
+</div>
 
-    <section class="section info" id="info">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h2 class="lead2">Details</h2>
-                        <div class="subtitle">for {{ event.name }}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="faq col-sm-12, col-md-8 col-md-offset-2">
-                    <h3>FAQ</h3>
-                    <ul class="">
-                        <li>
-                            <div class="faq-question">
-                                Is this a joke?
-                            </div>
-                            <div class="faq-answer">
-                                Yes. Well, kind of. We're really throwing this party, these speakers are really going to speak on these topics, and we're really going to have beer. But it's all light-hearted and fun.
-                            </div>
-                        </li>
-                        <li>
-                            <div class="faq-question">
-                                I didn't attend {{ event.partner.name }}, can I still come to PubConf?
-                            </div>
-                            <div class="faq-answer">
-                                Absolutely! While PubConf is after {{ event.partner.name }}, it is a separately ticketed event and we'd love to have you there!
-                            </div>
-                        </li>
-                        <li>
-                            <div class="faq-question">
-                                What's included with my ticket?
-                            </div>
-                            <div class="faq-answer">
-                                We'll provide pub-fare food, some adult beverages, a great show, and amazing people. If you need something more, well, maybe this isn't the event for you.
-                            </div>
-                        </li>
-                        <li>
-                            <div class="faq-question">
-                                When will tickets be available?
-                            </div>
-                            <div class="faq-answer">
-                                We release the first round of tickets about a month before the event. The second batch of tickets is held until the week of {{ event.partner.name }}.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row detail-content">
-                <div class="col-sm-12 col-md-6">
-                    <h3 data-visible-category="discovery" data-visible-action="view_info">Times</h3>
-                    <div><strong>Doors Open</strong> - {{ event.doorDisplay }}</div>
-                    <div><strong>Show Time</strong> - {{ event.startDisplay }}</div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <h3>Location</h3>
-                    <div>{{ event.location.name }}</div>
-                    <div>{{ event.location.address }}</div>
-                    <div><a href="{{ event.location.url }}" target="_blank">{{ event.location.url }}</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section gallery" id="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h2 class="lead2">Gallery</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row popup-gallery">
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/kc2017-1.jpg" title="Stage at PubConf Kansas City 2017" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-1.thumb.jpg" alt="Stage at PubConf Kansas City 2017" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/london2017.jpg" title="The crowd at PubConf London 2017" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/london2017.thumb.jpg" alt="The crowd at PubConf London 2017" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/kc2017-2.jpg" title="Damian and Todd bantering on stage" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-2.thumb.jpg" alt="Damian and Todd bantering on stage" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/kc2017-3.jpg" title="The crowd at PubConf Kansas City 2017" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/kc2017-3.thumb.jpg" alt="The crowd at PubConf Kansas City 2017" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/sydneyspeakers.gif" title="PubConf Sydney 2017 speakers having a bit of fun after the show" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/sydneyspeakers.thumb.jpg" alt="PubConf Sydney 2017 speakers having a bit of fun after the show" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4">
-                    <div class="w-item">
-                        <a href="/assets/images/gallery/oslo2017.jpg" title="Todd's Selfie at PubConf Oslo 2017" data-click-category="discovery" data-click-action="gallery_image">
-                            <img data-proofer-ignore data-lazy-src="/assets/images/gallery/oslo2017.thumb.jpg" alt="Todd's Selfie at PubConf Oslo 2017" class="img-responsive" />
-                            <div class="project-info">
-                                <div class="project-icon">
-                                    <span class="fa fa-search"></span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section video">
-        <div class="container" data-lazy-style="background:#000 url('/assets/images/bg-video.jpg') left center no-repeat;background-size:cover">
-            <div class="row">
-                <div class="col-sm-12 col-md-6"></div>
-                <div class="col-sm-12 col-md-6">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/USmUlshjcd4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section sponsor" id="sponsors">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h2 class="lead2">Sponsors</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {% assign topSponsors = event.sponsors | where:"level","topshelf" %}
-                {% for sponsor in topSponsors %}
-                <div class="col-xs-12 col-md-6">
-                    <div class="sponsor-item">
-                        <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                            <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
-                        </a>
-                    </div>
-                </div>
-                {% endfor; %}
-            </div>
-            <div class="row">
-                {% assign draftSponsors = event.sponsors | where:"level","draft" %}
-                {% for sponsor in draftSponsors %}
-                <div class="col-xs-6 col-md-4">
-                    <div class="sponsor-item">
-                        <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                            <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
-                        </a>
-                    </div>
-                </div>
-                {% endfor; %}
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <div class="page-title">
-                        <h3 class="lead3">Special Thanks</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6 col-md-offset-3">
-                    <div class="sponsor-item" style="text-align:center;">
-                        Dylan Beattie, Jakob Bradford, Sebastien Lambla, Tim Thomas, Ben Hall, Liam Westley, Jonathan Mills, Erin Gardner, and Lars Klint.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-</article>
-
+{% include gallery.html %}
+{% include video.html %}
