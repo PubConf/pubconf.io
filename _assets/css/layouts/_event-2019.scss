@@ -307,6 +307,9 @@
             flex-wrap: wrap;
             li {
                 flex: 0 0 50%;
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 100%;
+                }
                 a {
                     display: block;
                     padding: 20px;
@@ -319,6 +322,13 @@
             flex-wrap: wrap;
             li {
                 flex: 0 0 33%;
+                @media screen and (max-width: 768px) {
+                    flex: 0 0 50%;
+                }
+                a {
+                    display: block;
+                    padding: 10px;
+                }
             }
         }
         img {

@@ -8,7 +8,7 @@ sitemap:
 ---
 
 <ol class="speaker-list">
-    {% for speaker in site.speakers | sort: 'name' %}
+    {% for speaker in site.speakers %}
     <li>
         <a href="{{ speaker.url }}" title="{{ speaker.name }}">{{ speaker.name }}</a>
     </li>
