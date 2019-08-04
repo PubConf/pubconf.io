@@ -1,5 +1,4 @@
 ---
-slug: sydney-2018
 title: PubConf Sydney 2018
 date: 2018-09-21T19:00:00+15:00
 end_date: 2018-09-21T23:30:00+15:00

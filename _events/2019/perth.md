@@ -1,5 +1,4 @@
 ---
-slug: perth-2019
 title: PubConf Perth 2019
 date: 2019-08-03T19:30:00+8:00
 end_date: 2019-08-03T23:30:00+8:00

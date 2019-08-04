@@ -1,5 +1,4 @@
 ---
-slug: sydney-2016
 title: PubConf Sydney 2016
 date: 2016-08-05T19:00:00+15:00
 end_date: 2016-08-05T23:30:00+15:00

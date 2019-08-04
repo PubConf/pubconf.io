@@ -1,5 +1,4 @@
 ---
-slug: amsterdam-2019
 title: PubConf Amsterdam 2019
 date: 2019-10-03T19:00:00+2:00
 end_date: 2019-10-03T23:30:00+2:00

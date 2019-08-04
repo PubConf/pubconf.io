@@ -1,5 +1,4 @@
 ---
-slug: nottingham-2019
 title: PubConf Nottingham 2019
 date: 2019-10-26T18:30:00+1:00
 end_date: 2019-10-26T23:30:00+1:00
