@@ -7,10 +7,19 @@ sitemap:
   priority: 0.8
 ---
 
+<h1>PubConf Speakers</h1>
 <ol class="speaker-list">
-    {% for speaker in site.speakers %}
+    {% for speaker_profile in site.speakers %}
     <li>
-        <a href="{{ speaker.url }}" title="{{ speaker.name }}">{{ speaker.name }}</a>
+        <a class="speaker-link" href="{{ speaker_profile.url }}">
+        <figure class="speaker-item">
+            <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.name }}" class="speaker">
+            <figcaption>
+                <span class="name">{{ speaker_profile.name }}</span>
+                <span class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</span>
+            </figcaption>
+        </figure>
+        </a>
     </li>
     {% endfor %}
 </ol>

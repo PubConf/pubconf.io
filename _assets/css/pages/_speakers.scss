@@ -1,0 +1,111 @@
+.page.speakers {
+
+    .page-content {
+        background-color: $brand-darkest-grey;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        color: $brand-orange;
+        line-height: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .speaker-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 830px;
+        margin: 30px auto 0;
+
+        li {
+            width: calc(50% - 15px);
+
+            &:nth-last-of-type(n + 3) {
+                padding-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            li {
+                padding: 0 20px 20px 20px;
+                width: 100%;
+
+                &:last-of-type {
+                padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .speaker-link {
+        display: block;
+        text-decoration: none;
+    }
+
+    .speaker-item {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        position: relative;
+
+        img.speaker {
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: 150px;
+            width: 150px;
+        }
+        img.champion {
+            position: absolute;
+            height: 100px;
+            left: -18px;
+            bottom: -10px;
+        }
+        img.finalist {
+            position: absolute;
+            height: 60px;
+            left: -18px;
+            bottom: -10px;
+        }
+
+        figcaption {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            background-color: $brand-dark-grey;
+        }
+
+        p {
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 0;
+        }
+
+        .title {
+            flex-grow: 1;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 700;
+        }
+
+        .name {
+            color: $brand-orange;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .description {
+            color: #7F7F7F;
+            font-size: 12px;
+        }
+
+    }
+
+}
