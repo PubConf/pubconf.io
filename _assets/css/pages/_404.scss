@@ -1,0 +1,19 @@
+.page-404 {
+    text-align: center;
+    background-color: $brand-dark-grey;
+    padding: 50px;
+
+    h1 {
+        font-size: 2em;
+        color: $brand-orange;
+        line-height: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0;
+    }
+    p {
+        color: white;
+        font-size: 1.4em;
+    }
+}
