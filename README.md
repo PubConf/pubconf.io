@@ -27,3 +27,15 @@ PubConf speakers are defined as a file in the `_speakers` collection. This allow
 
 In general, you shouldn't need to make changes to templates or CSS files.
 
+### Voting
+
+You can handle speaker voting through this website by visiting `https://pubconf.io/vote/?event={{ YOUR EVENT ID }}&hash={{ SOME VALUE }}` where `{{ YOUR EVENT ID}}` is the url slug, like "amsterdam" or "nottingham" and `{{ SOME VALUE }}` is any hash key that you keep secret until voting time. For example:
+
+https://pubconf.io/vote/?event=amsterdam&hash=toddrules
+
+This will render a voting form for the next `amsterdam` event, secured by the key `toddrules`.
+
+To see the results of the vote, visit `https://pubconf.io/vote/results/?event={{ YOUR EVENT ID }}&hash={{ SOME VALUE }}`. This will render the vote tally for the event, made with the secret hash key, in the last 30 minutes. The hash key and the time limit are the only security precautions here.
+
+Do not share the results URL with the audience. Keeping it to the host allows you to correct for suspected fraud and make tie-breaker decisions.
+
