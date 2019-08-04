@@ -30,12 +30,12 @@
             background-image: radial-gradient(circle at center, rgba(0,0,0,0.8) 0, rgba(0,0,0,0) 100%);
             position: absolute;
             top: 0;
-            right: 10px;
             bottom: $hero-height;
             min-height: $hero-height;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
         }
 
         .title {

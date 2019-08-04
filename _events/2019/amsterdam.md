@@ -13,7 +13,7 @@ local_time: 2019-10-03T19:00
 images:
  share: /assets/images/events/amsterdam/event-share.jpg
  logo: /assets/images/events/amsterdam/event-logo.svg
- background: /assets/images/amsterdam/perth/event-hero-bg.jpg
+ background: /assets/images/events/amsterdam/event-hero-bg.jpg
 
 #partner
 partner:
@@ -30,6 +30,14 @@ partner:
 #speakers
 host: todd_gardner
 speakers:
+  alex_thissen:
+    talk:
+  christina_aldan:
+    talk:
+  jonathan_mills:
+    talk:
+  lemon:
+    talk:
 
 sponsors:
   - name: TrackJS
