@@ -307,6 +307,10 @@
             flex-wrap: wrap;
             li {
                 flex: 0 0 50%;
+                a {
+                    display: block;
+                    padding: 20px;
+                }
             }
         }
         ul.rail-sponsors {

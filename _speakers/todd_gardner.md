@@ -1,6 +1,7 @@
 ---
-slug: todd_gardner
+id: todd_gardner
 name: Todd Gardner
 twitter: toddhgardner
-bio: Awesome Dude
+bio: "Occasional JavaScript Developer and Pub Enthusiast"
+image: /assets/images/speakers/toddgardner.jpg
 ---
