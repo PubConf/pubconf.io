@@ -3,7 +3,7 @@ layout: default
 body_class: "page speaker"
 ---
 
-{% assign speaker = page %}
+{% assign speaker_profile = page %}
 
 <header class="page-header">
     <a class="header-brand" href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf"/></a>
@@ -33,42 +33,41 @@ body_class: "page speaker"
 </header>
 
 <div class="speaker-content">
-    <figure class="speaker-item">
-        <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.title }}" class="speaker">
-        <figcaption>
-            <div>
-                <div class="name">
-                    <a href="{{ speaker_profile.url }}" title="{{ speaker_profile.title }}">{{ speaker_profile.title }}</a>
-                    {% if speaker_profile.twitter %}<a href="https://twitter.com/{{ speaker_profile.twitter }}"><i class="icon-twitter"></i></a>{% endif %}
-                </div>
-                <div class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</div>
-            </div>
-            <div class="events">
-            {% for event in site.events %}
-            {% if event.speakers contains speaker_profile.slug or event.host == speaker_profile.slug %}
-            {% assign event_speaker = event.speakers[speaker_profile.slug] %}
-                <a class="event-link" href="{{ event.url }}">
-                    {{ event.title }}
-                    {% if event_speaker == nil %} (Host){% endif %}
-                    {% if event_speaker.place == "champion" %} (Champion){% endif %}
-                    {% if event_speaker.place == "finalist" %} (Finalist){% endif %}•
-                </a>
-            {% endif %}
-            {% endfor %}
-            </div>
-        </figcaption>
-    </figure>
-
-
-    <div>
-        <h2>Events</h2>
-        {% for event in site.events %}
-        {% if event.speakers contains speaker.slug %}
-        {% assign event_speaker = event.speakers[speaker.slug] %}
-            <a href="{{ event.url }}">{{ event.title }}</a>
-        {% endif %}
-        {% endfor %}
+    <div class="info">
+        <div class="headshot">
+            <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.title }}" class="speaker">
+        </div>
+        <div class="name">
+            <h1>{{ speaker_profile.title }} {% if speaker_profile.twitter %}<a class="twitter" href="https://twitter.com/{{ speaker_profile.twitter }}"><i class="icon-twitter"></i></a>{% endif %}</h1>
+            <h2>{{ speaker_profile.bio }}</h2>
+            {{ content }}
+        </div>
     </div>
-
-    {{ content }}
 </div>
+
+<div class="events">
+    <h2>Talks</h2>
+    <ol class="event-list">
+    {% assign events = site.events | reverse %}
+    {% for event in events %}
+    {% if event.speakers contains speaker_profile.slug or event.host == speaker_profile.slug %}
+    {% assign event_speaker = event.speakers[speaker_profile.slug] %}
+        <li class="event-item">
+            <div class="event-image">
+                <a href="{{ event.url }}" title="{{ event.title }}">
+                    <img src="{{ event.images.logo }}" alt="{{ event.title }}" />
+                </a>
+                {% if event_speaker == nill %}<img src="/assets/images/host.png" alt="PubConf Host" title="PubConf Host" class="host">{% endif; %}
+                {% if event_speaker.place == "champion" %}<img src="/assets/images/champion.png" alt="PubConf Champion" title="PubConf Champion" class="champion">{% endif; %}
+                {% if event_speaker.place == "finalist" %}<img src="/assets/images/finalist.png" alt="PubConf Finalist" title="PubConf Finalist" class="finalist">{% endif; %}
+            </div>
+            <div class="event-details">
+                <h3><a href="{{ event.url }}" title="{{ event.title }}">{{ event.title }}</a></h3>
+                <div>{{ event_speaker.talk }}</div>
+            </div>
+        </li>
+    {% endif %}
+    {% endfor %}
+    </ol>
+</div>
+

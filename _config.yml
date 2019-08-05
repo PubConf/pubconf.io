@@ -35,6 +35,7 @@ collections:
     permalink: /:collection/:path/
   speakers:
     output: true
+    permalink: /:collection/:path/
 
 defaults:
   - scope:

@@ -1,0 +1,139 @@
+.page.speaker {
+
+    .speaker-content {
+        background-color: $brand-darkest-grey;
+        padding: 30px 0px;
+    }
+
+    .info {
+        max-width: 830px;
+        margin: 30px auto 0;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .headshot {
+            flex: 0 1 300px;
+            padding: 0 20px;
+            img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        .name {
+            flex: 1 0 50%;
+            padding: 0 20px 20px 20px;
+        }
+
+        .twitter {
+            color: $brand-orange;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: $brand-med-grey;
+            font-weight: 300;
+        }
+    }
+
+    .events {
+        background-color: $brand-dark-grey;
+        padding: 50px 0;
+
+        h2 {
+            font-size: 2em;
+            color: $brand-orange;
+            line-height: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .event-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 830px;
+            margin: 30px auto 0;
+
+            li {
+                width: calc(50% - 15px);
+
+                &:nth-last-of-type(n + 3) {
+                    padding-bottom: 20px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                li {
+                    padding: 0 20px 20px 20px;
+                    width: 100%;
+
+                    &:last-of-type {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+
+        .event-item {
+            height: 100px;
+            display: flex;
+            margin: 0;
+            position: relative;
+
+            .event-image {
+                width: 140px;
+                padding: 10px;
+                flex: 0 0 160px;
+                background-color: $brand-darkest-grey;
+            }
+            .event-details {
+                flex-grow: 1;
+                flex-shrink: 1;
+                background-color: darken($brand-dark-grey,5%);
+                padding: 10px;
+                color: white;
+                h3 a {
+                    text-decoration: none;
+                    color: $brand-orange;
+                    font-size: 1em;
+                }
+            }
+
+            img.champion {
+                position: absolute;
+                height: 100px;
+                left: 10px;
+                bottom: -20px;
+            }
+            img.finalist {
+                position: absolute;
+                height: 60px;
+                left: -10px;
+                bottom: -10px;
+            }
+            img.host {
+                position: absolute;
+                height: 60px;
+                left: 10px;
+                bottom: 7px;
+            }
+        }
+    }
+
+}
