@@ -11,15 +11,33 @@ sitemap:
 <ol class="speaker-list">
     {% for speaker_profile in site.speakers %}
     <li>
-        <a class="speaker-link" href="{{ speaker_profile.url }}">
         <figure class="speaker-item">
-            <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.name }}" class="speaker">
+            <a href="{{ speaker_profile.url }}" title="{{ speaker_profile.title }}">
+                <img src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.title }}" class="speaker">
+            </a>
             <figcaption>
-                <span class="name">{{ speaker_profile.name }}</span>
-                <span class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</span>
+                <div>
+                    <div class="name">
+                        <a href="{{ speaker_profile.url }}" title="{{ speaker_profile.title }}">{{ speaker_profile.title }}</a>
+                        {% if speaker_profile.twitter %}<a href="https://twitter.com/{{ speaker_profile.twitter }}"><i class="icon-twitter"></i></a>{% endif %}
+                    </div>
+                    <div class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</div>
+                </div>
+                <div class="events">
+                {% for event in site.events %}
+                {% if event.speakers contains speaker_profile.slug or event.host == speaker_profile.slug %}
+                {% assign event_speaker = event.speakers[speaker_profile.slug] %}
+                    <a class="event-link" href="{{ event.url }}">
+                        {{ event.title }}
+                        {% if event_speaker == nil %} (Host){% endif %}
+                        {% if event_speaker.place == "champion" %} (Champion){% endif %}
+                        {% if event_speaker.place == "finalist" %} (Finalist){% endif %}•
+                    </a>
+                {% endif %}
+                {% endfor %}
+                </div>
             </figcaption>
         </figure>
-        </a>
     </li>
     {% endfor %}
 </ol>

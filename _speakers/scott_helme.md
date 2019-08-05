@@ -1,6 +1,6 @@
 ---
 id: scott_helme
-name: Scott Helme
+title: Scott Helme
 twitter: ScottHelme
 bio: "Whinging Pom"
 image: /assets/images/speakers/scotthelme.jpg

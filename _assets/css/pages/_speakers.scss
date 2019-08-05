@@ -79,6 +79,7 @@
             flex-direction: column;
             padding: 15px;
             background-color: $brand-dark-grey;
+            justify-content: space-between;
         }
 
         p {
@@ -95,16 +96,29 @@
         }
 
         .name {
-            color: $brand-orange;
-            font-size: 1.2em;
-            font-weight: 700;
-            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            a {
+                color: $brand-orange;
+                font-size: 1.2em;
+                font-weight: 700;
+                text-decoration: none;
+            }
         }
 
         .description {
             color: #7F7F7F;
             font-size: 12px;
         }
+
+        .events {
+            .event-link {
+                color: lighten($brand-orange, 10%);
+                font-size: 0.9em;
+                text-decoration: none;
+            }
+        }
+
 
     }
 

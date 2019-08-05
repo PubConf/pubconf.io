@@ -42,7 +42,7 @@ sitemap:
             {% if speaker_profile %}
             {
                 "@type": "Person",
-                "name": "{{ speaker_profile.name }}",
+                "name": "{{ speaker_profile.title }}",
                 "url": "{{ site.url }}{{ speaker_profile.url }}",
                 "sameAs": ["https://twitter.com/{{ speaker_profile.twitter }}"]
             }{% if forloop.last == false %},{% endif %}
@@ -124,14 +124,14 @@ sitemap:
             {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
             {% if speaker_profile %}
             <li>
-                <a class="speaker-link" href="{{ speaker_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker_profile.name }}">
+                <a class="speaker-link" href="{{ speaker_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker_profile.title }}">
                 <figure class="speaker-item">
-                    <img data-proofer-ignore data-lazy-src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.name }}" class="speaker">
+                    <img data-proofer-ignore data-lazy-src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.title }}" class="speaker">
                     {% if speaker_info.place == "champion" %}<img src="/assets/images/champion.png" alt="PubConf Champion" title="PubConf Champion" class="champion">{% endif; %}
                     {% if speaker_info.place == "finalist" %}<img src="/assets/images/finalist.png" alt="PubConf Finalist" title="PubConf Finalist" class="finalist">{% endif; %}
                     <figcaption>
                         <span class="title">{% if speaker_info.talk %}{{ speaker_info.talk }}{% else %}Coming Soon{% endif %}</span>
-                        <span class="name">{{ speaker_profile.name }}</span>
+                        <span class="name">{{ speaker_profile.title }}</span>
                         <span class="description">{% if speaker_profile.bio %}{{ speaker_profile.bio }}{% else %}Lazy Bastard{% endif %}</span>
                     </figcaption>
                 </figure>

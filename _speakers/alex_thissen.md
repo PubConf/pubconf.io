@@ -1,6 +1,6 @@
 ---
 id: alex_thissen
-name: Alex Thissen
+title: Alex Thissen
 twitter: alexthissen
 bio:
 image:

@@ -12,7 +12,7 @@
 id: aaron_powell
 
 # Friendly name of the speaker
-name: Aaron Powell
+title: Aaron Powell
 
 # Twitter handle, without url or @
 twitter: slace
