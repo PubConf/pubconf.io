@@ -1,5 +1,5 @@
 ---
-id: julie-grundy
+
 title: Julie Grundy
 twitter: stringy
 bio: "Champion of Accessibility"

@@ -1,5 +1,5 @@
 ---
-id: dylan_beattie
+
 title: Dylan Beattie
 twitter: dylanbeattie
 bio: "Whinging Pom"

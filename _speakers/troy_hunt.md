@@ -1,5 +1,5 @@
 ---
-id: troy_hunt
+
 title: Troy Hunt
 twitter: TroyHunt
 bio: "Rather Stupid Security Researcher"

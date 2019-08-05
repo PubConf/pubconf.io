@@ -1,5 +1,5 @@
 ---
-id: ben_cull
+
 title: Ben Cull
 twitter: BenWhoLikesBeers
 bio: "That Guy Who Likes Beer"

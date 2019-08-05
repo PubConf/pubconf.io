@@ -1,5 +1,5 @@
 ---
-id: josh_michielsen
+
 title: Josh Michielsen
 twitter: jmickey_
 bio: "Professional Proclaimer of Opinions"

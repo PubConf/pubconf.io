@@ -1,5 +1,5 @@
 ---
-id: lars_klint
+
 title: Lars Klint
 twitter: larsklint
 bio: Todd's Danish Twin

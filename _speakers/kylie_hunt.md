@@ -1,5 +1,5 @@
 ---
-id: kylie_hunt
+
 title: Kylie Hunt
 twitter: kyliemhunt
 bio: "Workplace Happiness Guru"

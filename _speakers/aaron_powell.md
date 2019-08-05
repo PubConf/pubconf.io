@@ -1,5 +1,4 @@
 ---
-id: aaron_powell
 title: Aaron Powell
 twitter: slace
 bio: "10x Avocado"

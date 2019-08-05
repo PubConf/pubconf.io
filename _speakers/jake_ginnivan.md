@@ -1,5 +1,5 @@
 ---
-id: jake_ginnivan
+
 title: Jake Ginnivan
 twitter: JakeGinnivan
 bio: "Enabler"

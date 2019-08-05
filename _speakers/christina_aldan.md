@@ -1,5 +1,4 @@
 ---
-id: christina_aldan
 title: Christina Aldan
 twitter: luckygirliegirl
 bio: "Trashy Code & Trashier TV Diva"

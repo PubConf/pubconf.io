@@ -1,5 +1,5 @@
 ---
-id: cathy_hunt
+
 title: Cathy Hunt
 twitter: art_cathyhunt
 bio: "Yes, I tried turning it off and on again…"

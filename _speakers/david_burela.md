@@ -1,5 +1,5 @@
 ---
-id: david_burela
+
 title: David Burela
 twitter: DavidBurela
 bio: "ICO Consultant in containerised Blockchain AI"

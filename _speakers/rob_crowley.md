@@ -1,5 +1,5 @@
 ---
-id: rob_crowley
+
 title: Rob Crowley
 twitter: robdcrowley
 bio: "Principal Shit Stirrer"

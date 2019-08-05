@@ -1,5 +1,5 @@
 ---
-id: ming_johanson
+
 title: Ming Johanson
 twitter: MingJohanson
 bio: "Mother of Unicorns"

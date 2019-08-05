@@ -1,5 +1,5 @@
 ---
-id: jonathan_mills
+
 title: Jonathan Mills
 twitter: jonathanfmills
 bio: "JavaScript Guy"

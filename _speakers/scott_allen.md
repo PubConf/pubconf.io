@@ -1,5 +1,5 @@
 ---
-id: scott_allen
+
 title: Scott Allen
 twitter: OdeToCode
 bio: "The Profit of Pluralsight"

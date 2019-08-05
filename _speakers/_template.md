@@ -7,10 +7,6 @@
 #
 # This data is also consumed by `_events`.
 
-# Slug id of the speaker. This is referenced from events. Format lowercase
-# firstname_lastname
-id: aaron_powell
-
 # Friendly name of the speaker
 title: Aaron Powell
 

@@ -1,5 +1,5 @@
 ---
-id: jimmy_bogard
+
 title: Jimmy Bogard
 twitter: jbogard
 bio: "Untappd Architect"

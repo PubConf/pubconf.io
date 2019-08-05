@@ -1,5 +1,5 @@
 ---
-id: laura_bell
+
 title: Laura Bell
 twitter: lady_nerd
 bio: "Princess Luna meets GladOs"
