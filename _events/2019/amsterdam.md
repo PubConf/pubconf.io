@@ -3,10 +3,10 @@ title: PubConf Amsterdam 2019
 date: 2019-10-03T19:00:00+2:00
 end_date: 2019-10-03T23:30:00+2:00
 local_time: 2019-10-03T19:00
-#tickets:
-#  url: https://www.eventbrite.nl/e/tickets-pubconf-amsterdam-67969002115
-#  price: 35
-#  currency: EUR
+tickets:
+  url: https://www.eventbrite.nl/e/tickets-pubconf-amsterdam-67969002115
+  price: 35
+  currency: EUR
 
 #images
 images:
