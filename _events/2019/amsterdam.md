@@ -4,9 +4,9 @@ date: 2019-10-03T19:00:00+2:00
 end_date: 2019-10-03T23:30:00+2:00
 local_time: 2019-10-03T19:00
 #tickets:
-#  url: https://ti.to/dddperth/pubconf-perth/
-#  price: 65
-#  currency: AUD
+#  url: https://www.eventbrite.nl/e/tickets-pubconf-amsterdam-67969002115
+#  price: 35
+#  currency: EUR
 
 #images
 images:
@@ -21,10 +21,10 @@ partner:
   logo: /assets/images/events/amsterdam/partner-logo.png
 
 #venue
-#venue:
-#  name: The Flour Factory
-#  address: 16 Queen St, Perth WA 6000, Australia
-#  url: http://theflourfactory.com/
+venue:
+  name: Xebia Academy Amsterdam & Hilversum
+  address: 200-202 Wibautstraat, 1091 GS Amsterdam Netherlands
+  url: https://training.xebia.com/
 
 #speakers
 host: todd_gardner
