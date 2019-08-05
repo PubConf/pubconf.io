@@ -53,21 +53,21 @@ speakers:
   shawn_wildermuth:
     talk: "JavaScript: It Used To Be Bad…Now It’s Just Awful"
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: KCDC
     level: topshelf
     url: https://www.kcdc.info/
-    image: /assets/images/sponsors/kcdc.png
+    image: /assets/images/supporters/kcdc.png
   - name: Plakeside
     level: rail
     url: https://plakeside.com/
-    image: /assets/images/sponsors/plakeside.png
+    image: /assets/images/supporters/plakeside.png
   - name: Arana
     level: rail
     url: https://www.aranasoft.com/
-    image: /assets/images/sponsors/aranasoftware.png
+    image: /assets/images/supporters/aranasoftware.png
 ---

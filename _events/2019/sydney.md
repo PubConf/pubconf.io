@@ -30,14 +30,14 @@ partner:
 host: lars_klint
 speakers:
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: NDC Sydney
     level: topshelf
     url: https://ndcsydney.com/
-    image: /assets/images/sponsors/ndc.png
+    image: /assets/images/supporters/ndc.png
 
 ---

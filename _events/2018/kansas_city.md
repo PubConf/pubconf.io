@@ -53,14 +53,14 @@ speakers:
     talk: "You Meatbags Had Your Chance!"
     place: "finalist"
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: KCDC
     level: topshelf
     url: https://www.kcdc.info/
-    image: /assets/images/sponsors/kcdc.png
+    image: /assets/images/supporters/kcdc.png
 
 ---

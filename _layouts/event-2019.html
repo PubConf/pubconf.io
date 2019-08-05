@@ -80,7 +80,7 @@ sitemap:
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#tickets">Tickets</a></li>
         <li><a href="#wtf">WTF?!</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#supporters">Supported By</a></li>
         <li><a href="/code-of-conduct/">Code of Conduct</a></li>
     </ol>
     {% endcapture %}
@@ -231,28 +231,28 @@ sitemap:
 
 {% include gallery.html %}
 
-{% if event.sponsors %}
-<div class="sponsors">
+{% if event.supporters %}
+<div class="supporters">
     <div class="container">
-        <h2 id="sponsors">Sponsors</h2>
-        <h3>Top-Shelf Sponsors</h3>
-        <ul class="top-shelf-sponsors">
-            {% assign top_sponsors = event.sponsors | where:"level","topshelf" %}
-            {% for sponsor in top_sponsors %}
-            <li class="sponsor-item">
-                <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                    <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+        <h2 id="supporters">Supported By</h2>
+        <h3>Top-Shelf</h3>
+        <ul class="top-shelf-supporters">
+            {% assign top_supporters = event.supporters | where:"level","topshelf" %}
+            {% for supporter in top_supporters %}
+            <li class="supporter-item">
+                <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
+                    <img src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
                 </a>
             </li>
             {% endfor; %}
         </ul>
-        <h3>Rail Sponsors</h3>
-        <ul class="rail-sponsors">
-            {% assign rail_sponsors = event.sponsors | where:"level","rail" %}
-            {% for sponsor in rail_sponsors %}
-            <li class="sponsor-item">
-                <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" data-click-category="discovery" data-click-action="sponsor_link" data-click-label="{{ sponsor.name }}">
-                    <img data-proofer-ignore data-lazy-src="{{ sponsor.image }}" alt="{{ sponsor.name }}" class="img-responsive" />
+        <h3>Rail</h3>
+        <ul class="rail-supporters">
+            {% assign rail_supporters = event.supporters | where:"level","rail" %}
+            {% for supporter in rail_supporters %}
+            <li class="supporter-item">
+                <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
+                    <img data-proofer-ignore data-lazy-src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
                 </a>
             </li>
             {% endfor; %}

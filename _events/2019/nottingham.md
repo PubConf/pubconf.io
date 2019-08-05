@@ -32,11 +32,11 @@ speakers:
   ian_cooper:
     talk:
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
 
 
 ---

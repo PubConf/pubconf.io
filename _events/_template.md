@@ -72,15 +72,15 @@ speakers:
   dylan_beattie:
     talk: "My awesome pubconf talk"
 
-# Sponsors array for the event.
-sponsors:
-    # TrackJS is a required sponsor.
+# Supporters array for the event.
+supporters:
+    # TrackJS is a required supporter.
   - name: TrackJS
     # Levels are "topshelf" and "rail" indicating if their are first-tier or
-    # second-tier sponsors.
+    # second-tier supporters.
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
 ---
 
 {% comment %}

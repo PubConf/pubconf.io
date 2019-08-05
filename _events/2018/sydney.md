@@ -53,21 +53,21 @@ speakers:
   dylan_beattie:
     talk: "Developer Hits from the 80s 90s and Today"
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: NDC Sydney
     level: topshelf
     url: https://ndcsydney.com/
-    image: /assets/images/sponsors/ndc.png
+    image: /assets/images/supporters/ndc.png
   - name: Microsoft Azure Dev Advocates
     level: topshelf
     url: https://twitter.com/azureadvocates
-    image: /assets/images/sponsors/microsoftcda.png
+    image: /assets/images/supporters/microsoftcda.png
   - name: Pinch Payments
     level: rail
     url: https://getpinch.com.au/
-    image: /assets/images/sponsors/pinch.png
+    image: /assets/images/supporters/pinch.png
 ---

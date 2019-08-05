@@ -53,21 +53,21 @@ speakers:
     talk: "10x from the trenches"
     place: "finalist"
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: Shoutout
     level: rail
     url: https://shoutout.cloud/
-    image: /assets/images/sponsors/shoutout.png
+    image: /assets/images/supporters/shoutout.png
   - name: Valrose
     level: rail
     url: https://valrose.com.au/
-    image: /assets/images/sponsors/valrose.png
+    image: /assets/images/supporters/valrose.png
   - name: Level19
     level: rail
     url: https://levelnineteen.com/
-    image: /assets/images/sponsors/level19.jpg
+    image: /assets/images/supporters/level19.jpg
 ---

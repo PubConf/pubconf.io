@@ -139,20 +139,20 @@
         }
     }
 
-    .global-sponsor {
-        $sponsor-height: 300px;
-        background: #fff url(/assets/images/index/sponsor-bg.png) center center no-repeat;
+    .global-supporter {
+        $supporter-height: 300px;
+        background: #fff url(/assets/images/index/supporter-bg.png) center center no-repeat;
         background-size: cover;
         position: relative;
-        height: $sponsor-height;
+        height: $supporter-height;
 
         .container {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            bottom: $sponsor-height;
-            min-height: $sponsor-height;
+            bottom: $supporter-height;
+            min-height: $supporter-height;
             display: flex;
             flex-direction: column;
             padding: 65px 0 0 0;

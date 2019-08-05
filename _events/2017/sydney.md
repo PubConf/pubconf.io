@@ -50,18 +50,18 @@ speakers:
   troy_hunt:
     talk: "Make Cyber Great Again"
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: NDC Sydney
     level: topshelf
     url: https://ndcsydney.com/
-    image: /assets/images/sponsors/ndc.png
+    image: /assets/images/supporters/ndc.png
   - name: Pluralsight
     level: topshelf
     url: https://www.pluralsight.com/
-    image: /assets/images/sponsors/pluralsight.png
+    image: /assets/images/supporters/pluralsight.png
 
 ---

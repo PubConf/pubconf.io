@@ -58,21 +58,21 @@ speakers:
     talk: "Fight Your Way Into UX Design"
 
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: NDC Sydney
     level: topshelf
     url: https://ndcsydney.com/
-    image: /assets/images/sponsors/ndc.png
+    image: /assets/images/supporters/ndc.png
   - name: Pluralsight
     level: topshelf
     url: https://www.pluralsight.com/
-    image: /assets/images/sponsors/pluralsight.png
+    image: /assets/images/supporters/pluralsight.png
   - name: JustDigitalPeople
     level: rail
     url: http://www.justdigitalpeople.com.au/
-    image: /assets/images/sponsors/justdigitalpeople.png
+    image: /assets/images/supporters/justdigitalpeople.png
 ---

@@ -38,14 +38,14 @@ speakers:
   lemon:
     talk:
 
-sponsors:
+supporters:
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
-    image: /assets/images/sponsors/tjs.png
+    image: /assets/images/supporters/tjs.png
   - name: TechoramaNL
     level: topshelf
     url: https://techorama.nl/
-    image: /assets/images/sponsors/techoramanl.png
+    image: /assets/images/supporters/techoramanl.png
 
 ---
