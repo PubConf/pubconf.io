@@ -16,36 +16,43 @@ sitemap:
         "url": "{{ site.url }}{{ event.url }}",
         "image": "{{ site.url }}{{ event.images.share }}",
         "startDate": "{{ event.date | date_to_xmlschema }}",
-        "endDate": "{{ event.end_date | date_to_xmlschema }}",
+        "endDate": "{{ event.end_date | date_to_xmlschema }}"
         {% if event.venue %}
-        "location": {
+        ,"location": {
             "@type": "Place",
             "name": "{{ event.venue.name }}",
             "address": "{{ event.venue.address }}"
-        },
+        }
         {% endif %}
         {% if event.tickets %}
-        "offers": {
+        ,"offers": {
             "@type": "Offer",
             "url": "{{ event.tickets.url }}",
             "availability": "http://schema.org/InStock",
             "validFrom": "{{ 'now' | date: "%F" }}",
             "price": "{{ event.tickets.price }}",
             "priceCurrency": "{{ event.tickets.currency }}"
-        },
+        }
         {% endif %}
         {% if event.speakers %}
-        "performer": [
+        ,"performer": [
+            {% assign host_profile = site.speakers | where: 'slug', event.host | first %}
+            {
+                "@type": "Person",
+                "name": "{{ host_profile.title }}",
+                "url": "{{ site.url }}{{ host_profile.url }}",
+                "sameAs": ["https://twitter.com/{{ host_profile.twitter }}"]
+            }
             {% for speaker_hash in event.speakers %}
             {% assign speaker_slug = speaker_hash[0] %}
             {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
             {% if speaker_profile %}
-            {
+            ,{
                 "@type": "Person",
                 "name": "{{ speaker_profile.title }}",
                 "url": "{{ site.url }}{{ speaker_profile.url }}",
                 "sameAs": ["https://twitter.com/{{ speaker_profile.twitter }}"]
-            }{% if forloop.last == false %},{% endif %}
+            }
             {% endif %}
             {% endfor %}
         ]
