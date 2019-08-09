@@ -31,6 +31,8 @@ host: dylan_beattie
 speakers:
   ian_cooper:
     talk:
+  matt_brunt:
+    talk: Doctor, It Hurts When I PHP
 
 supporters:
   - name: TrackJS
