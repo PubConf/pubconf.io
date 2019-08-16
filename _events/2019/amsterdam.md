@@ -31,8 +31,12 @@ host: todd_gardner
 speakers:
   alex_thissen:
     talk:
+  archana_wuntakal:
+    talk: "What If Anybody Could Build A Software Product?"
   christina_aldan:
-    talk:
+    talk: "How Product Delivery is Like a Telenovela"
+  hannes_lowette:
+    talk: "So, You Just Landed That Recruiter Job"
   jonathan_mills:
     talk:
   lemon:

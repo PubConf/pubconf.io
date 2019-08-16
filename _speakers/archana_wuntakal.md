@@ -8,17 +8,16 @@
 # This data is also consumed by `_events`.
 
 # Friendly name of the speaker
-title: Aaron Powell
+title: Archana Wuntakal
 
 # Twitter handle, without url or @
-twitter: slace
+twitter: BirdInTheCl0ud
 
 # Bio line.
-bio: "10x Avocado"
+bio: "On a Low-Code Mission and definitely NOT an Agile Enthusiast"
 
 # Headshot image URL. Should be 300x300 greyscale.
-image: /assets/images/speakers/aaron_powell.jpg
+image: /assets/images/speakers/archana_wuntakal.jpg
 
-# Shirt size for speaker swag.
-shirt_size: "s" # xs,s,m,l,xl,xxl,xxxl
+shirt_size: "xl"
 ---
