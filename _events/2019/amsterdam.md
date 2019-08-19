@@ -40,7 +40,7 @@ speakers:
   jonathan_mills:
     talk:
   lemon:
-    talk:
+    talk: "ACME Bears No Responsibility For Mr. Coyote Exploding"
 
 supporters:
   - name: TrackJS
