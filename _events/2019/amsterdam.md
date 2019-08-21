@@ -30,13 +30,15 @@ venue:
 host: todd_gardner
 speakers:
   alex_thissen:
-    talk:
+    talk: "Survival Guide to The Netherlands: A Warning About the Dutch People."
   archana_wuntakal:
     talk: "What If Anybody Could Build A Software Product?"
   christina_aldan:
     talk: "How Product Delivery is Like a Telenovela"
   hannes_lowette:
     talk: "So, You Just Landed That Recruiter Job"
+  jimmy_bogard:
+    talk:
   jonathan_mills:
     talk:
   lemon:
