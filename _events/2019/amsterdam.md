@@ -35,6 +35,8 @@ speakers:
     talk: "What If Anybody Could Build A Software Product?"
   christina_aldan:
     talk: "How Product Delivery is Like a Telenovela"
+  edward_thomson:
+    talk: "Git Is Destroying The World"
   hannes_lowette:
     talk: "So, You Just Landed That Recruiter Job"
   jimmy_bogard:
