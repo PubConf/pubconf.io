@@ -40,9 +40,9 @@ speakers:
   hannes_lowette:
     talk: "So, You Just Landed That Recruiter Job"
   jimmy_bogard:
-    talk:
+    talk: "Public Toilemetry"
   jonathan_mills:
-    talk:
+    talk: "To The Cloud! and Other Ridiculous Things Your Boss Says"
   lemon:
     talk: "ACME Bears No Responsibility For Mr. Coyote Exploding"
 
