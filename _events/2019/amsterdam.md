@@ -30,13 +30,21 @@ venue:
 host: todd_gardner
 speakers:
   alex_thissen:
-    talk:
+    talk: "Survival Guide to The Netherlands: A Warning About the Dutch People."
+  archana_wuntakal:
+    talk: "What If Anybody Could Build A Software Product?"
   christina_aldan:
-    talk:
+    talk: "How Product Delivery is Like a Telenovela"
+  edward_thomson:
+    talk: "Git Is Destroying The World"
+  hannes_lowette:
+    talk: "So, You Just Landed That Recruiter Job"
+  jimmy_bogard:
+    talk: "Public Toilemetry"
   jonathan_mills:
-    talk:
+    talk: "To The Cloud! and Other Ridiculous Things Your Boss Says"
   lemon:
-    talk:
+    talk: "ACME Bears No Responsibility For Mr. Coyote Exploding"
 
 supporters:
   - name: TrackJS
