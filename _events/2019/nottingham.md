@@ -36,9 +36,15 @@ venue:
 host: dylan_beattie
 speakers:
   ian_cooper:
-    talk:
+    talk: TBC
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
+  moreton_brockley:
+    talk: The Woes of Being a White Male in Tech
+  # louise_paling:
+  #   talk: TBC
+  jessica_white:
+    talk: Hire Me! I Have Breasts!
 
 supporters:
   - name: TrackJS
