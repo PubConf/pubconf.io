@@ -20,6 +20,12 @@ partner:
   url: https://www.dddeastmidlands.com/
   logo: /assets/images/events/nottingham/partner-logo.png
 
+#tickets
+tickets:
+  url: https://www.eventbrite.com/e/pubconf-nottingham-tickets-72233483293
+  price: 15
+  currency: GBP
+
 #venue
 venue:
   name: Monty's Bar and Social
@@ -30,9 +36,15 @@ venue:
 host: dylan_beattie
 speakers:
   ian_cooper:
-    talk:
+    talk: TBC
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
+  moreton_brockley:
+    talk: The Woes of Being a White Male in Tech
+  # louise_paling:
+  #   talk: TBC
+  jessica_white:
+    talk: Hire Me! I Have Breasts!
 
 supporters:
   - name: TrackJS
