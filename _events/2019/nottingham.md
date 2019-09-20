@@ -35,14 +35,14 @@ venue:
 #speakers
 host: dylan_beattie
 speakers:
-  ian_cooper:
-    talk: TBC
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
   moreton_brockley:
     talk: The Woes of Being a White Male in Tech
-  # louise_paling:
-  #   talk: TBC
+  louise_paling:
+    talk: What I've Learned From Tetris
+  ian_cooper:
+    talk: TBC
   jessica_white:
     talk: Hire Me! I Have Breasts!
 
