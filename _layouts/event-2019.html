@@ -130,7 +130,11 @@ sitemap:
             {% assign speaker_info = speaker_hash[1] %}
             {% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}
             {% if speaker_profile %}
+            {% if speaker_profile.bio.size > 100 %}
+            <li class="full-width">
+            {% else %}
             <li>
+            {% endif %}>}
                 <a class="speaker-link" href="{{ speaker_profile.url }}" data-click-category="discovery" data-click-action="speaker_link" data-click-label="{{ speaker_profile.title }}">
                 <figure class="speaker-item">
                     <img data-proofer-ignore data-lazy-src="{% if speaker_profile.image %}{{ speaker_profile.image }}{% else %}/assets/images/speakers/anonymous.png{% endif %}" alt="{{ speaker_profile.title }}" class="speaker">
