@@ -28,6 +28,7 @@ venue:
 
 #speakers
 host: todd_gardner
+finalist_count: 3
 speakers:
   alex_thissen:
     talk: "Survival Guide to The Netherlands: A Warning About the Dutch People."
