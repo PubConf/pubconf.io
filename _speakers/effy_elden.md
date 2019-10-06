@@ -1,7 +1,7 @@
 ---
 title: Effy Elden
 twitter: ineffyble
-bio: ""
+bio: "Weilder of ducktape"
 # image: /assets/images/speakers/effy_elden.jpg
 image: /assets/images/anonymous.png
 ---
