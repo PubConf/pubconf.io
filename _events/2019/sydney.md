@@ -37,7 +37,7 @@ speakers:
   kris_howard:
     talk: "Roald Dahl, BAMF"
   damian_brady:
-    talk: "??"
+    talk: "The Singularity is, like, really far away"
   effy_elden:
     talk: "??"
   jennifer_wadella:
