@@ -28,6 +28,7 @@ venue:
 
 #speakers
 host: todd_gardner
+finalist_count: 3
 speakers:
   alex_thissen:
     talk: "Survival Guide to The Netherlands: A Warning About the Dutch People."
@@ -39,10 +40,8 @@ speakers:
     talk: "Git Is Destroying The World"
   hannes_lowette:
     talk: "So, You Just Landed That Recruiter Job"
-  jimmy_bogard:
-    talk: "Font Terrible"
   jonathan_mills:
-    talk: "To The Cloud! and Other Ridiculous Things Your Boss Says"
+    talk: "JavaScript: The Weird Parts"
   lemon:
     talk: "ACME Bears No Responsibility For Mr. Coyote Exploding"
 
