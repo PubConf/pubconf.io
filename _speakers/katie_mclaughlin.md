@@ -1,6 +1,6 @@
 ---
 title: Katie McLaughlin
 twitter: glasnt
-bio: "meh, just use my usual"
+bio: "90% sparkles by volume"
 image: /assets/images/speakers/katie_mclaughlin.png
 ---

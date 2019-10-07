@@ -39,13 +39,15 @@ speakers:
   damian_brady:
     talk: "The Singularity is, like, really far away"
   effy_elden:
-    talk: ""
+    talk: "effy_pubconf_talk-FINAL-FINAL(2)(Use This One)"
   jennifer_wadella:
     talk: ""
   richard_campbell:
-    talk: ""
+    talk: "Goliath."
   heather_downing:
     talk: ""
+  rob_crowley:
+    talk: "10x from the trenches"
 
 supporters:
   - name: TrackJS
