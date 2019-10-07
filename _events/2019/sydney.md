@@ -32,6 +32,7 @@ host: aaron_powell
 speakers:
   amy_kapernick:
     talk: "So You Think You Know HTML?"
+    place: "champion"
   katie_mclaughlin:
     talk: "A profane guide to containers"
   kris_howard:
@@ -39,13 +40,16 @@ speakers:
   damian_brady:
     talk: "The Singularity is, like, really far away"
   effy_elden:
-    talk: ""
+    talk: "effy_pubconf_talk-FINAL-FINAL(2)(Use This One)"
   jennifer_wadella:
     talk: ""
   richard_campbell:
-    talk: ""
+    talk: "Goliath."
   heather_downing:
     talk: ""
+  rob_crowley:
+    talk: "10x from the trenches"
+    place: "finalist"
 
 supporters:
   - name: TrackJS
