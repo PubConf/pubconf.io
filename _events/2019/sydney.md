@@ -32,7 +32,6 @@ host: aaron_powell
 speakers:
   amy_kapernick:
     talk: "So You Think You Know HTML?"
-    place: "champion"
   katie_mclaughlin:
     talk: "A profane guide to containers"
   kris_howard:
@@ -49,7 +48,6 @@ speakers:
     talk: ""
   rob_crowley:
     talk: "10x from the trenches"
-    place: "finalist"
 
 supporters:
   - name: TrackJS
