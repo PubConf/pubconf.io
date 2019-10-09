@@ -3,10 +3,11 @@ title: PubConf Sydney 2019
 date: 2019-10-18T19:00:00+15:00
 end_date: 2019-10-18T23:30:00+15:00
 local_time: 2019-10-18T19:00
-#tickets:
-#  url: https://ti.to/dddperth/pubconf-perth/
-#  price: 65
-#  currency: AUD
+
+tickets:
+ url: https://www.eventbrite.co.uk/e/pubconf-sydney-2019-tickets-73793322815
+ price: 40
+ currency: AUD
 
 #images
 images:
@@ -21,14 +22,32 @@ partner:
   logo: /assets/images/events/sydney/partner-logo.png
 
 #venue
-#venue:
-#  name: The Flour Factory
-#  address: 16 Queen St, Perth WA 6000, Australia
-#  url: http://theflourfactory.com/
+venue:
+  name: All Hands Brewing
+  address: 22 The Promenade, Sydney NSW 2000, Australia
+  url: https://www.allhandsbrewinghouse.com.au/
 
 #speakers
-host: lars_klint
+host: aaron_powell
 speakers:
+  amy_kapernick:
+    talk: "So You Think You Know HTML?"
+  katie_mclaughlin:
+    talk: "A profane guide to containers"
+  kris_howard:
+    talk: "Roald Dahl, BAMF"
+  damian_brady:
+    talk: "The Singularity is, like, really far away"
+  effy_elden:
+    talk: "effy_pubconf_talk-FINAL-FINAL(2)(Use This One)"
+  jennifer_wadella:
+    talk: ""
+  richard_campbell:
+    talk: "Goliath."
+  heather_downing:
+    talk: ""
+  rob_crowley:
+    talk: "10x from the trenches"
 
 supporters:
   - name: TrackJS
