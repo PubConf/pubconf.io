@@ -45,7 +45,8 @@ speakers:
     talk: TBC
   jessica_white:
     talk: Hire Me! I Have Breasts!
-
+  kate_bolin:
+    talk: Old Woman Yells At Website
 supporters:
   - name: TrackJS
     level: topshelf
