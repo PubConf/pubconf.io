@@ -8,16 +8,16 @@
 # This data is also consumed by `_events`.
 
 # Friendly name of the speaker
-title: Aaron Powell
+title: Kate Bolin
 
 # Twitter handle, without url or @
-twitter: slace
+twitter: katemonkey
 
 # Bio line.
-bio: "10x Avocado"
+bio: Kate has HTML older than you and won't stop telling you about it.
 
 # Headshot image URL. Should be 300x300 greyscale.
-image: /assets/images/speakers/aaron_powell.jpg
+image: /assets/images/speakers/kate_bolin.jpg
 
 # Shirt size for speaker swag.
 shirt_size: "s" # xs,s,m,l,xl,xxl,xxxl
