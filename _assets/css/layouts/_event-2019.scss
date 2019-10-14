@@ -152,6 +152,9 @@
         }
 
         .speaker-item {
+
+            @import "_speaker_personalization.scss";
+                
             display: flex;
             width: 100%;
             margin: 0;
