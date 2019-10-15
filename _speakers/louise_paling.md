@@ -14,7 +14,7 @@ title: Louise Paling
 twitter: short_louise
 
 # Bio line.
-bio: "Louise of House Paling. First of Her Name. Slayer of Silos, Defender of Collaboration, Destroyer of Manual Processes."
+bio: "Louise of House Paling. First of Her Name. Slayer of Silos, Defender of Collaboration, Destroyer of Manual Processes. Champion of Automation. Warrior of Board Game Night. Member of the High Councils of Tech Nottingham of DevOpsDays London. Wielder of the Pronouns She and Her." 
 
 # Champion of Automation. Warrior of Board Game Night. Member of the High Councils of Tech Nottingham of DevOpsDays London. Wielder of the Pronouns She and Her."
 
