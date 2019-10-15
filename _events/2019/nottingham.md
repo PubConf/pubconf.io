@@ -42,10 +42,15 @@ speakers:
   louise_paling:
     talk: What I've Learned From Tetris
   ian_cooper:
-    talk: TBC
+    talk: The Duct Tape Developer
+  lex_lofthouse:
+    talk: I <3 Comic Sans
+  andrew_seward:
+    talk: The Most Public of my Many Failures
   jessica_white:
     talk: Hire Me! I Have Breasts!
-
+  kate_bolin:
+    talk: Old Woman Yells At Website
 supporters:
   - name: TrackJS
     level: topshelf
