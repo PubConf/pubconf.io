@@ -51,6 +51,8 @@ speakers:
     talk: Hire Me! I Have Breasts!
   kate_bolin:
     talk: Old Woman Yells At Website
+  rizwana_khan:
+    talk: Rizamblive!
 supporters:
   - name: TrackJS
     level: topshelf
