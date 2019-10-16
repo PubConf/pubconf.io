@@ -29,6 +29,7 @@ venue:
 
 #speakers
 host: aaron_powell
+finalist_count: 3
 speakers:
   amy_kapernick:
     talk: "So You Think You Know HTML?"

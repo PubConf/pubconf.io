@@ -34,6 +34,7 @@ venue:
 
 #speakers
 host: dylan_beattie
+finalist_count: 3
 speakers:
   matt_brunt:
     talk: Doctor, It Hurts When I PHP

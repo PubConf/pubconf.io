@@ -6,12 +6,13 @@ permalink: /vote/results/
 
 <div class="results">
     <header></header>
-
     {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
     {% for event in site.events %}
-        {% capture event_date %}{{ event.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% capture event_date %}{{ event.date | date: '%s' | plus: 172800 }}{% endcapture %}
+        {% if event_date > now %}
         <div id="{{ event.slug }}" class="event-results">
             <ul class="js-results" data-max-votes="{{ event.finalist_count }}"></ul>
         </div>
+        {% endif %}
     {% endfor %}
 </div>

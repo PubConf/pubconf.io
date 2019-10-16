@@ -37,6 +37,9 @@ var util = {
         if (activeSection) {
             activeSection.style.display = "block";
         }
+        else {
+            console.warn("could not find the event", activeEventId);
+        }
     })();
 
     (function addBallotConstraints() {
