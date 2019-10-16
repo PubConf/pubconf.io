@@ -60,6 +60,11 @@ sitemap:
     }
 </script>
 
+<script type="application/csv">
+Name,Twitter,Talk,Source{% for speaker_hash in event.speakers %}{% assign speaker_slug = speaker_hash[0] %}{% assign speaker_info = speaker_hash[1] %}{% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}{% if speaker_profile %}
+{{ speaker_profile.title }},@{{ speaker_profile.twitter }},"{{ speaker_info.talk }}",{{ speaker_slug }}{% endif %}{% endfor %}
+</script>
+
 <div class="hero" style="background: #000 url({{ event.images.background }}) center center no-repeat;background-size:cover;">
     <div class="container">
         <div class="title">
@@ -270,9 +275,3 @@ sitemap:
 
 {% include video.html %}
 
-<!--
-CSV Speaker Content
-Name,Twitter,Talk,Source
-{% for speaker_hash in event.speakers %}{% assign speaker_slug = speaker_hash[0] %}{% assign speaker_info = speaker_hash[1] %}{% assign speaker_profile = site.speakers | where: 'slug', speaker_slug | first %}{% if speaker_profile %}
-{{ speaker_profile.title }},@{{ speaker_profile.twitter }},"{{ speaker_info.talk }}",{{ speaker_slug }}{% endif %}{% endfor %}
--->
