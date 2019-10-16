@@ -8,8 +8,8 @@ permalink: /vote/
 
 {% capture now %}{{ 'now' | date: '%s' | plus: 0 }}{% endcapture %}
 {% for event in site.events %}
-    {% capture event_date %}{{ event.date | date: '%s' | plus: 1 }}{% endcapture %}
-
+    {% capture event_date %}{{ event.date | date: '%s' | plus: 172800 }}{% endcapture %}
+    {% if event_date > now %}
     <div id="{{ event.slug }}" style="display:none;">
         <form class="js-ballot" method="GET" action="/vote/thanks/" data-max-votes="{{ event.finalist_count }}">
             <button type="submit" disabled="disabled" class="disabled">Submit</button>
@@ -35,7 +35,7 @@ permalink: /vote/
             <button type="submit" disabled="disabled" class="disabled">Submit</button>
         </form>
     </div>
-
+    {% endif %}
 {% endfor %}
 
 <div class="footer">

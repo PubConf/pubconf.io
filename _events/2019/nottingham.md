@@ -34,6 +34,7 @@ venue:
 
 #speakers
 host: dylan_beattie
+finalist_count: 3
 speakers:
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
@@ -51,6 +52,8 @@ speakers:
     talk: Hire Me! I Have Breasts!
   kate_bolin:
     talk: Old Woman Yells At Website
+  rizwana_khan:
+    talk: Rizamblive!
 supporters:
   - name: TrackJS
     level: topshelf

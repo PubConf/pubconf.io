@@ -61,6 +61,10 @@ venue:
 # The host of the show
 host: todd_gardner
 
+# How many finalists can be voted for using the voting page
+# https://pubconf.io/vote/?event=<eventName>&hash=<secret>
+finalist_count: 3
+
 # Speaker object hash. Use the speaker slugs as the keys, alphabetically listed.
 # Within each speaker are the event-specific details.
 speakers:
