@@ -41,7 +41,7 @@ speakers:
   effy_elden:
     talk: "effy_pubconf_talk-FINAL-FINAL(2)(Use This One)"
   jennifer_wadella:
-    talk: ""
+    talk: "How to run a dev team ... into the ground"
   richard_campbell:
     talk: "Goliath."
   heather_downing:

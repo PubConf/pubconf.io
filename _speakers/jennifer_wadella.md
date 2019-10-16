@@ -2,6 +2,6 @@
 
 title: Jennifer Wadella
 twitter: likeOMGitsFEDAY
-bio: "Basic White Bitch"
+bio: "Not Victoria, the other short haired blonde chick"
 image: /assets/images/speakers/jenniferwadella.jpg
 ---
