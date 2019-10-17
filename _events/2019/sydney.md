@@ -1,6 +1,6 @@
 ---
 title: PubConf Sydney 2019
-date: 2019-10-18T19:00:00+15:00
+date: 2019-10-18T18:00:00+15:00
 end_date: 2019-10-18T23:30:00+15:00
 local_time: 2019-10-18T19:00
 
@@ -45,8 +45,6 @@ speakers:
     talk: "How to run a dev team ... into the ground"
   richard_campbell:
     talk: "Goliath."
-  heather_downing:
-    talk: ""
   rob_crowley:
     talk: "10x from the trenches"
 
