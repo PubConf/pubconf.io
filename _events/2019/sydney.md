@@ -45,8 +45,6 @@ speakers:
     talk: "How to run a dev team ... into the ground"
   richard_campbell:
     talk: "Goliath."
-  heather_downing:
-    talk: ""
   rob_crowley:
     talk: "10x from the trenches"
 
