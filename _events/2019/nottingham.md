@@ -34,7 +34,6 @@ venue:
 
 #speakers
 host: dylan_beattie
-finalist_count: 3
 speakers:
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
@@ -54,6 +53,8 @@ speakers:
     talk: Old Woman Yells At Website
   rizwana_khan:
     talk: Rizamblive!
+  matthew_walton:
+    talk: Martial Arts For Job Interviews
 supporters:
   - name: TrackJS
     level: topshelf
