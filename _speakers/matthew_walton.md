@@ -8,18 +8,17 @@
 # This data is also consumed by `_events`.
 
 # Friendly name of the speaker
-title: Louise Paling
+title: Matthew Walton
 
 # Twitter handle, without url or @
-twitter: short_louise
+twitter: maw
 
 # Bio line.
-bio: "Louise does stuff. Occasionally the stuff is useful." 
+bio: "Programmer, morris dancer, musician, cat-lover and professional tall person. With a third degree black belt." 
 
 # Headshot image URL. Should be 300x300 greyscale.
-image: /assets/images/speakers/louise_paling.jpg
+image: /assets/images/speakers/matthew_walton.jpg
 
 # Shirt size for speaker swag.
-shirt_size: "s" # xs,s,m,l,xl,xxl,xxxl
+shirt_size: "m" # xs,s,m,l,xl,xxl,xxxl
 ---
-
