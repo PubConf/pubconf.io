@@ -35,12 +35,15 @@ speakers:
     talk: "So You Think You Know HTML?"
   katie_mclaughlin:
     talk: "A profane guide to containers"
+    place: "finalist"
   kris_howard:
     talk: "Roald Dahl, BAMF"
+    place: "champion"
   damian_brady:
     talk: "The Singularity is, like, really far away"
   effy_elden:
     talk: "effy_pubconf_talk-FINAL-FINAL(2)(Use This One)"
+    place: "finalist"
   jennifer_wadella:
     talk: "How to run a dev team ... into the ground"
   richard_campbell:
