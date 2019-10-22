@@ -56,8 +56,6 @@ speakers:
     talk: Rizamblive!
   matthew_walton:
     talk: Martial Arts For Job Interviews
-
-
 supporters:
   - name: Distinct Recruitment
     level: topshelf
