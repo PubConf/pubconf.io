@@ -56,11 +56,22 @@ speakers:
     talk: Rizamblive!
   matthew_walton:
     talk: Martial Arts For Job Interviews
+
+
 supporters:
-  - name: TrackJS
+  - name: Distinct Recruitment
     level: topshelf
+    url: https://distinctrecruitment.com/
+    image: /assets/images/supporters/distinctrecruitment.png
+  - name: LoveLegal
+    level: rail
+    url: https://lovelegal.com/
+    image: /assets/images/supporters/lovelegal.png
+  - name: TrackJS
+    level: rail
     url: https://trackjs.com/
     image: /assets/images/supporters/tjs.png
+
 
 
 ---
