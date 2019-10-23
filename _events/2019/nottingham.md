@@ -57,10 +57,26 @@ speakers:
   matthew_walton:
     talk: Martial Arts For Job Interviews
 supporters:
+  
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/supporters/tjs.png
+  
+  - name: Tech Nottingham
+    level: rail
+    url: https://www.technottingham.com/
+    image: /assets/images/supporters/technottingham.png
+  
+  - name: Distinct Recruitment
+    level: rail
+    url: https://distinctrecruitment.com/
+    image: /assets/images/supporters/distinctrecruitment.png
+  
+  - name: LoveLegal
+    level: rail
+    url: https://lovelegal.com/
+    image: /assets/images/supporters/lovelegal.png
 
 
 ---
