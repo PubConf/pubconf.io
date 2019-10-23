@@ -63,6 +63,11 @@ supporters:
     url: https://trackjs.com/
     image: /assets/images/supporters/tjs.png
   
+  - name: Tech Nottingham
+    level: rail
+    url: https://www.technottingham.com/
+    image: /assets/images/supporters/technottingham.png
+  
   - name: Distinct Recruitment
     level: rail
     url: https://distinctrecruitment.com/
