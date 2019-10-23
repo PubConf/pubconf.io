@@ -324,10 +324,14 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            align-items: center;
             li {
                 flex: 0 0 33%;
                 @media screen and (max-width: 768px) {
                     flex: 0 0 50%;
+                }
+                @media screen and (max-width: 480px) {
+                    flex: 0 0 100%;
                 }
                 a {
                     display: block;
