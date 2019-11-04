@@ -38,12 +38,14 @@ finalist_count: 3
 speakers:
   matt_brunt:
     talk: Doctor, It Hurts When I PHP
+    place: "champion"
   moreton_brockley:
     talk: The Woes of Being a White Male in Tech
   louise_paling:
     talk: What I've Learned From Tetris
   ian_cooper:
     talk: The Duct Tape Developer
+    place: "finalist"
   lex_lofthouse:
     talk: I <3 Comic Sans
   andrew_seward:
@@ -54,25 +56,26 @@ speakers:
     talk: Old Woman Yells At Website
   rizwana_khan:
     talk: Rizamblive!
+    place: "finalist"
   matthew_walton:
     talk: Martial Arts For Job Interviews
 supporters:
-  
+
   - name: TrackJS
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/supporters/tjs.png
-  
+
   - name: Tech Nottingham
     level: rail
     url: https://www.technottingham.com/
     image: /assets/images/supporters/technottingham.png
-  
+
   - name: Distinct Recruitment
     level: rail
     url: https://distinctrecruitment.com/
     image: /assets/images/supporters/distinctrecruitment.png
-  
+
   - name: LoveLegal
     level: rail
     url: https://lovelegal.com/

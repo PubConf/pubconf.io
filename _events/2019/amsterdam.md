@@ -34,14 +34,17 @@ speakers:
     talk: "Survival Guide to The Netherlands: A Warning About the Dutch People."
   archana_wuntakal:
     talk: "It's not you, it's Agile"
+    place: "finalist"
   christina_aldan:
     talk: "How Product Delivery is Like a Telenovela"
   edward_thomson:
     talk: "Git Is Destroying The World"
+    place: "finalist"
   hannes_lowette:
     talk: "So, You Just Landed That Recruiter Job"
   jonathan_mills:
     talk: "JavaScript: The Weird Parts"
+    place: "champion"
   lemon:
     talk: "ACME Bears No Responsibility For Mr. Coyote Exploding"
 
