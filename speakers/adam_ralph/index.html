@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Ralph - PubConf</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://pubconf.io/speakers/adam_ralph/">
+    <link rel="me" href="https://twitter.com/pubconf">
+
+    <!-- Open Graph Sharing Info -->
+    <meta property="og:title" content="Adam Ralph" />
+    <meta property="og:site_name" content="PubConf"/>
+    <meta property="og:url" content="https://pubconf.io/speakers/adam_ralph//" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://www.facebook.com/pubconf" />
+    <meta property="article:publisher" content="https://www.facebook.com/pubconf" />
+    <meta property="og:image" content="https://pubconf.io/assets/images/global-share.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Adam Ralph">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="@pubconf">
+    <meta name="twitter:image" content="https://pubconf.io/assets/images/global-share.jpg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "PubConf",
+            "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.",
+            "url": "https://pubconf.io",
+            "logo": "https://pubconf.io/assets/images/global-share.jpg",
+            "sameAs": [
+                "https://www.facebook.com/pubconf",
+                "https://twitter.com/pubconf"
+            ],
+            "email": "hello@pubconf.io"
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TrackJS -->
+    <script src="https://cdn.trackjs.com/agent/v3/canary/t.js"></script>
+    <script>
+        if (location.host.indexOf("localhost") !== 0) {
+            window.TrackJS && TrackJS.install({
+                token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+                application: "pubconf",
+                callback: { bindStack: true }
+            });
+        }
+        // TrackJS Asset Load Failure Monitoring Test
+        (function listenForAssetFailures() {
+            function listenForError(node) {
+                if (["SCRIPT","LINK","IMG"].indexOf(node.tagName) >= 0) {
+                    var origOnError = node.onerror;
+                    node.onerror = function(evt) {
+                        // NOTE [Todd] Without the srcElement, there is nothing to go on. May as well ignore.
+                        if (!evt || !evt.srcElement) { return; }
+                        evt.path = evt.path || [];
+                        var path = "";
+                        for(var elIdx = 0; elIdx < evt.path.length; elIdx++) {
+                            var currentEl = evt.path[elIdx];
+                            if (currentEl === window) {
+                                path += "Window";
+                                continue;
+                            }
+                            path += currentEl.nodeName;
+                            path += currentEl.id ? "#" + currentEl.id : "";
+                            path += currentEl.className ? "." + currentEl.className.split(" ").join(".") : "";
+                            if (elIdx < evt.path.length) {
+                                path += " > ";
+                            }
+                        }
+                        console.info({
+                            asset: evt.srcElement.src,
+                            integrity: evt.srcElement.integrity,
+                            element: evt.srcElement.outerHTML,
+                            path: path
+                        });
+                        console.error("Failed to load " + evt.srcElement.tagName + ": " + (evt.srcElement.src || evt.srcElement.href));
+                        if (origOnError) { origOnError.call(node, evt); }
+                    }
+                }
+            }
+            var Observer = window.MutationObserver || window.WebKitMutationObserver;
+            if (!Observer) { return; }
+            new Observer((function(mutations) {
+                [].forEach.call(mutations, function(mutation) {
+                    [].forEach.call(mutation.addedNodes, listenForError);
+                });
+            })).observe(document, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,700,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="/assets/main-03f39cbef447a6a49e8ff2c12d738659b1faf757abd6dd22fd94be6d512d3177.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68386201-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-68386201-1');
+        gtag.createTimeoutFn = function(callback, timeout) {
+            var called = false;
+            function fn() {
+                if (!called) {
+                    called = true;
+                    callback();
+                }
+            }
+            setTimeout(fn, timeout || 1000);
+            return fn;
+        }
+    </script>
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','nwb6k');
+        twq('track','PageView');
+    </script>
+
+    <script type="text/javascript" src="/assets/main-3a4af22fd4af577cb27539d9b7e86e7b9a3debd5c72fbcd0e2fdb885c7a1b994.js" async defer></script>
+</head>
+
+    <body class="page speaker ">
+        
+
+<header class="page-header">
+    <a class="header-brand" href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf"/></a>
+    
+    <aside class="sidebar">
+    <label for="hamburger-activator" class="hamburger">
+        <div class="icon">☰</div>
+    </label>
+    <input type="checkbox" class="hamburger-activator" id="hamburger-activator">
+    <div class="sidebar-container">
+        <div class="overlay"></div>
+        <label for="hamburger-activator" class="close"></label>
+        <div class="drawer">
+            <header>
+                <a href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS"></a>
+            </header>
+            <nav class="menu">
+                
+    <ol>
+    
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        <li>
+            <a href="/events/">Event Archive</a>
+        </li>
+        <li>
+            <a href="/speakers/">Speakers</a>
+        </li>
+        <li>
+            <a href="/code-of-conduct/">Code of Conduct</a>
+        </li>
+    </ol>
+    
+                <div class="social">
+                    <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+                    <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+
+<script>
+    // tiny function to close the drawer on hash click
+    (function() {
+        if (!document.querySelector) { return; }
+        var nav = document.querySelector('nav.menu');
+        var activator = document.querySelector('#hamburger-activator');
+        if (!nav || !activator) { return; }
+
+        nav.addEventListener('click', function(evt) {
+            if (evt && evt.target && evt.target.getAttribute('href').indexOf("#") === 0) {
+                activator.checked = false;
+            }
+        });
+    })();
+</script>
+
+</header>
+
+<div class="speaker-content">
+    <div class="info">
+        <div class="headshot">
+            <img src="/assets/images/speakers/adamralph.jpg" alt="Adam Ralph" class="speaker">
+        </div>
+        <div class="name">
+            <h1>Adam Ralph <a class="twitter" href="https://twitter.com/adamralph"><i class="icon-twitter"></i></a></h1>
+            <h2>Whitespace bigot</h2>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="events">
+    <h2>Talks</h2>
+    <ol class="event-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <li class="event-item">
+            <div class="event-image">
+                <a href="/events/2018/london/" title="PubConf London 2018">
+                    <img src="/assets/images/events/london/event-logo.svg" alt="PubConf London 2018" />
+                </a>
+                
+                
+                
+            </div>
+            <div class="event-details">
+                <h3><a href="/events/2018/london/" title="PubConf London 2018">PubConf London 2018</a></h3>
+                <div>git commit -m 'add spaces'</div>
+            </div>
+        </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ol>
+</div>
+
+
+        <footer class="site-footer">
+    <div class="social">
+        <div class="container">
+            <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+            <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+            <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+        </div>
+    </div>
+
+    <p>All speakers, supporters, and attendees must respect the <a href="/code-of-conduct/">PubConf Code of Conduct</a>. All content appearing on this website is proprietary, copyrighted and owned or licensed by <a href="https://trackjs.com/">TrackJS LLC</a>. Any unauthorized use of trademarks or content from this website is strictly prohibited. All rights reserved.</p>
+    <p>Copyright &copy; 2015-2019 <a href="https://trackjs.com/">TrackJS LLC</a></p>
+</footer>
+
+    </body>
+</html>
