@@ -1,5 +1,7 @@
 # pubconf.io
-Website for PubConf Events
+Website for PubConf Events.
+
+[![Build Status](https://travis-ci.com/PubConf/pubconf.github.io.svg?branch=sources)](https://travis-ci.com/PubConf/pubconf.github.io)
 
 ## Developer Setup
 
