@@ -74,6 +74,8 @@ speakers:
     talk: Untitled Goose Talk
   jessica_white:
     talk: Coming Soon
+  edward_thomson:
+    talk: Coming Soon
 
 # Supporters array for the event.
 supporters:
