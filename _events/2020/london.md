@@ -17,7 +17,7 @@ end_date: 2020-01-31T23:30:00Z
 
 # ISO8601 Date (without offset) for the local time of the event. This is used
 # for display because dates are hard.
-local_time: 2019-01-31T19:00
+local_time: 2020-01-31T19:00
 
 # Tickets object. Comment this out until tickets are ready to be sold.
 # tickets:
