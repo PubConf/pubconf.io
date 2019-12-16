@@ -76,6 +76,12 @@ speakers:
     talk: Coming Soon
   edward_thomson:
     talk: Coming Soon
+  mark_rendle:
+    talk: Coming Soon
+
+# CONFIRMED SPEAKERS AWAITING BIO+PHOTO
+# layla_porter:
+#   talk: coming soon    
 
 # Supporters array for the event.
 supporters:
