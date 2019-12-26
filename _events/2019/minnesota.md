@@ -10,14 +10,14 @@ title: PubConf Minnesota 2019
 
 # ISO8601 Date for the starting time of the event. Make sure the offset is in the
 # event location timezone.
-date: 2018-05-08T19:00:00-5:00
+date: 2019-05-08T19:00:00-5:00
 
 # ISO8601 Date for the ending time of the event.
-end_date: 2018-05-08T23:00:00-5:00
+end_date: 2019-05-08T23:00:00-5:00
 
 # ISO8601 Date (without offset) for the local time of the event. This is used
 # for display because dates are hard.
-local_time: 2018-05-08T19:00
+local_time: 2019-05-08T19:00
 
 # Tickets object. Comment this out until tickets are ready to be sold.
 # tickets:
