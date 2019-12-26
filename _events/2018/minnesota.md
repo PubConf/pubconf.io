@@ -103,18 +103,14 @@ supporters:
     level: topshelf
     url: https://trackjs.com/
     image: /assets/images/supporters/tjs.png
-  - name: OrderCloud
-    level: topshelf
-    url: https://ordercloud.io/
-    image: /assets/images/supporters/ordercloud.png
-  - name: Leadpages
-    level: topshelf
-    url: https://www.leadpages.net/
-    image: /assets/images/supporters/leadpages.png
   - name: Super Go Faster
     level: topshelf
     url: http://supergofaster.com/
     image: /assets/images/supporters/supergofaster.png
+  - name: TekSystems
+    level: topshelf
+    url: https://www.teksystems.com/en
+    image: /assets/images/supporters/teksystems.png
 ---
 
 {% comment %}
