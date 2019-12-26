@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PubConf Minnesota 2017 - PubConf</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://pubconf.io/events/2017/minnesota/">
+    <link rel="me" href="https://twitter.com/pubconf">
+
+    <!-- Open Graph Sharing Info -->
+    <meta property="og:title" content="PubConf Minnesota 2017" />
+    <meta property="og:site_name" content="PubConf"/>
+    <meta property="og:url" content="https://pubconf.io/events/2017/minnesota//" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://www.facebook.com/pubconf" />
+    <meta property="article:publisher" content="https://www.facebook.com/pubconf" />
+    <meta property="og:image" content="https://pubconf.io/assets/images/events/minnesota/event-share.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PubConf Minnesota 2017">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="@pubconf">
+    <meta name="twitter:image" content="https://pubconf.io/assets/images/events/minnesota/event-share.jpg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "PubConf",
+            "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.",
+            "url": "https://pubconf.io",
+            "logo": "https://pubconf.io/assets/images/global-share.jpg",
+            "sameAs": [
+                "https://www.facebook.com/pubconf",
+                "https://twitter.com/pubconf"
+            ],
+            "email": "hello@pubconf.io"
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TrackJS -->
+    <script src="https://cdn.trackjs.com/agent/v3/canary/t.js"></script>
+    <script>
+        if (location.host.indexOf("localhost") !== 0) {
+            window.TrackJS && TrackJS.install({
+                token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+                application: "pubconf",
+                callback: { bindStack: true }
+            });
+        }
+        // TrackJS Asset Load Failure Monitoring Test
+        (function listenForAssetFailures() {
+            function listenForError(node) {
+                if (["SCRIPT","LINK","IMG"].indexOf(node.tagName) >= 0) {
+                    var origOnError = node.onerror;
+                    node.onerror = function(evt) {
+                        // NOTE [Todd] Without the srcElement, there is nothing to go on. May as well ignore.
+                        if (!evt || !evt.srcElement) { return; }
+                        evt.path = evt.path || [];
+                        var path = "";
+                        for(var elIdx = 0; elIdx < evt.path.length; elIdx++) {
+                            var currentEl = evt.path[elIdx];
+                            if (currentEl === window) {
+                                path += "Window";
+                                continue;
+                            }
+                            path += currentEl.nodeName;
+                            path += currentEl.id ? "#" + currentEl.id : "";
+                            path += currentEl.className ? "." + currentEl.className.split(" ").join(".") : "";
+                            if (elIdx < evt.path.length) {
+                                path += " > ";
+                            }
+                        }
+                        console.info({
+                            asset: evt.srcElement.src,
+                            integrity: evt.srcElement.integrity,
+                            element: evt.srcElement.outerHTML,
+                            path: path
+                        });
+                        console.error("Failed to load " + evt.srcElement.tagName + ": " + (evt.srcElement.src || evt.srcElement.href));
+                        if (origOnError) { origOnError.call(node, evt); }
+                    }
+                }
+            }
+            var Observer = window.MutationObserver || window.WebKitMutationObserver;
+            if (!Observer) { return; }
+            new Observer((function(mutations) {
+                [].forEach.call(mutations, function(mutation) {
+                    [].forEach.call(mutation.addedNodes, listenForError);
+                });
+            })).observe(document, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,700,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="/assets/main-03f39cbef447a6a49e8ff2c12d738659b1faf757abd6dd22fd94be6d512d3177.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68386201-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-68386201-1');
+        gtag.createTimeoutFn = function(callback, timeout) {
+            var called = false;
+            function fn() {
+                if (!called) {
+                    called = true;
+                    callback();
+                }
+            }
+            setTimeout(fn, timeout || 1000);
+            return fn;
+        }
+    </script>
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','nwb6k');
+        twq('track','PageView');
+    </script>
+
+    <script type="text/javascript" src="/assets/main-3a4af22fd4af577cb27539d9b7e86e7b9a3debd5c72fbcd0e2fdb885c7a1b994.js" async defer></script>
+</head>
+
+    <body class="event-2019 ">
+        
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "PubConf Minnesota 2017",
+        "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.",
+        "url": "https://pubconf.io/events/2017/minnesota/",
+        "image": "https://pubconf.io/assets/images/events/minnesota/event-share.jpg",
+        "startDate": "2017-04-22T00:00:00+00:00",
+        "endDate": "2017-04-22T04:00:00+00:00"
+        
+        ,"location": {
+            "@type": "Place",
+            "name": "Nomad World Pub",
+            "address": "501 Cedar Ave S Minneapolis, MN 55454"
+        }
+        
+        
+        
+        ,"performer": [
+            
+            {
+                "@type": "Person",
+                "name": "Todd Gardner",
+                "url": "https://pubconf.io/speakers/todd_gardner/",
+                "sameAs": ["https://twitter.com/toddhgardner"]
+            }
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Andrew Murray",
+                "url": "https://pubconf.io/speakers/andrew_murray/",
+                "sameAs": ["https://twitter.com/asketchyfish"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Angeliki Beyko",
+                "url": "https://pubconf.io/speakers/angeliki_beyko/",
+                "sameAs": ["https://twitter.com/abeyko"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "April King",
+                "url": "https://pubconf.io/speakers/april_king/",
+                "sameAs": ["https://twitter.com/aprilmpls"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Lemon",
+                "url": "https://pubconf.io/speakers/lemon/",
+                "sameAs": ["https://twitter.com/ahoyLemon"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Dan Lew",
+                "url": "https://pubconf.io/speakers/dan_lew/",
+                "sameAs": ["https://twitter.com/danlew42"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Donnie Berkholz",
+                "url": "https://pubconf.io/speakers/donnie_berkholz/",
+                "sameAs": ["https://twitter.com/dberkholz"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Eric Brandes",
+                "url": "https://pubconf.io/speakers/eric_brandes/",
+                "sameAs": ["https://twitter.com/BrandesEric"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Jake Good",
+                "url": "https://pubconf.io/speakers/jake_good/",
+                "sameAs": ["https://twitter.com/gooberdix"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Marc Grabanski",
+                "url": "https://pubconf.io/speakers/marc_grabanski/",
+                "sameAs": ["https://twitter.com/1Marc"]
+            }
+            
+            
+        ]
+        
+    }
+</script>
+
+<script type="application/csv">
+Name,Twitter,Talk,Source
+Andrew Murray,@asketchyfish,"I Told You There Was a 20% Chance of Rain!",andrew_murray
+Angeliki Beyko,@abeyko,"Refactor your Fitness Routine",angeliki_beyko
+April King,@aprilmpls,"20 Technology Acronyms that Keep you Safe",april_king
+Lemon,@ahoyLemon,"I Got Popular (Oops)",lemon
+Dan Lew,@danlew42,"Hostile Design Patterns",dan_lew
+Donnie Berkholz,@dberkholz,"Assholes Are Killing Your Project",donnie_berkholz
+Eric Brandes,@BrandesEric,"One Weird Trick to Avoid Losing Money in the Cloud",eric_brandes
+Jake Good,@gooberdix,"You're Wrong About Being Right",jake_good
+Marc Grabanski,@1Marc,"Web Development is Easy",marc_grabanski
+</script>
+
+<div class="hero" style="background: #000 url(/assets/images/events/minnesota/event-hero-bg.jpg) center center no-repeat;background-size:cover;">
+    <div class="container">
+        <div class="title">
+            <h1 style="display: none;">PubConf Minnesota 2017</h1>
+            <img src="/assets/images/events/minnesota/event-logo.svg" alt="PubConf Minnesota 2017">
+            
+        </div>
+        <div class="subtitle">
+            <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
+        </div>
+        
+        <a class="cta secondary" href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" alt="Get Notified for PubConf Minnesota 2017">
+            <i class="icon-paper-plane-empty"></i> Email Me
+        </a>
+        
+    </div>
+    
+    <aside class="sidebar">
+    <label for="hamburger-activator" class="hamburger">
+        <div class="icon">☰</div>
+    </label>
+    <input type="checkbox" class="hamburger-activator" id="hamburger-activator">
+    <div class="sidebar-container">
+        <div class="overlay"></div>
+        <label for="hamburger-activator" class="close"></label>
+        <div class="drawer">
+            <header>
+                <a href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS"></a>
+            </header>
+            <nav class="menu">
+                
+    <ol>
+        <li><a href="/">Other Events</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#wtf">WTF?!</a></li>
+        <li><a href="#supporters">Supported By</a></li>
+        <li><a href="/code-of-conduct/">Code of Conduct</a></li>
+    </ol>
+    
+                <div class="social">
+                    <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+                    <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+
+<script>
+    // tiny function to close the drawer on hash click
+    (function() {
+        if (!document.querySelector) { return; }
+        var nav = document.querySelector('nav.menu');
+        var activator = document.querySelector('#hamburger-activator');
+        if (!nav || !activator) { return; }
+
+        nav.addEventListener('click', function(evt) {
+            if (evt && evt.target && evt.target.getAttribute('href').indexOf("#") === 0) {
+                activator.checked = false;
+            }
+        });
+    })();
+</script>
+
+</div>
+
+
+
+<div class="details">
+    <div class="container">
+        <h2 id="details">Details</h2>
+        <p>
+            Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers.
+            Food, drinks, and laughs are included with your ticket.
+        </p>
+        <p>
+             <strong>Friday, April 21, 2017 @07:00 pm</strong>
+             at <strong><a href="" title="Nomad World Pub">Nomad World Pub</a></strong>.
+        </p>
+        
+
+    </div>
+</div>
+
+
+<div class="speakers">
+    <div class="container">
+        <h2 id="speakers">Featured Speakers</h2>
+        <ul class="speaker-list">
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/andrew_murray/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Andrew Murray">
+                <figure class="speaker-item speaker-twitter-asketchyfish">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/andrewmurray.jpeg" alt="Andrew Murray" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">I Told You There Was a 20% Chance of Rain!</span>
+                        <span class="name">Andrew Murray</span>
+                        <span class="description">Professional Cloud Watcher</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/angeliki_beyko/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Angeliki Beyko">
+                <figure class="speaker-item speaker-twitter-abeyko">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/angelikibeyko.jpg" alt="Angeliki Beyko" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Refactor your Fitness Routine</span>
+                        <span class="name">Angeliki Beyko</span>
+                        <span class="description">Mind Hacker Extraordinaire</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/april_king/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="April King">
+                <figure class="speaker-item speaker-twitter-aprilmpls">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/aprilking.png" alt="April King" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">20 Technology Acronyms that Keep you Safe</span>
+                        <span class="name">April King</span>
+                        <span class="description">Mozilla's CAO (Chief Acronym Officer)</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/lemon/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Lemon">
+                <figure class="speaker-item speaker-twitter-ahoyLemon">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/blemon.jpg" alt="Lemon" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">I Got Popular (Oops)</span>
+                        <span class="name">Lemon</span>
+                        <span class="description">Currently Throwing You Under The Bus</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/dan_lew/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Dan Lew">
+                <figure class="speaker-item speaker-twitter-danlew42">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/danlew.jpg" alt="Dan Lew" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Hostile Design Patterns</span>
+                        <span class="name">Dan Lew</span>
+                        <span class="description">Universal Philosopher of Absolute Reality</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/donnie_berkholz/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Donnie Berkholz">
+                <figure class="speaker-item speaker-twitter-dberkholz">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/donnieberkholz.jpg" alt="Donnie Berkholz" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Assholes Are Killing Your Project</span>
+                        <span class="name">Donnie Berkholz</span>
+                        <span class="description">Asshole-Avoidance Strategist</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/eric_brandes/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Eric Brandes">
+                <figure class="speaker-item speaker-twitter-BrandesEric">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/ericbrandes.jpg" alt="Eric Brandes" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">One Weird Trick to Avoid Losing Money in the Cloud</span>
+                        <span class="name">Eric Brandes</span>
+                        <span class="description">Professional Typist</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/jake_good/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Jake Good">
+                <figure class="speaker-item speaker-twitter-gooberdix">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/jakegood.jpeg" alt="Jake Good" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">You're Wrong About Being Right</span>
+                        <span class="name">Jake Good</span>
+                        <span class="description">Professional Oversimplifier</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/marc_grabanski/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Marc Grabanski">
+                <figure class="speaker-item speaker-twitter-1Marc">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/marcgrabanski.jpg" alt="Marc Grabanski" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Web Development is Easy</span>
+                        <span class="name">Marc Grabanski</span>
+                        <span class="description">I wrote jQueryUI Datepicker</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+        </ul>
+        <div data-visible-category="discovery" data-visible-action="view_speakers"></div>
+
+        
+        <div class="host">
+            
+            
+            <h3 class="lead2">Hosted By</h3>
+            <ul class="speaker-list">
+                <li>
+                    <a class="speaker-link" href="/speakers/todd_gardner/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="">
+                    <figure class="speaker-item">
+                        <img data-proofer-ignore data-lazy-src="/assets/images/speakers/toddgardner.jpg" alt="" class="speaker">
+                        <figcaption>
+                            <span class="name">Todd Gardner</span>
+                            <span class="description">Occasional JavaScript Developer and Pub Enthusiast</span>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="tickets">
+    <div class="container">
+        <h2 id="tickets">Get Email Updates</h2>
+        <div class="ticket-cta">
+            <p>Join our newsletter to be the first to know about PubConf tickets and events.</p>
+            <div>
+                <a class="cta" href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" alt="Subscribe to PubConf Minnesota 2017">
+                    <i class="icon-paper-plane-empty"></i>
+                    Subscribe to PubConf
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="supporters">
+    <div class="container">
+        <h2 id="supporters">Supported By</h2>
+        
+        
+        
+            <h3>Top-Shelf</h3>
+            <ul class="top-shelf-supporters">
+                
+                <li class="supporter-item">
+                    <a href="https://trackjs.com/" title="TrackJS" data-click-category="discovery" data-click-action="supporter_link" data-click-label="TrackJS">
+                        <img src="/assets/images/supporters/tjs.png" alt="TrackJS" class="img-responsive" />
+                    </a>
+                </li>
+                
+                <li class="supporter-item">
+                    <a href="https://ordercloud.io/" title="OrderCloud" data-click-category="discovery" data-click-action="supporter_link" data-click-label="OrderCloud">
+                        <img src="/assets/images/supporters/ordercloud.png" alt="OrderCloud" class="img-responsive" />
+                    </a>
+                </li>
+                
+                <li class="supporter-item">
+                    <a href="https://www.leadpages.net/" title="Leadpages" data-click-category="discovery" data-click-action="supporter_link" data-click-label="Leadpages">
+                        <img src="/assets/images/supporters/leadpages.png" alt="Leadpages" class="img-responsive" />
+                    </a>
+                </li>
+                
+                <li class="supporter-item">
+                    <a href="http://supergofaster.com/" title="Super Go Faster" data-click-category="discovery" data-click-action="supporter_link" data-click-label="Super Go Faster">
+                        <img src="/assets/images/supporters/supergofaster.png" alt="Super Go Faster" class="img-responsive" />
+                    </a>
+                </li>
+                
+            </ul>
+        
+        
+        
+        
+    </div>
+</div>
+
+
+<div class="wtf">
+    <div class="container">
+        <h2 id="wtf">WTF is This?!</h2>
+        <p>PubConf is a comedy variety show for software folks. We partner with conferences around the world to bring you lighthearted fun and community in a non-professional setting.</p>
+        <div class="question">
+            <h3>Is this a joke?</h3>
+            <p>
+                Yes. Well, kind of. We're really throwing this party, these speakers are really going to speak on these topics, and we're really going to have some drinks. But it's all light-hearted and fun.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Is this a professional event?</h3>
+            <p>
+                No, This is a comedy variety show at a pub.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Can I go to PubConf if I didn't attend ?</h3>
+            <p>
+                Absolutely! While PubConf is in partnership with , it is a separately ticketed event and we'd love to have you there!
+            </p>
+        </div>
+        <div class="question">
+            <h3>What's included with my ticket?</h3>
+            <p>
+                We'll provide pub-fare food, some adult beverages, a great show, and amazing people. If you need something more, well, maybe this isn't the event for you.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <ul>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-1.jpg" title="kc2017-1">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-1.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-1" title="kc2017-1" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-2.jpg" title="kc2017-2">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-2.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-2" title="kc2017-2" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-3.jpg" title="kc2017-3">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-3.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-3" title="kc2017-3" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/london2017.jpg" title="london2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/london2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="london2017" title="london2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/oslo2017.jpg" title="oslo2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/oslo2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="oslo2017" title="oslo2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/sydney2017.jpg" title="sydney2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/sydney2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="sydney2017" title="sydney2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        </ul>
+    </div>
+</div>
+
+
+<div class="video">
+    <div class="container">
+        <div class="vid">
+            <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/USmUlshjcd4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+        <footer class="site-footer">
+    <div class="social">
+        <div class="container">
+            <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+            <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+            <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+        </div>
+    </div>
+
+    <p>All speakers, supporters, and attendees must respect the <a href="/code-of-conduct/">PubConf Code of Conduct</a>. All content appearing on this website is proprietary, copyrighted and owned or licensed by <a href="https://trackjs.com/">TrackJS LLC</a>. Any unauthorized use of trademarks or content from this website is strictly prohibited. All rights reserved.</p>
+    <p>Copyright &copy; 2015-2019 <a href="https://trackjs.com/">TrackJS LLC</a></p>
+</footer>
+
+    </body>
+</html>
