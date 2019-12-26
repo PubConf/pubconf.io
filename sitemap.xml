@@ -11,4 +11,20 @@ layout: null
     <priority>{{ page.sitemap.priority | default: '0.8' }}</priority>
   </url>
 {% endif %}{% endfor %}
+{% for event in site.events %}
+  <url>
+    <loc>{{ site.url }}{{ event.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+{% endfor %}
+{% for speaker_profile in site.speakers %}
+  <url>
+    <loc>{{ site.url }}{{ speaker_profile.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+{% endfor %}
 </urlset>
