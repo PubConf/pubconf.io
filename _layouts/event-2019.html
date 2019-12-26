@@ -215,28 +215,34 @@ Name,Twitter,Talk,Source{% for speaker_hash in event.speakers %}{% assign speake
 <div class="supporters">
     <div class="container">
         <h2 id="supporters">Supported By</h2>
-        <h3>Top-Shelf</h3>
-        <ul class="top-shelf-supporters">
-            {% assign top_supporters = event.supporters | where:"level","topshelf" %}
-            {% for supporter in top_supporters %}
-            <li class="supporter-item">
-                <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
-                    <img src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
-                </a>
-            </li>
-            {% endfor; %}
-        </ul>
-        <h3>Rail</h3>
-        <ul class="rail-supporters">
-            {% assign rail_supporters = event.supporters | where:"level","rail" %}
-            {% for supporter in rail_supporters %}
-            <li class="supporter-item">
-                <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
-                    <img data-proofer-ignore data-lazy-src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
-                </a>
-            </li>
-            {% endfor; %}
-        </ul>
+        {% assign top_supporters = event.supporters | where:"level","topshelf" %}
+        {% assign top_size = top_supporters | size %}
+        {% if top_size > 0 %}
+            <h3>Top-Shelf</h3>
+            <ul class="top-shelf-supporters">
+                {% for supporter in top_supporters %}
+                <li class="supporter-item">
+                    <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
+                        <img src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
+                    </a>
+                </li>
+                {% endfor; %}
+            </ul>
+        {% endif; %}
+        {% assign rail_supporters = event.supporters | where:"level","rail" %}
+        {% assign rail_size = rail-supporters | size %}
+        {% if rail_size > 0 %}
+            <h3>Rail</h3>
+            <ul class="rail-supporters">
+                {% for supporter in rail_supporters %}
+                <li class="supporter-item">
+                    <a href="{{ supporter.url }}" title="{{ supporter.name }}" data-click-category="discovery" data-click-action="supporter_link" data-click-label="{{ supporter.name }}">
+                        <img data-proofer-ignore data-lazy-src="{{ supporter.image }}" alt="{{ supporter.name }}" class="img-responsive" />
+                    </a>
+                </li>
+                {% endfor; %}
+            </ul>
+        {% endif; %}
     </div>
 </div>
 {% endif %}
