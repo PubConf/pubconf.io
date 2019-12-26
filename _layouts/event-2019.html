@@ -230,7 +230,7 @@ Name,Twitter,Talk,Source{% for speaker_hash in event.speakers %}{% assign speake
             </ul>
         {% endif; %}
         {% assign rail_supporters = event.supporters | where:"level","rail" %}
-        {% assign rail_size = rail-supporters | size %}
+        {% assign rail_size = rail_supporters | size %}
         {% if rail_size > 0 %}
             <h3>Rail</h3>
             <ul class="rail-supporters">
