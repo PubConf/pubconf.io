@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PubConf Oslo 2016 - PubConf</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://pubconf.io/events/2016/oslo/">
+    <link rel="me" href="https://twitter.com/pubconf">
+
+    <!-- Open Graph Sharing Info -->
+    <meta property="og:title" content="PubConf Oslo 2016" />
+    <meta property="og:site_name" content="PubConf"/>
+    <meta property="og:url" content="https://pubconf.io/events/2016/oslo//" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://www.facebook.com/pubconf" />
+    <meta property="article:publisher" content="https://www.facebook.com/pubconf" />
+    <meta property="og:image" content="https://pubconf.io/assets/images/events/oslo/event-share.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PubConf Oslo 2016">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="@pubconf">
+    <meta name="twitter:image" content="https://pubconf.io/assets/images/events/oslo/event-share.jpg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "PubConf",
+            "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.",
+            "url": "https://pubconf.io",
+            "logo": "https://pubconf.io/assets/images/global-share.jpg",
+            "sameAs": [
+                "https://www.facebook.com/pubconf",
+                "https://twitter.com/pubconf"
+            ],
+            "email": "hello@pubconf.io"
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TrackJS -->
+    <script src="https://cdn.trackjs.com/agent/v3/canary/t.js"></script>
+    <script>
+        if (location.host.indexOf("localhost") !== 0) {
+            window.TrackJS && TrackJS.install({
+                token: "8de4c78a3ec64020ab2ad15dea1ae9ff",
+                application: "pubconf",
+                callback: { bindStack: true }
+            });
+        }
+        // TrackJS Asset Load Failure Monitoring Test
+        (function listenForAssetFailures() {
+            function listenForError(node) {
+                if (["SCRIPT","LINK","IMG"].indexOf(node.tagName) >= 0) {
+                    var origOnError = node.onerror;
+                    node.onerror = function(evt) {
+                        // NOTE [Todd] Without the srcElement, there is nothing to go on. May as well ignore.
+                        if (!evt || !evt.srcElement) { return; }
+                        evt.path = evt.path || [];
+                        var path = "";
+                        for(var elIdx = 0; elIdx < evt.path.length; elIdx++) {
+                            var currentEl = evt.path[elIdx];
+                            if (currentEl === window) {
+                                path += "Window";
+                                continue;
+                            }
+                            path += currentEl.nodeName;
+                            path += currentEl.id ? "#" + currentEl.id : "";
+                            path += currentEl.className ? "." + currentEl.className.split(" ").join(".") : "";
+                            if (elIdx < evt.path.length) {
+                                path += " > ";
+                            }
+                        }
+                        console.info({
+                            asset: evt.srcElement.src,
+                            integrity: evt.srcElement.integrity,
+                            element: evt.srcElement.outerHTML,
+                            path: path
+                        });
+                        console.error("Failed to load " + evt.srcElement.tagName + ": " + (evt.srcElement.src || evt.srcElement.href));
+                        if (origOnError) { origOnError.call(node, evt); }
+                    }
+                }
+            }
+            var Observer = window.MutationObserver || window.WebKitMutationObserver;
+            if (!Observer) { return; }
+            new Observer((function(mutations) {
+                [].forEach.call(mutations, function(mutation) {
+                    [].forEach.call(mutation.addedNodes, listenForError);
+                });
+            })).observe(document, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,700,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="/assets/main-03f39cbef447a6a49e8ff2c12d738659b1faf757abd6dd22fd94be6d512d3177.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68386201-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-68386201-1');
+        gtag.createTimeoutFn = function(callback, timeout) {
+            var called = false;
+            function fn() {
+                if (!called) {
+                    called = true;
+                    callback();
+                }
+            }
+            setTimeout(fn, timeout || 1000);
+            return fn;
+        }
+    </script>
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','nwb6k');
+        twq('track','PageView');
+    </script>
+
+    <script type="text/javascript" src="/assets/main-3a4af22fd4af577cb27539d9b7e86e7b9a3debd5c72fbcd0e2fdb885c7a1b994.js" async defer></script>
+</head>
+
+    <body class="event-2019 ">
+        
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "PubConf Oslo 2016",
+        "description": "Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers. At the pub.",
+        "url": "https://pubconf.io/events/2016/oslo/",
+        "image": "https://pubconf.io/assets/images/events/oslo/event-share.jpg",
+        "startDate": "2016-06-11T16:00:00+00:00",
+        "endDate": "2016-06-11T21:00:00+00:00"
+        
+        ,"location": {
+            "@type": "Place",
+            "name": "The Scotsman",
+            "address": "Karl Johans Gate 17 0159 Oslo Norway"
+        }
+        
+        
+        
+        ,"performer": [
+            
+            {
+                "@type": "Person",
+                "name": "Todd Gardner",
+                "url": "https://pubconf.io/speakers/todd_gardner/",
+                "sameAs": ["https://twitter.com/toddhgardner"]
+            }
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Ben Cull",
+                "url": "https://pubconf.io/speakers/ben_cull/",
+                "sameAs": ["https://twitter.com/BenWhoLikesBeers"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "David Neal",
+                "url": "https://pubconf.io/speakers/david_neal/",
+                "sameAs": ["https://twitter.com/reverentgeek"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Dylan Beattie",
+                "url": "https://pubconf.io/speakers/dylan_beattie/",
+                "sameAs": ["https://twitter.com/dylanbeattie"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Einar Høst",
+                "url": "https://pubconf.io/speakers/einar_host/",
+                "sameAs": ["https://twitter.com/einarwh"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Evelina Gabašová",
+                "url": "https://pubconf.io/speakers/evelina_gabasova/",
+                "sameAs": ["https://twitter.com/evelgab"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Jimmy Bogard",
+                "url": "https://pubconf.io/speakers/jimmy_bogard/",
+                "sameAs": ["https://twitter.com/jbogard"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Karl-Henrik Nilsson",
+                "url": "https://pubconf.io/speakers/karlhenrik_nilsson/",
+                "sameAs": ["https://twitter.com/KHNilsson"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Karoline Klever",
+                "url": "https://pubconf.io/speakers/karoline_klever/",
+                "sameAs": ["https://twitter.com/karolikl"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Lars Klint",
+                "url": "https://pubconf.io/speakers/lars_klint/",
+                "sameAs": ["https://twitter.com/larsklint"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Sebastien Lambla",
+                "url": "https://pubconf.io/speakers/sebastien_lambla/",
+                "sameAs": ["https://twitter.com/serialseb"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Stefan Daugaard Poulsen",
+                "url": "https://pubconf.io/speakers/stefan_daugaardpoulsen/",
+                "sameAs": ["https://twitter.com/cyberzeddk"]
+            }
+            
+            
+            
+            
+            
+            ,{
+                "@type": "Person",
+                "name": "Troy Hunt",
+                "url": "https://pubconf.io/speakers/troy_hunt/",
+                "sameAs": ["https://twitter.com/TroyHunt"]
+            }
+            
+            
+        ]
+        
+    }
+</script>
+
+<script type="application/csv">
+Name,Twitter,Talk,Source
+Ben Cull,@BenWhoLikesBeers,"How to Brew Beer",ben_cull
+David Neal,@reverentgeek,"Win Hearts with Your Craptastic Drawings",david_neal
+Dylan Beattie,@dylanbeattie,"So You Think Your Code Isn't Mission Critical?",dylan_beattie
+Einar Høst,@einarwh,"Pragmatism is Poison",einar_host
+Evelina Gabašová,@evelgab,"Welcoming our AI Overlords",evelina_gabasova
+Jimmy Bogard,@jbogard,"When You've Fucked Up",jimmy_bogard
+Karl-Henrik Nilsson,@KHNilsson,"The Internet of Less-Useless Things",karlhenrik_nilsson
+Karoline Klever,@karolikl,"The Miscommunicating Developer",karoline_klever
+Lars Klint,@larsklint,"The Day Kittens Took Over the World Using HoloLens",lars_klint
+Sebastien Lambla,@serialseb,"How to Always Be Right on the Internets",sebastien_lambla
+Stefan Daugaard Poulsen,@cyberzeddk,"IoT is Misspelled IoU",stefan_daugaardpoulsen
+Troy Hunt,@TroyHunt,"Let's Face It--Security is Pointless",troy_hunt
+</script>
+
+<div class="hero" style="background: #000 url(/assets/images/events/oslo/event-hero-bg.jpg) center center no-repeat;background-size:cover;">
+    <div class="container">
+        <div class="title">
+            <h1 style="display: none;">PubConf Oslo 2016</h1>
+            <img src="/assets/images/events/oslo/event-logo.svg" alt="PubConf Oslo 2016">
+            
+        </div>
+        <div class="subtitle">
+            <h2>THE SOFTWARE VARIETY SHOW AND AFTERPARTY</h2>
+        </div>
+        
+        <a class="cta secondary" href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" alt="Get Notified for PubConf Oslo 2016">
+            <i class="icon-paper-plane-empty"></i> Email Me
+        </a>
+        
+    </div>
+    
+    <aside class="sidebar">
+    <label for="hamburger-activator" class="hamburger">
+        <div class="icon">☰</div>
+    </label>
+    <input type="checkbox" class="hamburger-activator" id="hamburger-activator">
+    <div class="sidebar-container">
+        <div class="overlay"></div>
+        <label for="hamburger-activator" class="close"></label>
+        <div class="drawer">
+            <header>
+                <a href="/"><img src="/assets/images/index/title-logo.svg" alt="PubConf by TrackJS"></a>
+            </header>
+            <nav class="menu">
+                
+    <ol>
+        <li><a href="/">Other Events</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#wtf">WTF?!</a></li>
+        <li><a href="#supporters">Supported By</a></li>
+        <li><a href="/code-of-conduct/">Code of Conduct</a></li>
+    </ol>
+    
+                <div class="social">
+                    <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+                    <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+                    <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+
+<script>
+    // tiny function to close the drawer on hash click
+    (function() {
+        if (!document.querySelector) { return; }
+        var nav = document.querySelector('nav.menu');
+        var activator = document.querySelector('#hamburger-activator');
+        if (!nav || !activator) { return; }
+
+        nav.addEventListener('click', function(evt) {
+            if (evt && evt.target && evt.target.getAttribute('href').indexOf("#") === 0) {
+                activator.checked = false;
+            }
+        });
+    })();
+</script>
+
+</div>
+
+
+<div class="partner">
+    <div class="container">
+        <h2>In Partnership With</h2>
+        <a href="https://ndcoslo.com" title="NDC Oslo">
+            <img src="/assets/images/events/oslo/partner-logo.png" alt="NDC Oslo" />
+        </a>
+    </div>
+</div>
+
+
+<div class="details">
+    <div class="container">
+        <h2 id="details">Details</h2>
+        <p>
+            Rapid-fire funny talks, musical acts, and comedy stunts from amazing developers.
+            Food, drinks, and laughs are included with your ticket.
+        </p>
+        <p>
+             <strong>Saturday, June 11, 2016 @06:00 pm</strong>
+             at <strong><a href="https://scotsman.no/" title="The Scotsman">The Scotsman</a></strong>.
+        </p>
+        
+
+    </div>
+</div>
+
+
+<div class="speakers">
+    <div class="container">
+        <h2 id="speakers">Featured Speakers</h2>
+        <ul class="speaker-list">
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/ben_cull/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Ben Cull">
+                <figure class="speaker-item speaker-twitter-BenWhoLikesBeers">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/bencull.jpg" alt="Ben Cull" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">How to Brew Beer</span>
+                        <span class="name">Ben Cull</span>
+                        <span class="description">That Guy Who Likes Beer</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/david_neal/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="David Neal">
+                <figure class="speaker-item speaker-twitter-reverentgeek">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/david_neal.jpg" alt="David Neal" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Win Hearts with Your Craptastic Drawings</span>
+                        <span class="name">David Neal</span>
+                        <span class="description">Drawer of Things</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/dylan_beattie/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Dylan Beattie">
+                <figure class="speaker-item speaker-twitter-dylanbeattie">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/dylan_beattie.jpg" alt="Dylan Beattie" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">So You Think Your Code Isn't Mission Critical?</span>
+                        <span class="name">Dylan Beattie</span>
+                        <span class="description">You know. The one in the hat.</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/einar_host/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Einar Høst">
+                <figure class="speaker-item speaker-twitter-einarwh">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/einar.jpg" alt="Einar Høst" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Pragmatism is Poison</span>
+                        <span class="name">Einar Høst</span>
+                        <span class="description">Ivory tower zealot. Basically Saruman.</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/evelina_gabasova/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Evelina Gabašová">
+                <figure class="speaker-item speaker-twitter-evelgab">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/evelina.jpg" alt="Evelina Gabašová" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Welcoming our AI Overlords</span>
+                        <span class="name">Evelina Gabašová</span>
+                        <span class="description">Machine learning researcher, clerk at the ministry of silly talks</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/jimmy_bogard/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Jimmy Bogard">
+                <figure class="speaker-item speaker-twitter-jbogard">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/jimmy_bogard.jpg" alt="Jimmy Bogard" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">When You've Fucked Up</span>
+                        <span class="name">Jimmy Bogard</span>
+                        <span class="description">Untappd Architect</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/karlhenrik_nilsson/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Karl-Henrik Nilsson">
+                <figure class="speaker-item speaker-twitter-KHNilsson">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/karl.jpg" alt="Karl-Henrik Nilsson" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">The Internet of Less-Useless Things</span>
+                        <span class="name">Karl-Henrik Nilsson</span>
+                        <span class="description">If you ever need to build a smarter toaster, I’m your guy</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/karoline_klever/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Karoline Klever">
+                <figure class="speaker-item speaker-twitter-karolikl">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/karoline.jpg" alt="Karoline Klever" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">The Miscommunicating Developer</span>
+                        <span class="name">Karoline Klever</span>
+                        <span class="description">Passionate feminist developer lured into the corporate world.</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/lars_klint/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Lars Klint">
+                <figure class="speaker-item speaker-twitter-larsklint">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/lars_klint.jpg" alt="Lars Klint" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">The Day Kittens Took Over the World Using HoloLens</span>
+                        <span class="name">Lars Klint</span>
+                        <span class="description">Todd's Danish Twin</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/sebastien_lambla/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Sebastien Lambla">
+                <figure class="speaker-item speaker-twitter-serialseb">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/sebastien.jpg" alt="Sebastien Lambla" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">How to Always Be Right on the Internets</span>
+                        <span class="name">Sebastien Lambla</span>
+                        <span class="description">International bits fiddler. ReSTing all the things.</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/stefan_daugaardpoulsen/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Stefan Daugaard Poulsen">
+                <figure class="speaker-item speaker-twitter-cyberzeddk">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/stefan.jpg" alt="Stefan Daugaard Poulsen" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">IoT is Misspelled IoU</span>
+                        <span class="name">Stefan Daugaard Poulsen</span>
+                        <span class="description">Software Charlatan</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a class="speaker-link" href="/speakers/troy_hunt/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="Troy Hunt">
+                <figure class="speaker-item speaker-twitter-TroyHunt">
+                    <img data-proofer-ignore data-lazy-src="/assets/images/speakers/troy_hunt.jpg" alt="Troy Hunt" class="speaker">
+                    
+                    
+                    <figcaption>
+                        <span class="title">Let's Face It--Security is Pointless</span>
+                        <span class="name">Troy Hunt</span>
+                        <span class="description">Rather Stupid Security Researcher</span>
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            
+            
+        </ul>
+        <div data-visible-category="discovery" data-visible-action="view_speakers"></div>
+
+        
+        <div class="host">
+            
+            
+            <h3 class="lead2">Hosted By</h3>
+            <ul class="speaker-list">
+                <li>
+                    <a class="speaker-link" href="/speakers/todd_gardner/" data-click-category="discovery" data-click-action="speaker_link" data-click-label="">
+                    <figure class="speaker-item">
+                        <img data-proofer-ignore data-lazy-src="/assets/images/speakers/toddgardner.jpg" alt="" class="speaker">
+                        <figcaption>
+                            <span class="name">Todd Gardner</span>
+                            <span class="description">Occasional JavaScript Developer and Pub Enthusiast</span>
+                        </figcaption>
+                    </figure>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="tickets">
+    <div class="container">
+        <h2 id="tickets">Get Email Updates</h2>
+        <div class="ticket-cta">
+            <p>Join our newsletter to be the first to know about PubConf tickets and events.</p>
+            <div>
+                <a class="cta" href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" alt="Subscribe to PubConf Oslo 2016">
+                    <i class="icon-paper-plane-empty"></i>
+                    Subscribe to PubConf
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="supporters">
+    <div class="container">
+        <h2 id="supporters">Supported By</h2>
+        
+        
+        
+            <h3>Top-Shelf</h3>
+            <ul class="top-shelf-supporters">
+                
+                <li class="supporter-item">
+                    <a href="https://trackjs.com/" title="TrackJS" data-click-category="discovery" data-click-action="supporter_link" data-click-label="TrackJS">
+                        <img src="/assets/images/supporters/tjs.png" alt="TrackJS" class="img-responsive" />
+                    </a>
+                </li>
+                
+            </ul>
+        
+        
+        
+        
+    </div>
+</div>
+
+
+<div class="wtf">
+    <div class="container">
+        <h2 id="wtf">WTF is This?!</h2>
+        <p>PubConf is a comedy variety show for software folks. We partner with conferences around the world to bring you lighthearted fun and community in a non-professional setting.</p>
+        <div class="question">
+            <h3>Is this a joke?</h3>
+            <p>
+                Yes. Well, kind of. We're really throwing this party, these speakers are really going to speak on these topics, and we're really going to have some drinks. But it's all light-hearted and fun.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Is this a professional event?</h3>
+            <p>
+                No, This is a comedy variety show at a pub.
+            </p>
+        </div>
+        <div class="question">
+            <h3>Can I go to PubConf if I didn't attend NDC Oslo?</h3>
+            <p>
+                Absolutely! While PubConf is in partnership with NDC Oslo, it is a separately ticketed event and we'd love to have you there!
+            </p>
+        </div>
+        <div class="question">
+            <h3>What's included with my ticket?</h3>
+            <p>
+                We'll provide pub-fare food, some adult beverages, a great show, and amazing people. If you need something more, well, maybe this isn't the event for you.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <ul>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-1.jpg" title="kc2017-1">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-1.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-1" title="kc2017-1" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-2.jpg" title="kc2017-2">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-2.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-2" title="kc2017-2" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/kc2017-3.jpg" title="kc2017-3">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/kc2017-3.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="kc2017-3" title="kc2017-3" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/london2017.jpg" title="london2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/london2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="london2017" title="london2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/oslo2017.jpg" title="oslo2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/oslo2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="oslo2017" title="oslo2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+            
+            <li>
+                <a href="/assets/images/gallery/sydney2017.jpg" title="sydney2017">
+                    <img data-proofer-ignore data-lazy-src="https://images.weserv.nl/?url=https://pubconf.io//assets/images/gallery/sydney2017.jpg&w=300&h=200&output=jpg&q=50&t=square" alt="sydney2017" title="sydney2017" />
+                </a>
+            </li>
+            
+            
+        
+            
+            
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        </ul>
+    </div>
+</div>
+
+
+<div class="video">
+    <div class="container">
+        <div class="vid">
+            <iframe class="embed-responsive-item" data-proofer-ignore data-lazy-src="https://www.youtube.com/embed/USmUlshjcd4?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=1"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+        <footer class="site-footer">
+    <div class="social">
+        <div class="container">
+            <a href="https://www.youtube.com/channel/UCzRi6NoncIBqJzOWT1T-WJw" title="YouTube"><i class="icon-youtube-play"></i></a>
+            <a href="https://twitter.com/pubconf" title="Twitter"><i class="icon-twitter"></i></a>
+            <a href="http://pubconf.us11.list-manage1.com/subscribe?u=33d7399517a3ee3a5e9b679f7&id=05e06dc18c" title="Email"><i class="icon-mail"></i></a>
+        </div>
+    </div>
+
+    <p>All speakers, supporters, and attendees must respect the <a href="/code-of-conduct/">PubConf Code of Conduct</a>. All content appearing on this website is proprietary, copyrighted and owned or licensed by <a href="https://trackjs.com/">TrackJS LLC</a>. Any unauthorized use of trademarks or content from this website is strictly prohibited. All rights reserved.</p>
+    <p>Copyright &copy; 2015-2019 <a href="https://trackjs.com/">TrackJS LLC</a></p>
+</footer>
+
+    </body>
+</html>
