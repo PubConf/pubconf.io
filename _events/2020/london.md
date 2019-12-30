@@ -20,13 +20,13 @@ end_date: 2020-01-31T23:30:00Z
 local_time: 2020-01-31T19:00
 
 # Tickets object. Comment this out until tickets are ready to be sold.
-# tickets:
-#   # External URL to purchase tickets. Eventbrite, etc.
-#   url: https://ti.to/dddperth/pubconf-perth/
-#   # Number price in local currency
-#   price: 65
-#   # Currency code. Used in meta.
-#   currency: AUD
+tickets:
+  # External URL to purchase tickets. Eventbrite, etc.
+  url: https://www.eventbrite.co.uk/e/pubconf-ndc-london-2020-tickets-86649177021
+  # Number price in local currency
+  price: 35
+  # Currency code. Used in meta.
+  currency: GBP
 
 # Basic images used for every event. I typically use the same ones for a location
 # every year. There are templates for creating these in
