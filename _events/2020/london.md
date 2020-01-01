@@ -81,7 +81,9 @@ speakers:
   mark_rendle:
     talk: Coming Soon
   layla_porter:
-    talk: TBC
+    talk: Coming Soon
+  amy_kapernick:
+    talk: Coming Soon
 
 # Supporters array for the event.
 supporters:
