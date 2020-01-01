@@ -68,20 +68,20 @@ finalist_count: 3
 # Speaker object hash. Use the speaker slugs as the keys, alphabetically listed.
 # Within each speaker are the event-specific details.
 speakers:
-  lemon:
-    talk: Coming Soon
   jennifer_wadella:
     talk: Untitled Goose Talk
+  hannes_lowette:
+    talk: "HOWTO: Making Enemies Using Classic Games"
+  lemon:
+    talk: Coming Soon
   jessica_white:
     talk: Coming Soon
   edward_thomson:
     talk: Coming Soon
   mark_rendle:
     talk: Coming Soon
-
-# CONFIRMED SPEAKERS AWAITING BIO+PHOTO
-# layla_porter:
-#   talk: coming soon    
+  layla_porter:
+    talk: TBC
 
 # Supporters array for the event.
 supporters:
