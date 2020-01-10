@@ -74,6 +74,10 @@ speakers:
     talk: "HOWTO: Making Enemies Using Classic Games"
   amy_kapernick:
     talk: "The Exploding Kittens Guide to Web Development"
+  megan_slater:
+    talk: "Stardew is the new Silicon"
+  lewis_denhamparry:
+    talk: "You've Just Lost The Game"
   lemon:
     talk: Coming Soon
   jessica_white:
@@ -87,7 +91,6 @@ speakers:
   
 # waiting on bios + photos from:
 # david_whitney
-# megan_slater
 # +1 more TBC
 
 # Supporters array for the event.
