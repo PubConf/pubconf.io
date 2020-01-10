@@ -1,5 +1,6 @@
 # Ruby
 Gemfile.lock
+.ruby-version
 
 # Jekyll
 .asset-cache

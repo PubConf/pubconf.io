@@ -72,6 +72,8 @@ speakers:
     talk: Untitled Goose Talk
   hannes_lowette:
     talk: "HOWTO: Making Enemies Using Classic Games"
+  amy_kapernick:
+    talk: "The Exploding Kittens Guide to Web Development"
   lemon:
     talk: Coming Soon
   jessica_white:
@@ -82,8 +84,11 @@ speakers:
     talk: Coming Soon
   layla_porter:
     talk: Coming Soon
-  amy_kapernick:
-    talk: Coming Soon
+  
+# waiting on bios + photos from:
+# david_whitney
+# megan_slater
+# +1 more TBC
 
 # Supporters array for the event.
 supporters:
