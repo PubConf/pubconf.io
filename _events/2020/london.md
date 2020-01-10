@@ -79,7 +79,7 @@ speakers:
   lewis_denhamparry:
     talk: "You've Just Lost The Game"
   lemon:
-    talk: Coming Soon
+    talk: "Website Needs Code, Badly!"
   jessica_white:
     talk: Coming Soon
   edward_thomson:
