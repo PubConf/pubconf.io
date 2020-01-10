@@ -88,6 +88,8 @@ speakers:
     talk: Coming Soon
   layla_porter:
     talk: Coming Soon
+  lewis_denhamparry:
+    talk: Coming Soon
   
 # waiting on bios + photos from:
 # david_whitney
