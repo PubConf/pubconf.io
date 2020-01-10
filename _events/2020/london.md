@@ -80,11 +80,11 @@ speakers:
     talk: "You've Just Lost The Game"
   lemon:
     talk: "Website Needs Code, Badly!"
+  mark_rendle:
+    talk: "Stop The World, I Want To Restart From A Saved Checkpoint"
   jessica_white:
     talk: Coming Soon
   edward_thomson:
-    talk: Coming Soon
-  mark_rendle:
     talk: Coming Soon
   layla_porter:
     talk: Coming Soon
