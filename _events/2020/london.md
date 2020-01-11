@@ -76,24 +76,24 @@ speakers:
     talk: "The Exploding Kittens Guide to Web Development"
   megan_slater:
     talk: "Stardew is the new Silicon"
+
   lewis_denhamparry:
     talk: "You've Just Lost The Game"
   lemon:
     talk: "Website Needs Code, Badly!"
   mark_rendle:
     talk: "Stop The World, I Want To Restart From A Saved Checkpoint"
+  alex_dunn:
+    talk: "Playing Drinking Games with Amazon"
+
+  layla_porter:
+    talk: "The Dating Game for Developers"
   jessica_white:
     talk: Coming Soon
   edward_thomson:
     talk: Coming Soon
-  layla_porter:
+  david_whitney:
     talk: Coming Soon
-  lewis_denhamparry:
-    talk: Coming Soon
-  
-# waiting on bios + photos from:
-# david_whitney
-# +1 more TBC
 
 # Supporters array for the event.
 supporters:
