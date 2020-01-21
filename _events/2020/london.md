@@ -91,7 +91,7 @@ speakers:
   jessica_white:
     talk: "Who Gives A Toss (A Coin To Your Witcher)"
   edward_thomson:
-    talk: Coming Soon
+    talk: "Git Rebase: The Most Dangerous Game"
 
 # Supporters array for the event.
 supporters:
