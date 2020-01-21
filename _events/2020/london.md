@@ -89,7 +89,7 @@ speakers:
   layla_porter:
     talk: "The Dating Game for Developers"
   jessica_white:
-    talk: Coming Soon
+    talk: "Who Gives A Toss (A Coin To Your Witcher)"
   edward_thomson:
     talk: Coming Soon
 
