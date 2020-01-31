@@ -46,6 +46,7 @@ speakers:
     place: "champion"
   lemon:
     talk: "Please Your VP By Hating Your User"
+    place: "finalist"
   scott_helme:
     talk: "Make Australia Britain Again"
   troy_hunt:
