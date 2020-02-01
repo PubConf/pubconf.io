@@ -68,6 +68,15 @@ finalist_count: 3
 # Speaker object hash. Use the speaker slugs as the keys, alphabetically listed.
 # Within each speaker are the event-specific details.
 speakers:
+  alex_dunn:
+    talk: "Playing Drinking Games with Amazon"
+    place: "champion"
+  edward_thomson:
+    talk: "Git Rebase: The Most Dangerous Game"
+    place: "finalist"
+  lewis_denhamparry:
+    talk: "You've Just Lost The Game"
+    place: "finalist"
   jennifer_wadella:
     talk: Untitled Goose Talk
   hannes_lowette:
@@ -76,22 +85,16 @@ speakers:
     talk: "The Exploding Kittens Guide to Web Development"
   megan_slater:
     talk: "Stardew is the new Silicon"
-  lewis_denhamparry:
-    talk: "You've Just Lost The Game"
   lemon:
     talk: "Website Needs Code, Badly!"
   mark_rendle:
     talk: "Stop The World, I Want To Restart From A Saved Checkpoint"
-  alex_dunn:
-    talk: "Playing Drinking Games with Amazon"
   david_whitney:
     talk: "Blunderyears - The Game That Changed My Life"
   layla_porter:
     talk: "The Dating Game for Developers"
   jessica_white:
     talk: "Who Gives A Toss (A Coin To Your Witcher)"
-  edward_thomson:
-    talk: "Git Rebase: The Most Dangerous Game"
 
 # Supporters array for the event.
 supporters:
