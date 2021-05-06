@@ -28,6 +28,9 @@ exclude:
   - "README.md"
   - "vendor" # for travis bullshit.
 
+include:
+  - ".well-known"
+
 future: true
 collections:
   events:
