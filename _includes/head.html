@@ -7,6 +7,8 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="me" href="https://twitter.com/{{ site.twitter_username }}">
 
+    <script async src="https://cdn.requestmetrics.com/agent/current/rm.js" data-rm-token="s6pb4ny:u3ut6yp"></script>
+
     <!-- Open Graph Sharing Info -->
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:site_name" content="{{ site.title }}"/>
@@ -108,7 +110,7 @@
     </script>
 
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300,700,900' rel='stylesheet' type='text/css' />
-    {% stylesheet main %}
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.UA }}"></script>
@@ -137,5 +139,5 @@
         twq('track','PageView');
     </script>
 
-    {% javascript main async defer %}
+    <script async src="{{ site.url }}/assets/js/main.js{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}"></script>
 </head>

@@ -20,8 +20,10 @@ twitter_username: pubconf
 markdown: kramdown
 
 plugins:
-  - jekyll-assets
   - jekyll-redirect-from
+
+sass:
+  sass_dir: "assets/css"
 
 exclude:
   - "Gemfile*"

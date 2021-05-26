@@ -98,10 +98,10 @@ layout: null
         </script>
 
         <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css' />
-        {% stylesheet vote %}
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/vote.css{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}">
     </head>
     <body class="layout-vote">
         {{ content }}
-        {% javascript vote %}
+        <script src="{{ site.url }}/assets/js/vote.js{% if jekyll.environment == 'production' %}?{{ site.time | date: "%s%N" }}{% endif %}"></script>
     </body>
 </html>
